@@ -8,7 +8,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,20 +28,37 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.9"
-      - name: Package upstream LTX license in APK assets
+      - name: Embed all ONNX models in APK assets
         run: |
-          mkdir -p app/src/main/assets/licenses
-          curl --fail --location --retry 3 --output app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf https://static.lightricks.com/legal/LTX-Video-Open-Weights-License-0.X.pdf
+          set -euxo pipefail
+          mkdir -p app/src/main/assets/models app/src/main/assets/licenses
+          BASE="https://github.com/Romangold999/Tank2-AI-Video-Studio/releases/download/tank2-models-v0.1.0"
+          curl --fail --location --retry 5 --retry-all-errors "$BASE/models-manifest.json" -o app/src/main/assets/models/models-manifest.json
+          for model in ltx_open_vae_encoder.onnx mobiledit_300m.onnx turbo_vaed_ltx_decoder.onnx; do
+            curl --fail --location --retry 5 --retry-all-errors "$BASE/$model" -o "app/src/main/assets/models/$model"
+            test -s "app/src/main/assets/models/$model"
+          done
+          curl --fail --location --retry 5 --retry-all-errors "https://huggingface.co/edgetools/rife/resolve/main/rife49.onnx" -o app/src/main/assets/models/rife49.onnx
+          echo "76e4cef9ab42fa7dd8e4f6e4aba47462051e3faa969e4bca6479784fbab0ac6f  app/src/main/assets/models/rife49.onnx" | sha256sum --check
+          curl --fail --location --retry 5 --retry-all-errors --output app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf https://static.lightricks.com/legal/LTX-Video-Open-Weights-License-0.X.pdf
           file app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf | grep -q PDF
-      - name: Build debug APK
-        run: gradle --no-daemon :app:assembleDebug
-      - name: Upload APK
+          echo "=== Embedded model sizes ==="
+          ls -lh app/src/main/assets/models
+          du -sh app/src/main/assets/models
+          df -h .
+      - name: Build APK with embedded models
+        run: |
+          gradle --no-daemon :app:assembleDebug --stacktrace
+          ls -lh app/build/outputs/apk/debug/app-debug.apk
+          stat -c "APK_BYTES=%s" app/build/outputs/apk/debug/app-debug.apk
+      - name: Upload APK with embedded models
         uses: actions/upload-artifact@v4
         with:
-          name: Tank2-AI-Video-Studio-debug
+          name: Tank2-AI-Video-Studio-embedded-models-debug
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 14
+          compression-level: 0
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -64,7 +81,7 @@ jobs:
             echo "hw.keyboard=yes"
           } >> "$AVD_CONFIG"
           cat "$AVD_CONFIG"
-      - name: Boot Tank2-like Android 14 emulator and run app/model tests
+      - name: Boot Tank2-like Android 14 emulator and run offline generation tests
         id: android_tests
         run: |
           set -o pipefail
@@ -95,7 +112,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tank2-emulator-diagnostics
+          name: tank2-emulator-diagnostics-embedded-models
           path: |
             emulator-startup.log
             emulator-logcat.txt
