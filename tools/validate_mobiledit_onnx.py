@@ -15,8 +15,6 @@ import onnxruntime as ort
 EXPECTED = {
     "latent": (1, 128, 3, 23, 40),
     "timestep": (1,),
-    "guide_image": (1, 128, 1, 23, 40),
-    "text_features": (1, 1, 300, 896),
     "cond_mask": (1, 2760),
     "flow_score": (1,),
 }
@@ -28,6 +26,9 @@ def main():
     args = parser.parse_args()
 
     print("ONNXRUNTIME_VERSION=" + ort.__version__)
+    # The current upstream Mobiledit block does not consume guide_image or y:
+    # image conditioning is injected into latent frame 0 by the sampler.
+    print("UPSTREAM_UNUSED_ARGS=guide_image,text_features")
     options = ort.SessionOptions()
     options.intra_op_num_threads = 2
     options.inter_op_num_threads = 1
