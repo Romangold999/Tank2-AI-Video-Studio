@@ -46,8 +46,15 @@ def main():
             % (sorted(EXPECTED), sorted(actual))
         )
 
-    feed = {}
-    rng = np.random.default_rng(20261112)
+    reference_path = Path(args.model).with_name("mobiledit_reference.npz")
+    if not reference_path.is_file():
+        raise FileNotFoundError(
+            "PyTorch reference missing: %s" % reference_path
+        )
+    with np.load(reference_path) as reference:
+        feed = {name: reference[name] for name in EXPECTED}
+        torch_output = reference["torch_output"]
+
     for name, shape in EXPECTED.items():
         item = actual[name]
         if item.type != "tensor(float)":
@@ -57,16 +64,12 @@ def main():
                 "%s has unexpected shape %s; expected %s"
                 % (name, item.shape, shape)
             )
-        feed[name] = rng.standard_normal(shape, dtype=np.float32)
+        if feed[name].shape != shape or feed[name].dtype != np.float32:
+            raise RuntimeError(
+                "%s reference has invalid shape/dtype: %s %s"
+                % (name, feed[name].shape, feed[name].dtype)
+            )
 
-    # Match the official sampler: lock the first latent frame as the image condition.
-    feed["cond_mask"] = np.zeros(EXPECTED["cond_mask"], dtype=np.float32)
-    feed["cond_mask"][:, : 23 * 40] = 1.0
-    feed["timestep"] = np.array([500.0], dtype=np.float32)
-    feed["flow_score"] = np.array([2.0], dtype=np.float32)
-
-    print("CONDITION_MASK=FIRST_LATENT_FRAME")
-    print("CFG_CAN_BE_SINGLE_PASS=YES (upstream MobileDiT blocks ignore text features)")
     print("ORT_SESSION=CREATED")
     print("INPUT_SIGNATURE=PASS")
     outputs = session.run(None, feed)
@@ -80,10 +83,23 @@ def main():
         )
     if not np.isfinite(result).all():
         raise RuntimeError("Denoiser output contains NaN or infinity")
+    if not np.isfinite(torch_output).all():
+        raise RuntimeError("PyTorch reference contains NaN or infinity")
+
+    max_abs = float(np.max(np.abs(result - torch_output)))
+    max_ref = float(np.max(np.abs(torch_output)))
+    if not np.allclose(result, torch_output, rtol=2e-3, atol=2e-4):
+        raise RuntimeError(
+            "PyTorch/ONNX mismatch: max_abs_error=%.8g max_reference=%.8g"
+            % (max_abs, max_ref)
+        )
 
     print("ORT_CPU_INFERENCE=PASS")
+    print("PYTORCH_ONNX_NUMERICAL_MATCH=PASS")
+    print("MAX_ABS_ERROR=%.8g" % max_abs)
     print("OUTPUT_SHAPE=%s" % (result.shape,))
     print("OUTPUT_FINITE=YES")
+
 
 
 if __name__ == "__main__":
