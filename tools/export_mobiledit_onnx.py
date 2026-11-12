@@ -127,6 +127,7 @@ def main():
         timestep=timestep.numpy(),
         cond_mask=cond_mask.numpy(),
         flow_score=flow_score.numpy(),
+        guide_image=guide_image.numpy(),
         torch_output=torch_reference,
     )
     print("PYTORCH_REFERENCE=CREATED")
