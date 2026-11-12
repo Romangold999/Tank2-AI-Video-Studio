@@ -1,0 +1,26 @@
+name: RIFE ONNX runtime probe
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/validate_rife_onnx.py"
+      - ".github/workflows/rife-onnx-probe.yml"
+      - "app/src/main/java/com/romangold/tank2aivideostudio/RifeX2Interpolator.kt"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-rife:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ONNX Runtime
+        run: python -m pip install --upgrade pip numpy onnxruntime
+      - name: Validate RIFE model metadata and 720p CPU inference
+        run: python tools/validate_rife_onnx.py
