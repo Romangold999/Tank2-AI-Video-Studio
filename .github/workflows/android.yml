@@ -67,8 +67,16 @@ jobs:
           test -e /dev/kvm
       - name: Create Tank2-like Android 14 AVD
         run: |
-          echo "no" | avdmanager create avd -n tank2_android14 -k "system-images;android-34;google_apis;x86_64" --force
+          set -euxo pipefail
+          mkdir -p "$HOME/.android/avd"
+          printf 'no\\n' | avdmanager create avd --name tank2_android14 --package "system-images;android-34;google_apis;x86_64" --path "$HOME/.android/avd/tank2_android14.avd" --force
           AVD_CONFIG="$HOME/.android/avd/tank2_android14.avd/config.ini"
+          if [ ! -f "$AVD_CONFIG" ]; then
+            echo "AVD manager did not create expected config file"
+            find "$HOME/.android/avd" -maxdepth 3 -type f -print || true
+            avdmanager list avd || true
+            exit 1
+          fi
           {
             echo "hw.lcd.width=1080"
             echo "hw.lcd.height=2460"
