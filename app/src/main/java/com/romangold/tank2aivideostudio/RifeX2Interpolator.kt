@@ -1,4 +1,4 @@
-package com.romgold.tank2aivideostudio
+package com.romangold.tank2aivideostudio
 
 import android.content.Context
 import android.graphics.Bitmap
