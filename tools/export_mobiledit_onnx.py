@@ -111,6 +111,7 @@ def main():
     latent = torch.randn(1, 128, 3, 23, 40, dtype=torch.float32)
     timestep = torch.tensor([500.0], dtype=torch.float32)
     guide_image = torch.randn(1, 128, 1, 23, 40, dtype=torch.float32)
+    latent[:, :, :1, :, :] = guide_image
     text_features = torch.randn(1, 1, 300, 896, dtype=torch.float32)
     cond_mask = torch.zeros(1, 2760, dtype=torch.float32)
     cond_mask[:, : 23 * 40] = 1.0
