@@ -106,14 +106,32 @@ def main():
     print("TEXT_FEATURE_SHAPE=[1,1,300,896]")
 
     wrapped = DenoiserExport(model).eval()
-    inputs = (
-        torch.randn(1, 128, 3, 23, 40, dtype=torch.float32),
-        torch.ones(1, dtype=torch.float32),
-        torch.randn(1, 128, 1, 23, 40, dtype=torch.float32),
-        torch.randn(1, 1, 300, 896, dtype=torch.float32),
-        torch.ones(1, 2760, dtype=torch.float32),
-        torch.ones(1, dtype=torch.float32),
+    # Use sampler-shaped conditioning and retain a PyTorch reference so the
+    # runtime test can compare numerical results, not merely execute the graph.
+    latent = torch.randn(1, 128, 3, 23, 40, dtype=torch.float32)
+    timestep = torch.tensor([500.0], dtype=torch.float32)
+    guide_image = torch.randn(1, 128, 1, 23, 40, dtype=torch.float32)
+    text_features = torch.randn(1, 1, 300, 896, dtype=torch.float32)
+    cond_mask = torch.zeros(1, 2760, dtype=torch.float32)
+    cond_mask[:, : 23 * 40] = 1.0
+    flow_score = torch.tensor([2.0], dtype=torch.float32)
+    inputs = (latent, timestep, guide_image, text_features, cond_mask, flow_score)
+
+    with torch.inference_mode():
+        torch_reference = wrapped(*inputs).cpu().numpy()
+    reference_path = output.parent / "mobiledit_reference.npz"
+    import numpy as np
+    np.savez(
+        reference_path,
+        latent=latent.numpy(),
+        timestep=timestep.numpy(),
+        cond_mask=cond_mask.numpy(),
+        flow_score=flow_score.numpy(),
+        torch_output=torch_reference,
     )
+    print("PYTORCH_REFERENCE=CREATED")
+    print("REFERENCE_FILE=%s" % reference_path)
+
     torch.onnx.export(
         wrapped, inputs, str(output),
         input_names=["latent", "timestep", "guide_image", "text_features", "cond_mask", "flow_score"],
