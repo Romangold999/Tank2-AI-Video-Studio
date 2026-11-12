@@ -71,7 +71,7 @@ jobs:
         run: |
           set -euxo pipefail
           mkdir -p "$HOME/.android/avd"
-          printf 'no\\n' | avdmanager create avd --name tank2_android14 --package "system-images;android-34;google_apis;x86_64" --path "$HOME/.android/avd/tank2_android14.avd" --force
+          printf 'no\\n' | avdmanager create avd --name tank2_android14 --package "system-images;android-34;google_apis;x86_64" --device "pixel_6" --path "$HOME/.android/avd/tank2_android14.avd" --force
           AVD_CONFIG="$HOME/.android/avd/tank2_android14.avd/config.ini"
           if [ ! -f "$AVD_CONFIG" ]; then
             echo "AVD manager did not create expected config file"
