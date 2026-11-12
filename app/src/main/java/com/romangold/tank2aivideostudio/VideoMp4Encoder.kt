@@ -30,6 +30,18 @@ class VideoMp4Encoder(
     fun encode(
         frames: Iterable<Bitmap>,
         onProgress: (encodedFrames: Int) -> Unit = {}
+    ): File = encodeStream(
+        produceFrames = { emit -> frames.forEach(emit) },
+        onProgress = onProgress
+    )
+
+    /**
+     * Encodes each frame immediately when the producer emits it. The producer
+     * must not retain generated frames after emit returns.
+     */
+    fun encodeStream(
+        produceFrames: (emit: (Bitmap) -> Unit) -> Unit,
+        onProgress: (encodedFrames: Int) -> Unit = {}
     ): File {
         output.parentFile?.mkdirs()
         if (output.exists()) output.delete()
@@ -89,7 +101,7 @@ class VideoMp4Encoder(
                 }
             }
 
-            for (source in frames) {
+            produceFrames { source ->
                 var inputIndex = codec.dequeueInputBuffer(10_000)
                 while (inputIndex < 0) {
                     drain(false)
