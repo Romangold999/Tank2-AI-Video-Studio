@@ -10,7 +10,6 @@ import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import android.text.InputType
 
 class MainActivity : Activity() {
     private val bg = Color.rgb(15, 18, 24)
@@ -19,7 +18,6 @@ class MainActivity : Activity() {
     private val accent = Color.rgb(112, 160, 255)
     private lateinit var imagePreview: ImageView
     private lateinit var imageHint: TextView
-    private lateinit var prompt: EditText
     private lateinit var durationValue: TextView
     private lateinit var progress: ProgressBar
     private lateinit var progressText: TextView
@@ -68,21 +66,6 @@ class MainActivity : Activity() {
         imageCard.addView(imageHint)
         content.addView(imageCard.top(10))
 
-        content.addView(sectionTitle("ПРОМТ").top(22))
-        prompt = EditText(this).apply {
-            setTextColor(Color.WHITE)
-            setHintTextColor(muted)
-            hint = "Опишите движение, атмосферу и действия..."
-            textSize = 15f
-            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
-            gravity = Gravity.TOP or Gravity.START
-            minLines = 3
-            maxLines = 5
-            setPadding(dp(14), dp(13), dp(14), dp(13))
-            setBackgroundColor(panel)
-        }
-        content.addView(prompt.top(10))
-
         content.addView(sectionTitle("ДЛИТЕЛЬНОСТЬ").top(22))
         val durationRow = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
@@ -113,7 +96,6 @@ class MainActivity : Activity() {
         generateButton.setOnClickListener {
             val message = when {
                 selectedImage == null -> "Сначала выберите изображение"
-                prompt.text.toString().isBlank() -> "Добавьте описание движения в поле промта"
                 else -> "Нейросетевой движок ещё подключается. Генерация пока недоступна."
             }
             Toast.makeText(this, message, Toast.LENGTH_LONG).show()
