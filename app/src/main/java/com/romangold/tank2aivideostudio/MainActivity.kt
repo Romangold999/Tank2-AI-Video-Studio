@@ -110,6 +110,10 @@ class MainActivity : Activity() {
     }
 
     private fun startGeneration() {
+        LicenseAcceptance.requireAccepted(this) { startGenerationAfterLicense() }
+    }
+
+    private fun startGenerationAfterLicense() {
         val uri = selectedImage
         if (uri == null) {
             Toast.makeText(this, "Сначала выберите изображение", Toast.LENGTH_LONG).show()
