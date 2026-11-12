@@ -9,6 +9,7 @@ android {
         applicationId = "com.romangold.tank2aivideostudio"
         minSdk = 26
         targetSdk = 35
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         versionCode = 1
         versionName = "0.1.0"
     }
@@ -30,4 +31,8 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.10.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.microsoft.onnxruntime:onnxruntime-android:1.28.0")
+    androidTestImplementation("androidx.test:runner:1.6.2")
+    androidTestImplementation("androidx.test:rules:1.6.1")
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+    androidTestImplementation("androidx.test:core-ktx:1.6.1")
 }
