@@ -42,7 +42,6 @@ def main():
     sys.argv = [sys.argv[0]]
 
     # Upstream MobileDiT creates output/train_log.log during model construction.
-    # Create that directory before build_model(), not only before ONNX export.
     Path("output").mkdir(parents=True, exist_ok=True)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -54,8 +53,7 @@ def main():
         raise FileNotFoundError(cfg_path)
 
     config = pyrallis.parse(config_class=SanaConfig, config_path=str(cfg_path))
-    # 720x1280 input -> latent grid 23x40 (the official inference code rounds
-    # 720/32 upward because it is not divisible by 32); 17 output frames -> 3 latent frames.
+    # 720x1280 input -> latent grid 23x40; 17 output frames -> 3 latent frames.
     latent_h = config.model.image_height // config.vae.vae_downsample_rate
     if config.model.image_height % config.vae.vae_downsample_rate:
         latent_h += 1
@@ -74,15 +72,20 @@ def main():
     )
     payload = torch.load(checkpoint, map_location="cpu", weights_only=False)
     state = payload.get("state_dict", payload)
+    # Upstream MobileDiT creates pos_embed as a deterministic sin/cos buffer
+    # during initialization; the published checkpoint intentionally omits it.
     state.pop("pos_embed", None)
     incompatible = model.load_state_dict(state, strict=False)
-    if incompatible.missing_keys or incompatible.unexpected_keys:
+    allowed_missing = {"pos_embed"}
+    missing = set(incompatible.missing_keys)
+    unexpected = set(incompatible.unexpected_keys)
+    if missing - allowed_missing or unexpected:
         raise RuntimeError(
             "Checkpoint mismatch: missing=%s unexpected=%s"
-            % (incompatible.missing_keys[:20], incompatible.unexpected_keys[:20])
+            % (sorted(missing), sorted(unexpected))
         )
-
-    print("EXPORT_PROBE_VERSION=2")
+    print("POSITION_EMBEDDING=REGENERATED_SINCOS")
+    print("EXPORT_PROBE_VERSION=3")
     print("CHECKPOINT_LOADED=YES")
     print("PARAMETERS=%d" % sum(p.numel() for p in model.parameters()))
     print("LATENT_SHAPE=[1,128,3,23,40]")
