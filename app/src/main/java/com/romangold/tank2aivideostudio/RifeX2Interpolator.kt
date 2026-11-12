@@ -1,0 +1,212 @@
+package com.romgold.tank2aivideostudio
+
+import android.content.Context
+import android.graphics.Bitmap
+import ai.onnxruntime.OnnxTensor
+import ai.onnxruntime.OrtEnvironment
+import ai.onnxruntime.OrtSession
+import java.io.File
+import java.net.HttpURLConnection
+import java.net.URL
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+import java.nio.FloatBuffer
+import java.security.MessageDigest
+
+/**
+ * RIFE v4.9 x2 frame interpolation.
+ *
+ * Call from a background thread. For every adjacent pair of source frames this
+ * class synthesizes the midpoint, returning [A, midpoint(A,B), B, ...].
+ * It never changes the source frame rate metadata or duplicates frames.
+ */
+class RifeX2Interpolator(context: Context) : AutoCloseable {
+    private val appContext = context.applicationContext
+    private val modelFile = File(File(appContext.filesDir, "models"), MODEL_FILE)
+    private val environment = OrtEnvironment.getEnvironment()
+    private var session: OrtSession? = null
+
+    @Synchronized
+    fun interpolateSequence(
+        sourceFrames: List<Bitmap>,
+        onModelDownloadProgress: (downloaded: Long, total: Long) -> Unit = { _, _ -> },
+        onFrameProgress: (completedPairs: Int, totalPairs: Int) -> Unit = { _, _ -> }
+    ): List<Bitmap> {
+        require(sourceFrames.size >= 2) { "RIFE needs at least two source frames" }
+        ensureModel(onModelDownloadProgress)
+        val activeSession = session ?: createSession().also { session = it }
+
+        val totalPairs = sourceFrames.size - 1
+        val result = ArrayList<Bitmap>(sourceFrames.size + totalPairs)
+        for (index in 0 until totalPairs) {
+            val first = sourceFrames[index]
+            val second = sourceFrames[index + 1]
+            require(first.width == second.width && first.height == second.height) {
+                "All source frames must have identical dimensions"
+            }
+            result.add(first)
+            result.add(inferMidpoint(activeSession, first, second))
+            onFrameProgress(index + 1, totalPairs)
+        }
+        result.add(sourceFrames.last())
+        return result
+    }
+
+    private fun createSession(): OrtSession {
+        val options = OrtSession.SessionOptions()
+        options.setIntraOpNumThreads(CPU_THREADS)
+        options.setInterOpNumThreads(1)
+        options.setOptimizationLevel(OrtSession.SessionOptions.OptLevel.ALL)
+        val created = environment.createSession(modelFile.absolutePath, options)
+        options.close()
+        val expectedInputs = setOf("img0", "img1", "timestep")
+        check(created.inputNames == expectedInputs) {
+            "Unexpected RIFE inputs: ${created.inputNames}"
+        }
+        check(created.outputNames.contains(OUTPUT_NAME)) {
+            "RIFE output '$OUTPUT_NAME' not found: ${created.outputNames}"
+        }
+        return created
+    }
+
+    private fun inferMidpoint(activeSession: OrtSession, first: Bitmap, second: Bitmap): Bitmap {
+        val originalWidth = first.width
+        val originalHeight = first.height
+        val paddedWidth = ((originalWidth + 31) / 32) * 32
+        val paddedHeight = ((originalHeight + 31) / 32) * 32
+        val shape = longArrayOf(1, 3, paddedHeight.toLong(), paddedWidth.toLong())
+
+        val firstInput = bitmapToTensorData(first, paddedWidth, paddedHeight)
+        val secondInput = bitmapToTensorData(second, paddedWidth, paddedHeight)
+        val timestepBuffer = directFloatBuffer(1).put(0.5f).apply { rewind() }
+
+        OnnxTensor.createTensor(environment, firstInput, shape).use { img0 ->
+            OnnxTensor.createTensor(environment, secondInput, shape).use { img1 ->
+                OnnxTensor.createTensor(environment, timestepBuffer, longArrayOf(1)).use { timestep ->
+                    val inputs = mapOf("img0" to img0, "img1" to img1, "timestep" to timestep)
+                    activeSession.run(inputs).use { outputs ->
+                        val output = outputs.get(OUTPUT_NAME).orElseThrow {
+                            IllegalStateException("RIFE returned no '$OUTPUT_NAME' tensor")
+                        } as OnnxTensor
+                        val values = output.floatBuffer
+                        val outputPixels = IntArray(originalWidth * originalHeight)
+                        val planeSize = paddedWidth * paddedHeight
+                        for (y in 0 until originalHeight) {
+                            for (x in 0 until originalWidth) {
+                                val sourceIndex = y * paddedWidth + x
+                                val red = toByte(values.get(sourceIndex))
+                                val green = toByte(values.get(planeSize + sourceIndex))
+                                val blue = toByte(values.get(2 * planeSize + sourceIndex))
+                                outputPixels[y * originalWidth + x] =
+                                    (0xFF shl 24) or (red shl 16) or (green shl 8) or blue
+                            }
+                        }
+                        return Bitmap.createBitmap(
+                            outputPixels, originalWidth, originalHeight, Bitmap.Config.ARGB_8888
+                        )
+                    }
+                }
+            }
+        }
+    }
+
+    private fun bitmapToTensorData(bitmap: Bitmap, paddedWidth: Int, paddedHeight: Int): FloatBuffer {
+        val width = bitmap.width
+        val height = bitmap.height
+        val pixels = IntArray(width * height)
+        bitmap.getPixels(pixels, 0, width, 0, 0, width, height)
+        val planeSize = paddedWidth * paddedHeight
+        val tensor = directFloatBuffer(planeSize * 3)
+        for (y in 0 until paddedHeight) {
+            val sourceY = minOf(y, height - 1)
+            for (x in 0 until paddedWidth) {
+                val sourceX = minOf(x, width - 1)
+                val color = pixels[sourceY * width + sourceX]
+                val offset = y * paddedWidth + x
+                tensor.put(offset, ((color shr 16) and 0xFF) / 255f)
+                tensor.put(planeSize + offset, ((color shr 8) and 0xFF) / 255f)
+                tensor.put(2 * planeSize + offset, (color and 0xFF) / 255f)
+            }
+        }
+        tensor.position(0)
+        tensor.limit(planeSize * 3)
+        return tensor
+    }
+
+    private fun ensureModel(onProgress: (Long, Long) -> Unit) {
+        if (modelFile.isFile && sha256(modelFile) == MODEL_SHA256) return
+        modelFile.parentFile?.mkdirs()
+        val temporary = File(modelFile.parentFile, "$MODEL_FILE.download")
+        temporary.delete()
+
+        val connection = (URL(MODEL_URL).openConnection() as HttpURLConnection).apply {
+            connectTimeout = 20_000
+            readTimeout = 60_000
+            instanceFollowRedirects = true
+            requestMethod = "GET"
+        }
+        try {
+            connection.connect()
+            check(connection.responseCode in 200..299) {
+                "RIFE model download failed: HTTP ${connection.responseCode}"
+            }
+            val total = connection.contentLengthLong
+            connection.inputStream.use { input ->
+                temporary.outputStream().buffered().use { output ->
+                    val buffer = ByteArray(1024 * 256)
+                    var downloaded = 0L
+                    while (true) {
+                        val count = input.read(buffer)
+                        if (count < 0) break
+                        output.write(buffer, 0, count)
+                        downloaded += count
+                        onProgress(downloaded, total)
+                    }
+                }
+            }
+        } finally {
+            connection.disconnect()
+        }
+
+        check(sha256(temporary) == MODEL_SHA256) {
+            temporary.delete()
+            "RIFE model SHA-256 verification failed"
+        }
+        if (modelFile.exists()) modelFile.delete()
+        check(temporary.renameTo(modelFile)) { "Could not install the downloaded RIFE model" }
+    }
+
+    private fun sha256(file: File): String {
+        val digest = MessageDigest.getInstance("SHA-256")
+        file.inputStream().buffered().use { input ->
+            val buffer = ByteArray(1024 * 128)
+            while (true) {
+                val count = input.read(buffer)
+                if (count < 0) break
+                digest.update(buffer, 0, count)
+            }
+        }
+        return digest.digest().joinToString("") { "%02x".format(it) }
+    }
+
+    private fun directFloatBuffer(count: Int): FloatBuffer =
+        ByteBuffer.allocateDirect(count * 4).order(ByteOrder.nativeOrder()).asFloatBuffer()
+
+    private fun toByte(value: Float): Int =
+        (value.coerceIn(0f, 1f) * 255f + 0.5f).toInt()
+
+    @Synchronized
+    override fun close() {
+        session?.close()
+        session = null
+    }
+
+    companion object {
+        const val OUTPUT_FPS_MULTIPLIER = 2
+        private const val CPU_THREADS = 2
+        private const val MODEL_FILE = "rife49.onnx"
+        private const val MODEL_URL = "https://huggingface.co/edgetools/rife/resolve/main/rife49.onnx"
+        private const val MODEL_SHA256 = "76e4cef9ab42fa7dd4e8f6e4aba47462051e3faa969e4bca6479784fbab0ac6f"
+        private const val OUTPUT_NAME = "output"
+    }
+}
