@@ -9,8 +9,15 @@ An Android-first, offline-first research project for on-device **Image-to-Video*
 
 Text-to-Video is explicitly out of scope.
 
-## Current status
-The Android shell builds successfully through GitHub Actions. It is not yet a working generator: no verified Android-compatible model package or real inference pipeline is integrated. A successful APK build proves only that the Android shell compiles.
+## Current status (2026-11-13)
+The Android app now has a wired local pipeline in code:
+1. LTX VAE image encoder (ONNX) -> MobileI2V latent guide.
+2. MobileI2V MobileDiT denoising with the 28-step shifted Flow Euler schedule.
+3. Turbo-VAED LTX decoder -> 17 frames at 1280x720.
+4. RIFE v4.9 ONNX midpoint interpolation -> 16 FPS.
+5. Android MediaCodec H.264 MP4 export.
+
+The latest Android debug build compiled successfully (GitHub Actions run #82). ONNX components and a synthetic composition path have passed CPU-side numerical/probe checks. This does NOT yet prove real-photo generation on Android or performance on the Unihertz TANK 2. The model bundle release is not published yet; the app's model downloader currently points to that not-yet-existing release. LTX VAE redistribution also requires shipping its Open Weights License and enforcing its use restrictions. Do not call this a finished app until a real image has been processed on the phone and a valid MP4 has been saved.
 
 ## MobileI2V investigation (2026-11-12)
 The official [hustvl/MobileI2V repository](https://github.com/hustvl/MobileI2V) publishes PyTorch inference instructions using `hybrid_371.pth`, a Python environment, and a CUDA device. The official repository does not provide a ready-to-use Android ONNX package. The paper describes a 270M-parameter mobile-focused model and fast mobile results, but that does not by itself provide a compatible runtime package for this specific Helio G99 device.
@@ -33,12 +40,12 @@ Push to `main` or run the **Android debug build** workflow manually. The workflo
 7. Confirm NNAPI acceleration on this exact device; otherwise report CPU execution and its measured performance.
 8. Keep inference local and make network access unnecessary after model installation.
 
-## Planned stages
-1. Android shell + reproducible CI build. (Complete)
-2. Device-side runtime and accelerator capability probe.
-3. Reproducible model conversion and validation.
-4. Real Android ONNX inference integration.
-5. On-device end-to-end testing and performance/memory qualification.
+## Remaining acceptance work
+1. Complete model-license notices and an in-app enforceable acceptance flow for the LTX VAE license.
+2. Publish the three ONNX assets and manifest only after license compliance is implemented.
+3. Run a clean APK build against the corrected decoder output layout.
+4. Test model download, real image inference, RIFE x2, and MP4 export on the Unihertz TANK 2.
+5. Measure CPU latency, peak RAM, thermal behavior, and battery use; report actual device results.
 
 Do not promise real-time generation or label a build as ready until end-to-end local inference has produced and saved a valid MP4 on the target phone.
 
