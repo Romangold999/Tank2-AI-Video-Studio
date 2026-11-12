@@ -41,7 +41,7 @@ jobs:
           curl --fail --location --retry 5 --retry-all-errors "https://huggingface.co/edgetools/rife/resolve/18dcfbe2c349d5922e353708153581d2039c576c/rife49.onnx?download=true" -o app/src/main/assets/models/rife49.onnx
           stat -c "RIFE_BYTES=%s" app/src/main/assets/models/rife49.onnx
           test "$(stat -c%s app/src/main/assets/models/rife49.onnx)" = "21458882"
-          echo "76e4cef9ab42fa7dd8e4f6e4aba47462051e3faa969e4bca6479784fbab0ac6f  app/src/main/assets/models/rife49.onnx" | sha256sum --check
+          echo "76e4cef9ab42fa7dd4e8f6e4aba47462051e3faa969e4bca6479784fbab0ac6f  app/src/main/assets/models/rife49.onnx" | sha256sum --check
           curl --fail --location --retry 5 --retry-all-errors --output app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf https://static.lightricks.com/legal/LTX-Video-Open-Weights-License-0.X.pdf
           file app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf | grep -q PDF
           echo "=== Embedded model sizes ==="
