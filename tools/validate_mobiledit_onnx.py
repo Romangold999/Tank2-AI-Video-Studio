@@ -59,6 +59,14 @@ def main():
             )
         feed[name] = rng.standard_normal(shape, dtype=np.float32)
 
+    # Match the official sampler: lock the first latent frame as the image condition.
+    feed["cond_mask"] = np.zeros(EXPECTED["cond_mask"], dtype=np.float32)
+    feed["cond_mask"][:, : 23 * 40] = 1.0
+    feed["timestep"] = np.array([500.0], dtype=np.float32)
+    feed["flow_score"] = np.array([2.0], dtype=np.float32)
+
+    print("CONDITION_MASK=FIRST_LATENT_FRAME")
+    print("CFG_CAN_BE_SINGLE_PASS=YES (upstream MobileDiT blocks ignore text features)")
     print("ORT_SESSION=CREATED")
     print("INPUT_SIGNATURE=PASS")
     outputs = session.run(None, feed)
