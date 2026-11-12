@@ -25,6 +25,8 @@ def main():
     print("LTX_VAE_SCALING_FACTOR=%s" % vae.config.scaling_factor)
 
     torch.manual_seed(20261112)
+    # Keep this first ONNX probe shape-static: dynamic H/W currently produce
+    # invalid Transpose shape metadata in this VAE's traced graph.
     image = torch.rand(1, 3, 1, 256, 256, dtype=torch.float32) * 2.0 - 1.0
     with torch.inference_mode():
         reference = vae.encoder(image).cpu().numpy()
@@ -39,10 +41,6 @@ def main():
         str(output),
         input_names=["image"],
         output_names=["moments"],
-        dynamic_axes={
-            "image": {3: "height", 4: "width"},
-            "moments": {3: "latent_height", 4: "latent_width"},
-        },
         opset_version=17,
         do_constant_folding=True,
         dynamo=False,
