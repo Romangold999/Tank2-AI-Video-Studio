@@ -35,11 +35,19 @@ def main():
         repo_id="hustvl/Turbo-VAED", filename="Turbo-VAED-LTX.pth"
     )
     state = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
-    incompatible = model.decoder.load_state_dict(state, strict=False)
+    # The official checkpoint also contains global latent statistics and
+    # feature-projection heads. Load only tensors owned by the decoder.
+    decoder_state = model.decoder.state_dict()
+    decoder_weights = {key: value for key, value in state.items() if key in decoder_state}
+    if not decoder_weights:
+        raise RuntimeError("No decoder weights matched the Turbo-VAED decoder")
+    incompatible = model.decoder.load_state_dict(decoder_weights, strict=False)
     if incompatible.unexpected_keys:
-        raise RuntimeError("Unexpected Turbo-VAED keys: %s" % incompatible.unexpected_keys)
+        raise RuntimeError("Unexpected decoder keys after filtering: %s" % incompatible.unexpected_keys)
     if incompatible.missing_keys:
-        print("DECODER_MISSING_KEYS=%d" % len(incompatible.missing_keys))
+        raise RuntimeError("Turbo-VAED decoder weights are incomplete: %s" % incompatible.missing_keys[:20])
+    print("DECODER_WEIGHT_TENSORS_LOADED=%d" % len(decoder_weights))
+    print("IGNORED_NON_DECODER_TENSORS=%d" % (len(state) - len(decoder_weights)))
     print("TURBO_VAED_WEIGHTS_LOADED=YES")
 
     # 3 latent frames decode to 17 video frames; 8x8 latents test the 32x scale.
