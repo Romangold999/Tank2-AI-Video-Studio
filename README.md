@@ -48,7 +48,7 @@ A reusable Android-side RIFE v4.9 ONNX interpolator has been added at `RifeX2Int
 - Model: `edgetools/rife` / `rife49.onnx`, approximately 21.5 MB, downloaded on first use into app-private storage (not bundled in the APK).
 - Integrity: SHA-256 is checked before the model is accepted: `76e4cef9ab42fa7dd4e8f6e4aba47462051e3faa969e4bca6479784fbab0ac6f`.
 - Inputs: `img0`, `img1`, and midpoint `timestep=0.5`; output: `output`. RGB planar float32 tensors are edge-padded to dimensions divisible by 32 and cropped back to the original frame size.
-- Output: one newly inferred midpoint between every adjacent pair. A 17-frame MobileI2V clip becomes 33 frames, keeping the same duration while doubling the frame rate from 8 to 16 FPS.
+- Output: one newly inferred midpoint between every adjacent pair. A 17-frame MobileI2V clip becomes 34 output frames: 33 sampled/interpolated positions plus a one-frame hold on the final source frame. At 16 FPS this preserves the original 2.125-second duration exactly while doubling the frame rate from 8 to 16 FPS.
 - Model card states MIT licensing and attributes weights to Practical-RIFE v4.9. See https://huggingface.co/edgetools/rife and retain its attribution when redistributing.
 
 This is an integration component, not yet an end-to-end feature: the current screen's Generate button is still a placeholder, and no MobileI2V-to-RIFE-to-MP4 flow is wired. Android CI compilation and a real-device inference/performance test are required before claiming the feature works on the Tank 2. CPU speed and peak memory at 720p are still unknown.
