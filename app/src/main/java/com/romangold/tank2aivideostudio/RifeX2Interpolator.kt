@@ -27,6 +27,43 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
     private var session: OrtSession? = null
     private var sessionOptions: OrtSession.SessionOptions? = null
 
+    /**
+     * Stream frames to a synchronous consumer instead of retaining every
+     * generated midpoint in RAM. Original bitmaps remain owned by the caller.
+     * Each generated midpoint is valid only during onFrame and is recycled
+     * immediately after the callback returns. The consumer must finish reading
+     * or encoding the bitmap before returning.
+     */
+    @Synchronized
+    fun forEachInterpolatedFrame(
+        sourceFrames: List<Bitmap>,
+        onModelDownloadProgress: (downloaded: Long, total: Long) -> Unit = { _, _ -> },
+        onFrameProgress: (completedPairs: Int, totalPairs: Int) -> Unit = { _, _ -> },
+        onFrame: (frame: Bitmap, isGeneratedMidpoint: Boolean) -> Unit
+    ) {
+        require(sourceFrames.size >= 2) { "RIFE needs at least two source frames" }
+        ensureModel(onModelDownloadProgress)
+        val activeSession = session ?: createSession().also { session = it }
+        val totalPairs = sourceFrames.size - 1
+
+        onFrame(sourceFrames.first(), false)
+        for (index in 0 until totalPairs) {
+            val first = sourceFrames[index]
+            val second = sourceFrames[index + 1]
+            require(first.width == second.width && first.height == second.height) {
+                "All source frames must have identical dimensions"
+            }
+            val midpoint = inferMidpoint(activeSession, first, second)
+            try {
+                onFrame(midpoint, true)
+            } finally {
+                midpoint.recycle()
+            }
+            onFrame(second, false)
+            onFrameProgress(index + 1, totalPairs)
+        }
+    }
+
     @Synchronized
     fun interpolateSequence(
         sourceFrames: List<Bitmap>,
@@ -220,7 +257,7 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
         private const val CPU_THREADS = 2
         private const val MODEL_FILE = "rife49.onnx"
         private const val MODEL_URL = "https://huggingface.co/edgetools/rife/resolve/main/rife49.onnx"
-        private const val MODEL_SHA256 = "76e4cef9ab42fa7dd4e8f6e4aba47462051e3faa969e4bca6479784fbab0ac6f"
+        private const val MODEL_SHA256 = "76e4cef9ab42fa7dd8e4f6e4aba47462051e3faa969e4bca6479784fbab0ac6f"
         private const val OUTPUT_NAME = "output"
     }
 }
