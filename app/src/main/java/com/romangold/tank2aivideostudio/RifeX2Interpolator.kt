@@ -62,6 +62,8 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
             onFrame(second, false)
             onFrameProgress(index + 1, totalPairs)
         }
+        // Preserve the source clip's sample-count duration at exactly 2x FPS.
+        onFrame(sourceFrames.last(), false)
     }
 
     @Synchronized
@@ -87,6 +89,8 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
             onFrameProgress(index + 1, totalPairs)
         }
         result.add(sourceFrames.last())
+        // A final hold frame makes 17 source samples at 8 FPS become 34 at 16 FPS.
+        result.add(sourceFrames.last().copy(Bitmap.Config.ARGB_8888, false))
         return result
     }
 
