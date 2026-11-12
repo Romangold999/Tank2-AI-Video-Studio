@@ -51,7 +51,8 @@ def main():
     cond=np.zeros((1,3*23*40),dtype=np.float32); cond[:,:23*40]=1
     score=np.array([2.0],dtype=np.float32)
     scheduler=FlowMatchEulerDiscreteScheduler(shift=3.0)
-    scheduler.set_timesteps(2,device="cpu")
+    # Match the official MobileI2V inference default; 2 steps are only a graph smoke test.
+    scheduler.set_timesteps(28,device="cpu")
     for t in scheduler.timesteps:
         pred=dit.run(None,{"latent":latents,"timestep":np.array([float(t.item())],dtype=np.float32),
                            "cond_mask":cond,"flow_score":score})[0]
@@ -59,7 +60,7 @@ def main():
         latents[:,:,:1]=guide
         if not np.isfinite(latents).all(): raise RuntimeError("Non-finite MobileDiT latents")
     del dit; gc.collect()
-    print("MOBILEDIT_FLOW_EULER_2_STEPS=PASS",flush=True)
+    print("MOBILEDIT_FLOW_EULER_28_STEPS=PASS",flush=True)
     print("FIRST_FRAME_IMAGE_CONDITION=PASS",flush=True)
 
     dec=ort_session(dec_path)
