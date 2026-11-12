@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Export the current open-weights LTX Video VAE image encoder to ONNX.
+"""Export the open-weights LTX Video VAE image encoder with the Dynamo ONNX exporter.
 
-This tests the encoder component needed to map the user's still image into the
-LTX latent space used by MobileI2V. It does not claim a complete video pipeline.
+This is an export compatibility probe, not a claim that the full video pipeline
+or Android inference is ready.
 """
 from pathlib import Path
 
@@ -21,12 +21,12 @@ def main():
         subfolder="vae",
         torch_dtype=torch.float32,
     ).cpu().eval()
+    print("TORCH_VERSION=%s" % torch.__version__)
+    print("ONNX_VERSION=%s" % onnx.__version__)
     print("LTX_VAE_REPOSITORY=Lightricks/LTX-Video")
     print("LTX_VAE_SCALING_FACTOR=%s" % vae.config.scaling_factor)
 
     torch.manual_seed(20261112)
-    # Keep this first ONNX probe shape-static: dynamic H/W currently produce
-    # invalid Transpose shape metadata in this VAE's traced graph.
     image = torch.rand(1, 3, 1, 256, 256, dtype=torch.float32) * 2.0 - 1.0
     with torch.inference_mode():
         reference = vae.encoder(image).cpu().numpy()
@@ -35,15 +35,16 @@ def main():
         raise RuntimeError("Unexpected encoder output shape: %s" % (reference.shape,))
 
     output = out_dir / "ltx_open_vae_encoder.onnx"
+    # The legacy TorchScript exporter emits an invalid Transpose permutation
+    # containing -1 for this encoder. Use the newer Dynamo/ONNX exporter.
     torch.onnx.export(
         vae.encoder,
         (image,),
         str(output),
         input_names=["image"],
         output_names=["moments"],
-        opset_version=17,
-        do_constant_folding=True,
-        dynamo=False,
+        opset_version=18,
+        dynamo=True,
     )
     graph = onnx.load(str(output))
     onnx.checker.check_model(graph)
