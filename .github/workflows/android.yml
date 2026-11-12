@@ -27,6 +27,11 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.9"
+      - name: Package upstream LTX license in APK assets
+        run: |
+          mkdir -p app/src/main/assets/licenses
+          curl --fail --location --retry 3 --output app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf https://static.lightricks.com/legal/LTX-Video-Open-Weights-License-0.X.pdf
+          file app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf | grep -q PDF
       - name: Build debug APK
         run: gradle --no-daemon :app:assembleDebug
       - name: Upload APK
