@@ -125,9 +125,9 @@ class MobileI2VOnnxEngine(
                 session.run(mapOf("latents" to it)).use { result ->
                     val video = (result[0] as OnnxTensor).floatBuffer
                     val frames = ArrayList<Bitmap>(FRAME_COUNT)
+                    val pixels = IntArray(WIDTH * HEIGHT)
                     val plane = DECODER_H * WIDTH
-                            for (frame in 0 until FRAME_COUNT) {
-                        val pixels = IntArray(WIDTH * HEIGHT)
+                    for (frame in 0 until FRAME_COUNT) {
                         for (y in 0 until HEIGHT) for (x in 0 until WIDTH) {
                             val p = y * WIDTH + x
                             // ONNX decoder output is N,C,T,H,W, not N,T,C,H,W.
