@@ -1,0 +1,83 @@
+name: Publish MobileI2V model assets
+on:
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Download validated 720p LTX encoder
+        uses: actions/download-artifact@v4
+        with:
+          name: ltx-open-vae-encoder-export-probe
+          run-id: 43308409080
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: artifacts/encoder
+      - name: Download validated MobileDiT
+        uses: actions/download-artifact@v4
+        with:
+          name: mobilei2v-mobiledit-export-probe
+          run-id: 43303240278
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: artifacts/mobiledit
+      - name: Download validated 720p Turbo-VAED decoder
+        uses: actions/download-artifact@v4
+        with:
+          name: turbo-vaed-ltx-decoder-export-probe
+          run-id: 43308403755
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: artifacts/decoder
+      - name: Verify and create manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          encoder="$(find artifacts/encoder -name ltx_open_vae_encoder.onnx -type f -print -quit)"
+          denoiser="$(find artifacts/mobiledit -name mobiledit_300m.onnx -type f -print -quit)"
+          decoder="$(find artifacts/decoder -name turbo_vaed_ltx_decoder.onnx -type f -print -quit)"
+          test -s "$encoder" && test -s "$denoiser" && test -s "$decoder"
+          mkdir -p release
+          cp "$encoder" release/ltx_open_vae_encoder.onnx
+          cp "$denoiser" release/mobiledit_300m.onnx
+          cp "$decoder" release/turbo_vaed_ltx_decoder.onnx
+          cd release
+          sha256sum *.onnx > SHA256SUMS
+          python - <<'PY'
+          import hashlib, json, pathlib
+          entries = []
+          for p in sorted(pathlib.Path(".").glob("*.onnx")):
+              h = hashlib.sha256(p.read_bytes()).hexdigest()
+              entries.append({"file": p.name, "size_bytes": p.stat().st_size, "sha256": h})
+          pathlib.Path("models-manifest.json").write_text(json.dumps({
+              "bundle": "tank2-mobilei2v-720p-v0.1.0",
+              "status": "research-prerelease-not-device-qualified",
+              "source": "Romangold999/Tank2-AI-Video-Studio",
+              "models": entries
+          }, indent=2) + "\\n")
+          PY
+          cat SHA256SUMS
+          cat models-manifest.json
+      - name: Publish prerelease model assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: tank2-models-v0.1.0
+          name: Tank2 MobileI2V model bundle v0.1.0
+          prerelease: true
+          make_latest: false
+          files: |
+            release/ltx_open_vae_encoder.onnx
+            release/mobiledit_300m.onnx
+            release/turbo_vaed_ltx_decoder.onnx
+            release/models-manifest.json
+            release/SHA256SUMS
+          body: |
+            Research model bundle for the Tank2 AI Video Studio Android pipeline.
+
+            Contains the 720p LTX VAE image encoder, MobileI2V MobileDiT denoiser, and Turbo-VAED LTX decoder. Exported graphs passed ONNX Runtime CPU numerical checks on GitHub Actions. The component-composition probe is separate from real-photo quality validation. This bundle is not yet qualified on the Unihertz TANK 2; CPU speed, peak memory, thermal behavior, and end-to-end on-device MP4 output remain unverified.
+
+            Review the upstream model licenses before redistribution or use. This prerelease is not a finished Android application.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
