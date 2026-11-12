@@ -38,7 +38,11 @@ def main():
     # from the current LTX Video VAE config used by the export.
     logvar=np.clip(logvar,-30.0,20.0)
     eps=np.random.default_rng(20261114).standard_normal(mean.shape).astype(np.float32)
-    guide=(mean+np.exp(0.5*logvar)*eps).astype(np.float32)
+    # MobileI2V's own config sets vae.scale_factor=0.41407 and its
+    # official vae_encode() multiplies the sampled LTX posterior by it.
+    # The exported LTX VAE config scaling_factor is 1.0; this MobileI2V
+    # scale is a separate model-side factor and must not be omitted.
+    guide=((mean+np.exp(0.5*logvar)*eps)*0.41407).astype(np.float32)
     if guide.shape!=(1,128,1,23,40): raise RuntimeError(f"Guide latent shape: {guide.shape}")
     print("720P_IMAGE_TO_LTX_GUIDE_LATENT=PASS",flush=True)
 
