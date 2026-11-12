@@ -70,6 +70,17 @@ def main():
     video=video[:,:,:,:720,:]
     if video.shape!=(1,3,17,720,1280): raise RuntimeError(f"Crop shape: {video.shape}")
     print("TURBO_VAED_17_FRAME_DECODE=PASS",flush=True)
+    print(f"DECODED_RANGE=[{float(video.min()):.5f},{float(video.max()):.5f}]",flush=True)
+    import imageio_ffmpeg
+    frames=np.transpose(video[0],(1,2,3,0))
+    frames=np.clip((frames+1.0)*127.5,0,255).astype(np.uint8)
+    writer=imageio_ffmpeg.write_frames("mobilei2v_pipeline_probe.mp4",(1280,720),fps=8,codec="libx264",pix_fmt_in="rgb24",pix_fmt_out="yuv420p")
+    writer.send(None)
+    for frame in frames: writer.send(frame)
+    writer.close()
+    out=Path("mobilei2v_pipeline_probe.mp4")
+    if not out.exists() or out.stat().st_size<10000: raise RuntimeError("MP4 output missing or unexpectedly small")
+    print(f"MP4_FILE=PASS size={out.stat().st_size}",flush=True)
     print("FINAL_VIDEO_TENSOR=(1,3,17,720,1280)",flush=True)
     print("END_TO_END_COMPONENT_COMPOSITION=PASS",flush=True)
 
