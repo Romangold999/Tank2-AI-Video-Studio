@@ -24,6 +24,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    androidResources { noCompress += "onnx" }
     kotlinOptions { jvmTarget = "17" }
 }
 dependencies {
