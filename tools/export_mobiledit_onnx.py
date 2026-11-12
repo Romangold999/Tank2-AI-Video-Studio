@@ -41,6 +41,12 @@ def main():
     # Pyrallis also reads sys.argv; keep exporter flags away from its config parser.
     sys.argv = [sys.argv[0]]
 
+    # Upstream MobileDiT creates output/train_log.log during model construction.
+    # Create that directory before build_model(), not only before ONNX export.
+    Path("output").mkdir(parents=True, exist_ok=True)
+    output = Path(args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+
     torch.set_grad_enabled(False)
     torch.manual_seed(7)
     cfg_path = UPSTREAM / "configs/mobilei2v_config/MobileI2V_300M_img512.yaml"
@@ -76,7 +82,7 @@ def main():
             % (incompatible.missing_keys[:20], incompatible.unexpected_keys[:20])
         )
 
-    print("EXPORT_PROBE_VERSION=1")
+    print("EXPORT_PROBE_VERSION=2")
     print("CHECKPOINT_LOADED=YES")
     print("PARAMETERS=%d" % sum(p.numel() for p in model.parameters()))
     print("LATENT_SHAPE=[1,128,3,23,40]")
@@ -91,8 +97,6 @@ def main():
         torch.ones(1, 2760, dtype=torch.float32),
         torch.ones(1, dtype=torch.float32),
     )
-    output = Path(args.output)
-    output.parent.mkdir(parents=True, exist_ok=True)
     torch.onnx.export(
         wrapped, inputs, str(output),
         input_names=["latent", "timestep", "guide_image", "text_features", "cond_mask", "flow_score"],
