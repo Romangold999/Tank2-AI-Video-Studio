@@ -102,7 +102,7 @@ class MainActivity : Activity() {
             }
             startActivityForResult(intent, SAVE_VIDEO)
         }
-        content.addView(label("Обработка выполняется на телефоне. После первой загрузки моделей генерация будет доступна офлайн.", 12f, muted).top(22))
+        content.addView(label("При первом нажатии «Создать видео» приложение скачает модели (около 2 ГБ) и проверит их целостность. После этого генерация выполняется на телефоне без интернета.", 12f, muted).top(22))
         scroll.addView(content)
         root.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
         setContentView(root)
@@ -142,6 +142,10 @@ class MainActivity : Activity() {
                         produceFrames = { emit ->
                             rife.forEachInterpolatedFrame(
                                 sourceFrames,
+                                onModelDownloadProgress = { done, total ->
+                                    val pct = if (total > 0L) (done * 100 / total).toInt().coerceIn(0, 100) else 0
+                                    updateProgress("Загрузка RIFE: $pct%", 88)
+                                },
                                 onFrameProgress = { done, total ->
                                     updateProgress("RIFE: $done/$total", 88 + done * 7 / total)
                                 },
