@@ -43,7 +43,7 @@ def main():
         str(output),
         input_names=["image"],
         output_names=["moments"],
-        opset_version=18,
+        opset_version=20,
         dynamo=True,
     )
     graph = onnx.load(str(output))
