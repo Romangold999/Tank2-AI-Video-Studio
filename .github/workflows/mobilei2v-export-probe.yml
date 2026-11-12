@@ -41,27 +41,7 @@ jobs:
           print("Patched only Triton cache naming; model math and weights are unchanged.")
           PY
 
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install --force-reinstall "setuptools==70.3.0" wheel
-          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.4.0 torchvision==0.19.0
-          python -m pip install --no-build-isolation "mmcv==1.7.2"
-          python -m pip install "numpy<2" "mmengine==0.10.7" "timm==1.0.20" "einops==0.8.1" "pyrallis==0.3.1" "omegaconf==2.3.0" "termcolor==3.1.0" "diffusers==0.35.2" "transformers==4.57.0" "huggingface_hub==0.35.3" "onnx==1.17.0" "protobuf<5" "safetensors" "accelerate" "pytz" "ipdb==0.13.13" "triton==3.0.0"
-
-      - name: Export official MobileDiT using official checkpoint
-        env:
-          HF_HUB_DISABLE_XET: "1"
-          MOBILEI2V_SOURCE: MobileI2V
-        run: python tools/export_mobiledit_onnx.py --output artifacts/mobiledit_300m.onnx
-
-      - name: Upload export probe result
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: mobilei2v-mobiledit-export-probe
-          path: artifacts/
-          if-no-files-found: ignore
-          retention-days: 14
+      - name: Install export dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install --force-reinstall "setuptools==70.3.0" wheel
