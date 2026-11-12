@@ -28,16 +28,16 @@ class MainActivity : Activity() {
             setPadding(0, 0, 0, 24)
         }
         content.addView(text("TANK2 AI VIDEO STUDIO", 23f, Color.WHITE, true))
-        content.addView(text("Offline-first • Android • Helio G99", 14f, muted, false).withTop(8))
+        content.addView(text("Локальная генерация • Android • Helio G99", 14f, muted, false).withTop(8))
         content.addView(card(
             "IMAGE → VIDEO",
-            "Цель: настоящая генерация движения нейросетевой моделью. Модель и локальный runtime пока не подключены.",
+            "Единственный режим проекта: оживление выбранной фотографии нейросетевой моделью непосредственно на телефоне.",
             accent
         ).withTop(24))
         content.addView(card(
-            "TEXT → VIDEO",
-            "Отдельное направление исследований. На этом этапе генерация по тексту не реализована.",
-            accent
+            "СТАТУС МОДЕЛИ",
+            "MobileI2V рассматривается как кандидат. Модель, ONNX Runtime и рабочий inference pipeline ещё не подключены.",
+            muted
         ).withTop(14))
         content.addView(card(
             "УСТРОЙСТВО",
@@ -47,8 +47,7 @@ class MainActivity : Activity() {
             muted
         ).withTop(14))
         content.addView(text(
-            "ВАЖНО: приложение пока является стартовой оболочкой, а не генератором видео. " +
-                "Мы не будем выдавать слайд-шоу или эффекты панорамирования за AI-видеогенерацию.",
+            "ВАЖНО: сейчас это стартовая оболочка, а не генератор видео. Мы не будем выдавать слайд-шоу, панорамирование или зум за AI-видеогенерацию.",
             13f, muted, false
         ).withTop(20))
         scroll.addView(content)
