@@ -2,11 +2,11 @@
 """Load and execute the exported MobileI2V denoiser with ONNX Runtime CPU.
 
 This is a graph/runtime smoke test only. It does not claim a complete I2V
-pipeline: VAE, Qwen tokenizer/text encoder, scheduler and video decoder remain
-separate required stages.
+pipeline: VAE encoder, scheduler and video decoder remain separate stages.
 """
 import argparse
 import sys
+from pathlib import Path
 
 import numpy as np
 import onnxruntime as ort
