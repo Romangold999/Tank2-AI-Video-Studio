@@ -55,6 +55,10 @@ def main():
         str(output),
         input_names=["latents"],
         output_names=["video"],
+        dynamic_axes={
+            "latents": {3: "latent_height", 4: "latent_width"},
+            "video": {3: "video_height", 4: "video_width"},
+        },
         opset_version=17,
         do_constant_folding=True,
         dynamo=False,
