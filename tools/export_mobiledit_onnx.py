@@ -74,6 +74,7 @@ def main():
             % (incompatible.missing_keys[:20], incompatible.unexpected_keys[:20])
         )
 
+    print("EXPORT_PROBE_VERSION=1")
     print("CHECKPOINT_LOADED=YES")
     print("PARAMETERS=%d" % sum(p.numel() for p in model.parameters()))
     print("LATENT_SHAPE=[1,128,3,23,40]")
