@@ -38,6 +38,8 @@ def main():
     parser.add_argument("--output", default="artifacts/mobiledit_300m.onnx")
     parser.add_argument("--opset", type=int, default=17)
     args = parser.parse_args()
+    # Pyrallis also reads sys.argv; keep exporter flags away from its config parser.
+    sys.argv = [sys.argv[0]]
 
     torch.set_grad_enabled(False)
     torch.manual_seed(7)
