@@ -28,12 +28,12 @@ def main():
     print("LTX_VAE_SCALING_FACTOR=%s" % vae.config.scaling_factor)
 
     torch.manual_seed(20261112)
-    image = torch.rand(1, 3, 1, 256, 256, dtype=torch.float32) * 2.0 - 1.0
+    image = torch.rand(1, 3, 1, 720, 1280, dtype=torch.float32) * 2.0 - 1.0
     with torch.inference_mode():
         reference = vae.encoder(image).cpu().numpy()
 
-    if reference.shape != (1, 256, 1, 8, 8):
-        raise RuntimeError("Unexpected encoder output shape: %s" % (reference.shape,))
+    if reference.shape != (1, 256, 1, 23, 40):
+        raise RuntimeError("Unexpected 720p encoder output shape: %s" % (reference.shape,))
 
     output = out_dir / "ltx_open_vae_encoder.onnx"
     # Bypass torch.onnx.export's compatibility wrapper: in torch 2.6 it
@@ -82,7 +82,7 @@ def main():
     print("LTX_ENCODER_ORT_CPU=PASS")
     print("PYTORCH_ONNX_NUMERICAL_MATCH=PASS")
     print("MAX_ABS_ERROR=%.8g" % max_abs)
-    print("LATENT_MOMENTS_SHAPE=%s" % (actual.shape,))
+    print("LATENT_MOMENTS_SHAPE=%s" % (actual.shape,))\n    print("TARGET_720P_ENCODER=PASS")
 
 
 if __name__ == "__main__":
