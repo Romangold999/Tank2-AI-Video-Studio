@@ -25,6 +25,7 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
     private val modelFile = File(File(appContext.filesDir, "models"), MODEL_FILE)
     private val environment = OrtEnvironment.getEnvironment()
     private var session: OrtSession? = null
+    private var sessionOptions: OrtSession.SessionOptions? = null
 
     @Synchronized
     fun interpolateSequence(
@@ -56,17 +57,28 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
         val options = OrtSession.SessionOptions()
         options.setIntraOpNumThreads(CPU_THREADS)
         options.setInterOpNumThreads(1)
-        options.setOptimizationLevel(OrtSession.SessionOptions.OptLevel.ALL)
-        val created = environment.createSession(modelFile.absolutePath, options)
-        options.close()
-        val expectedInputs = setOf("img0", "img1", "timestep")
-        check(created.inputNames == expectedInputs) {
-            "Unexpected RIFE inputs: ${created.inputNames}"
+        options.setOptimizationLevel(OrtSession.SessionOptions.OptLevel.ALL_OPT)
+        val created = try {
+            environment.createSession(modelFile.absolutePath, options)
+        } catch (error: Exception) {
+            options.close()
+            throw error
         }
-        check(created.outputNames.contains(OUTPUT_NAME)) {
-            "RIFE output '$OUTPUT_NAME' not found: ${created.outputNames}"
+        try {
+            val expectedInputs = setOf("img0", "img1", "timestep")
+            check(created.inputNames == expectedInputs) {
+                "Unexpected RIFE inputs: ${created.inputNames}"
+            }
+            check(created.outputNames.contains(OUTPUT_NAME)) {
+                "RIFE output '$OUTPUT_NAME' not found: ${created.outputNames}"
+            }
+            sessionOptions = options
+            return created
+        } catch (error: Exception) {
+            created.close()
+            options.close()
+            throw error
         }
-        return created
     }
 
     private fun inferMidpoint(activeSession: OrtSession, first: Bitmap, second: Bitmap): Bitmap {
@@ -199,6 +211,8 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
     override fun close() {
         session?.close()
         session = null
+        sessionOptions?.close()
+        sessionOptions = null
     }
 
     companion object {
