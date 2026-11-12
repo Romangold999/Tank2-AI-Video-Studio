@@ -17,7 +17,7 @@ The Android app now has a wired local pipeline in code:
 4. RIFE v4.9 ONNX midpoint interpolation -> 16 FPS.
 5. Android MediaCodec H.264 MP4 export.
 
-The latest Android debug build compiled successfully (GitHub Actions run #82). ONNX components and a synthetic composition path have passed CPU-side numerical/probe checks. This does NOT yet prove real-photo generation on Android or performance on the Unihertz TANK 2. The model bundle release is not published yet; the app's model downloader currently points to that not-yet-existing release. LTX VAE redistribution also requires shipping its Open Weights License and enforcing its use restrictions. Do not call this a finished app until a real image has been processed on the phone and a valid MP4 has been saved.
+The corrected decoder implementation has compiled successfully in GitHub Actions run [43322366402](https://github.com/Romangold999/Tank2-AI-Video-Studio/actions/runs/43322366402). The workflow uploaded a debug APK artifact. ONNX components and a synthetic composition path have passed CPU-side numerical/probe checks. This does NOT yet prove real-photo generation on Android or performance on the Unihertz TANK 2. The model bundle release is not published yet; the app's model downloader currently points to that not-yet-existing release. LTX VAE redistribution also requires shipping its Open Weights License and enforcing its use restrictions. Do not call this a finished app until a real image has been processed on the phone and a valid MP4 has been saved.
 
 ## MobileI2V investigation (2026-11-12)
 The official [hustvl/MobileI2V repository](https://github.com/hustvl/MobileI2V) publishes PyTorch inference instructions using `hybrid_371.pth`, a Python environment, and a CUDA device. The official repository does not provide a ready-to-use Android ONNX package. The paper describes a 270M-parameter mobile-focused model and fast mobile results, but that does not by itself provide a compatible runtime package for this specific Helio G99 device.
@@ -43,14 +43,13 @@ Push to `main` or run the **Android debug build** workflow manually. The workflo
 ## Remaining acceptance work
 1. Complete model-license notices and an in-app enforceable acceptance flow for the LTX VAE license.
 2. Publish the three ONNX assets and manifest only after license compliance is implemented.
-3. Run a clean APK build against the corrected decoder output layout.
-4. Test model download, real image inference, RIFE x2, and MP4 export on the Unihertz TANK 2.
-5. Measure CPU latency, peak RAM, thermal behavior, and battery use; report actual device results.
+3. Test model download, real image inference, RIFE x2, and MP4 export on the Unihertz TANK 2.
+4. Measure CPU latency, peak RAM, thermal behavior, and battery use; report actual device results.
 
 Do not promise real-time generation or label a build as ready until end-to-end local inference has produced and saved a valid MP4 on the target phone.
 
 ## RIFE x2 frame interpolation (2026-11-13)
-A reusable Android-side RIFE v4.9 ONNX interpolator has been added at `RifeX2Interpolator.kt`.
+The Android-side RIFE v4.9 ONNX interpolator is now connected to the generation/export path in `RifeX2Interpolator.kt`.
 - Runtime: Microsoft ONNX Runtime Android 1.28.0, CPU execution with two intra-op threads as the conservative initial setting.
 - Model: `edgetools/rife` / `rife49.onnx`, approximately 21.5 MB, downloaded on first use into app-private storage (not bundled in the APK).
 - Integrity: SHA-256 is checked before the model is accepted: `76e4cef9ab42fa7dd4e8f6e4aba47462051e3faa969e4bca6479784fbab0ac6f`.
@@ -58,4 +57,4 @@ A reusable Android-side RIFE v4.9 ONNX interpolator has been added at `RifeX2Int
 - Output: one newly inferred midpoint between every adjacent pair. A 17-frame MobileI2V clip becomes 34 output frames: 33 sampled/interpolated positions plus a one-frame hold on the final source frame. At 16 FPS this preserves the original 2.125-second duration exactly while doubling the frame rate from 8 to 16 FPS.
 - Model card states MIT licensing and attributes weights to Practical-RIFE v4.9. See https://huggingface.co/edgetools/rife and retain its attribution when redistributing.
 
-This is an integration component, not yet an end-to-end feature: the current screen's Generate button is still a placeholder, and no MobileI2V-to-RIFE-to-MP4 flow is wired. Android CI compilation and a real-device inference/performance test are required before claiming the feature works on the Tank 2. CPU speed and peak memory at 720p are still unknown.
+The RIFE component is wired into the app's Generate pipeline, but end-to-end inference has not yet been proven on the target phone. Android CI success confirms compilation only; CPU speed, peak memory, and the final MP4 must still be checked on the Tank 2.
