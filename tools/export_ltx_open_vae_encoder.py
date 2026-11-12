@@ -82,7 +82,8 @@ def main():
     print("LTX_ENCODER_ORT_CPU=PASS")
     print("PYTORCH_ONNX_NUMERICAL_MATCH=PASS")
     print("MAX_ABS_ERROR=%.8g" % max_abs)
-    print("LATENT_MOMENTS_SHAPE=%s" % (actual.shape,))\n    print("TARGET_720P_ENCODER=PASS")
+    print("LATENT_MOMENTS_SHAPE=%s" % (actual.shape,))
+    print("TARGET_720P_ENCODER=PASS")
 
 
 if __name__ == "__main__":
