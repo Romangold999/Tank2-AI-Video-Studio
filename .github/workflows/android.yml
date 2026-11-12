@@ -8,7 +8,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,8 +21,9 @@ jobs:
         uses: android-actions/setup-android@v3
         with:
           packages: platform-tools
-      - name: Install Android platform
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - name: Install Android platform and Tank2-like emulator image
+        run: |
+          sdkmanager "platforms;android-35" "build-tools;35.0.0" "emulator" "system-images;android-34;google_apis;x86_64"
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
@@ -41,15 +42,62 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 14
-      - name: Run Android emulator tests (launch app + download and verify real models)
-        uses: reactivecircus/android-emulator-runner@v2
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          test -e /dev/kvm
+      - name: Create Tank2-like Android 14 AVD
+        run: |
+          echo "no" | avdmanager create avd -n tank2_android14 -k "system-images;android-34;google_apis;x86_64" --force
+          AVD_CONFIG="$HOME/.android/avd/tank2_android14.avd/config.ini"
+          {
+            echo "hw.lcd.width=1080"
+            echo "hw.lcd.height=2460"
+            echo "hw.lcd.density=420"
+            echo "hw.ramSize=8192"
+            echo "vm.heapSize=512"
+            echo "hw.cpu.ncore=8"
+            echo "hw.gpu.enabled=yes"
+            echo "hw.gpu.mode=swiftshader_indirect"
+            echo "hw.keyboard=yes"
+          } >> "$AVD_CONFIG"
+          cat "$AVD_CONFIG"
+      - name: Boot Tank2-like Android 14 emulator and run app/model tests
+        id: android_tests
+        run: |
+          set -o pipefail
+          emulator -avd tank2_android14 -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot -memory 8192 -cores 8 > emulator-startup.log 2>&1 &
+          EMULATOR_PID=$!
+          echo "$EMULATOR_PID" > emulator.pid
+          adb wait-for-device
+          BOOTED=0
+          for i in $(seq 1 180); do
+            if [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ]; then BOOTED=1; break; fi
+            sleep 5
+          done
+          if [ "$BOOTED" != "1" ]; then
+            echo "Android emulator did not finish booting within 15 minutes"
+            tail -200 emulator-startup.log || true
+            exit 1
+          fi
+          adb shell wm size 1080x2460
+          adb shell wm density 420
+          adb shell getprop ro.build.version.release
+          adb shell getprop ro.product.cpu.abi
+          adb shell cat /proc/meminfo | head
+          adb logcat -c
+          adb logcat -v threadtime > emulator-logcat.txt &
+          echo $! > logcat.pid
+          gradle --no-daemon :app:connectedDebugAndroidTest --info
+      - name: Upload Android emulator diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          api-level: 35
-          target: google_apis
-          arch: x86_64
-          profile: pixel_6
-          ram-size: 4096M
-          heap-size: 2048M
-          disk-size: 12G
-          disable-animations: true
-          script: gradle --no-daemon :app:connectedDebugAndroidTest
+          name: tank2-emulator-diagnostics
+          path: |
+            emulator-startup.log
+            emulator-logcat.txt
+          if-no-files-found: warn
+          retention-days: 14
