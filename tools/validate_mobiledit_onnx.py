@@ -10,6 +10,8 @@ from pathlib import Path
 
 import numpy as np
 import onnxruntime as ort
+import torch
+from diffusers import FlowMatchEulerDiscreteScheduler
 
 
 EXPECTED = {
@@ -54,6 +56,7 @@ def main():
     with np.load(reference_path) as reference:
         feed = {name: reference[name] for name in EXPECTED}
         torch_output = reference["torch_output"]
+        guide_image = reference["guide_image"]
 
     for name, shape in EXPECTED.items():
         item = actual[name]
@@ -99,6 +102,37 @@ def main():
     print("MAX_ABS_ERROR=%.8g" % max_abs)
     print("OUTPUT_SHAPE=%s" % (result.shape,))
     print("OUTPUT_FINITE=YES")
+
+    # Run the actual FlowMatch Euler update loop with the same first-frame
+    # image clamp used by the upstream MobileI2V sampler.
+    scheduler = FlowMatchEulerDiscreteScheduler(shift=3.0)
+    scheduler.set_timesteps(2, device="cpu")
+    latents = torch.from_numpy(feed["latent"].copy())
+    guide = torch.from_numpy(guide_image.copy())
+    if guide.shape != (1, 128, 1, 23, 40):
+        raise RuntimeError("Invalid guide image latent shape: %s" % (guide.shape,))
+    latents[:, :, :1, :, :] = guide
+
+    for index, timestep_value in enumerate(scheduler.timesteps):
+        step_feed = {
+            "latent": latents.detach().cpu().numpy().astype(np.float32, copy=False),
+            "timestep": np.array([float(timestep_value.item())], dtype=np.float32),
+            "cond_mask": feed["cond_mask"],
+            "flow_score": feed["flow_score"],
+        }
+        prediction = session.run(None, step_feed)[0]
+        latents = scheduler.step(
+            torch.from_numpy(prediction), timestep_value, latents, return_dict=False
+        )[0]
+        latents[:, :, :1, :, :] = guide
+        if not torch.isfinite(latents).all():
+            raise RuntimeError("Non-finite latent after Euler step %d" % (index + 1,))
+        if not torch.equal(latents[:, :, :1, :, :], guide):
+            raise RuntimeError("Image condition drifted after Euler step %d" % (index + 1,))
+
+    print("FLOW_EULER_STEPS=2")
+    print("IMAGE_CONDITION_CLAMP=PASS")
+    print("TWO_STEP_SAMPLER=PASS")
 
 
 
