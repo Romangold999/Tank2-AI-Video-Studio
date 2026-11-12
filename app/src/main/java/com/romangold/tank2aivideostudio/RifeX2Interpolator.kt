@@ -37,7 +37,7 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
         val activeSession = session ?: createSession().also { session = it }
 
         val totalPairs = sourceFrames.size - 1
-        val result = ArrayList<Bitmap>(sourceFrames.size + totalPairs)
+        val result = ArrayList<Bitmap>(sourceFrames.size + totalPairs + 1)
         for (index in 0 until totalPairs) {
             val first = sourceFrames[index]
             val second = sourceFrames[index + 1]
