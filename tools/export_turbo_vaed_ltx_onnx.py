@@ -101,7 +101,8 @@ def main():
     print("TURBO_VAED_ORT_CPU=PASS")
     print("PYTORCH_ONNX_NUMERICAL_MATCH=PASS")
     print("MAX_ABS_ERROR=%.8g" % max_abs)
-    print("VIDEO_SHAPE=%s" % (actual.shape,))\n    print("TARGET_720P_DECODER=PASS")
+    print("VIDEO_SHAPE=%s" % (actual.shape,))
+    print("TARGET_720P_DECODER=PASS")
 
 
 if __name__ == "__main__":
