@@ -1,0 +1,52 @@
+name: End-to-end 720p I2V component composition
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'tools/run_i2v_component_pipeline_probe.py'
+      - '.github/workflows/i2v-component-pipeline-probe.yml'
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  compose:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Download 720p LTX encoder
+        uses: actions/download-artifact@v4
+        with:
+          name: ltx-open-vae-encoder-export-probe
+          run-id: 43308409080
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: artifacts/encoder
+      - name: Download MobileDiT
+        uses: actions/download-artifact@v4
+        with:
+          name: mobilei2v-mobiledit-export-probe
+          run-id: 43303240278
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: artifacts/mobiledit
+      - name: Download 720p Turbo-VAED decoder
+        uses: actions/download-artifact@v4
+        with:
+          name: turbo-vaed-ltx-decoder-export-probe
+          run-id: 43308403755
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: artifacts/decoder
+      - name: Show downloaded model files
+        run: find artifacts -maxdepth 4 -type f -printf '%p %s bytes\\n'
+      - name: Install inference runtime
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install 'numpy<2' 'onnxruntime==1.20.1' 'torch==2.4.0' 'diffusers==0.32.2'
+      - name: Run image-to-video composition
+        run: python tools/run_i2v_component_pipeline_probe.py
