@@ -1,10 +1,10 @@
-name: LTX 0.9.1 VAE encoder ONNX export probe
+name: LTX open-weights VAE encoder ONNX export probe
 
 on:
   push:
     branches: [ main ]
     paths:
-      - 'tools/export_ltx091_vae_encoder.py'
+      - 'tools/export_ltx_open_vae_encoder.py'
       - '.github/workflows/ltx-vae-export-probe.yml'
   workflow_dispatch:
 
@@ -30,16 +30,16 @@ jobs:
           python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.4.0 torchvision==0.19.0
           python -m pip install "numpy<2" "onnx==1.17.0" "onnxruntime==1.20.1" "diffusers==0.35.2" "transformers==4.57.0" "huggingface_hub==0.35.3" "safetensors" "accelerate"
 
-      - name: Export official LTX 0.9.1 VAE encoder and compare with PyTorch
+      - name: Export current open-weights LTX VAE encoder and compare with PyTorch
         env:
           HF_HUB_DISABLE_XET: "1"
-        run: python tools/export_ltx091_vae_encoder.py
+        run: python tools/export_ltx_open_vae_encoder.py
 
       - name: Upload LTX VAE encoder export probe
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ltx091-vae-encoder-export-probe
+          name: ltx-open-vae-encoder-export-probe
           path: artifacts/
           if-no-files-found: ignore
           retention-days: 14
