@@ -10,6 +10,7 @@ import numpy as np
 import onnx
 import onnxruntime as ort
 import torch
+from torch.onnx._internal.exporter import _core, _registration
 from diffusers import AutoencoderKLLTXVideo
 
 
@@ -35,16 +36,23 @@ def main():
         raise RuntimeError("Unexpected encoder output shape: %s" % (reference.shape,))
 
     output = out_dir / "ltx_open_vae_encoder.onnx"
-    # The legacy TorchScript exporter emits an invalid Transpose permutation
-    # containing -1 for this encoder. Use the newer Dynamo/ONNX exporter.
-    torch.onnx.export(
-        vae.encoder,
-        (image,),
-        str(output),
+    # Bypass torch.onnx.export's compatibility wrapper: in torch 2.6 it
+    # attempts an opset conversion that fails when the graph has local
+    # ONNX functions. Export the captured program directly and save its
+    # native ONNXProgram without that conversion pass.
+    exported = torch.export.export(vae.encoder, (image,), strict=False)
+    registry = _registration.ONNXRegistry.from_torchlib()
+    onnx_program = _core.export(
+        exported,
+        registry=registry,
         input_names=["image"],
         output_names=["moments"],
-        opset_version=20,
-        dynamo=True,
+        verbose=True,
+    )
+    onnx_program.save(
+        str(output),
+        include_initializers=True,
+        external_data=False,
     )
     graph = onnx.load(str(output))
     onnx.checker.check_model(graph)
