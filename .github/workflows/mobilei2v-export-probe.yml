@@ -23,7 +23,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
-          cache: pip
 
       - name: Clone official MobileI2V source
         run: git clone --depth 1 https://github.com/hustvl/MobileI2V.git MobileI2V
