@@ -6,8 +6,6 @@ import ai.onnxruntime.OnnxTensor
 import ai.onnxruntime.OrtEnvironment
 import ai.onnxruntime.OrtSession
 import java.io.File
-import java.net.HttpURLConnection
-import java.net.URL
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer
@@ -189,44 +187,27 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
     private fun ensureModel(onProgress: (Long, Long) -> Unit) {
         if (modelFile.isFile && sha256(modelFile) == MODEL_SHA256) return
         modelFile.parentFile?.mkdirs()
-        val temporary = File(modelFile.parentFile, "$MODEL_FILE.download")
+        val temporary = File(modelFile.parentFile, "$MODEL_FILE.asset-copy")
         temporary.delete()
-
-        val connection = (URL(MODEL_URL).openConnection() as HttpURLConnection).apply {
-            connectTimeout = 20_000
-            readTimeout = 60_000
-            instanceFollowRedirects = true
-            requestMethod = "GET"
-        }
-        try {
-            connection.connect()
-            check(connection.responseCode in 200..299) {
-                "RIFE model download failed: HTTP ${connection.responseCode}"
-            }
-            val total = connection.contentLengthLong
-            connection.inputStream.use { input ->
-                temporary.outputStream().buffered().use { output ->
-                    val buffer = ByteArray(1024 * 256)
-                    var downloaded = 0L
-                    while (true) {
-                        val count = input.read(buffer)
-                        if (count < 0) break
-                        output.write(buffer, 0, count)
-                        downloaded += count
-                        onProgress(downloaded, total)
-                    }
+        appContext.assets.open("models/$MODEL_FILE").use { input ->
+            temporary.outputStream().buffered().use { output ->
+                val buffer = ByteArray(1024 * 256)
+                var copied = 0L
+                while (true) {
+                    val count = input.read(buffer)
+                    if (count < 0) break
+                    output.write(buffer, 0, count)
+                    copied += count
+                    onProgress(copied, -1L)
                 }
             }
-        } finally {
-            connection.disconnect()
         }
-
         check(sha256(temporary) == MODEL_SHA256) {
             temporary.delete()
-            "RIFE model SHA-256 verification failed"
+            "Bundled RIFE model SHA-256 verification failed"
         }
         if (modelFile.exists()) modelFile.delete()
-        check(temporary.renameTo(modelFile)) { "Could not install the downloaded RIFE model" }
+        check(temporary.renameTo(modelFile)) { "Could not install bundled RIFE model" }
     }
 
     private fun sha256(file: File): String {
