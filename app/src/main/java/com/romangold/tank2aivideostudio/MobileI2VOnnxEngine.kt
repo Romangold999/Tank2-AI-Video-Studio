@@ -33,10 +33,7 @@ class MobileI2VOnnxEngine(
     private var activeOptions: OrtSession.SessionOptions? = null
 
     fun generate(contentResolver: ContentResolver, imageUri: Uri): List<Bitmap> {
-        val source = contentResolver.openInputStream(imageUri).use { stream ->
-            requireNotNull(stream) { "Не удалось открыть изображение" }
-            BitmapFactory.decodeStream(stream) ?: error("Не удалось прочитать изображение")
-        }
+        val source = decodeSourceImage(contentResolver, imageUri)
         val inputImage = try { fitImage(source, WIDTH, HEIGHT) } finally { source.recycle() }
         try {
             onProgress("Кодирование изображения", 3)
@@ -135,10 +132,12 @@ class MobileI2VOnnxEngine(
                         val pixels = IntArray(WIDTH * HEIGHT)
                         for (y in 0 until HEIGHT) for (x in 0 until WIDTH) {
                             val p = y * WIDTH + x
-                            val base = frame * frameStride
-                            val r = toByte(video.get(base + p))
-                            val g = toByte(video.get(base + plane + p))
-                            val b = toByte(video.get(base + 2 * plane + p))
+                            // ONNX decoder output is N,C,T,H,W, not N,T,C,H,W.
+                            // Each channel plane contains all 17 temporal frames.
+                            val temporalOffset = frame * plane
+                            val r = toByte(video.get(temporalOffset + p))
+                            val g = toByte(video.get(FRAME_COUNT * plane + temporalOffset + p))
+                            val b = toByte(video.get(2 * FRAME_COUNT * plane + temporalOffset + p))
                             pixels[p] = (0xff shl 24) or (r shl 16) or (g shl 8) or b
                         }
                         frames.add(Bitmap.createBitmap(pixels, WIDTH, HEIGHT, Bitmap.Config.ARGB_8888))
@@ -178,6 +177,28 @@ class MobileI2VOnnxEngine(
         val buffer = ByteBuffer.allocateDirect(values.size * 4).order(ByteOrder.nativeOrder()).asFloatBuffer()
         buffer.put(values).rewind()
         return OnnxTensor.createTensor(env, buffer, shape)
+    }
+
+    private fun decodeSourceImage(resolver: ContentResolver, uri: Uri): Bitmap {
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        resolver.openInputStream(uri).use { stream ->
+            requireNotNull(stream) { "Не удалось открыть изображение" }
+            BitmapFactory.decodeStream(stream, null, bounds)
+        }
+        require(bounds.outWidth > 0 && bounds.outHeight > 0) { "Некорректное изображение" }
+        var sample = 1
+        while (bounds.outWidth / sample > 2560 || bounds.outHeight / sample > 1440) {
+            sample *= 2
+        }
+        val options = BitmapFactory.Options().apply {
+            inSampleSize = sample
+            inPreferredConfig = Bitmap.Config.ARGB_8888
+        }
+        return resolver.openInputStream(uri).use { stream ->
+            requireNotNull(stream) { "Не удалось повторно открыть изображение" }
+            BitmapFactory.decodeStream(stream, null, options)
+                ?: error("Не удалось декодировать изображение")
+        }
     }
 
     private fun bitmapToNcthw(bitmap: Bitmap): FloatArray {
