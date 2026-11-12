@@ -1,6 +1,11 @@
 name: MobileI2V real-weight ONNX export probe
 
 on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'tools/export_mobiledit_onnx.py'
+      - '.github/workflows/mobilei2v-export-probe.yml'
   workflow_dispatch:
 
 permissions:
