@@ -74,6 +74,9 @@ def main():
     import imageio_ffmpeg
     frames=np.transpose(video[0],(1,2,3,0))
     frames=np.clip((frames+1.0)*127.5,0,255).astype(np.uint8)
+    # ffmpeg stdin requires tightly packed C-contiguous RGB frames.
+    frames=np.ascontiguousarray(frames)
+
     writer=imageio_ffmpeg.write_frames("mobilei2v_pipeline_probe.mp4",(1280,720),fps=8,codec="libx264",pix_fmt_in="rgb24",pix_fmt_out="yuv420p")
     writer.send(None)
     for frame in frames: writer.send(frame)
