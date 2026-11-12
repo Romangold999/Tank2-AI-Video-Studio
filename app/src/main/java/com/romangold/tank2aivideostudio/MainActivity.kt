@@ -32,7 +32,6 @@ class MainActivity : Activity() {
     private lateinit var downloadButton: Button
     private var selectedImage: Uri? = null
     private var generatedVideo: File? = null
-    private var generatedFrames: List<Bitmap> = emptyList()
 
     @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -126,7 +125,6 @@ class MainActivity : Activity() {
         progressText.text = "Подготовка моделей…"
         worker.execute {
             var sourceFrames: List<Bitmap> = emptyList()
-            var outputFrames: List<Bitmap> = emptyList()
             try {
                 val modelFiles = MobileI2VModelManager(this).ensureModels { stage, done, total ->
                     val pct = if (total > 0) (done * 100 / total).toInt().coerceIn(0, 100) else 0
@@ -136,17 +134,26 @@ class MainActivity : Activity() {
                     updateProgress(stage, pct)
                 }
                 sourceFrames = try { engine.generate(contentResolver, uri) } finally { engine.close() }
-                updateProgress("Интерполяция RIFE ×2", 88)
-                val rife = RifeX2Interpolator(this)
-                outputFrames = try {
-                    rife.interpolateSequence(sourceFrames, onFrameProgress = { done, total ->
-                        updateProgress("RIFE: $done/$total", 88 + done * 7 / total)
-                    })
-                } finally { rife.close() }
-                updateProgress("Сохранение MP4 · 16 FPS", 96)
+                updateProgress("Интерполяция RIFE ×2 и сохранение MP4 · 16 FPS", 88)
                 val output = File(filesDir, "generated/Tank2-MobileI2V.mp4")
-                VideoMp4Encoder(output, fps = 16).encode(outputFrames) { count ->
-                    updateProgress("Кодирование MP4: $count кадров", 96 + count * 4 / outputFrames.size)
+                val rife = RifeX2Interpolator(this)
+                try {
+                    VideoMp4Encoder(output, fps = 16).encodeStream(
+                        produceFrames = { emit ->
+                            rife.forEachInterpolatedFrame(
+                                sourceFrames,
+                                onFrameProgress = { done, total ->
+                                    updateProgress("RIFE: $done/$total", 88 + done * 7 / total)
+                                },
+                                onFrame = { frame, _ -> emit(frame) }
+                            )
+                        },
+                        onProgress = { count ->
+                            updateProgress("Кодирование MP4: $count кадров", 88 + count * 12 / 34)
+                        }
+                    )
+                } finally {
+                    rife.close()
                 }
                 generatedVideo = output
                 main.post {
@@ -167,7 +174,6 @@ class MainActivity : Activity() {
                     generateButton.isEnabled = true
                 }
             } finally {
-                (outputFrames.filter { frame -> sourceFrames.none { it === frame } }).forEach { it.recycle() }
                 sourceFrames.forEach { if (!it.isRecycled) it.recycle() }
             }
         }
