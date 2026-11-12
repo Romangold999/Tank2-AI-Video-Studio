@@ -50,9 +50,9 @@ def main():
     print("IGNORED_NON_DECODER_TENSORS=%d" % (len(state) - len(decoder_weights)))
     print("TURBO_VAED_WEIGHTS_LOADED=YES")
 
-    # 3 latent frames decode to 17 video frames; 8x8 latents test the 32x scale.
+    # Target MobileI2V latent grid: 3 temporal frames, 23x40 spatial tokens.
     torch.manual_seed(20261112)
-    latents = torch.randn(1, 128, 3, 8, 8, dtype=torch.float32)
+    latents = torch.randn(1, 128, 3, 23, 40, dtype=torch.float32)
     with torch.inference_mode():
         reference = model.decoder(latents).cpu().numpy()
 
@@ -94,14 +94,14 @@ def main():
     max_abs = float(np.max(np.abs(actual - reference)))
     if not np.allclose(actual, reference, rtol=2e-3, atol=2e-4):
         raise RuntimeError("PyTorch/ONNX mismatch: max_abs_error=%.8g" % max_abs)
-    if actual.shape[2] != 17 or actual.shape[3:] != (256, 256):
-        raise RuntimeError("Unexpected decoded video shape: %s" % (actual.shape,))
+    if actual.shape[2] != 17 or actual.shape[3:] != (736, 1280):
+        raise RuntimeError("Unexpected target decoded video shape: %s" % (actual.shape,))
 
     print("TURBO_VAED_ONNX_CHECK=PASS")
     print("TURBO_VAED_ORT_CPU=PASS")
     print("PYTORCH_ONNX_NUMERICAL_MATCH=PASS")
     print("MAX_ABS_ERROR=%.8g" % max_abs)
-    print("VIDEO_SHAPE=%s" % (actual.shape,))
+    print("VIDEO_SHAPE=%s" % (actual.shape,))\n    print("TARGET_720P_DECODER=PASS")
 
 
 if __name__ == "__main__":
