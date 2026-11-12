@@ -10,7 +10,12 @@ An Android-first, offline-first research project for on-device **Image-to-Video*
 Text-to-Video is explicitly out of scope.
 
 ## Current status
-This repository contains an Android app shell and a GitHub Actions debug-build workflow. It does **not** yet contain an integrated video model, ONNX weights, or a working generation pipeline. A successful APK build proves only that the Android shell compiles.
+The Android shell builds successfully through GitHub Actions. It is not yet a working generator: no verified Android-compatible model package or real inference pipeline is integrated. A successful APK build proves only that the Android shell compiles.
+
+## MobileI2V investigation (2026-11-12)
+The official [hustvl/MobileI2V repository](https://github.com/hustvl/MobileI2V) publishes PyTorch inference instructions using `hybrid_371.pth`, a Python environment, and a CUDA device. The official repository does not provide a ready-to-use Android ONNX package. The paper describes a 270M-parameter mobile-focused model and fast mobile results, but that does not by itself provide a compatible runtime package for this specific Helio G99 device.
+
+A third-party Android port, [himadriHK/MobileI2VConsole](https://github.com/himadriHK/MobileI2VConsole), was audited as a possible starting point. Its own `.codebase/CONCERNS.md` states that all four core inference stages return zero-filled placeholder arrays rather than executing ONNX sessions. Its model download/manifest assumptions and pipeline therefore cannot be treated as a working implementation or copied as-is. This project will not inherit that fake generation path.
 
 ## Device constraints
 The target device reports Android 14, arm64-v8a, MT6789, about 11 GiB physical RAM, and Mali GPU libraries. Termux Vulkan currently exposes Mesa llvmpipe rather than Mali, and OpenCL reports zero platforms. Android's own graphics driver exists, but usable ML acceleration has not been demonstrated.
@@ -18,15 +23,21 @@ The target device reports Android 14, arm64-v8a, MT6789, about 11 GiB physical R
 ## Build
 Push to `main` or run the **Android debug build** workflow manually. The workflow builds `app-debug.apk` and uploads it as a GitHub Actions artifact. This is a development APK, not a signed release.
 
-## Model integration rules
-1. Do not download model weights automatically without documenting the source, license, size, and checksum.
-2. Keep model weights out of Git history; use a separate download/cache or release asset strategy.
-3. Validate model architecture, input/output shapes, quantization, runtime operator support, and peak RAM before claiming device compatibility.
-4. Keep all inference local and make network access unnecessary after model installation.
-5. Do not promise real-time generation. Benchmark actual latency, memory use, thermals, and battery drain on the target phone.
+## Model integration acceptance criteria
+1. Identify the exact upstream weights, license, file sizes, and SHA-256 hashes.
+2. Produce real ONNX/ORT model files from the upstream architecture; keep model binaries out of Git history.
+3. Validate every exported graph with ONNX checker and runtime inference using real test tensors.
+4. Verify input/output names, shapes, data types, tokenizer, scheduler, and numerical agreement with the reference implementation.
+5. Implement real ONNX sessions in Android; never use zero tensors or dummy frames as generated output.
+6. Load/unload stages deliberately and measure peak resident memory, latency, thermals, and battery use on the Tank 2.
+7. Confirm NNAPI acceleration on this exact device; otherwise report CPU execution and its measured performance.
+8. Keep inference local and make network access unnecessary after model installation.
 
 ## Planned stages
-1. Android shell + reproducible CI build.
-2. Device-side runtime capability probe.
-3. Select and validate a small, legally distributable Image-to-Video model and runtime.
-4. Implement and benchmark real local Image-to-Video inference.
+1. Android shell + reproducible CI build. (Complete)
+2. Device-side runtime and accelerator capability probe.
+3. Reproducible model conversion and validation.
+4. Real Android ONNX inference integration.
+5. On-device end-to-end testing and performance/memory qualification.
+
+Do not promise real-time generation or label a build as ready until end-to-end local inference has produced and saved a valid MP4 on the target phone.
