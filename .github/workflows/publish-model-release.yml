@@ -1,0 +1,108 @@
+name: Publish MobileI2V model release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download already-exported model artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: mobilei2v-mobiledit-export-probe
+          path: incoming/mobiledit
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          run-id: 43303240278
+
+      - name: Download LTX VAE encoder artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ltx-open-vae-encoder-export-probe
+          path: incoming/encoder
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          run-id: 43308409080
+
+      - name: Download Turbo-VAED decoder artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: turbo-vaed-ltx-decoder-export-probe
+          path: incoming/decoder
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          run-id: 43308403755
+
+      - name: Assemble models and generate verified manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p release-assets
+          find incoming -type f -name 'mobiledit_300m.onnx' -exec cp {} release-assets/ \;
+          find incoming -type f -name 'ltx_open_vae_encoder.onnx' -exec cp {} release-assets/ \;
+          find incoming -type f -name 'turbo_vaed_ltx_decoder.onnx' -exec cp {} release-assets/ \;
+          for f in mobiledit_300m.onnx ltx_open_vae_encoder.onnx turbo_vaed_ltx_decoder.onnx; do
+            test -s "release-assets/$f" || { echo "Missing model: $f"; find incoming -maxdepth 4 -type f; exit 1; }
+          done
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          root = pathlib.Path("release-assets")
+          names = [
+              "ltx_open_vae_encoder.onnx",
+              "mobiledit_300m.onnx",
+              "turbo_vaed_ltx_decoder.onnx",
+          ]
+          models = []
+          for name in names:
+              p = root / name
+              h = hashlib.sha256()
+              with p.open("rb") as f:
+                  for chunk in iter(lambda: f.read(8 * 1024 * 1024), b""):
+                      h.update(chunk)
+              models.append({"file": name, "size_bytes": p.stat().st_size, "sha256": h.hexdigest()})
+          (root / "models-manifest.json").write_text(
+              json.dumps({"version": "tank2-mobilei2v-0.1.0", "models": models}, indent=2) + "\n"
+          )
+          print((root / "models-manifest.json").read_text())
+          PY
+          curl --fail --location --retry 3 --output release-assets/LTX-Video-Open-Weights-License-0.X.pdf https://static.lightricks.com/legal/LTX-Video-Open-Weights-License-0.X.pdf
+          file release-assets/LTX-Video-Open-Weights-License-0.X.pdf | grep -q PDF
+          cat > release-assets/THIRD-PARTY-NOTICES.txt <<'EOF'
+          Tank2 AI Video Studio model bundle
+          
+          LTX VAE encoder: derived from Lightricks LTX Video open weights.
+          License: LTX Video Open Weights License 0.X.
+          The original license is included as LTX-Video-Open-Weights-License-0.X.pdf.
+          
+          MobileI2V and Turbo-VAED model components are redistributed with their
+          upstream license notices; consult the upstream project/model cards:
+          https://github.com/hustvl/MobileI2V
+          https://huggingface.co/hustvl/Turbo-VAED
+          
+          Model files are provided as separate release assets. The Android app
+          verifies exact file sizes and SHA-256 hashes from models-manifest.json.
+          EOF
+
+      - name: Publish GitHub Release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="tank2-models-v0.1.0"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" release-assets/* --clobber
+          else
+            gh release create "$TAG" release-assets/* \
+              --title "Tank2 MobileI2V models v0.1.0" \
+              --target "${GITHUB_SHA}" \
+              --notes "Offline MobileI2V ONNX model assets for Tank2 AI Video Studio. Includes SHA-256 manifest and upstream license notices. The LTX Video Open Weights License PDF is included; users must comply with its terms."
+          fi
