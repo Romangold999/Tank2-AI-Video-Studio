@@ -3,7 +3,6 @@ package com.romangold.tank2aivideostudio
 import android.content.ContentResolver
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.graphics.Canvas
 import android.graphics.Rect
 import android.net.Uri
 import ai.onnxruntime.OnnxTensor
@@ -127,8 +126,7 @@ class MobileI2VOnnxEngine(
                     val video = (result[0] as OnnxTensor).floatBuffer
                     val frames = ArrayList<Bitmap>(FRAME_COUNT)
                     val plane = DECODER_H * WIDTH
-                    val frameStride = 3 * plane
-                    for (frame in 0 until FRAME_COUNT) {
+                            for (frame in 0 until FRAME_COUNT) {
                         val pixels = IntArray(WIDTH * HEIGHT)
                         for (y in 0 until HEIGHT) for (x in 0 until WIDTH) {
                             val p = y * WIDTH + x
