@@ -14,6 +14,20 @@ import onnx
 from huggingface_hub import hf_hub_download
 
 UPSTREAM = Path(os.environ.get("MOBILEI2V_SOURCE", "MobileI2V")).resolve()
+
+# The upstream attention block unconditionally casts attention probabilities to
+# fp16 while its value tensor remains fp32 in this CPU export path. Keep the
+# export-only path in fp32 so tracing can proceed without mixed-dtype matmul.
+attention_source = UPSTREAM / "diffusion/model/nets/sana_blocks.py"
+if attention_source.is_file():
+    source_text = attention_source.read_text()
+    old_cast = "attn = self.attn_drop(attn).half()"
+    if old_cast in source_text:
+        attention_source.write_text(source_text.replace(old_cast, "attn = self.attn_drop(attn)", 1))
+        print("EXPORT_PATCH=FP32_ATTENTION_PROBABILITIES")
+    elif "attn = self.attn_drop(attn)" not in source_text:
+        raise RuntimeError("Could not locate upstream attention cast for CPU export")
+
 sys.path.insert(0, str(UPSTREAM))
 
 from diffusion.model.builder import build_model
