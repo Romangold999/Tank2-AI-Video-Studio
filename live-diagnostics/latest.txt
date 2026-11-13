@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:11:43.076967+00:00
+updated_utc=2026-11-13T02:11:48.077070+00:00
 workflow_run_id=43349759093
 run_attempt=1
 branch=live-diagnostics
@@ -110,104 +110,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:11:42.614  3260  3537 W oid.documentsui: Long monitor contention with owner pool-4-thread-2 (3533) at void com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.handleDocumentsProvider(android.content.pm.ProviderInfo, com.android.documentsui.base.UserId)(ProvidersCache.java:645) waiters=4 in void com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.handleDocumentsProvider(android.content.pm.ProviderInfo, com.android.documentsui.base.UserId) for 188ms
-11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: Currently set values for:
-11-13 02:11:42.629  3493  3493 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
-11-13 02:11:42.629  3493  3493 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
-11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.webview: false
-11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: com.google.android.webview is not listed in per-application setting
-11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-11-13 02:11:42.631  1505  1587 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.consentverifier#com.google.android.gm) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:11:42.633  3493  3493 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
-11-13 02:11:42.635  3493  3493 I cr_WebViewApkApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview:webview_service
-11-13 02:11:42.636   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
-11-13 02:11:42.637  1910  1910 I ContentCaptureHelper: Setting logging level to DEBUG
-11-13 02:11:42.637  1910  1910 D ContentCaptureManager: setFlushViewTreeAppearingEventDisabled(): setting to false
-11-13 02:11:42.642  1910  2443 I OpenGLRenderer: Davey! duration=3476ms; Flags=1, FrameTimelineVsyncId=4705, IntendedVsync=43917997371, Vsync=45134663989, InputEventId=0, HandleInputStart=45152243664, AnimationStart=45152244355, PerformTraversalsStart=45152244546, DrawStart=47046079407, FrameDeadline=43934664037, FrameInterval=45150706138, FrameStartTime=16666666, SyncQueued=47048843493, SyncStart=47049138563, IssueDrawCommandsStart=47161405308, SwapBuffers=47236237032, FrameCompleted=47394757879, DequeueBufferDuration=39649764, QueueBufferDuration=156683, GpuCompleted=47368135926, SwapBuffersCompleted=47394757879, DisplayPresentTime=0, CommandSubmissionCompleted=47236237032, 
-11-13 02:11:42.643   546   977 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10132 pid=0
-11-13 02:11:42.644   546   977 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10132 => denied (355 us)
-11-13 02:11:42.644   546   977 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10132 pid=0
-11-13 02:11:42.644   546   977 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10132 => denied (30 us)
-11-13 02:11:42.644   546   977 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10132 pid=0
-11-13 02:11:42.644   546   977 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10132 => denied (16 us)
-11-13 02:11:42.645  1075  3524 D NetworkMonitor/101: PROBE_DNS connectivitycheck.gstatic.com 98ms OK 142.251.150.120,2001:4860:4826:7800::
-11-13 02:11:42.656   546  1891 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10133. pid: 3493
-11-13 02:11:42.669  1180  1180 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
-11-13 02:11:42.669   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
-11-13 02:11:42.670   903   986 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
-11-13 02:11:42.670  1910  1910 I Choreographer: Skipped 135 frames!  The application may be doing too much work on its main thread.
-11-13 02:11:42.672  1180  1195 W s.nexuslauncher: Cleared Reference was only reachable from finalizer (only reported once)
-11-13 02:11:42.673  1505  1505 I CastSocket: Adding new CastClientAuthKeyManager. [CONTEXT service_id=161 ]
-11-13 02:11:42.674  1910  2338 W SessionLifecycleManager: Client : AttachedClient[8402063372101244, ClientConfig[mFlags=[40000088001] mSuggestFlags=[0] mClientId=HOTWORD_SERVICE mSessionType=search publicSearchServiceCallerUid=-1]] has no associated SessionController
-11-13 02:11:42.690  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:42.690  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:42.690  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:42.701  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:42.701  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:42.704   358  3561 I resolv  : GetAddrInfoHandler::run: {101 983141 101 983141 1073 1}
-11-13 02:11:42.710   358  3562 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
-11-13 02:11:42.710   358  3562 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7d6bebd29f50
-11-13 02:11:42.710   358  3562 I resolv  : doQuery: rcode=0, ancount=1, return value=104
-11-13 02:11:42.756   546   563 I ActivityTaskManager: Displayed com.google.android.apps.nexuslauncher/.NexusLauncherActivity for user 0: +9s563ms
-11-13 02:11:42.756   546   563 W Looper  : Slow dispatch took 105ms android.fg h=android.os.Handler c=com.android.server.wm.ActivityMetricsLogger$$ExternalSyntheticLambda0@e97329c m=0
-11-13 02:11:42.756  1505  1515 I .gms.persistent: Background young concurrent copying GC freed 131434(6601KB) AllocSpace objects, 18(936KB) LOS objects, 48% free, 8113KB/15MB, paused 48us,15us total 173.219ms
-11-13 02:11:42.764  1180  1180 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
-11-13 02:11:42.799   546  2453 W AlarmManager: Window length 1383505805528182272ms too long; limiting to 1 day
-11-13 02:11:42.800  1505  2939 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-11-13 02:11:42.802  1505  2939 W SystemServiceRegistry: No service published for: wifirtt
-11-13 02:11:42.805   903   986 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
-11-13 02:11:42.808   546   974 D CompatibilityChangeReporter: Compat change id reported: 229362273; UID 10127; state: DISABLED
-11-13 02:11:42.809   546   974 D CompatibilityChangeReporter: Compat change id reported: 229362273; UID 10127; state: ENABLED
-11-13 02:11:42.813  1505  1623 W Nearby  : Failed to open content://com.android.contacts/profile because the Cursor was empty [CONTEXT service_id=49 ]
-11-13 02:11:42.831  1180  1180 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
-11-13 02:11:42.839  1761  2155 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 3 scheduled, 3 pending: manifests:kg_collections_table-21051103 * {W:b:u:l, bg}, manifests:actions-ranking-table-211005 * {W:b:u:l, bg}, manifests:spelling_correction-22110320 * {W:b:I:l, bg}
-11-13 02:11:42.841  1761  1761 I AiAiEcho: AppFetcherImpl onPackageChanged android.
-11-13 02:11:42.842  1761  2798 I AiAiEcho: AppIndexer Package:[android] UserProfile:[0] Enabled:[true].
-11-13 02:11:42.843  1761  2798 I AiAiEcho: AppFetcherImplV2 updateApps package:[android], userId:[0], reason:[package is updated.].
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: Model sync failed.
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: kit: Request of 1 packs for webref-2-en-us-manifest failed
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at cjq.call(PG:126)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at oeh.a(Unknown Source:2)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at ofj.run(PG:3)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: Caused by: koy: HTTP_ERROR 404, url: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at kow.b(Unknown Source:4)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at kuk.o(PG:7)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at kug.run(PG:9)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at dgq.run(PG:67)
-11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	... 1 more
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: [TextClassifierLibProviderImpl]: TcLib packs sync failed.
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: kit: Request of 1 packs for webref-2-en-us-manifest failed
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at cjq.call(PG:126)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at oeh.a(Unknown Source:2)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at ofj.run(PG:3)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: Caused by: koy: HTTP_ERROR 404, url: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at kow.b(Unknown Source:4)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at kuk.o(PG:7)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at kug.run(PG:9)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at dgq.run(PG:67)
-11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	... 1 more
-11-13 02:11:42.855  1761  2155 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
-11-13 02:11:42.857   546   574 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:11:47.622  1569  1569 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-13 02:11:47.622  1505  3886 D TrafficStats: tagSocket(207) with statsTag=0x1203, statsUid=10127
+11-13 02:11:47.622  3921  3921 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 1000; state: ENABLED
+11-13 02:11:47.622  3921  3921 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 1000; state: ENABLED
+11-13 02:11:47.623  3923  3923 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10092; state: ENABLED
+11-13 02:11:47.624  3923  3923 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10092; state: ENABLED
+11-13 02:11:47.625  2894  2894 I DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.startWork:66 starting work
+11-13 02:11:47.626  2894  3158 I DialerCountryCodeProvider: com.android.dialer.businessvoice.verifiedcall.impl.i18n.CountryCodeProvider.getSimCountryCodeInternal:85 returning Redacted-2-chars
+11-13 02:11:47.629  1761  1761 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.dialer.
+11-13 02:11:47.630  1761  3573 I AiAiEcho: AppIndexer Package:[com.google.android.dialer] UserProfile:[0] Enabled:[true].
+11-13 02:11:47.630  1761  3573 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.dialer], userId:[0], reason:[package is updated.].
+11-13 02:11:47.632   546  1073 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10092; state: ENABLED
+11-13 02:11:47.632  2894  3158 I DialerCachedVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.CachedVerifiedNumberProvider.refreshConstellationInfo:190 Retrieving constellation info and refreshing the cache.
+11-13 02:11:47.633  3923  3923 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 10092; state: ENABLED
+11-13 02:11:47.633  3921  3921 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 1000; state: ENABLED
+11-13 02:11:47.636   546   575 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 1027; state: DISABLED
+11-13 02:11:47.640  3921  3921 D nativeloader: Configuring clns-shared-6 for other apk /system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk. target_sdk_version=34, uses_libraries=, library_path=/system/priv-app/DynamicSystemInstallationService/lib/x86_64:/system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk!/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.dynsystem:/system/priv-app/DynamicSystemInstallationService:/system/lib64:/system_ext/lib64
+11-13 02:11:47.641  2894  3108 I DialerSystemCallLogUpdater: com.android.dialer.calllog.refresh.impl.SystemCallLogUpdater.updateSystemCallLog:209 updated 0 rows
+11-13 02:11:47.643  2894  2894 I DialerRestVoicemailEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVoicemailEnabledFn.isEnabled:51 disabled by flag [CONTEXT ratelimit_period="1 MINUTES" ]
+11-13 02:11:47.645  2894  2894 I DialerCvvmEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.omtp.protocol.cvvm.CvvmEnabledFn.isEnabled:37 disabled by flag [CONTEXT ratelimit_period="1 MINUTES" ]
+11-13 02:11:47.663  3921  3921 V GraphicsEnvironment: Currently set values for:
+11-13 02:11:47.663  3921  3921 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:11:47.663  3921  3921 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:11:47.664  3921  3921 V GraphicsEnvironment: ANGLE GameManagerService for com.android.dynsystem: false
+11-13 02:11:47.664  3921  3921 V GraphicsEnvironment: com.android.dynsystem is not listed in per-application setting
+11-13 02:11:47.664  3921  3921 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:11:47.665  1659  2256 I SP      : Sync for emoticon_content_description succeeded in 3357 ms: {added: [7a635888cb828dfa2fc744b7b9b50f04], metadata: false
+11-13 02:11:47.666  3390  3456 D ThemeSanitizerReceiver: No config existed, skipping theme sanitizer
+11-13 02:11:47.677  2894  2894 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.migrate:54 migrating
+11-13 02:11:47.677  1505  3886 D TrafficStats: tagSocket(206) with statsTag=0x1203, statsUid=10127
+11-13 02:11:47.678  3923  3923 D nativeloader: Configuring clns-shared-6 for other apk /system/priv-app/IntentResolver/IntentResolver.apk. target_sdk_version=34, uses_libraries=, library_path=/system/priv-app/IntentResolver/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.intentresolver:/system/priv-app/IntentResolver:/system/lib64:/system_ext/lib64
+11-13 02:11:47.680   546  2280 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 1000. pid: 3921
+11-13 02:11:47.685  1180  2269 D EGL_emulation: app_time_stats: avg=639.01ms min=282.55ms max=995.46ms count=2
+11-13 02:11:47.685  2894  2894 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.getFullIccId:131 preferences with ICCID not found, nothing to migrate.
+11-13 02:11:47.688  2894  2894 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.migrate:99 migration completed
+11-13 02:11:47.689  2894  2894 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.migrate:54 migrating
+11-13 02:11:47.690   359   359 D Zygote  : Forked child process 3963
+11-13 02:11:47.691  2894  2894 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.getFullIccId:131 preferences with ICCID not found, nothing to migrate.
+11-13 02:11:47.691  2894  2894 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.migrate:99 migration completed
+11-13 02:11:47.691  2894  2894 I DialerStatusCheckJobService: com.android.voicemail.impl.StatusCheckJobService.onStartJob:100 attempting to reactivate ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} [CONTEXT enable_persistent_logger=true ]
+11-13 02:11:47.693  3921  3921 D DynamicSystemInstallationService: onStartCommand(): action=android.os.image.action.NOTIFY_IF_IN_USE
+11-13 02:11:47.693   546   576 W ActivityManager: Slow operation: 58ms so far, now at startProcess: returned from zygote!
+11-13 02:11:47.694   546   576 W ActivityManager: Slow operation: 58ms so far, now at startProcess: done updating battery stats
+11-13 02:11:47.694   546   576 W ActivityManager: Slow operation: 58ms so far, now at startProcess: building log message
+11-13 02:11:47.694   546   576 I ActivityManager: Start proc 3963:com.android.nfc/1027 for broadcast {com.android.nfc/com.android.nfc.NfcBootCompletedReceiver}
+11-13 02:11:47.694   546   576 W ActivityManager: Slow operation: 58ms so far, now at startProcess: starting to update pids map
+11-13 02:11:47.694   546   576 W ActivityManager: Slow operation: 58ms so far, now at startProcess: done updating pids map
+11-13 02:11:47.694  1505  3886 D TrafficStats: tagSocket(206) with statsTag=0x1203, statsUid=10127
+11-13 02:11:47.716   546  2280 I DynamicSystemService: isInstalled(): false
+11-13 02:11:47.722  3923  3923 V GraphicsEnvironment: Currently set values for:
+11-13 02:11:47.722  3923  3923 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:11:47.723  3923  3923 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:11:47.723  1505  3886 D TrafficStats: tagSocket(206) with statsTag=0x1203, statsUid=10127
+11-13 02:11:47.723  3963  3963 I com.android.nfc: Using CollectorTypeCC GC.
+11-13 02:11:47.724  3923  3923 V GraphicsEnvironment: ANGLE GameManagerService for com.android.intentresolver: false
+11-13 02:11:47.724  3923  3923 V GraphicsEnvironment: com.android.intentresolver is not listed in per-application setting
+11-13 02:11:47.724  3923  3923 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:11:47.724  3963  3963 W com.android.nfc: Unexpected CPU variant for x86: x86_64.
+11-13 02:11:47.724  3963  3963 W com.android.nfc: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-13 02:11:47.732  2894  3107 I DialerVoicemailStatusDataMigration: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataMigration.lambda$migrate$0:78 no package status to migrate
+11-13 02:11:47.741   546   574 E system_server: No package ID 7f found for resource ID 0x7f080107.
+11-13 02:11:47.741   546   574 E system_server: No package ID 7f found for resource ID 0x7f150560.
+11-13 02:11:47.748  1505  3886 D TrafficStats: tagSocket(206) with statsTag=0x1203, statsUid=10127
+11-13 02:11:47.753  1505  3886 D TrafficStats: tagSocket(206) with statsTag=0x1203, statsUid=10127
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: <DWB> Call failed: get_actions
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: java.util.concurrent.TimeoutException: Waited 5000 milliseconds (plus 4 milliseconds, 856349 nanoseconds delay) for lki@ee14d02[status=PENDING, info=[inputFuture=[lkh@cf09613[status=PENDING, setFuture=[ljp@5dbe050[status=PENDING, info=[inputFuture=[lki@ad71249[status=PENDING, info=[inputFuture=[lki@29b374e[status=PENDING, info=[inputFuture=[lld@b44806f[status=PENDING, info=[futures=[lki@26b17c[status=PENDING, info=[inputFuture=[lki@c758a05[status=PENDING, info=[function=[propagating=[bvr@2f77a5a]]]]], function=[propagating=[cur@642b48b]]]]]]]], function=[propagating=[dce@beb6968]]]]], function=[propagating=[bvq@bc9c181]]]]], exceptionType=[class java.lang.Throwable], fallback=[propagating=[bwc@8a2e226]]]]]]], function=[propagating=[bvq@da60e67]]]]
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at lkf.get(PG:47)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at llt.get(PG:2)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at com.google.android.apps.wellbeing.api.impl.WellbeingSettingsProvider.i(PG:1)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at com.google.android.apps.wellbeing.api.impl.WellbeingSettingsProvider.call(PG:13)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at android.content.ContentProvider.call(ContentProvider.java:2679)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:628)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:307)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at android.os.Binder.execTransactInternal(Binder.java:1339)
+11-13 02:11:47.756  1681  1719 W WellbeingSettingsProvid: 	at android.os.Binder.execTransact(Binder.java:1275)
+11-13 02:11:47.760  3963  3963 E com.android.nfc: Not starting debugger since process cannot load the jdwp agent.
+11-13 02:11:47.766  2894  3105 I DialerVoicemailStatusDataMigration: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataMigration.cleanup:89 enter
+11-13 02:11:47.800  1133  1133 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 1000; state: ENABLED
+11-13 02:11:47.800  1133  1133 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 1000; state: ENABLED
+11-13 02:11:47.801   546   974 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 1000; state: ENABLED
+11-13 02:11:47.801   546   974 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 1000; state: ENABLED
+11-13 02:11:47.814  1659  2256 I SP      : GC for 'emoticon_content_description' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-13 02:11:47.822  1505  3602 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.auth.easyunlock, using defaults.
+11-13 02:11:47.823  1569  3699 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-13 02:11:47.824  1569  3699 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:11:47.824  1569  3699 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:11:47.832  1505  3602 W EasyUnlock: [EasyUnlockSupportReporterIntentOperation] Invalid account list. [CONTEXT service_id=234 ]
+11-13 02:11:47.840  1505  3886 D TrafficStats: tagSocket(206) with statsTag=0x1203, statsUid=10127
+11-13 02:11:47.844  2894  2894 I DialerVvmDailyWorker: com.android.dialer.voicemail.service.receivers.VvmDailyWorker.startWork:85 startWork
+11-13 02:11:47.847  1505  1505 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms }
+11-13 02:11:47.847  1505  1505 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms }
+11-13 02:11:47.855   546  1927 D SafetySourceDataValidator: No cert check requested for package com.android.settings
+11-13 02:11:47.856   546  1927 W system_server: Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/android/permission/jarjar/com/google/protobuf/UnsafeUtil; using reflection
+11-13 02:11:47.856   546  1927 W system_server: Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/android/permission/jarjar/com/google/protobuf/UnsafeUtil; using reflection
+11-13 02:11:47.858   546  1931 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10092. pid: 3923
+11-13 02:11:47.859  1505  3659 I FontLog : Using directory in FlatBuffer format [CONTEXT service_id=132 ]
+11-13 02:11:47.859  1505  1505 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+11-13 02:11:47.859  1505  3655 W .gms.persistent: Long monitor contention with owner highpool[8] (3659) at void aoan.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):84) waiters=0 in void aoam.b(java.lang.String, anxz) for 281ms
+11-13 02:11:47.860  1505  1505 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms }
+11-13 02:11:47.861  1505  3886 D TrafficStats: tagSocket(138) with statsTag=0x1203, statsUid=10127
 
