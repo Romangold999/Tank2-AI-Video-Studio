@@ -8,6 +8,7 @@ concurrency:
   cancel-in-progress: true
 permissions:
   contents: write
+  actions: read
 jobs:
   build:
     # Public-repository standard Linux runner: 4 vCPU / 16 GB RAM.
@@ -43,39 +44,22 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.9"
-      - name: Embed all ONNX models in APK assets
-        run: |
-          set -euxo pipefail
-          mkdir -p app/src/main/assets/models app/src/main/assets/licenses
-          BASE="https://github.com/Romangold999/Tank2-AI-Video-Studio/releases/download/tank2-models-v0.1.0"
-          curl --fail --location --retry 5 --retry-all-errors "$BASE/models-manifest.json" -o app/src/main/assets/models/models-manifest.json
-          for model in ltx_open_vae_encoder.onnx mobiledit_300m.onnx turbo_vaed_ltx_decoder.onnx; do
-            curl --fail --location --retry 5 --retry-all-errors "$BASE/$model" -o "app/src/main/assets/models/$model"
-            test -s "app/src/main/assets/models/$model"
-          done
-          curl --fail --location --retry 5 --retry-all-errors --output app/src/main/assets/models/rife49.onnx "https://huggingface.co/edgetools/rife/resolve/18dcfbe2c349d5922e353708153581d2039c576c/rife49.onnx?download=true"
-          stat -c "RIFE_BYTES=%s" app/src/main/assets/models/rife49.onnx
-          test "$(stat -c%s app/src/main/assets/models/rife49.onnx)" = "21458882"
-          echo "76e4cef9ab42fa7dd4e8f6e4aba47462051e3faa969e4bca6479784fbab0ac6f  app/src/main/assets/models/rife49.onnx" | sha256sum --check
-          curl --fail --location --retry 5 --retry-all-errors --output app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf https://static.lightricks.com/legal/LTX-Video-Open-Weights-License-0.X.pdf
-          file app/src/main/assets/licenses/LTX-Video-Open-Weights-License-0.X.pdf | grep -q PDF
-          echo "=== Embedded model sizes ==="
-          ls -lh app/src/main/assets/models
-          du -sh app/src/main/assets/models
-          df -h .
-      - name: Build APK with embedded models
-        run: |
-          gradle --no-daemon :app:assembleDebug --stacktrace
-          ls -lh app/build/outputs/apk/debug/app-debug.apk
-          stat -c "APK_BYTES=%s" app/build/outputs/apk/debug/app-debug.apk
-      - name: Upload APK with embedded models
-        uses: actions/upload-artifact@v4
+      - name: Download the already-built APK from run 118 (do not rebuild it)
+        uses: actions/download-artifact@v4
         with:
           name: Tank2-AI-Video-Studio-embedded-models-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
-          retention-days: 14
-          compression-level: 0
+          path: ci-existing-apk
+          run-id: 43347242486
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Verify reused APK and build only the instrumentation test APK
+        run: |
+          set -euxo pipefail
+          test -s ci-existing-apk/app-debug.apk
+          stat -c "REUSED_APK_BYTES=%s" ci-existing-apk/app-debug.apk
+          sha256sum ci-existing-apk/app-debug.apk
+          gradle --no-daemon :app:assembleDebugAndroidTest --stacktrace
+          test -s app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+          stat -c "TEST_APK_BYTES=%s" app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -202,9 +186,12 @@ jobs:
           LOGCAT_PID=$!
           echo "$LOGCAT_PID" > logcat.pid
 
-          printf 'STATUS=ANDROID_INSTRUMENTED_TEST_RUNNING\nUTC=%s\n' "$(date -u +%FT%TZ)" > live-status.txt
+          printf 'STATUS=INSTALLING_REUSED_APK\\nUTC=%s\\n' "$(date -u +%FT%TZ)" > live-status.txt
+          adb install -r ci-existing-apk/app-debug.apk
+          adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+          printf 'STATUS=ANDROID_INSTRUMENTED_TEST_RUNNING\\nUTC=%s\\n' "$(date -u +%FT%TZ)" > live-status.txt
           set +e
-          gradle --no-daemon :app:connectedDebugAndroidTest --info --console=plain 2>&1 | tee gradle-instrumented-test.log
+          adb -s emulator-5554 shell am instrument -w -r -e class com.romangold.tank2aivideostudio.RealImageGenerationInstrumentedTest#realPhotoProducesPlayableMp4 com.romangold.tank2aivideostudio.debug.test/androidx.test.runner.AndroidJUnitRunner 2>&1 | tee gradle-instrumented-test.log
           TEST_STATUS=${PIPESTATUS[0]}
           set -e
           printf 'STATUS=ANDROID_TEST_FINISHED\nTEST_EXIT_CODE=%s\nUTC=%s\n' "$TEST_STATUS" "$(date -u +%FT%TZ)" > live-status.txt
