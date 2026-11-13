@@ -3,12 +3,15 @@ on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
+concurrency:
+  group: android-ci-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 35
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -100,12 +103,12 @@ jobs:
           echo "$EMULATOR_PID" > emulator.pid
           adb wait-for-device
           BOOTED=0
-          for i in $(seq 1 180); do
+          for i in $(seq 1 60); do
             if [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ]; then BOOTED=1; break; fi
             sleep 5
           done
           if [ "$BOOTED" != "1" ]; then
-            echo "Android emulator did not finish booting within 15 minutes"
+            echo "Android emulator did not finish booting within 5 minutes"
             tail -200 emulator-startup.log || true
             exit 1
           fi
