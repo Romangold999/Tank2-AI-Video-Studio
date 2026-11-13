@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:56.055186+00:00
+updated_utc=2026-11-13T02:21:01.055275+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -114,104 +114,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 package:/data/app/~~HLz2fmRHVMpPsbO0wsGyvw==/com.romangold.tank2aivideostudio.debug-C-Gjp3NZrWlbmgz2Ez_cLg==/base.apk
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:55.437  5226  5279 I ChimeraCfgMgr: Updating module config: container:2318189190800 -> container:2318189190800
-11-13 02:20:55.437  5226  5279 E DowngradeHelper: isModuleDowngradeRequired false
-11-13 02:20:55.455   548  1951 D CompatibilityChangeReporter: Compat change id reported: 229362273; UID 10128; state: ENABLED
-11-13 02:20:55.455   548  1951 D CompatibilityChangeReporter: Compat change id reported: 229362273; UID 10128; state: DISABLED
-11-13 02:20:55.478  5226  5279 I GmsDebugLogger: [46] container:2318189190800
-11-13 02:20:55.485  5226  5337 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.phenotype, using defaults.
-11-13 02:20:55.494  5226  5307 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
-11-13 02:20:55.494  5226  5303 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: maps_core:-1
-11-13 02:20:55.497  5226  5309 I Vision  : Supported ABIS: [x86_64, arm64-v8a]
-11-13 02:20:55.522   548   577 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10128; state: DISABLED
-11-13 02:20:55.523   548   578 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10128; state: ENABLED
-11-13 02:20:55.525  5226  5303 I ChimeraConfigurator: Detected pending changes for urgent request: [maps_core]. Pending module sets: container:2318189190800+maps_core
-11-13 02:20:55.530   362   362 D Zygote  : Forked child process 5362
-11-13 02:20:55.531   548   578 I ActivityManager: Start proc 5362:com.google.android.gms.ui/u0a128 for service {com.google.android.gms/com.google.android.gms.chimera.UiIntentOperationService}
-11-13 02:20:55.535  5226  5308 I LocationHistory: [IntentOperation] Module is disabled [CONTEXT service_id=314 ]
-11-13 02:20:55.538  5352  5352 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-11-13 02:20:55.543   548  1951 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
-11-13 02:20:55.546  5352  5352 I AndroidRuntime: Using default boot image
-11-13 02:20:55.546  5352  5352 I AndroidRuntime: Leaving lock profiling enabled
-11-13 02:20:55.547  5352  5352 I app_process: Core platform API reporting enabled, enforcing=false
-11-13 02:20:55.548  5352  5352 I app_process: Using CollectorTypeCC GC.
-11-13 02:20:55.549   548   548 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
-11-13 02:20:55.551  5226  5308 I LocationHistory: [IntentOperation] Module is disabled [CONTEXT service_id=314 ]
-11-13 02:20:55.756     0     0 I servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
-11-13 02:20:55.554   548  1961 I RegistrationProxy: IGetRegistrationCallback.onSuccess
-11-13 02:20:55.560   548  1961 I RemoteProvisionSysSvc: Fetching key 10128 for client 174308765
-11-13 02:20:55.560   548  1961 I RegistrationProxy: getKeyAsync operation started with callback 78365202
-11-13 02:20:55.562  3695  3759 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10128, callback: 232620037
-11-13 02:20:55.563  3695  3759 I RkpdRegistrationBinder: Key successfully assigned to client
-11-13 02:20:55.563   548   548 I RemoteProvisionSysSvc: Successfully fetched key for client 174308765
-11-13 02:20:55.573  5226  5337 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.games [CONTEXT service_id=231 ]
-11-13 02:20:55.576  5226  5303 I GmsDebugLogger: [73] 1801
-11-13 02:20:55.576  5362  5362 I .android.gms.ui: Using CollectorTypeCC GC.
-11-13 02:20:55.577  5226  5337 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.maps#com.google.android.gms [CONTEXT service_id=231 ]
-11-13 02:20:55.577  5226  5337 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.cast [CONTEXT service_id=231 ]
-11-13 02:20:55.577  5362  5362 W .android.gms.ui: Unexpected CPU variant for x86: x86_64.
-11-13 02:20:55.577  5362  5362 W .android.gms.ui: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
-11-13 02:20:55.577  5226  5337 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
-11-13 02:20:55.581  5226  5303 W ZappDownloader: No successful module downloads for requested features [maps_core].
-11-13 02:20:55.581  5226  5303 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:231112103100800]
-11-13 02:20:55.582  5226  5337 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.udc [CONTEXT service_id=231 ]
-11-13 02:20:55.593  5226  5307 W GmsTaskScheduler: ScheduledCheckinGmsTaskService is not available. This may cause the task to be lost.
-11-13 02:20:55.601  5226  5307 I Checkin : [EventLogChimeraService] Accumulating logs since 1794536449179
-11-13 02:20:55.606  5362  5362 E .android.gms.ui: Not starting debugger since process cannot load the jdwp agent.
-11-13 02:20:55.609  5226  5303 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
-11-13 02:20:55.609  5226  5303 I GmsDebugLogger: [83] 1 [maps_core]
-11-13 02:20:55.611  5226  5308 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: mlkit.barcode.ui:0
-11-13 02:20:55.646  5362  5362 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10128; state: ENABLED
-11-13 02:20:55.646  5362  5362 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10128; state: DISABLED
-11-13 02:20:55.653  4912  5126 V ClearcutMetricXmitter: Transmission is done.
-11-13 02:20:55.655  5362  5362 D nativeloader: Configuring clns-6 for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
-11-13 02:20:55.657  5362  5362 D nativeloader: Configuring clns-7 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
-11-13 02:20:55.658  5362  5362 D nativeloader: Configuring clns-8 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
-11-13 02:20:55.658  5362  5362 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
-11-13 02:20:55.658  5362  5362 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
-11-13 02:20:55.670   361  5383 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
-11-13 02:20:55.672  3142  4991 D TrafficStats: tagSocket(68) with statsTag=0x1809, statsUid=-1
-11-13 02:20:55.673  3142  4991 D TrafficStats: tagSocket(68) with statsTag=0x1809, statsUid=-1
-11-13 02:20:55.674  3142  4991 D TrafficStats: tagSocket(68) with statsTag=0x1809, statsUid=-1
-11-13 02:20:55.690  5362  5362 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
-11-13 02:20:55.690  5362  5362 D nativeloader: Configuring product-clns-9 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
-11-13 02:20:55.690  5362  5362 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
-11-13 02:20:55.900     0     0 I logd    : logdr: UID=10128 GID=10128 PID=5226 n tail=0 logMask=4 pid=0 start=0ns deadline=0ns
-11-13 02:20:55.706  5362  5362 V GraphicsEnvironment: Currently set values for:
-11-13 02:20:55.706  5362  5362 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
-11-13 02:20:55.706  5362  5362 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
-11-13 02:20:55.707  5362  5362 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
-11-13 02:20:55.707  5362  5362 V GraphicsEnvironment: com.google.android.gms is not listed in per-application setting
-11-13 02:20:55.707  5362  5362 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-11-13 02:20:55.730  5226  5308 I ChimeraConfigurator: Detected pending changes for urgent request: [mlkit.barcode.ui]. Pending module sets: container:2318189190800+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2640104055100800+tflite_dynamite
-11-13 02:20:55.741  5352  5352 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
-11-13 02:20:55.744  5226  5307 D CompatibilityChangeReporter: Compat change id reported: 247079863; UID 10128; state: DISABLED
-11-13 02:20:55.760  5352  5352 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-11-13 02:20:55.760  5352  5352 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
-11-13 02:20:55.769  5352  5352 W app_process: Unexpected CPU variant for x86: x86_64.
-11-13 02:20:55.769  5352  5352 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
-11-13 02:20:55.771  5226  5308 I GmsDebugLogger: [73] 1801
-11-13 02:20:55.785  5226  5308 W ZappDownloader: No successful module downloads for requested features [mlkit.barcode.ui].
-11-13 02:20:55.785  5226  5308 I GmsDebugLogger: [30] [VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitBarcodeUi.optional:231818100000]
-11-13 02:20:55.796  5226  5308 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
-11-13 02:20:55.796  5226  5308 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
-11-13 02:20:55.798  5226  5308 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
-11-13 02:20:55.805  5352  5352 W libc    : Access denied finding property "ro.product.name_for_attestation"
-11-13 02:20:55.807  5352  5352 W libc    : Access denied finding property "ro.product.brand_for_attestation"
-11-13 02:20:55.807  5352  5352 W libc    : Access denied finding property "ro.product.model_for_attestation"
-11-13 02:20:55.810  5352  5352 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
-11-13 02:20:55.811  5352  5352 W Monkey  : args: [-p, com.romangold.tank2aivideostudio.debug, 1]
-11-13 02:20:55.811  5352  5352 W Monkey  :  arg: "-p"
-11-13 02:20:55.812  5352  5352 W Monkey  :  arg: "com.romangold.tank2aivideostudio.debug"
-11-13 02:20:55.812  5352  5352 W Monkey  :  arg: "1"
-11-13 02:20:55.812  5352  5352 W Monkey  : data="com.romangold.tank2aivideostudio.debug"
-11-13 02:20:55.805  5352  5352 W main    : type=1400 audit(0.0:38): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
-11-13 02:20:55.828   548  1916 W ActivityManager: registerReceiverWithFeature: no app for null
-11-13 02:20:55.830  5352  5352 W System  : No Compatibility callbacks set! Querying change 263076149
-11-13 02:20:55.830  5352  5352 W System  : No Compatibility callbacks set! Querying change 263076149
-11-13 02:20:55.830  5352  5352 W System  : No Compatibility callbacks set! Querying change 263076149
-11-13 02:20:55.835   548  1961 W ActivityTaskManager: callingPackage for (uid=2000, pid=5352) has no WPC
-11-13 02:20:55.835   548  1961 D CompatibilityChangeReporter: Compat change id reported: 244637991; UID 2000; state: ENABLED
-11-13 02:20:55.805  5352  5352 W main    : type=1400 audit(0.0:39): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
-11-13 02:20:55.836   548  1961 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10192; state: DISABLED
+11-13 02:21:00.282   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:21:00.282   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:21:00.296  1842  2616 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+11-13 02:21:00.300   548   562 W ProcessStats: Tracking association SourceState{5ee9d72 com.romangold.tank2aivideostudio.debug/10192 BTop #5382} whose proc state 2 is better than process ProcessState{c46f350 com.google.android.gms.persistent/10128 pkg=com.google.android.gms} proc state 4 (27567 skipped)
+11-13 02:21:00.301  1842  2616 I NgaEntryPointEventSendr: onServiceConnected
+11-13 02:21:00.302  1976  2817 I A       : Calling beginBinderSession().
+11-13 02:21:00.307  1842  2617 I A       : #onActiveStateChangeEvent, newState: IDLE, previousState: IDLE.
+11-13 02:21:00.309  1809  3345 W ocess.gservices: Long monitor contention with owner binder:1809_F (3714) at android.util.ArrayMap android.provider.Settings$NameValueCache.getStringsForPrefix(android.content.ContentResolver, java.lang.String, java.util.List)(Settings.java:3490) waiters=0 in android.util.ArrayMap android.provider.Settings$NameValueCache.getStringsForPrefix(android.content.ContentResolver, java.lang.String, java.util.List) for 332ms
+11-13 02:21:00.310  1976  2817 I A       : beginBinderSession(): calling binder
+11-13 02:21:00.323  1842  2616 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+11-13 02:21:00.330   548  1961 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-13 02:21:00.377  1976  3226 I PBSessionCacheImpl: Deleted sessionId[8692334442350237] from persistence.
+11-13 02:21:00.378  1976  3226 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+11-13 02:21:00.388  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:00.389   904   960 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@a36fae1
+11-13 02:21:00.390   548   562 D CoreBackPreview: Window{2c21536 u0 Splash Screen com.romangold.tank2aivideostudio.debug EXITING}: Setting back callback null
+11-13 02:21:00.391   548  1961 W InputManager-JNI: Input channel object '2c21536 Splash Screen com.romangold.tank2aivideostudio.debug (client)' was disposed without first being removed with the input manager!
+11-13 02:21:00.411   904   960 W FrameTracker: Missed App frame:UNKNOWN: 10, 8636, 123019971, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missed SF frame:UNKNOWN: 10, 8636, 123019971, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missed App frame:UNKNOWN: 74, 8650, 0, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missed SF frame:UNKNOWN: 74, 8650, 0, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missing HWUI jank callback for vsyncId: 8650, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missed App frame:UNKNOWN: 74, 8665, 0, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missed SF frame:UNKNOWN: 74, 8665, 0, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missing HWUI jank callback for vsyncId: 8665, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.411   904   960 W FrameTracker: Missing SF jank callback for vsyncId: 8704, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+11-13 02:21:00.414   904   950 V PerfettoTrigger: Not triggering com.android.telemetry.interaction-jank-monitor-39 - not enough time since last trigger
+11-13 02:21:00.417  1842  2617 W A       : Routing took 93 ms
+11-13 02:21:00.444  1842  2617 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+11-13 02:21:00.446  5128  5128 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-13 02:21:00.446  5128  5128 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-13 02:21:00.454  1842  2616 I A       : Successfully initialized all components
+11-13 02:21:00.457  5226  5318 W native  : W0000 00:00:1794536460.457890    5318 array-storage-crc.cc:152] File /data/data/com.google.android.gms/files/AppDataSearch/main/cur/ds.docids bad crc 1803034207 vs 546745141
+11-13 02:21:00.458  5226  5318 W native  : W0000 00:00:1794536460.458171    5318 array-storage-crc.cc:152] File /data/data/com.google.android.gms/files/AppDataSearch/main/cur/ds.perdocdata bad crc 3964498164 vs 2812528030
+11-13 02:21:00.458  5226  5318 W native  : W0000 00:00:1794536460.458334    5318 array-storage-crc.cc:152] File /data/data/com.google.android.gms/files/AppDataSearch/main/cur/ds.cscoring bad crc 2785193717 vs 4080503262
+11-13 02:21:00.466   904   989 D EGL_emulation: app_time_stats: avg=1616.20ms min=1616.20ms max=1616.20ms count=1
+11-13 02:21:00.487  5128  5260 W GLSUser : [AppCertManager] Exception while requesting key: 
+11-13 02:21:00.487  5128  5260 W GLSUser : java.util.concurrent.ExecutionException: avvw: Parse Proto Exception.
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dlnv.s(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dlnv.get(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at oub.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):78)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at otz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at otv.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at otx.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at otx.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at abxk.r(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at abxw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at abxw.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at cyeg.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):27)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at czpd.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):78)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:21:00.487  5128  5260 W GLSUser : Caused by: avvw: Parse Proto Exception.
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at avwn.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at avxk.onSucceeded(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at jf.onSucceeded(:com.google.android.gms.dynamite_cronetdynamite@231818047@23.18.18 (190800-0):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at ie.run(:com.google.android.gms.dynamite_cronetdynamite@231818047@23.18.18 (190800-0):4)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	... 6 more
+11-13 02:21:00.487  5128  5260 W GLSUser : Caused by: dzfz: Protocol message contained an invalid tag (zero).
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzdb.k(:com.google.android.gms@231818047@23.18.18 (190800-535401451):13)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzha.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):47)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzha.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):45)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzfd.A(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzex.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzcx.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzcx.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at dzcx.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at avwn.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	at avwn.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:21:00.487  5128  5260 W GLSUser : 	... 9 more
+11-13 02:21:00.493  5226  5318 E native  : E0000 00:00:1794536460.493121    5318 array-storage.cc:100] Array storage bad crc 3798111065 vs 0
+11-13 02:21:00.493  5226  5318 E native  : E0000 00:00:1794536460.493170    5318 dynamic-trie.cc:483] Trie mmap node failed
+11-13 02:21:00.536  5128  5260 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-13 02:21:00.597   361  5506 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
+11-13 02:21:00.600  5226  5226 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-13 02:21:00.600  5226  5226 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-13 02:21:00.633   361  5507 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-13 02:21:00.633   361  5507 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23a314ddd0
+11-13 02:21:00.633   361  5507 I resolv  : doQuery: rcode=0, ancount=8, return value=269
+11-13 02:21:00.637   361  5508 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-13 02:21:00.637   361  5508 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23e3152dd0
+11-13 02:21:00.637   361  5508 I resolv  : doQuery: rcode=0, ancount=8, return value=173
+11-13 02:21:00.641  5128  5158 I NearbySharing: FastInitiation warming period has ended [CONTEXT service_id=194 ]
+11-13 02:21:00.694  5226  5293 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=ContactsIndexer serviceId=33
+11-13 02:21:00.708  5128  5206 D TrafficStats: tagSocket(178) with statsTag=0x34000609, statsUid=10127
+11-13 02:21:00.717  5226  5318 W native  : W0000 00:00:1794536460.717887    5318 document-store.cc:173] Docstore bad crc 0xd9e58f96 vs 0x8e124a43
+11-13 02:21:00.719  5128  5206 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-13 02:21:00.719  5128  5206 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:21:00.719  5128  5206 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:00.725  1842  1842 V ClearcutMetricXmitter: Transmission is done.
+11-13 02:21:00.746  5226  5270 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+11-13 02:21:00.749  5128  5198 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 96 [CONTEXT service_id=218 ]
+11-13 02:21:00.810  5128  5162 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 162 uptime_millis: 162 exec_start_elapsed_seconds: 96 [CONTEXT service_id=218 ]
+11-13 02:21:00.832  5128  5218 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+11-13 02:21:00.832  5128  5218 D BluetoothAdapter: isLeEnabled(): ON
 
