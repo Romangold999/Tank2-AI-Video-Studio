@@ -1,11 +1,13 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:12:18.077964+00:00
+updated_utc=2026-11-13T02:12:23.078062+00:00
 workflow_run_id=43349759093
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
-STATUS=INSTALLING_REUSED_APK\nUTC=2026-11-13T02:11:34Z\n
+STATUS=ANDROID_TEST_FINISHED
+TEST_EXIT_CODE=1
+UTC=2026-11-13T02:12:20Z
 
 ===== emulator-startup.log (last 100 lines) =====
 INFO         | Android emulator version 37.2.13.0 (build_id 16740729) (CL:N/A)
@@ -107,107 +109,130 @@ INFO         | Boot completed in 37369 ms
 INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
-(not created yet)
+onError: commandError=true message=Permission Denial: starting instrumentation ComponentInfo{com.romangold.tank2aivideostudio.debug.test/androidx.test.runner.AndroidJUnitRunner} from pid=5108, uid=2000 not allowed because package com.romangold.tank2aivideostudio.debug.test does not have a signature matching the target com.romangold.tank2aivideostudio.debug
+java.lang.SecurityException: Permission Denial: starting instrumentation ComponentInfo{com.romangold.tank2aivideostudio.debug.test/androidx.test.runner.AndroidJUnitRunner} from pid=5108, uid=2000 not allowed because package com.romangold.tank2aivideostudio.debug.test does not have a signature matching the target com.romangold.tank2aivideostudio.debug
+	at android.os.Parcel.createExceptionOrNull(Parcel.java:3057)
+	at android.os.Parcel.createException(Parcel.java:3041)
+	at android.os.Parcel.readException(Parcel.java:3024)
+	at android.os.Parcel.readException(Parcel.java:2966)
+	at android.app.IActivityManager$Stub$Proxy.startInstrumentation(IActivityManager.java:6182)
+	at com.android.commands.am.Instrument.run(Instrument.java:533)
+	at com.android.commands.am.Am.runInstrument(Am.java:208)
+	at com.android.commands.am.Am.onRun(Am.java:85)
+	at com.android.internal.os.BaseCommand.run(BaseCommand.java:62)
+	at com.android.commands.am.Am.main(Am.java:54)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:359)
+Caused by: android.os.RemoteException: Remote stack trace:
+	at com.android.server.am.ActivityManagerService.startInstrumentation(ActivityManagerService.java:15526)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:2977)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2720)
+	at android.os.Binder.execTransactInternal(Binder.java:1339)
+	at android.os.Binder.execTransact(Binder.java:1275)
+
+INSTRUMENTATION_STATUS: Error=Permission Denial: starting instrumentation ComponentInfo{com.romangold.tank2aivideostudio.debug.test/androidx.test.runner.AndroidJUnitRunner} from pid=5108, uid=2000 not allowed because package com.romangold.tank2aivideostudio.debug.test does not have a signature matching the target com.romangold.tank2aivideostudio.debug
+INSTRUMENTATION_STATUS: id=ActivityManagerService
+INSTRUMENTATION_STATUS_CODE: -1
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:12:17.708  1659  1659 I InputMethodEntryManager: InputMethodEntryManager$5.onFailure():869 Fail load entries [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
-11-13 02:12:17.708  1659  1659 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
-11-13 02:12:17.708  1659  1659 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
-11-13 02:12:17.708  1659  1659 I InputMethodEntryManager: InputMethodEntryManager$5.onFailure():869 Fail load entries [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
-11-13 02:12:17.708  1659  1659 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
-11-13 02:12:17.708  1659  1659 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
-11-13 02:12:17.708  1659  1659 I InputMethodEntryManager: InputMethodEntryManager$5.onFailure():869 Fail load entries [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
-11-13 02:12:17.709  1659  1659 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
-11-13 02:12:17.709  1659  1659 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
-11-13 02:12:17.709  1659  1659 I SuperDelight: SuperDelightManager.initializeDelightSuperpacks():340 initializeDelightSuperpacks()
-11-13 02:12:17.709  1659  1659 I SuperDelight: SuperDelightManager.getDelightMetadataUriAndVersion():1011 getDelightMetadataUriAndVersion(): Phenotype : 2023020919 : https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json
-11-13 02:12:17.709  1659  1659 I SuperDelight: SuperDelightAppsSuperpacksManager.initializeDelightAppsSuperpacks():92 initializeDelightAppsSuperpacks()
-11-13 02:12:17.712  1659  1659 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
-11-13 02:12:17.714  1505  3576 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
-11-13 02:12:17.729  1505  4969 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
-11-13 02:12:17.740  1659  1659 I BaseClearcutAdapter: BaseClearcutAdapter.lambda$queryAndUpdateUserCheckboxOptIn$1():266 Checkbox = false
-11-13 02:12:17.745  1505  4969 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
-11-13 02:12:17.747  1505  3600 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
-11-13 02:12:17.748  1505  4969 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
-11-13 02:12:17.760  1505  4702 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
-11-13 02:12:17.770  1659  1659 I SpeechPackManager: SpeechPackManager.refreshManifest():352 refreshManifest()
-11-13 02:12:17.770  1659  1659 I SpeechPackManager: SpeechPackManager.registerManifest():451 registerManifest() : https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json
-11-13 02:12:17.773  1659  1752 W MetricsManager: MetricsManager.addProcessorImpl():614 Processor dzr@8712b97 already exists.
-11-13 02:12:17.776   546   555 I system_server: Background young concurrent copying GC freed 468737(19MB) AllocSpace objects, 61(1588KB) LOS objects, 30% free, 36MB/52MB, paused 68us,47us total 325.610ms
-11-13 02:12:17.778  1659  1756 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in csi
-11-13 02:12:17.778  1659  1756 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in csi
-11-13 02:12:17.779  1659  1659 I EmojiExtensionHelper: EmojiExtensionHelper.flagsUpdated():144 Received flag change: enable_emoji_tall_view{type=Boolean, finalValue=true, DEFAULT=false, PHENOTYPE=true}.
-11-13 02:12:17.779  1659  1659 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in eco
-11-13 02:12:17.779  1659  1659 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in eco
-11-13 02:12:17.782  1659  2325 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.CHARGING.PERIODIC.TASK (id=-625184177). Success.
-11-13 02:12:17.785  1659  1752 I PlayCore: UID: [10145]  PID: [1659] SplitInstallService : deferredInstall([tenoranimation_feature_split])
-11-13 02:12:17.793  1659  5055 I PlayCore: UID: [10145]  PID: [1659] SplitInstallService : Initiate binding to the service.
-11-13 02:12:17.794  1659  2284 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdatesInternal():350 Latency of updating configurations from phenotype (experiment v4): 105
-11-13 02:12:17.794  1659  2284 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():277 Latency of updating configurations from phenotype (ExperimentV4): 105
-11-13 02:12:17.794  2894  3250 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:12:17.794  1659  2284 I PhenotypeModule: PhenotypeModule.lambda$fetchAndUpdate$2():220 fetchAndUpdate() : Success, hasFlags=true, fetchStatus=2026-11-13 02:12:17{reason=2, isFullFetch=true, success=true, isEmpty=false, isDelta=false, fetchedFlagsCount=923, deletedFlagsCount=0, updatedFlagsCount=0, totalTime=740}
-11-13 02:12:17.795  2118  4962 D DownloadManager: [1] Finished with status SUCCESS
-11-13 02:12:17.798   546   975 W ActivityManager: Unable to start service Intent { act=com.google.android.play.core.splitinstall.BIND_SPLIT_INSTALL_SERVICE pkg=com.android.vending } U=0: not found
-11-13 02:12:17.798  1659  5055 I PlayCore: UID: [10145]  PID: [1659] SplitInstallService : Failed to bind to the service.
-11-13 02:12:17.799  1659  2325 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.MAINTENANCE.PERIODIC.GCM.TASK (id=-1115903610). Success.
-11-13 02:12:17.800  1659  1752 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: ExpressionDataPrunePeriodicTask (id=1111301416). Success.
-11-13 02:12:17.810  1659  1757 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in een
-11-13 02:12:17.810  1659  1757 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in een
-11-13 02:12:17.812  1659  1756 I InputContextSharingModule: InputContextSharingModule.onCreate():44 onCreate()
-11-13 02:12:17.812  4827  4827 V ClearcutMetricXmitter: Transmission is done.
-11-13 02:12:17.812  1659  1756 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214033 -> 0_resource_name_obfuscated : WaitTime = 34 ms : RunTime = 0 ms
-11-13 02:12:17.812  1659  1756 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214027 -> 0_resource_name_obfuscated : WaitTime = 33 ms : RunTime = 1 ms
-11-13 02:12:17.813  1659  1756 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214028 -> 0_resource_name_obfuscated : WaitTime = 34 ms : RunTime = 0 ms
-11-13 02:12:17.813  1659  1756 I SuperDelight: SuperDelightManager.initializeDelightSuperpacks():340 initializeDelightSuperpacks()
-11-13 02:12:17.813  1659  1756 I SuperDelight: SuperDelightManager.getDelightMetadataUriAndVersion():1011 getDelightMetadataUriAndVersion(): Phenotype : 2023020919 : https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json
-11-13 02:12:17.813  1659  1756 I SuperDelight: SuperDelightAppsSuperpacksManager.initializeDelightAppsSuperpacks():92 initializeDelightAppsSuperpacks()
-11-13 02:12:17.809  1569  4936 I MS_Utils: version of com.google.android.apps.maps = 1066937505
-11-13 02:12:17.814  1659  2325 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.CELLULAR.CHARGING.PERIODIC.TASK (id=671901099). Success.
-11-13 02:12:17.815  1659  1756 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214034 -> 0_resource_name_obfuscated : WaitTime = 3 ms : RunTime = 0 ms
-11-13 02:12:17.815  1659  1659 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in eco.
-11-13 02:12:17.816  1659  1659 W hle     : FeatureSplitObservationModule$requestDeferredInstall$2.onFailure():98 Failed in installing tenoranimation_feature_split.
-11-13 02:12:17.816  1659  1659 W hle     : lja: Failed to bind to the service.
-11-13 02:12:17.816  1659  1659 W hle     : 	at lit.b(PG:9)
-11-13 02:12:17.816  1659  1659 W hle     : 	at liq.run(PG:1)
-11-13 02:12:17.816  1659  1659 W hle     : 	at android.os.Handler.handleCallback(Handler.java:958)
-11-13 02:12:17.816  1659  1659 W hle     : 	at android.os.Handler.dispatchMessage(Handler.java:99)
-11-13 02:12:17.816  1659  1659 W hle     : 	at android.os.Looper.loopOnce(Looper.java:205)
-11-13 02:12:17.816  1659  1659 W hle     : 	at android.os.Looper.loop(Looper.java:294)
-11-13 02:12:17.816  1659  1659 W hle     : 	at android.os.HandlerThread.run(HandlerThread.java:67)
-11-13 02:12:17.819  2894  2894 I PhenotypeBackgroundRecv: Skipping com.google.android.dialershared.directboot#com.google.android.dialer which doesn't use ProcessStable flags.
-11-13 02:12:17.820  1659  2325 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.WIFI.CHARGING.PERIODIC.TASK (id=1350725024). Success.
-11-13 02:12:17.825  1659  2256 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():577 emoji.registerManifest() cancelled
-11-13 02:12:17.825  1659  2256 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/emoji/20230201113008/superpacks_manifest.zip to emoji-2023020111.zip.fetched (constraints: m:b:u:l)
-11-13 02:12:17.826  1659  2256 W SP      : Manifest for delight is not available, version: 2023020919
-11-13 02:12:17.826  1659  2256 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: 2022081613
-11-13 02:12:17.826  1659  2256 I SP      : Registering content_cache.2022112214, url: https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022112214, current: 2020101916
-11-13 02:12:17.827  1659  2256 I SP      : Registering dynamic_art.20220108, url: https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json, constraints: *:*:*:*, flags: *, requested: 20220108, current: -1
-11-13 02:12:17.827  1659  1756 I SuperDelight: SuperDelightManager.lambda$registerAndUpgradeSuperpacks$5():476 SuperDelightManager#registerAndUpgradeSuperpacks(delight): current 2022101700, required 2023020919
-11-13 02:12:17.827  1505  4702 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
-11-13 02:12:17.828  1659  1756 I SuperDelight: SuperDelightManager.lambda$registerAndUpgradeSuperpacks$5():476 SuperDelightManager#registerAndUpgradeSuperpacks(delight): current 2022101700, required 2023020919
-11-13 02:12:17.829  1659  2256 I SP      : Registering content_cache.2022112214, url: https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022112214, current: 2020101916
-11-13 02:12:17.830   546   634 D ActivityManager: freezing 3921 com.android.dynsystem:dynsystem
-11-13 02:12:17.831   546   634 D ActivityManager: freezing 3882 com.android.dynsystem
-11-13 02:12:17.831   546   634 D ActivityManager: freezing 2618 com.android.localtransport
-11-13 02:12:17.836  1659  2256 I SP      : Registering transformer_concept.2023011913, url: https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json, constraints: *:*:*:*, flags: *, requested: 2023011913, current: -1
-11-13 02:12:17.836   358  5057 I resolv  : GetAddrInfoHandler::run: {101 101 101 983141 10145 0}
-11-13 02:12:17.837   358  5058 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
-11-13 02:12:17.837   358  5058 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7d6d3bd2c160
-11-13 02:12:17.837   358  5058 I resolv  : doQuery: rcode=0, ancount=8, return value=377
-11-13 02:12:17.839  1659  4597 I SpeechPackManager: SpeechPackManager.lambda$registerManifest$4():461 registerManifest() : Fetching hash 1327534105
-11-13 02:12:17.843  1505  4702 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
-11-13 02:12:17.845   358  5059 I resolv  : res_nmkquery: (QUERY, IN, A)
-11-13 02:12:17.845   358  5059 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7d6c2bd2add0
-11-13 02:12:17.845   358  5059 I resolv  : doQuery: rcode=0, ancount=8, return value=281
-11-13 02:12:17.846  1659  3258 D TrafficStats: tagSocket(110) with statsTag=0xffffffff, statsUid=-1
-11-13 02:12:17.853  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-11-13 02:12:17.854  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-11-13 02:12:17.854  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
-11-13 02:12:17.854  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-11-13 02:12:17.854  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-11-13 02:12:17.854  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
-11-13 02:12:17.854  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
-11-13 02:12:17.854  1659  3258 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
-11-13 02:12:17.856  1910  1910 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
-11-13 02:12:17.871   546   634 D ActivityManager: freezing 2286 com.android.keychain
+11-13 02:12:19.708   903   986 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+11-13 02:12:19.708   903   986 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+11-13 02:12:19.708   903   986 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+11-13 02:12:19.711  1132  1132 D CarrierSvcBindHelper: onPackageModified: com.romangold.tank2aivideostudio.debug.test
+11-13 02:12:19.711  1132  1132 D CarrierSvcBindHelper: No carrier app for: 0
+11-13 02:12:19.712   903   986 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+11-13 02:12:19.736  1505  3600 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-13 02:12:19.737  1505  3600 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.737  1505  3600 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-13 02:12:19.737  1505  3600 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-13 02:12:19.738  1505  3600 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-13 02:12:19.738  1505  3600 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.738  1505  3600 I NamespaceManager: Package 1 name not found! Using module version.
+11-13 02:12:19.746   903   986 D StylusManager: Stylus InputDevice changed: 7 virtio_input_multi_touch_4
+11-13 02:12:19.749  4440  4548 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-13 02:12:19.755  1659  2256 I SP      : Scheduling: download registered, 1 started, 0 paused, 0 scheduled, 6 pending: dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:60932fe37d5f6d7a3e60488d8a1755c4 @ {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ * {m:b:u:l, bg}
+11-13 02:12:19.758  4440  4586 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@dd45407
+11-13 02:12:19.762   903   986 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+11-13 02:12:19.763   903   986 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+11-13 02:12:19.767  4440  4549 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.messaging
+11-13 02:12:19.767  1505  3600 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-13 02:12:19.768  1505  3600 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-13 02:12:19.772  1132  1412 D ImsResolver: maybeAddedImsService, packageName: com.romangold.tank2aivideostudio.debug.test
+11-13 02:12:19.777  1505  3600 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.777  1505  3600 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-13 02:12:19.781  1505  3600 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-13 02:12:19.781  1505  3600 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-13 02:12:19.782  1505  3600 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.783  1505  3600 I NamespaceManager: Package 1 name not found! Using module version.
+11-13 02:12:19.788  4440  4558 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@343b4d2
+11-13 02:12:19.794   903   986 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+11-13 02:12:19.798   903   986 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+11-13 02:12:19.799   903   986 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+11-13 02:12:19.805  1659  2256 I SP      : Scheduling: download registered, 1 started, 0 paused, 0 scheduled, 7 pending: dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:60932fe37d5f6d7a3e60488d8a1755c4 @ {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ * {m:b:u:l, bg}
+11-13 02:12:19.805  1659  2256 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/emoji2expr.pb to e9a5a2de48a4f8b9a658b411bcfb375d.fetched (constraints: m:b:u:l)
+11-13 02:12:19.808  1505  5053 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-13 02:12:19.809  1761  1761 I AiAiEcho: AppFetcherImpl onPackageChanged com.romangold.tank2aivideostudio.debug.test.
+11-13 02:12:19.809  1659  2256 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/text2expr.pb to 8722425f4121ffdea802b1066df73991.fetched (constraints: m:b:u:l)
+11-13 02:12:19.810  1659  2256 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/contextual_ek.pb to fa1da98da1212aad6fb9a8efaff48148.fetched (constraints: m:b:u:l)
+11-13 02:12:19.810  1761  2798 I AiAiEcho: AppIndexer Package:[com.romangold.tank2aivideostudio.debug.test] UserProfile:[0] Enabled:[true].
+11-13 02:12:19.810  1761  2798 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.romangold.tank2aivideostudio.debug.test], userId:[0], reason:[package is updated.].
+11-13 02:12:19.812  1505  5053 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-13 02:12:19.812  1659  2256 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():68 DownloadSlicing#getSlices() : Locale = [en_US]
+11-13 02:12:19.814  1505  5053 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.814  1505  5053 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-13 02:12:19.815  1505  5053 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-13 02:12:19.815  1505  5053 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-13 02:12:19.815  1505  5053 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.816  1659  2256 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():125 DownloadSlicing#getSlices(): result {slices=[{delight:main_en_840_2022102600_1, m:*:*:*, fg}], last batch=true, sync metadata=false}
+11-13 02:12:19.816  1659  2256 I SP      : Syncing delight (2023020919) with slices: [{main_en_840_2022102600_1, m:*:*:*, fg}], metadata: false
+11-13 02:12:19.834  1505  5053 I NamespaceManager: Package 1 name not found! Using module version.
+11-13 02:12:19.852  5108  5108 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-13 02:12:19.873  4440  4549 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-13 02:12:19.881  5108  5108 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-13 02:12:19.881  5108  5108 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
+11-13 02:12:19.889  5108  5108 W app_process: Unexpected CPU variant for x86: x86_64.
+11-13 02:12:19.889  5108  5108 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-13 02:12:19.891  1681  2063 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.apps.wellbeing
+11-13 02:12:19.899  1505  5053 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-13 02:12:19.903  1505  5053 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-13 02:12:19.905  1505  5053 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.910  1505  5053 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-13 02:12:19.911  1505  5053 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-13 02:12:19.911  1505  5053 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-13 02:12:19.914  1505  5053 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-13 02:12:19.926  1505  5053 I NamespaceManager: Package 1 name not found! Using module version.
+11-13 02:12:19.931  1659  2256 I SP      : Pausing download content_cache:8722425f4121ffdea802b1066df73991, reason: PREEMPTED
+11-13 02:12:19.933  1569  3093 I GmsDebugLogger: [78] 
+11-13 02:12:19.934  5108  5108 W libc    : Access denied finding property "ro.product.name_for_attestation"
+11-13 02:12:19.934  5108  5108 W libc    : Access denied finding property "ro.product.brand_for_attestation"
+11-13 02:12:19.934  5108  5108 W libc    : Access denied finding property "ro.product.model_for_attestation"
+11-13 02:12:19.934  1659  2256 I SP      : Pausing download content_cache:e9a5a2de48a4f8b9a658b411bcfb375d, reason: PREEMPTED
+11-13 02:12:19.934  1659  2256 I SP      : Pausing download dynamic_art:b1f6f47a53f7820be91b9fe247728980, reason: PREEMPTED
+11-13 02:12:19.935  5108  5108 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-13 02:12:19.943  1659  2256 I SP      : Pausing download content_cache:fa1da98da1212aad6fb9a8efaff48148, reason: PREEMPTED
+11-13 02:12:19.943  1659  2256 I SP      : Pausing download dynamic_art:305f81355a729e382ea9f374dd286d9f, reason: PREEMPTED
+11-13 02:12:19.944  1659  2256 I SP      : Pausing download emoji:60932fe37d5f6d7a3e60488d8a1755c4, reason: PREEMPTED
+11-13 02:12:19.944  1659  2256 I SP      : Pausing download transformer_concept:2023011913_en, reason: PREEMPTED
+11-13 02:12:19.945  1659  2256 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+11-13 02:12:19.946   546   560 I ActivityManager: Background started FGS: Allowed [callingPackage: com.google.android.inputmethod.latin; callingUid: 10145; uidState: IMPB; uidBFSL: n/a; intent: Intent { cmp=com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.dataservice.superpacks.SuperpacksForegroundTaskService }; code:CURRENT_INPUT_METHOD; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+11-13 02:12:19.948  5108  5108 D UiAutomationConnection: Created on user UserHandle{0}
+11-13 02:12:19.949   546   559 W ActivityManager: Permission Denial: starting instrumentation ComponentInfo{com.romangold.tank2aivideostudio.debug.test/androidx.test.runner.AndroidJUnitRunner} from pid=5108, uid=2000 not allowed because package com.romangold.tank2aivideostudio.debug.test does not have a signature matching the target com.romangold.tank2aivideostudio.debug
+11-13 02:12:19.960  1659  1659 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():41 SuperpacksForegroundTaskService.onStartCommand(): 1
+11-13 02:12:19.963  5108  5108 I app_process: System.exit called, status: 1
+11-13 02:12:19.963  5108  5108 I AndroidRuntime: VM exiting with result code 1.
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: GmsPipelineLogger Failed to obtain device id [CONTEXT service_id=256 ]
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: java.lang.NullPointerException
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at dhat.y(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at avot.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at avot.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at avor.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:19.981  1569  3135 W GmsPipelineLogger: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:12:19.986  1505  5053 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
 
