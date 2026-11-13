@@ -1,12 +1,12 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:11:03.075681+00:00
+updated_utc=2026-11-13T02:11:08.076334+00:00
 workflow_run_id=43349759093
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
 STATUS=EMULATOR_BOOT_WAIT
-ELAPSED_SECONDS=10
+ELAPSED_SECONDS=15
 EMULATOR_PID=4126
 ADB_DEVICE_STATE=offline
 BOOT_COMPLETED=not-yet
