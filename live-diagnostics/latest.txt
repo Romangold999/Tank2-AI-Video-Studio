@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:36:59.354349+00:00
+updated_utc=2026-11-13T02:37:04.354444+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -137,104 +137,104 @@ text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] cl
 text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:36:56.511  1740  2814 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
-11-13 02:36:56.511   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-11-13 02:36:56.511  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:56.511  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:56.511  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:56.511  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:56.513  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:56.513  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:56.513  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:56.513  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:56.513  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
-11-13 02:36:56.513  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
-11-13 02:36:56.516   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-11-13 02:36:57.518  6473  6473 W AccessibilityNodeInfoDumper: Fetch time: 3ms
-11-13 02:36:57.520   547  2194 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
-11-13 02:36:57.520   547  2194 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
-11-13 02:36:57.520  6473  6473 D AndroidRuntime: Shutting down VM
-11-13 02:36:57.520  1740  2814 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
-11-13 02:36:57.522  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:57.522  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:57.522  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:57.522  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:57.522  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:57.522  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:57.522  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:57.522  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:57.523  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
-11-13 02:36:57.525   547   547 D BatterySaverPolicy: accessibility changed to false, updating policy.
-11-13 02:36:57.526  1835  2457 I A       : NGA enabled in interactor.
-11-13 02:36:57.526  1835  2457 I A       : Nga state changed to NgaStateDetails{state=ENABLED, isSpecialExperience=false}
-11-13 02:36:57.527  1757  6233 I A       : Initializing all components
-11-13 02:36:57.529  1757  2319 I A       : onIsEnabledChanged, isEnabled: false
-11-13 02:36:57.529  1757  2320 I A       : State changed: IDLE => IDLE by NGA_STATE_CHANGED and N/A with Optional.empty
-11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.529  1757  2320 I A       : Recognizer choice: (recognizer_type: 1, recognizer_mode: 1, choice_reason: 4)
-11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.530  1757  2320 I A       : onActiveStateChangeEvent: IDLE => IDLE
-11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.530  1757  2319 I A       : onOpaVisibilityChanged: false
-11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 I A       : Setting session to type: NO_SESSION
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 I A       : setNavBarVisible: GestureNavBarVisible{navbarVisible=true}
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:57.531  1757  2319 I A       : onDisabled. Registered: false
-11-13 02:36:57.532  1757  2320 I A       : #onActiveStateChangeEvent, newState: IDLE, previousState: IDLE.
-11-13 02:36:57.532  1757  6233 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
-11-13 02:36:57.533  1757  6233 I A       : [Memory] eligibility: StashEligibility{6}
-11-13 02:36:57.538  1757  2319 I A       : Initialize
-11-13 02:36:57.539  1757  2319 I A       : on opa visibility changed false
-11-13 02:36:57.539  1757  2319 I A       : on opa visibility changed false
-11-13 02:36:57.539  1757  2319 I A       : stopListening(NGA_PAUSED_UNKNOWN_REASON, NGA_CREATE), idleOverride=NOT_LISTENING
-11-13 02:36:57.541  1757  2320 I NgaEntryPointEventSendr: setupConnection
-11-13 02:36:57.546   547  2628 D OomAdjuster: Not killing cached processes
-11-13 02:36:57.551   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-11-13 02:36:57.559  1835  1835 I A       : Creating pss binder().
-11-13 02:36:57.560  1757  2320 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
-11-13 02:36:57.560  1757  2320 I NgaEntryPointEventSendr: onServiceConnected
-11-13 02:36:57.561  1835  3209 I A       : Calling beginBinderSession().
-11-13 02:36:57.561  1835  3209 I A       : beginBinderSession(): calling binder
-11-13 02:36:57.561  1757  2320 I NgaEntryPointEventSendr: State changed: Connecting => Ready
-11-13 02:36:57.562  1757  2319 I A       : Successfully initialized all components
-11-13 02:36:57.569  1757  1757 V ClearcutMetricXmitter: Transmission is done.
-11-13 02:36:57.570   547  2195 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
-11-13 02:36:57.584  1757  2319 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
-11-13 02:36:57.584  1835  2818 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
-11-13 02:36:57.585  1835  3465 I PBSessionCacheImpl: Deleted sessionId[8072209885176436] from persistence.
-11-13 02:36:57.588  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:57.589  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:57.589  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:57.589  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:57.591  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:57.591  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:57.591  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:59.087   902   902 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+11-13 02:37:04.052  5589  6510 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:37:04.055  5687  5780 W PeoplePU: getComponentEnabledSetting failed.
+11-13 02:37:04.055  5687  5780 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at bvgq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:37:04.055  5687  5780 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5159)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5141)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:388)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:3012)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6334)
+11-13 02:37:04.055  5687  5780 W PeoplePU: 
+11-13 02:37:04.056  5687  5780 I FsaEntryPointSwitcher: setting component enabled=1 for com.google.android.gms.people.sync.focus.ContactsSyncAdapterService
+11-13 02:37:04.056  5687  5780 I FsaEntryPointSwitcher: Setting component enabled succeeds.
+11-13 02:37:04.057  5687  5780 W PeoplePU: getComponentEnabledSetting failed.
+11-13 02:37:04.057  5687  5780 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at bvgq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):29)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:37:04.057  5687  5780 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:37:04.058  5687  5780 W PeoplePU: getComponentEnabledSetting failed.
+11-13 02:37:04.058  5687  5780 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:37:04.058  5687  5780 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:37:04.064  5687  5777 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43201] seconds from now (1794537424064) [CONTEXT service_id=264 ]
+11-13 02:37:04.065  5687  5777 I GmsDebugLogger: [83] 1 [vision.ocr]
+11-13 02:37:04.066  5687  6540 W Vision  : Request for optional module download of ocr failed. Request again.
+11-13 02:37:04.066  5687  6540 W Vision  : Would have logged:
+11-13 02:37:04.066  5687  6540 W Vision  : # dsae@37884fe7
+11-13 02:37:04.066  5687  6540 I Vision  : Schedule retrying download ocr at 161605 with backoff 10 seconds
+11-13 02:37:04.069  5589  6510 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService started execution. cause:5 exec_start_elapsed_seconds: 161 [CONTEXT service_id=218 ]
+11-13 02:37:04.077  5687  5775 I ChimeraConfigurator: Starting update, reason: 1 urgentFeatures: 
+11-13 02:37:04.083  5687  5780 I PeopleGalProvider: Gal directories started.
+11-13 02:37:04.083  5687  5780 I PeopleGalProvider: Method 1 completed.
+11-13 02:37:04.083  5687  5780 I PeopleGalProvider: Method 1 finished successfully.
+11-13 02:37:04.089  1105  1105 D BluetoothPbapService:  onChange on contact uri 
+11-13 02:37:04.091  5687  5780 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
+11-13 02:37:04.091   547   576 W ProcessStats: Tracking association SourceState{190deb system/1000 BFgs #11994} whose proc state 4 is better than process ProcessState{95072de android.process.acore/10084 pkg=com.android.providers.contacts (sub)} proc state 6 (11 skipped)
+11-13 02:37:04.092  5687  5780 I GalProviderController: Setting component enabled succeeds.
+11-13 02:37:04.100  5687  5780 I PeopleGalProvider: Gal directories started.
+11-13 02:37:04.101  5687  5780 I PeopleGalProvider: Method 1 completed.
+11-13 02:37:04.101  5687  5780 I PeopleGalProvider: Method 1 finished successfully.
+11-13 02:37:04.103  1105  6558 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+11-13 02:37:04.103  5687  5780 I DeletedNullContactsCleanup: Scheduling the service.
+11-13 02:37:04.104  5687  5780 I BackupAndSyncValidation: Scheduling the service.
+11-13 02:37:04.105   547  2190 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:37:04.105   547  2190 D PackageManager: Clear ephemeral installer activity
+11-13 02:37:04.107  3377  6527 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-13 02:37:04.107  3377  6527 W libc    : Access denied finding property "service.adb.tls.port"
+11-13 02:37:04.099  3377  3377 W IntentService[D: type=1400 audit(0.0:97): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-13 02:37:04.107  3377  3377 W IntentService[D: type=1400 audit(0.0:98): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-13 02:37:04.116  5687  5780 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+11-13 02:37:04.122  5687  5780 I HeterodyneSyncScheduler: Cancel all previously scheduled polling [CONTEXT service_id=51 ]
+11-13 02:37:04.125  5687  5780 I HeterodyneSyncScheduler: Scheduling Phenotype for first execution 9887 seconds from now (1794537424125) [CONTEXT service_id=51 ]
 
