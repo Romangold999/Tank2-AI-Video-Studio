@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:21:11.055423+00:00
+updated_utc=2026-11-13T02:21:16.055536+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -123,106 +123,107 @@ text='Photos' desc='' class=android.widget.TextView bounds=[345,383][461,434] cl
 text='' desc='Albums' class=android.widget.LinearLayout bounds=[540,346][813,472] clickable=true
 text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] clickable=false
 text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
+IMAGE_SELECTION_TAPPED
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:21:09.965   548  1952 W JobScheduler: Job didn't exist in JobStore: 9e275a1 #u0a132/-353 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
-11-13 02:21:09.974  5128  5679 W SystemServiceRegistry: No service published for: contexthub
-11-13 02:21:09.981  5128  5682 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
-11-13 02:21:09.988  5128  5682 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
-11-13 02:21:09.989  5128  5682 I GCoreUlr: Unbound from all signal providers.
-11-13 02:21:10.002  5128  5128 I GCoreUlr: Unbound from all signal providers.
-11-13 02:21:10.002  5128  5128 I GCoreUlr: Stopping handler for UlrDispSvcFast
-11-13 02:21:10.165   548  2061 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
-11-13 02:21:10.168   548   548 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
-11-13 02:21:10.375     0     0 I servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
-11-13 02:21:10.173   548  2061 I RegistrationProxy: IGetRegistrationCallback.onSuccess
-11-13 02:21:10.175   548  2514 I RemoteProvisionSysSvc: Fetching key 10128 for client 149486637
-11-13 02:21:10.175   548  2514 I RegistrationProxy: getKeyAsync operation started with callback 265766242
-11-13 02:21:10.176  3695  3846 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10128, callback: 234649778
-11-13 02:21:10.176  3695  3846 I RkpdRegistrationBinder: Key successfully assigned to client
-11-13 02:21:10.177   548   548 I RemoteProvisionSysSvc: Successfully fetched key for client 149486637
-11-13 02:21:10.201  5741  5741 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-11-13 02:21:10.211  5741  5741 I AndroidRuntime: Using default boot image
-11-13 02:21:10.211  5741  5741 I AndroidRuntime: Leaving lock profiling enabled
-11-13 02:21:10.215  5741  5741 I app_process: Core platform API reporting enabled, enforcing=false
-11-13 02:21:10.216  5741  5741 I app_process: Using CollectorTypeCC GC.
-11-13 02:21:10.323  5741  5741 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
-11-13 02:21:10.330  5226  5320 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
-11-13 02:21:10.331  5226  5320 I Icing   : Indexing done com.google.android.gms-apps
-11-13 02:21:10.336   548  2061 W ProcessStats: Tracking association SourceState{2062e29 com.google.android.gms/10128 BFgs #6063} whose proc state 4 is better than process ProcessState{48f4db8 com.google.android.gms.unstable/10128 pkg=com.google.android.gms} proc state 14 (2328 skipped)
-11-13 02:21:10.345  5741  5741 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
-11-13 02:21:10.345  5741  5741 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
-11-13 02:21:10.362  5741  5741 W app_process: Unexpected CPU variant for x86: x86_64.
-11-13 02:21:10.362  5741  5741 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
-11-13 02:21:10.368  5741  5741 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]} | PCL[])
-11-13 02:21:10.370  5741  5741 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}#PCL[/system/framework/android.test.base.jar*836642756]} | PCL[/system/framework/android.test.runner.jar*4168958247])
-11-13 02:21:10.397  5741  5741 W libc    : Access denied finding property "ro.product.name_for_attestation"
-11-13 02:21:10.398  5741  5741 W libc    : Access denied finding property "ro.product.brand_for_attestation"
-11-13 02:21:10.398  5741  5741 W libc    : Access denied finding property "ro.product.model_for_attestation"
-11-13 02:21:10.399  5741  5741 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-11-13 02:21:10.402  5741  5741 D UiAutomationConnection: Created on user UserHandle{0}
-11-13 02:21:10.402  5741  5741 I UiAutomation: Initialized for user 0 on display 0
-11-13 02:21:10.402  5741  5741 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
-11-13 02:21:10.393  5741  5741 W main    : type=1400 audit(0.0:53): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
-11-13 02:21:10.407   548  1886 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
-11-13 02:21:10.407   548  1886 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation) when called by user 0
-11-13 02:21:10.397  5741  5741 W main    : type=1400 audit(0.0:54): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
-11-13 02:21:10.413  3142  3717 W libc    : Access denied finding property "persist.adb.tls_server.enable"
-11-13 02:21:10.414  3142  3717 W libc    : Access denied finding property "service.adb.tls.port"
-11-13 02:21:10.397  5741  5741 W main    : type=1400 audit(0.0:55): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
-11-13 02:21:10.415   548  1886 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
-11-13 02:21:10.417  1806  2392 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
-11-13 02:21:10.417  5741  5759 V UiAutomation: Init UiAutomation@8e85a1d[id=3, displayId=0, flags=0]
-11-13 02:21:10.418  1806  1995 I AiAiEcho: Predicting[0]: 
-11-13 02:21:10.418  1806  1995 I AiAiEcho: EchoTargets: 
-11-13 02:21:10.418  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:21:10.419  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:21:10.419  1806  1995 I AiAiEcho: Predicting[0]: 
-11-13 02:21:10.419  1806  1995 I AiAiEcho: EchoTargets: 
-11-13 02:21:10.419  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:21:10.419  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:21:10.420  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
-11-13 02:21:10.420   548  2514 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
-11-13 02:21:10.421  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
-11-13 02:21:10.409  3142  3142 W binder:3142_4: type=1400 audit(0.0:56): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:21:10.435  1976  2510 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
-11-13 02:21:10.435  1976  2510 I A       : Nga state changed to NgaStateDetails{state=DISABLED, isSpecialExperience=false}
-11-13 02:21:10.409  3142  3142 W binder:3142_4: type=1400 audit(0.0:57): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:21:10.441  1842  2617 I A       : Unsubscribed to apa or classic variant change.
-11-13 02:21:10.443   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-11-13 02:21:10.444  1842  3379 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
-11-13 02:21:10.444  1842  3379 I A       : [Memory] eligibility: StashEligibility{4}
-11-13 02:21:10.449  1806  3286 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
-11-13 02:21:10.449  1806  1995 I AiAiEcho: Predicting[0]: 
-11-13 02:21:10.449  1806  1995 I AiAiEcho: EchoTargets: 
-11-13 02:21:10.449  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:21:10.451  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:21:10.451  1806  1995 I AiAiEcho: Predicting[0]: 
-11-13 02:21:10.451  1806  1995 I AiAiEcho: EchoTargets: 
-11-13 02:21:10.451  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:21:10.451  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:21:10.455  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
-11-13 02:21:10.456  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
-11-13 02:21:10.459   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-11-13 02:21:10.471   548   548 D BatterySaverPolicy: accessibility changed to true, updating policy.
-11-13 02:21:10.474   548   995 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
-11-13 02:21:10.543  3142  3717 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
-11-13 02:21:10.551  3142  3717 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
-11-13 02:21:10.554  3142  3717 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
-11-13 02:21:10.663   548  1886 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:21:10.663   548  1886 D PackageManager: Clear ephemeral installer activity
-11-13 02:21:10.668   548  1886 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:21:10.668   548  1886 D PackageManager: Clear ephemeral installer activity
-11-13 02:21:10.757  3142  3717 W SystemServiceRegistry: No service published for: persistent_data_block
-11-13 02:21:10.774   361  5761 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
-11-13 02:21:10.775   361  5762 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
-11-13 02:21:10.775   361  5762 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23a3150290
-11-13 02:21:10.775   361  5762 I resolv  : doQuery: rcode=0, ancount=8, return value=260
-11-13 02:21:10.776   361  5763 I resolv  : res_nmkquery: (QUERY, IN, A)
-11-13 02:21:10.776   361  5763 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23e3153090
-11-13 02:21:10.776   361  5763 I resolv  : doQuery: rcode=0, ancount=8, return value=164
-11-13 02:21:10.777  5226  5320 D TrafficStats: tagSocket(68) with statsTag=0x30003000, statsUid=-1
-11-13 02:21:10.781  5226  5320 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
-11-13 02:21:10.781  5226  5320 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:21:10.781  5226  5320 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:21:14.476  1108  1277 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:197 unregister_client: Cancelled address rotation alarm
+11-13 02:21:14.476  1108  1321 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:21:14.476  1108  1321 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:21:14.476  1108  1405 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:21:14.476  1108  1321 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:21:14.476  1108  1321 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:21:14.476  4530  4654 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@dd51ff9
+11-13 02:21:14.476  1108  1405 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:21:14.479  1108  1321 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:21:14.479  1108  1321 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:21:14.479  1108  1405 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:21:14.479  1108  1321 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:21:14.479  1108  1321 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:21:14.479  1108  1405 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:21:14.479  1108  1321 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:21:14.479  1108  1321 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:21:14.479  1108  1405 D BtGatt.ScanManager: configureRegularScanParams() - queue=1
+11-13 02:21:14.479  1108  1405 D BtGatt.ScanManager: configureRegularScanParams() - queue empty, scan stopped
+11-13 02:21:14.481  1108  3210 D BtGatt.GattService: unregisterScanner() - scannerId=2
+11-13 02:21:14.481  1108  3210 I bt_stack: [INFO:le_scanning_manager.cc(162)] Unregister in shim layer, scanner_id:2
+11-13 02:21:14.482  5128  5218 I Nearby  : [MBleClient] M hardware scan: 1 clients, scanMode= OPPORTUNISTIC, filters size = 5 [CONTEXT service_id=49 ]
+11-13 02:21:14.482  5128  5218 D BluetoothAdapter: isLeEnabled(): ON
+11-13 02:21:14.485  1108  3210 D BtGatt.GattService: registerScanner() - UUID=20804dbe-22f8-4e85-a4ad-3d5163fe7bd2
+11-13 02:21:14.486  1108  3210 I bt_stack: [INFO:le_scanning_manager.cc(155)] RegisterScanner in shim layer
+11-13 02:21:14.486  1108  1321 D BtGatt.GattService: onScannerRegistered() - UUID=20804dbe-22f8-4e85-a4ad-3d5163fe7bd2, scannerId=2, status=0
+11-13 02:21:14.486  5128  5145 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=2 mScannerId=0
+11-13 02:21:14.486  1108  3210 D BtGatt.GattService: start scan with filters
+11-13 02:21:14.488  1108  3210 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=224, mManufacturerData=[0, 0, 0], mManufacturerDataMask=[0, 0, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fef3-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000feaa-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1,
+11-13 02:21:14.490  1108  3210 D BtGatt.ScanManager: startScan()  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10128]]
+11-13 02:21:14.490  1108  3210 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-13 02:21:14.490  1108  3210 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:829 get_profile_interface: get_profile_interface: id = activity_attribution
+11-13 02:21:14.490  1108  1405 D BtGatt.ScanManager: handling starting scan
+11-13 02:21:14.495   548   577 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10133; state: DISABLED
+11-13 02:21:14.496   548   578 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10133; state: ENABLED
+11-13 02:21:14.501   362   362 D Zygote  : Forked child process 5803
+11-13 02:21:14.501   548   578 I ActivityManager: Start proc 5803:com.google.android.webview/u0a133 for broadcast {com.google.android.webview/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver}
+11-13 02:21:14.521  5803  5803 I android.webview: Using CollectorTypeCC GC.
+11-13 02:21:14.522  5803  5803 W android.webview: Unexpected CPU variant for x86: x86_64.
+11-13 02:21:14.522  5803  5803 W android.webview: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-13 02:21:14.526  5803  5803 E android.webview: Not starting debugger since process cannot load the jdwp agent.
+11-13 02:21:14.533   548   977 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10133; state: DISABLED
+11-13 02:21:14.533   548   977 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10133; state: DISABLED
+11-13 02:21:14.535   548   629 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10133; state: ENABLED
+11-13 02:21:14.549  5226  5637 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.549  5226  5728 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.550  5226  5728 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-13 02:21:14.550  5226  5637 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.551  5226  5637 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-13 02:21:14.552  5226  5313 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-13 02:21:14.553  5226  5313 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-13 02:21:14.554  5226  5313 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.client_error_logging [CONTEXT service_id=340 ]
+11-13 02:21:14.555  5226  5728 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.556  5226  5728 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-13 02:21:14.557  5226  5307 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-13 02:21:14.558  5226  5307 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-13 02:21:14.559  5226  5307 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-13 02:21:14.562  5803  5803 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10133; state: ENABLED
+11-13 02:21:14.562  5803  5803 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10133; state: ENABLED
+11-13 02:21:14.564   548  1358 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10133; state: ENABLED
+11-13 02:21:14.567  5803  5803 W ziparchive: Unable to open '/data/app/~~xwpsku4Sy8RANl8qI2hOzQ==/com.google.android.trichromelibrary_567263637-sjeAoj9qAI3tTJrm67NQEA==/TrichromeLibrary.dm': No such file or directory
+11-13 02:21:14.567  5803  5803 W ziparchive: Unable to open '/data/app/~~xwpsku4Sy8RANl8qI2hOzQ==/com.google.android.trichromelibrary_567263637-sjeAoj9qAI3tTJrm67NQEA==/TrichromeLibrary.dm': No such file or directory
+11-13 02:21:14.567  5803  5803 W android.webview: Entry not found
+11-13 02:21:14.570  5803  5803 D nativeloader: Configuring clns-6 for other apk /data/app/~~xwpsku4Sy8RANl8qI2hOzQ==/com.google.android.trichromelibrary_567263637-sjeAoj9qAI3tTJrm67NQEA==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/lib/x86_64:/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~xwpsku4Sy8RANl8qI2hOzQ==/com.google.android.trichromelibrary_567263637-sjeAoj9qAI3tTJrm67NQEA==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+11-13 02:21:14.579  5803  5803 D nativeloader: Configuring clns-7 for other apk /data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/lib/x86_64:/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~xwpsku4Sy8RANl8qI2hOzQ==/com.google.android.trichromelibrary_567263637-sjeAoj9qAI3tTJrm67NQEA==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+11-13 02:21:14.585  5803  5803 V GraphicsEnvironment: Currently set values for:
+11-13 02:21:14.585  5803  5803 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:21:14.585  5803  5803 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:21:14.585  5803  5803 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.webview: false
+11-13 02:21:14.585  5803  5803 V GraphicsEnvironment: com.google.android.webview is not listed in per-application setting
+11-13 02:21:14.585  5803  5803 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:21:14.587  5803  5803 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+11-13 02:21:14.588  5803  5803 I cr_WebViewApkApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview
+11-13 02:21:14.588   548   977 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10133. pid: 5803
+11-13 02:21:14.610  5226  5313 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.610  5226  5706 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.611  5226  5706 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-13 02:21:14.611  5226  5706 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-13 02:21:14.612  5226  5313 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-13 02:21:14.612  5226  5706 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-13 02:21:14.612  5226  5706 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.romanesco [CONTEXT service_id=340 ]
+11-13 02:21:14.613  5226  5337 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.613  5226  5313 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-13 02:21:14.613  5226  5337 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-13 02:21:14.614  5226  5337 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-13 02:21:14.614  5226  5337 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-13 02:21:14.615  5226  5307 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.638  5128  5171 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1794536474637) [CONTEXT service_id=51 ]
+11-13 02:21:14.691  5226  5821 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.691  5226  5821 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.691  5226  5821 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-13 02:21:14.692  5226  5706 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-13 02:21:14.692  5226  5304 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-13 02:21:14.693  5226  5304 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-13 02:21:14.693  5226  5304 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.platformconfigurator [CONTEXT service_id=340 ]
+11-13 02:21:14.694  5226  5821 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-13 02:21:14.695  5226  5304 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-13 02:21:14.696  5226  5706 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-13 02:21:14.697  5226  5304 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-13 02:21:14.698  5226  5304 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-13 02:21:14.802  1976  2027 W earchbox:search: Cleared Reference was only reachable from finalizer (only reported once)
 
