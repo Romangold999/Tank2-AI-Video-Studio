@@ -202,9 +202,11 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
                 }
             }
         }
-        check(sha256(temporary) == MODEL_SHA256) {
+        val actualHash = sha256(temporary)
+        check(temporary.length() == MODEL_SIZE_BYTES && actualHash == MODEL_SHA256) {
+            val actualSize = temporary.length()
             temporary.delete()
-            "Bundled RIFE model SHA-256 verification failed"
+            "Bundled RIFE model verification failed: expected ${MODEL_SIZE_BYTES} bytes / ${MODEL_SHA256}, got $actualSize bytes / $actualHash"
         }
         if (modelFile.exists()) modelFile.delete()
         check(temporary.renameTo(modelFile)) { "Could not install bundled RIFE model" }
@@ -241,6 +243,7 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
         const val OUTPUT_FPS_MULTIPLIER = 2
         private const val CPU_THREADS = 2
         private const val MODEL_FILE = "rife49.onnx"
+        private const val MODEL_SIZE_BYTES = 21458882L
         private const val MODEL_URL = "https://huggingface.co/edgetools/rife/resolve/main/rife49.onnx"
         private const val MODEL_SHA256 = "76e4cef9ab42fa7dd8e4f6e4aba47462051e3faa969e4bca6479784fbab0ac6f"
         private const val OUTPUT_NAME = "output"
