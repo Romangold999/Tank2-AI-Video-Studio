@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:21:41.056034+00:00
+updated_utc=2026-11-13T02:21:46.056123+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -137,104 +137,104 @@ text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] cl
 text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:21:38.548  5128  5942 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.548  5128  5942 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:21:38.549  5128  5942 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:21:38.549  5128  5942 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.550  5128  5942 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:21:38.550  5128  5942 I NamespaceManager: Package rkpd name not found! Using module version.
-11-13 02:21:38.550  5128  5942 I NamespaceManager: Package android.companion name not found! Using module version.
-11-13 02:21:38.551  5128  5942 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
-11-13 02:21:38.551  5128  5942 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
-11-13 02:21:38.551  5128  5942 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
-11-13 02:21:38.551  5128  5942 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
-11-13 02:21:38.552  5128  5942 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
-11-13 02:21:38.552  5128  5942 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
-11-13 02:21:38.552  5128  5942 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
-11-13 02:21:38.553  5128  5942 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
-11-13 02:21:38.553  5128  5942 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
-11-13 02:21:38.553  5128  5942 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
-11-13 02:21:38.553  5128  5942 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
-11-13 02:21:38.555   548   643 I RescueParty: Starting to observe: [android], updated namespace: backup_and_restore
-11-13 02:21:38.555   548   576 I PackageWatchdog: Syncing state, reason: observing new packages
-11-13 02:21:38.556   548   576 D PackageWatchdog: rescue-party-observer added the following packages to monitor [android]
-11-13 02:21:38.556   548   576 I PackageWatchdog: Syncing state, reason: updated observers
-11-13 02:21:38.556   548   576 I PackageWatchdog: Saving observer state to file
-11-13 02:21:38.558   548   548 I PackageWatchdog: Syncing health check requests for packages: {}
-11-13 02:21:38.558   548   548 I ExplicitHealthCheckController: Service not ready to get health check supported packages. Binding...
-11-13 02:21:38.559   548   548 I ExplicitHealthCheckController: Explicit health check service is bound
-11-13 02:21:38.559   548   548 I PackageWatchdog: Syncing health check requests for packages: {}
-11-13 02:21:38.559   548   548 I ExplicitHealthCheckController: Service not ready to get health check supported packages. Binding...
-11-13 02:21:38.559   548   548 I ExplicitHealthCheckController: Not binding to service, service already connecting
-11-13 02:21:38.559  5128  5942 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:21:38.559  5128  5942 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:21:38.560  5128  5942 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.560  5128  5942 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:21:38.560  5128  5942 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:21:38.560  5128  5942 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.560   548   548 I ExplicitHealthCheckController: Explicit health check service is connected ComponentInfo{com.google.android.ext.services/android.ext.services.watchdog.ExplicitHealthCheckServiceImpl}
-11-13 02:21:38.560   548   548 I ExplicitHealthCheckController: Service initialized, syncing requests
-11-13 02:21:38.560   548   548 I PackageWatchdog: Syncing health check requests for packages: {}
-11-13 02:21:38.560   548   548 D ExplicitHealthCheckController: Getting health check supported packages
-11-13 02:21:38.561  5128  5942 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:21:38.561  5128  5942 I NamespaceManager: Package rkpd name not found! Using module version.
-11-13 02:21:38.561  5128  5942 I NamespaceManager: Package android.companion name not found! Using module version.
-11-13 02:21:38.561  5128  5942 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
-11-13 02:21:38.561   548  1964 I ExplicitHealthCheckController: Explicit health check supported packages [PackageConfig{com.google.android.networkstack, 86400000}]
-11-13 02:21:38.562  5128  5942 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
-11-13 02:21:38.562   548  1964 D PackageWatchdog: Received supported packages [PackageConfig{com.google.android.networkstack, 86400000}]
-11-13 02:21:38.562  5128  5942 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
-11-13 02:21:38.562  5128  5942 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
-11-13 02:21:38.562   548  1964 D ExplicitHealthCheckController: Getting health check requested packages
-11-13 02:21:38.562  5128  5942 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
-11-13 02:21:38.562  5128  5942 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
-11-13 02:21:38.563  5128  5942 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
-11-13 02:21:38.563   548  1964 I ExplicitHealthCheckController: Explicit health check requested packages []
-11-13 02:21:38.563   548  1964 I ExplicitHealthCheckController: No more health check requests, unbinding...
-11-13 02:21:38.563  5128  5942 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
-11-13 02:21:38.563  5128  5942 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
-11-13 02:21:38.563  5128  5942 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
-11-13 02:21:38.564  5128  5942 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
-11-13 02:21:38.564   548  1964 I ExplicitHealthCheckController: Explicit health check service is unbound
-11-13 02:21:38.568  5128  5719 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:21:38.568  5128  5719 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:21:38.568  5128  5719 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.569  5128  5719 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:21:38.569  5128  5719 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:21:38.570  5128  5719 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.570  5128  5719 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:21:38.570  5128  5719 I NamespaceManager: Package rkpd name not found! Using module version.
-11-13 02:21:38.570  5128  5719 I NamespaceManager: Package android.companion name not found! Using module version.
-11-13 02:21:38.571  5128  5719 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
-11-13 02:21:38.571  5128  5719 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
-11-13 02:21:38.571  5128  5719 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
-11-13 02:21:38.571  5128  5719 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
-11-13 02:21:38.572  5128  5719 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
-11-13 02:21:38.572  5128  5719 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
-11-13 02:21:38.572  5128  5719 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
-11-13 02:21:38.572  5128  5719 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
-11-13 02:21:38.573  5128  5719 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
-11-13 02:21:38.573  5128  5719 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
-11-13 02:21:38.573  5128  5719 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
-11-13 02:21:38.577  5128  6100 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:21:38.577  5128  6100 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:21:38.578  5128  6100 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.578  5128  6100 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:21:38.579  5128  6100 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:21:38.579  5128  6100 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:21:38.579  5128  6100 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:21:38.580  5128  6100 I NamespaceManager: Package rkpd name not found! Using module version.
-11-13 02:21:38.580  5128  6100 I NamespaceManager: Package android.companion name not found! Using module version.
-11-13 02:21:38.580  5128  6100 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
-11-13 02:21:38.580  5128  6100 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
-11-13 02:21:38.581  5128  6100 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
-11-13 02:21:38.581  5128  6100 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
-11-13 02:21:38.581  5128  6100 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
-11-13 02:21:38.582  5128  6100 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
-11-13 02:21:38.582  5128  6100 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
-11-13 02:21:38.582  5128  6100 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
-11-13 02:21:38.583  5128  6100 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
-11-13 02:21:38.583  5128  6100 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
-11-13 02:21:38.583  5128  6100 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
-11-13 02:21:39.793   548   637 D ActivityManager: freezing 3142 com.google.android.gms.unstable
+11-13 02:21:42.197  1842  2616 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:21:42.198  1842  2616 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:21:42.198  1842  2616 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:21:42.198  1842  2616 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:21:42.198  1842  2616 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:21:42.198  1842  2616 I A       : onDisabled. Registered: false
+11-13 02:21:42.198  1842  2616 I A       : on opa visibility changed false
+11-13 02:21:42.198  1842  2616 I A       : on opa visibility changed false
+11-13 02:21:42.210  1842  2616 I A       : State changed: IDLE => IDLE by NGA_STATE_CHANGED and N/A with Optional.empty
+11-13 02:21:42.210  1842  2617 I NgaEntryPointEventSendr: setupConnection
+11-13 02:21:42.210  1842  2616 I A       : Recognizer choice: (recognizer_type: 1, recognizer_mode: 1, choice_reason: 4)
+11-13 02:21:42.211  1842  2616 I A       : onActiveStateChangeEvent: IDLE => IDLE
+11-13 02:21:42.211  1842  2616 I A       : #onActiveStateChangeEvent, newState: IDLE, previousState: IDLE.
+11-13 02:21:42.219  1842  2617 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+11-13 02:21:42.224  1842  2617 I A       : Successfully initialized all components
+11-13 02:21:42.225  1976  1976 I A       : Creating pss binder().
+11-13 02:21:42.229  1842  2616 I NgaEntryPointEventSendr: onServiceConnected
+11-13 02:21:42.230  1976  5123 I A       : Calling beginBinderSession().
+11-13 02:21:42.230  1976  5123 I A       : beginBinderSession(): calling binder
+11-13 02:21:42.230  1842  2616 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+11-13 02:21:42.235   548   562 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-13 02:21:42.253  1976  3226 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+11-13 02:21:42.254  1842  2617 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+11-13 02:21:42.254  1976  4211 I PBSessionCacheImpl: Deleted sessionId[8692334442350425] from persistence.
+11-13 02:21:42.262  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:42.262  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:42.262  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:42.262  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:42.262  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:42.262  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:42.263  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:21:42.302  5226  5226 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+11-13 02:21:42.875   904   904 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+11-13 02:21:43.190   548   576 D OomAdjuster: Not killing cached processes
+11-13 02:21:43.321   548   637 D ActivityManager: freezing 3036 com.google.android.tts
+11-13 02:21:43.385   548   637 D ActivityManager: freezing 1903 com.google.android.apps.youtube.music
+11-13 02:21:43.862   548   637 D ActivityManager: freezing 4276 com.google.android.googlequicksearchbox
+11-13 02:21:44.011   904   904 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+11-13 02:21:44.607   548   637 D ActivityManager: freezing 4051 com.google.android.projection.gearhead:shared
+11-13 02:21:44.708   548   637 D ActivityManager: freezing 4100 com.google.android.gm
+11-13 02:21:44.810   548   637 D ActivityManager: freezing 1997 com.google.android.youtube
+11-13 02:21:44.811   548   637 D ActivityManager: freezing 2994 com.android.chrome
+11-13 02:21:45.101  6274  6274 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-13 02:21:45.105  6274  6274 I AndroidRuntime: Using default boot image
+11-13 02:21:45.105  6274  6274 I AndroidRuntime: Leaving lock profiling enabled
+11-13 02:21:45.107  6274  6274 I app_process: Core platform API reporting enabled, enforcing=false
+11-13 02:21:45.107  6274  6274 I app_process: Using CollectorTypeCC GC.
+11-13 02:21:45.158  6274  6274 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-13 02:21:45.167  6274  6274 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-13 02:21:45.167  6274  6274 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
+11-13 02:21:45.172  6274  6274 W app_process: Unexpected CPU variant for x86: x86_64.
+11-13 02:21:45.172  6274  6274 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-13 02:21:45.173  6274  6274 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]} | PCL[])
+11-13 02:21:45.174  6274  6274 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}#PCL[/system/framework/android.test.base.jar*836642756]} | PCL[/system/framework/android.test.runner.jar*4168958247])
+11-13 02:21:45.187  6274  6274 W libc    : Access denied finding property "ro.product.name_for_attestation"
+11-13 02:21:45.187  6274  6274 W libc    : Access denied finding property "ro.product.brand_for_attestation"
+11-13 02:21:45.188  6274  6274 W libc    : Access denied finding property "ro.product.model_for_attestation"
+11-13 02:21:45.189  6274  6274 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-13 02:21:45.185  6274  6274 W main    : type=1400 audit(0.0:81): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:21:45.192  6274  6274 D UiAutomationConnection: Created on user UserHandle{0}
+11-13 02:21:45.192  6274  6274 I UiAutomation: Initialized for user 0 on display 0
+11-13 02:21:45.192  6274  6274 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+11-13 02:21:45.185  6274  6274 W main    : type=1400 audit(0.0:82): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:21:45.198   548   562 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+11-13 02:21:45.198   548   562 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation) when called by user 0
+11-13 02:21:45.200   548   562 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:21:45.200  1806  2392 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:21:45.201   548   548 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-13 02:21:45.201  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:45.201  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:45.201  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:45.201  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:45.201  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:45.201  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:45.201  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:45.201  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:45.201  1976  2511 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-13 02:21:45.201  1976  2511 I A       : Nga state changed to NgaStateDetails{state=DISABLED, isSpecialExperience=false}
+11-13 02:21:45.202  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:21:45.185  6274  6274 W main    : type=1400 audit(0.0:83): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:21:45.202  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-13 02:21:45.203  1842  3028 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-13 02:21:45.203  1842  3028 I A       : [Memory] eligibility: StashEligibility{4}
+11-13 02:21:45.203  1842  2616 I A       : Unsubscribed to apa or classic variant change.
+11-13 02:21:45.210   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:21:45.211  6274  6290 V UiAutomation: Init UiAutomation@5237678[id=11, displayId=0, flags=0]
+11-13 02:21:45.212   548  1964 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:21:45.212  1806  2392 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:21:45.212  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:45.213  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:21:45.214   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:21:45.215   548  1964 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
+11-13 02:21:45.218  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
 
