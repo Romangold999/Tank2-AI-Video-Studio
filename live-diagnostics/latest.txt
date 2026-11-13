@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:11.054172+00:00
+updated_utc=2026-11-13T02:20:16.054271+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:10.740  1083  3122 D TrafficStats: tagSocket(109) with statsTag=0xffffff81, statsUid=-1
-11-13 02:20:10.741  1528  1642 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:20:10.742  1528  2855 I bwdg    : No Heterodyne serving version in database [CONTEXT service_id=51 ]
-11-13 02:20:10.743  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.gsa.pcp.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.744  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.podcasts_android.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.746  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.search.smartsetup#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.747  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.search.soundsearch.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.748  1528  1629 W bwft    : Succeeded but not registered: com.google.android.libraries.assistant.symbiote#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.749  1528  1629 W bwft    : Succeeded but not registered: com.google.android.libraries.search.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.749  1528  1642 W bwft    : Succeeded but not registered: com.google.ar.sceneviewer.android.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.750  1528  1642 W bwft    : Succeeded but not registered: com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.754  1976  2455 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:10.755  1976  2856 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:10.759  1126  1126 D CarrierSvcBindHelper: No carrier app for: 0
-11-13 02:20:10.760  1976  2856 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: Currently set values for:
-11-13 02:20:10.763  3036  3036 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
-11-13 02:20:10.763  3036  3036 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
-11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.tts: false
-11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: com.google.android.tts is not listed in per-application setting
-11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-11-13 02:20:10.764   904   986 W Looper  : Drained
-11-13 02:20:10.766  3036  3036 I MultiDex: VM with version 2.1.0 has multidex support
-11-13 02:20:10.766  3036  3036 I MultiDex: Installing application
-11-13 02:20:10.766  3036  3036 I MultiDex: VM has multidex support, MultiDex support library is disabled.
-11-13 02:20:10.766  3036  3036 I MultiDex: Installing application
-11-13 02:20:10.766  3036  3036 I MultiDex: VM has multidex support, MultiDex support library is disabled.
-11-13 02:20:10.767  1976  2856 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:10.768  3057  3057 V GraphicsEnvironment: Currently set values for:
-11-13 02:20:10.768  3057  3057 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
-11-13 02:20:10.768  3057  3057 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
-11-13 02:20:10.769  3057  3057 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.dialer: false
-11-13 02:20:10.769  3057  3057 V GraphicsEnvironment: com.google.android.dialer is not listed in per-application setting
-11-13 02:20:10.769  3057  3057 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-11-13 02:20:10.770  1177  1177 I Choreographer: Skipped 71 frames!  The application may be doing too much work on its main thread.
-11-13 02:20:10.772   548  1837 W AppSearchIcing: icing-search-engine.cc:283: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
-11-13 02:20:10.773  1177  2600 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=z1{delegate=s1{logId=5, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=X1.T@62f8bd7
-11-13 02:20:10.774  1528  1642 W bwft    : Succeeded but not registered: com.google.android.apps.search.transcription.uidevice#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:10.775  3057  3057 I MultiDex: Installing application
-11-13 02:20:10.775  3057  3057 I MultiDex: VM with version 2.1.0 has multidex support
-11-13 02:20:10.775  3057  3057 I MultiDex: VM has multidex support, MultiDex support library is disabled.
-11-13 02:20:10.776  3057  3057 I DialerProvider: enter
-11-13 02:20:10.781  3057  3057 I AtlasPixelTipsContentPr: enter
-11-13 02:20:10.781   548   577 W ActivityManager: Slow operation: 169ms so far, now at startProcess: done creating new process record
-11-13 02:20:10.781   548   577 W ActivityManager: Slow operation: 169ms so far, now at startProcess: stepping in to startProcess
-11-13 02:20:10.781   909   940 I PermissionControllerServiceImpl: Updating user sensitive for uid 10180
-11-13 02:20:10.783   548   548 W Looper  : Slow dispatch took 123ms main h=android.app.ActivityThread$H c=android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0@de876d4 m=0
-11-13 02:20:10.785  1083  3121 D NetworkMonitor/101: PROBE_HTTPS https://www.google.com/generate_204 time=52ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Fri, 13 Nov 2026 02:20:10 GMT], X-Android-Received-Millis=[1794536410782], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794536410774]}
-11-13 02:20:10.787  1083  3122 D NetworkMonitor/101: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=53ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Fri, 13 Nov 2026 02:20:10 GMT], X-Android-Received-Millis=[1794536410786], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794536410761]}
-11-13 02:20:10.787  1083  3120 D NetworkMonitor/101: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=84ms
-11-13 02:20:10.788  1177  1177 D TISBindHelper: TIS service connected
-11-13 02:20:10.788  1177  1177 D b/254119092: Set mActivity=com.google.android.apps.nexuslauncher.NexusLauncherActivity@5e3b3b2
-11-13 02:20:10.788  1177  1177 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
-11-13 02:20:10.788   548   836 I ConnectivityService: Update score for net 101 : +EVER_EVALUATED
-11-13 02:20:10.788   548   836 D ConnectivityService: [101 CELLULAR] validation passed
-11-13 02:20:10.788   548   836 I ConnectivityService: Update capabilities for net 101 : +VALIDATED
-11-13 02:20:10.788   548   836 I ConnectivityService: Update score for net 101 : +EVER_VALIDATED+IS_VALIDATED
-11-13 02:20:10.789   548   836 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
-11-13 02:20:10.790   548   836 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
-11-13 02:20:10.790   548   836 D DnsManager: sendDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [10.0.2.3])
-11-13 02:20:10.790   361   361 I resolv  : setDoh: No suitable DoH server found
-11-13 02:20:10.790   361  3137 W resolv  : Validating DnsTlsServer 10.0.2.3 with mark 0xf0065
-11-13 02:20:10.790   361   361 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, "", [10.0.2.3]) -> (0) (0.2ms)
-11-13 02:20:10.790   361   361 I netd    : setResolverConfiguration(ResolverParamsParcel{netId: 101, sampleValiditySeconds: 1800, successThreshold: 25, minSamples: 8, maxSamples: 64, baseTimeoutMsec: 0, retryCount: 0, servers: [10.0.2.3], domains: [], tlsName: , tlsServers: [10.0.2.3], tlsFingerprints: [], caCertificate: , tlsConnectTimeoutMs: 0, resolverOptions: (null), transportTypes: [0]}) <0.26ms>
-11-13 02:20:10.791   361  3137 W resolv  : SSL_connect ssl error =5, mark 0xf0065: Connection refused
-11-13 02:20:10.791   361  3137 W resolv  : TLS Handshake failed
-11-13 02:20:10.791   361  3137 W resolv  : query failed
-11-13 02:20:10.791   361  3137 W resolv  : validateDnsTlsServer returned 0 for 10.0.2.3
-11-13 02:20:10.791   361  3137 W resolv  : Validation failed
-11-13 02:20:10.793   909   940 I PermissionControllerServiceImpl: Updating user sensitive for uid 10154
-11-13 02:20:10.794  1126  1438 D com.android.ons.ONSProfileActivator: Internet connection available
-11-13 02:20:10.795   548   565 I GnssNetworkConnectivityHandler: updateNetworkState, state=CLOSED, connected=true, network=101, capabilities=[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyNetworkSpecifier [mSubId = 1]> SubscriptionIds: {1} UnderlyingNetworks: Null], availableNetworkCount: 2
-11-13 02:20:10.799   909   940 I PermissionControllerServiceImpl: Updating user sensitive for uid 10128
-11-13 02:20:10.801   548   629 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10148; state: ENABLED
-11-13 02:20:10.803   361   361 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.74ms>
-11-13 02:20:10.804   361   361 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.83ms>
-11-13 02:20:10.805  1177  1225 D LoaderTask: loadWorkspace
-11-13 02:20:10.805  1177  1225 D LoaderTask: Cancelled
-11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10085; state: DISABLED
-11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10085; state: DISABLED
-11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10085; state: DISABLED
-11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10085; state: ENABLED
-11-13 02:20:10.810   548   577 W ActivityManager: Slow operation: 198ms so far, now at startProcess: done starting proc!
-11-13 02:20:10.811  1673  1766 I DeviceStatusMonitor: DeviceStatusMonitor.handleBroadcast():122 onReceive() : Action = android.net.conn.CONNECTIVITY_CHANGE
-11-13 02:20:10.812   548   578 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10085; state: ENABLED
-11-13 02:20:10.813  1177  1225 D LoaderTask: loadWorkspace: loading default favorites
-11-13 02:20:10.815  1806  1806 I AiAiCaptions: onServiceConnected(): Connected to Superpacks Service
-11-13 02:20:10.815  1806  2696 I AiAiCaptions: initialize(): bound to superpacks service.
-11-13 02:20:10.815  1806  2696 I AiAiCaptions: getResource(): Could not find pack: 'sound' in superpack: 'captions_i18n_v0_mandatory', trying legacy Superpack.
-11-13 02:20:10.817  1673  1766 I DeviceStatusMonitor: DeviceStatusMonitor.notifyIfNetworkChanged():179 notifyIfNetworkChanged: newState = NON_METERED, airplaneModeOn = false, notifyAnyway = false
-11-13 02:20:10.817  1673  1766 I NetworkInfoNotification: NetworkInfoNotification$Listener.onReceive():93 onNetworkAvailable: networkState = NON_METERED, isAirplaneModeOn = false
-11-13 02:20:10.817  1673  1766 I LatinImeEntryActivation: LatinImeActivationContentObserver.activeLanguagesHaveChanged():68 Active entries changed: [] -> {en-US}
-11-13 02:20:10.817  1673  1766 I SuperDelight: SuperDelightManager.syncBundledLanguageModels():734 syncBundledLanguageModels(): clearing bundled_delight selection
-11-13 02:20:10.818  1673  1766 I LmManager: LmManager.asyncUpdateEnabledLanguageModels():90 asyncUpdateEnabledLanguageModels()
-11-13 02:20:10.818  1673  1766 I SuperDelight: SuperDelightManager.initializeDelightSuperpacks():340 initializeDelightSuperpacks()
-11-13 02:20:10.818  1673  1766 I SuperDelight: SuperDelightManager.getDelightMetadataUriAndVersion():1011 getDelightMetadataUriAndVersion(): Phenotype : 2022101700 : https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json
-11-13 02:20:10.819  1673  1766 I SuperDelight: SuperDelightAppsSuperpacksManager.initializeDelightAppsSuperpacks():92 initializeDelightAppsSuperpacks()
-11-13 02:20:10.820  1673  1766 I SuperDelight: SuperDelightManager.initializeOverridesSuperpacks():402 initializeOverridesSuperpacks()
-11-13 02:20:10.820   362   362 D Zygote  : Forked child process 3140
-11-13 02:20:10.821   548   578 I ActivityManager: Start proc 3140:com.android.externalstorage/u0a85 for broadcast {com.android.externalstorage/com.android.externalstorage.MountReceiver}
+11-13 02:20:15.694  3057  3199 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_all_calls
+11-13 02:20:15.694  3057  3232 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForCallLogAllCalls:57 notifyForCallLogAllCalls
+11-13 02:20:15.695  3057  3202 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:162 start writing coalesced_rows_for_conversation_history_all_calls
+11-13 02:20:15.695  3057  3202 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_conversation_history_all_calls
+11-13 02:20:15.696  3057  3195 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:162 start writing coalesced_rows_for_missed_calls
+11-13 02:20:15.696  3057  3195 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_missed_calls
+11-13 02:20:15.700  1607  1616 I gle.android.gms: Background young concurrent copying GC freed 64090(3387KB) AllocSpace objects, 20(1048KB) LOS objects, 42% free, 5875KB/10184KB, paused 80us,16us total 154.373ms
+11-13 02:20:15.701  3057  3201 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForConversationHistory:79 notifyForConversationHistory
+11-13 02:20:15.701  3057  3201 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForCallLogMissedCalls:68 notifyForCallLogMissedCalls
+11-13 02:20:15.701  3057  3201 I DialerRefreshAnnotatedCallLogWorker: com.android.dialer.calllog.refresh.impl.RefreshAnnotatedCallLogWorker.lambda$rebuild$7:219 coalesced row updated
+11-13 02:20:15.702  3057  3202 I DialerSystemCallLogUpdater: com.android.dialer.calllog.refresh.impl.SystemCallLogUpdater.lambda$update$0:105 not updating system call log for initial build
+11-13 02:20:15.702  3057  3201 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: ANNOTATED_CALL_LOG_FORCE_REFRESH_NO_CHANGES_NEEDED
+11-13 02:20:15.703  1697  1726 I .apps.wellbeing: Background concurrent copying GC freed 62727(3399KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 4599KB/9198KB, paused 30us,10us total 132.325ms
+11-13 02:20:15.708   548  2382 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10098. pid: 3403
+11-13 02:20:15.708   548  1951 W JobScheduler: Job didn't exist in JobStore: 1af854a #u0a132/-1000001 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+11-13 02:20:15.708  3403  3403 W PreBootReceiver: Can't get valid overlay info
+11-13 02:20:15.709  3403  3403 D DocumentsApplication: OverlayManager.setEnabled() result: true
+11-13 02:20:15.709  3487  3487 D nativeloader: Configuring clns-7 for other apk /data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/lib/x86_64:/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~xwpsku4Sy8RANl8qI2hOzQ==/com.google.android.trichromelibrary_567263637-sjeAoj9qAI3tTJrm67NQEA==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+11-13 02:20:15.713  1976  2509 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+11-13 02:20:15.713  1976  2509 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+11-13 02:20:15.713  1976  2509 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+11-13 02:20:15.716   548  1916 W JobScheduler: Job didn't exist in JobStore: a60890f #u0a132/-133 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+11-13 02:20:15.718  1976  2509 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+11-13 02:20:15.718  1976  2509 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+11-13 02:20:15.722   548   565 W Looper  : Slow dispatch took 213ms android.fg h=android.os.Handler c=<recycled PooledLambda@910bb5c> m=0
+11-13 02:20:15.726  1528  1528 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-13 02:20:15.726  1528  1528 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-13 02:20:15.727  1528  1642 D BluetoothAdapter: isLeEnabled(): ON
+11-13 02:20:15.728  1976  2849 I A       : Executing HotwordSilentEnrollment for user profile: 0
+11-13 02:20:15.728  1976  2849 I A       : Using proto config with mendel
+11-13 02:20:15.728  1976  2849 I A       : Proto config empty. Exit merge.
+11-13 02:20:15.729   548   565 W Looper  : Slow delivery took 261ms android.fg h=android.os.Handler c=<recycled PooledLambda@ed05aa2> m=0
+11-13 02:20:15.729  1976  2849 I A       : Using proto config with mendel
+11-13 02:20:15.729  1976  2849 I A       : Proto config empty. Exit merge.
+11-13 02:20:15.729  1976  2849 I MicroDataManager: Location for model with model type: 1 and locale: en-US, is : en-US/hotword.data
+11-13 02:20:15.729  1976  2849 I A       : Using proto config with mendel
+11-13 02:20:15.730  1976  2849 I A       : Proto config empty. Exit merge.
+11-13 02:20:15.730  1976  2849 I MicroDataManager: Location for model with model type: 1 and locale: en-US, is : en-US/hotword.data
+11-13 02:20:15.730  1976  2849 I MicroDataManager: Already initialized, obtaining the hotword data immediately.
+11-13 02:20:15.730  1976  2849 I MicroDataManager: #getGoogleHotwordData desiredModel en-US/hotword.data, sourceLocationOfCurrentHotwordModel en-US/hotword.data
+11-13 02:20:15.730  1976  2849 I MicroDataManager: Obtaining new data for new params.
+11-13 02:20:15.733  1528  1637 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.consentverifier#com.google.android.tts) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: Currently set values for:
+11-13 02:20:15.738  3487  3487 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:20:15.738  3487  3487 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.webview: false
+11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: com.google.android.webview is not listed in per-application setting
+11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:20:15.742  3487  3487 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+11-13 02:20:15.744  3487  3487 I cr_WebViewApkApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview:webview_service
+11-13 02:20:15.747  1976  2849 I MicroDataManager: Created a new hotword model for:
+11-13 02:20:15.747  1976  2849 I MicroDataManager:  LOC: en-US/hotword.data SR: 16000 CC: 1
+11-13 02:20:15.749   548   565 I PreBootBroadcaster: Pre-boot of {com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher} for user 0
+11-13 02:20:15.751  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:15.753  1528  1629 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gm#com.google.android.gm_Hub) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-13 02:20:15.765  1806  2132 I SP.AiAi : Successfully got manifest for actions-ranking-table-manifest: manifests:actions-ranking-table-211005
+11-13 02:20:15.767  1528  1637 W bwft    : Succeeded but not registered: com.google.android.libraries.search.rendering.xuikit.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:15.767  1607  3119 W SQLiteLog: (28) double-quoted string literal: "1794363615767"
+11-13 02:20:15.767  1607  3119 W SQLiteLog: (28) double-quoted string literal: "1"
+11-13 02:20:15.770   548  1931 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:15.770   548  1931 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:15.770  1976  2863 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-13 02:20:15.773   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:15.773   548   977 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:15.779  1528  2878 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 53594]
+11-13 02:20:15.780   548  1951 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 10128; state: ENABLED
+11-13 02:20:15.781   548  1951 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10128; state: ENABLED
+11-13 02:20:15.787   548   980 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:15.787   548   980 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
+11-13 02:20:15.789  1806  3397 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'actions-ranking-table' (download version 211005), starting to download superpack.
+11-13 02:20:15.792  1976  2509 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=31, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-13 02:20:15.792   548  2514 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:15.792   548  2514 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:15.794  1976  2509 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+11-13 02:20:15.809  1528  3313 I GoogleLocationManager: loading FLP PI cache [CONTEXT service_id=6 ]
+11-13 02:20:15.813   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:15.813   548   977 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:15.816   548  2382 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10133. pid: 3487
+11-13 02:20:15.821  1108  3210 D BtGatt.GattService: registerScanner() - UUID=2483657b-7cbe-4ecb-9df1-6d85421e0bb7
+11-13 02:20:15.822  1108  3210 I bt_stack: [INFO:le_scanning_manager.cc(155)] RegisterScanner in shim layer
+11-13 02:20:15.827  1126  1161 D MmsSmsDatabaseHelper: clearMmsParts: removing all attachments from: /data/user/0/com.android.providers.telephony/app_parts
+11-13 02:20:15.827  1108  1321 D BtGatt.GattService: onScannerRegistered() - UUID=2483657b-7cbe-4ecb-9df1-6d85421e0bb7, scannerId=1, status=0
+11-13 02:20:15.828  1528  3103 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=1 mScannerId=0
+11-13 02:20:15.828   904   904 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-13 02:20:15.829  1108  3210 D BtGatt.GattService: start scan with filters
+11-13 02:20:15.829  1108  3210 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=0000fe2c-0000-1000-8000-00805f9b34fb, mServiceData=[-4, 18, -114], mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null]])
+11-13 02:20:15.833  1108  3210 W droid.bluetooth: Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/google/protobuf/UnsafeUtil; using reflection
+11-13 02:20:15.833  1108  3210 W droid.bluetooth: Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/google/protobuf/UnsafeUtil; using reflection
 
