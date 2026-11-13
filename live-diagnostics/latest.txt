@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:21:06.055359+00:00
+updated_utc=2026-11-13T02:21:11.055423+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -113,105 +113,116 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 === INSTALLED PACKAGE ===
 package:/data/app/~~HLz2fmRHVMpPsbO0wsGyvw==/com.romangold.tank2aivideostudio.debug-C-Gjp3NZrWlbmgz2Ez_cLg==/base.apk
 
+=== UI IMAGE_PICKER ===
+text='This app can only access the photos you select' desc='' class=android.widget.TextView bounds=[248,244][832,283] clickable=false
+text='Recent' desc='' class=android.widget.TextView bounds=[0,493][1080,640] clickable=false
+text='' desc='Photo taken on Nov 13, 2026, 2:16:51\u202fAM' class=android.widget.FrameLayout bounds=[0,640][354,994] clickable=true
+text='' desc='Cancel' class=android.widget.ImageButton bounds=[0,335][147,482] clickable=true
+text='' desc='Photos' class=android.widget.LinearLayout bounds=[267,346][540,472] clickable=false
+text='Photos' desc='' class=android.widget.TextView bounds=[345,383][461,434] clickable=false
+text='' desc='Albums' class=android.widget.LinearLayout bounds=[540,346][813,472] clickable=true
+text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] clickable=false
+text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
+
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:21:02.820   426   442 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10191 => denied (176 us)
-11-13 02:21:02.821   426   442 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10191 pid=5580
-11-13 02:21:02.821   426   442 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10191 => denied (924 us)
-11-13 02:21:02.821   426   442 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10191 pid=5580
-11-13 02:21:02.821   426   442 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10191 => denied (140 us)
-11-13 02:21:02.821   426  1230 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10191 pid=0
-11-13 02:21:02.821   426  1230 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10191 => denied (1273 us)
-11-13 02:21:02.840  5580  5601 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
-11-13 02:21:02.856  1826  3509 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
-11-13 02:21:02.856  1826  3509 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
-11-13 02:21:02.856  1826  3509 D PickerSyncController:    Latest ID/Gen=1407:8a775af3-1ff9-444d-a5fd-8af244725106:external_primary/7
-11-13 02:21:02.856  1826  3509 D PickerSyncController:    Cached ID/Gen=1407:8a775af3-1ff9-444d-a5fd-8af244725106:external_primary/7
-11-13 02:21:02.856  1826  3509 D PickerSyncController:    RESULT=SyncRequestParams{type=NONE, gen=0, latest=null}
-11-13 02:21:02.867  5580  5605 D PhotoPicker: Loaded 1 items in Category: {mId: null, mAuthority: null, mDisplayName: null, mCoverUri: null, mItemCount: 0, mIsLocal: false for user 0
-11-13 02:21:02.884   160   160 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
-11-13 02:21:02.885  5580  5601 I Gralloc4: mapper 4.x is not supported
-11-13 02:21:03.087     0     0 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
-11-13 02:21:02.905   904   904 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
-11-13 02:21:03.111  5128  5136 I .gms.persistent: Background concurrent copying GC freed 368884(18MB) AllocSpace objects, 8(196KB) LOS objects, 49% free, 11MB/22MB, paused 25us,22us total 153.242ms
-11-13 02:21:03.153  5407  5610 D ProfileInstaller: Installing profile for com.romangold.tank2aivideostudio.debug
-11-13 02:21:03.650   548  2075 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10191 pid=0
-11-13 02:21:03.650   548  2075 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10191 => denied (82 us)
-11-13 02:21:03.650   548  2075 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10191 pid=0
-11-13 02:21:03.650   548  2075 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10191 => denied (23 us)
-11-13 02:21:03.650   548  2075 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10191 pid=0
-11-13 02:21:03.650   548  2075 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10191 => denied (14 us)
-11-13 02:21:03.659   548  2075 D CoreBackPreview: Window{6e64df8 u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1db410e, mPriority=0, mIsAnimationCallback=false}
-11-13 02:21:03.673  5580  5596 I OpenGLRenderer: Davey! duration=883ms; Flags=1, FrameTimelineVsyncId=9676, IntendedVsync=98239114985, Vsync=98255781651, InputEventId=0, HandleInputStart=98264827106, AnimationStart=98264827537, PerformTraversalsStart=98264827728, DrawStart=98375283717, FrameDeadline=98255781651, FrameInterval=98264817529, FrameStartTime=16666666, SyncQueued=98390004678, SyncStart=98390306311, IssueDrawCommandsStart=98391739425, SwapBuffers=98842989859, FrameCompleted=99122921618, DequeueBufferDuration=3647, QueueBufferDuration=164868, GpuCompleted=99122921618, SwapBuffersCompleted=99109049569, DisplayPresentTime=0, CommandSubmissionCompleted=98842989859, 
-11-13 02:21:03.683  5226  5320 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
-11-13 02:21:03.683  1826  3509 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
-11-13 02:21:03.684  5226  5320 I Icing   : Indexing done com.google.android.gms-apps
-11-13 02:21:03.684  1826  3509 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
-11-13 02:21:03.685  1826  3509 D PickerSyncController:    Latest ID/Gen=1407:8a775af3-1ff9-444d-a5fd-8af244725106:external_primary/7
-11-13 02:21:03.689  1826  3509 D PickerSyncController:    Cached ID/Gen=1407:8a775af3-1ff9-444d-a5fd-8af244725106:external_primary/7
-11-13 02:21:03.690  1826  3509 D PickerSyncController:    RESULT=SyncRequestParams{type=NONE, gen=0, latest=null}
-11-13 02:21:03.693  5580  5580 W View    : requestLayout() improperly called by com.google.android.material.textview.MaterialTextView{e8c29ab V.ED..... ......ID 248,116-832,155 #7f0a01c5 app:id/privacy_text} during layout: running second layout pass
-11-13 02:21:03.695  5580  5605 D PhotoPicker: Loaded 1 items in Category: {mId: null, mAuthority: null, mDisplayName: null, mCoverUri: null, mItemCount: 0, mIsLocal: false for user 0
-11-13 02:21:03.736  5580  5580 I Choreographer: Skipped 55 frames!  The application may be doing too much work on its main thread.
-11-13 02:21:03.816  5580  5580 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
-11-13 02:21:03.816  5580  5580 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
-11-13 02:21:03.821   904   946 V WindowManagerShell: onTransitionReady android.os.BinderProxy@6b15381: {id=9 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{c5a8b14 u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x1b3ee14 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1},{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{d77a87c u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x39ea6bd sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1}]}
-11-13 02:21:03.821   904   946 V WindowManagerShell: Playing animation for (#9)android.os.BinderProxy@6b15381@0
-11-13 02:21:03.821   904   946 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@860605e
-11-13 02:21:03.821   904   946 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@519dc3f
-11-13 02:21:03.821   904   946 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@4d8290c
-11-13 02:21:03.821   904   946 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@7d35255
-11-13 02:21:03.821   904   946 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
-11-13 02:21:03.821   904   946 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@ace246a
-11-13 02:21:03.821   904   946 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@cd9fd5b
-11-13 02:21:03.821   904   946 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@364c9f8
-11-13 02:21:03.821   904   946 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=9 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{c5a8b14 u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x1b3ee14 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1},{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{d77a87c u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x39ea6bd sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1}]}
-11-13 02:21:03.822   904   946 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@e08be8c, appThread = android.app.IApplicationThread$Stub$Proxy@ff9d5, debugName = LauncherToDream }}
-11-13 02:21:03.822   904   946 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4aa75ea, appThread = android.app.IApplicationThread$Stub$Proxy@97db0db, debugName = QuickstepLaunchHome }}
-11-13 02:21:03.822   904   946 V WindowManagerShell:  Delegate animation for #9 to null
-11-13 02:21:03.822   904   946 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@543bed1
-11-13 02:21:03.822   904   946 V WindowManagerShell: start default transition animation, info = {id=9 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{c5a8b14 u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x1b3ee14 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1},{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{d77a87c u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x39ea6bd sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1}]}
-11-13 02:21:03.823   904   946 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@2ebd780 animAttr=0x4 type=OPEN isEntrance=true
-11-13 02:21:03.824   904   946 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@713f1b9 animAttr=0x4 type=OPEN isEntrance=true
-11-13 02:21:03.826  5580  5598 I OpenGLRenderer: Davey! duration=954ms; Flags=1, FrameTimelineVsyncId=9676, IntendedVsync=98239114985, Vsync=98255781651, InputEventId=0, HandleInputStart=98264827106, AnimationStart=98264827537, PerformTraversalsStart=98264827728, DrawStart=99157129344, FrameDeadline=98255781651, FrameInterval=98264817529, FrameStartTime=16666666, SyncQueued=99158255676, SyncStart=99160743748, IssueDrawCommandsStart=99160854465, SwapBuffers=99168788812, FrameCompleted=99195886429, DequeueBufferDuration=4558, QueueBufferDuration=2699387, GpuCompleted=99195810838, SwapBuffersCompleted=99195886429, DisplayPresentTime=0, CommandSubmissionCompleted=99168788812, 
-11-13 02:21:03.827  5580  5598 I OpenGLRenderer: Davey! duration=989ms; Flags=0, FrameTimelineVsyncId=9699, IntendedVsync=98272448317, Vsync=99189114947, InputEventId=0, HandleInputStart=99196306944, AnimationStart=99196307615, PerformTraversalsStart=99196399637, DrawStart=99196505936, FrameDeadline=99155781615, FrameInterval=99196174116, FrameStartTime=16666666, SyncQueued=99196632582, SyncStart=99197176387, IssueDrawCommandsStart=99197405403, SwapBuffers=99201452676, FrameCompleted=99262935011, DequeueBufferDuration=3115, QueueBufferDuration=167053, GpuCompleted=99262935011, SwapBuffersCompleted=99244004784, DisplayPresentTime=0, CommandSubmissionCompleted=99201452676, 
-11-13 02:21:03.827   904   946 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@543bed1
-11-13 02:21:03.841   548   565 I ActivityTaskManager: Displayed com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity for user 0: +2s13ms
-11-13 02:21:03.842   548   565 I ActivityTaskManager: Displayed com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity for user 0: +1s791ms
-11-13 02:21:03.842   548   565 V WindowManager: Sent Transition #9 createdAt=11-13 02:21:01.662 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.romangold.tank2aivideostudio.debug/com.romangold.tank2aivideostudio.MainActivity } baseActivity=ComponentInfo{com.romangold.tank2aivideostudio.debug/com.romangold.tank2aivideostudio.MainActivity} topActivity=ComponentInfo{com.android.intentresolver/com.android.intentresolver.ChooserActivity} origActivity=null realActivity=ComponentInfo{com.romangold.tank2aivideostudio.debug/com.romangold.tank2aivideostudio.MainActivity} numActivities=2 lastActiveTime=97139 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{3546696 Task{7958829 #8 type=standard A=10192:com.romangold.tank2aivideostudio.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{
-11-13 02:21:03.842   548   565 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
-11-13 02:21:03.842   548   565 V WindowManager:     info={id=9 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{c5a8b14 u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x2c8313c sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1},{null m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{d77a87c u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity)/@0x701272f sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 1920) d=-1->0 r=-1->0:-1}]}
-11-13 02:21:03.870  5580  5580 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
-11-13 02:21:03.870  5580  5580 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
-11-13 02:21:03.894   904   956 W Looper  : Slow delivery took 31ms wmshell.anim h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver@39f3f81 m=0
-11-13 02:21:03.896   904   956 W Looper  : Drained
-11-13 02:21:04.011  5580  5613 I OpenGLRenderer: Davey! duration=1004ms; Flags=0, FrameTimelineVsyncId=9699, IntendedVsync=98272448317, Vsync=99189114947, InputEventId=0, HandleInputStart=99196306944, AnimationStart=99196307615, PerformTraversalsStart=99196399637, DrawStart=99197331416, FrameDeadline=99222448279, FrameInterval=99196174116, FrameStartTime=16666666, SyncQueued=99197386478, SyncStart=99245095610, IssueDrawCommandsStart=99247000204, SwapBuffers=99278154440, FrameCompleted=99324768401, DequeueBufferDuration=3988, QueueBufferDuration=176841, GpuCompleted=99324768401, SwapBuffersCompleted=99304793120, DisplayPresentTime=0, CommandSubmissionCompleted=99278154440, 
-11-13 02:21:04.048   548   637 D ActivityManager: freezing 3301 com.google.android.apps.wallpaper
-11-13 02:21:04.087   904   989 D EGL_emulation: app_time_stats: avg=323.62ms min=23.39ms max=2055.19ms count=8
-11-13 02:21:04.143   904   956 W Looper  : Slow delivery took 30ms wmshell.anim h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver@39f3f81 m=0
-11-13 02:21:04.151   904   946 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#9)android.os.BinderProxy@6b15381@0
-11-13 02:21:04.162   548   565 V WindowManager: Finish Transition #9: created at 11-13 02:21:01.662 collect-started=0.055ms request-sent=17.53ms started=25.144ms ready=918.487ms sent=2151.464ms finished=2493.611ms
-11-13 02:21:04.163   904   946 V WindowManagerShell: Track 0 became idle
-11-13 02:21:04.163   904   946 V WindowManagerShell: All active transition animations finished
-11-13 02:21:04.170   548   995 D CompatibilityChangeReporter: Compat change id reported: 214016041; UID 10191; state: ENABLED
-11-13 02:21:04.170   548   995 I ImeTracker: com.google.android.providers.media.module:aa7d277c: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-11-13 02:21:04.170   548   995 I ImeTracker: com.google.android.providers.media.module:aa7d277c: onCancelled at PHASE_SERVER_SHOULD_HIDE
-11-13 02:21:04.182  1673  1673 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227 
-11-13 02:21:04.183  1673  1673 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
-11-13 02:21:04.183  1673  1673 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.providers.media.module fieldId=0 fieldName=null extras=null}, false)
-11-13 02:21:04.183  1673  1673 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
-11-13 02:21:04.187  1673  1673 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
-11-13 02:21:04.203  5530  5530 D ShortcutLoader: destroyed, user: UserHandle{0}
-11-13 02:21:04.204  5530  5530 D ShortcutLoader: destroyed, user: UserHandle{0}
-11-13 02:21:04.257   904   946 W Looper  : Slow delivery took 69ms wmshell.main h=android.os.Handler c=com.android.wm.shell.pip.PinnedStackListenerForwarder$PinnedTaskListenerImpl$$ExternalSyntheticLambda1@1c0380a m=0
-11-13 02:21:04.269   904   946 W Looper  : Drained
-11-13 02:21:04.686   548   568 I ActivityManager: PendingStartActivityUids startActivity to updateOomAdj delay:2106ms, uid:10191
-11-13 02:21:04.810  5580  5622 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
-11-13 02:21:04.811  5580  5622 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
-11-13 02:21:04.814  1826  3509 I MediaProvider: Open with lower FS for /storage/emulated/0/Pictures/ci-source.png. Uid: 10191
-11-13 02:21:04.990   367  5528 D android.hardware.audio@7.1-impl.ranchu: threadLoop: entering standby, frames: 158848
-11-13 02:21:05.207  5580  5601 D EGL_emulation: app_time_stats: avg=311.67ms min=123.51ms max=637.40ms count=5
-11-13 02:21:05.212   904   989 D EGL_emulation: app_time_stats: avg=102.08ms min=68.15ms max=179.14ms count=9
-11-13 02:21:05.267  5580  5601 D EGL_emulation: app_time_stats: avg=207.03ms min=30.22ms max=496.43ms count=7
-11-13 02:21:05.665  1108  1405 D BtGatt.ScanManager: uid 10128 isForeground true scanMode -1
-11-13 02:21:05.665  1108  1405 D BtGatt.ScanManager: uid 10128 isForeground true scanMode -1
+11-13 02:21:09.965   548  1952 W JobScheduler: Job didn't exist in JobStore: 9e275a1 #u0a132/-353 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+11-13 02:21:09.974  5128  5679 W SystemServiceRegistry: No service published for: contexthub
+11-13 02:21:09.981  5128  5682 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+11-13 02:21:09.988  5128  5682 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-13 02:21:09.989  5128  5682 I GCoreUlr: Unbound from all signal providers.
+11-13 02:21:10.002  5128  5128 I GCoreUlr: Unbound from all signal providers.
+11-13 02:21:10.002  5128  5128 I GCoreUlr: Stopping handler for UlrDispSvcFast
+11-13 02:21:10.165   548  2061 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+11-13 02:21:10.168   548   548 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+11-13 02:21:10.375     0     0 I servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
+11-13 02:21:10.173   548  2061 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+11-13 02:21:10.175   548  2514 I RemoteProvisionSysSvc: Fetching key 10128 for client 149486637
+11-13 02:21:10.175   548  2514 I RegistrationProxy: getKeyAsync operation started with callback 265766242
+11-13 02:21:10.176  3695  3846 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10128, callback: 234649778
+11-13 02:21:10.176  3695  3846 I RkpdRegistrationBinder: Key successfully assigned to client
+11-13 02:21:10.177   548   548 I RemoteProvisionSysSvc: Successfully fetched key for client 149486637
+11-13 02:21:10.201  5741  5741 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-13 02:21:10.211  5741  5741 I AndroidRuntime: Using default boot image
+11-13 02:21:10.211  5741  5741 I AndroidRuntime: Leaving lock profiling enabled
+11-13 02:21:10.215  5741  5741 I app_process: Core platform API reporting enabled, enforcing=false
+11-13 02:21:10.216  5741  5741 I app_process: Using CollectorTypeCC GC.
+11-13 02:21:10.323  5741  5741 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-13 02:21:10.330  5226  5320 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-13 02:21:10.331  5226  5320 I Icing   : Indexing done com.google.android.gms-apps
+11-13 02:21:10.336   548  2061 W ProcessStats: Tracking association SourceState{2062e29 com.google.android.gms/10128 BFgs #6063} whose proc state 4 is better than process ProcessState{48f4db8 com.google.android.gms.unstable/10128 pkg=com.google.android.gms} proc state 14 (2328 skipped)
+11-13 02:21:10.345  5741  5741 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-13 02:21:10.345  5741  5741 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
+11-13 02:21:10.362  5741  5741 W app_process: Unexpected CPU variant for x86: x86_64.
+11-13 02:21:10.362  5741  5741 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-13 02:21:10.368  5741  5741 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]} | PCL[])
+11-13 02:21:10.370  5741  5741 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}#PCL[/system/framework/android.test.base.jar*836642756]} | PCL[/system/framework/android.test.runner.jar*4168958247])
+11-13 02:21:10.397  5741  5741 W libc    : Access denied finding property "ro.product.name_for_attestation"
+11-13 02:21:10.398  5741  5741 W libc    : Access denied finding property "ro.product.brand_for_attestation"
+11-13 02:21:10.398  5741  5741 W libc    : Access denied finding property "ro.product.model_for_attestation"
+11-13 02:21:10.399  5741  5741 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-13 02:21:10.402  5741  5741 D UiAutomationConnection: Created on user UserHandle{0}
+11-13 02:21:10.402  5741  5741 I UiAutomation: Initialized for user 0 on display 0
+11-13 02:21:10.402  5741  5741 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+11-13 02:21:10.393  5741  5741 W main    : type=1400 audit(0.0:53): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:21:10.407   548  1886 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+11-13 02:21:10.407   548  1886 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation) when called by user 0
+11-13 02:21:10.397  5741  5741 W main    : type=1400 audit(0.0:54): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:21:10.413  3142  3717 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-13 02:21:10.414  3142  3717 W libc    : Access denied finding property "service.adb.tls.port"
+11-13 02:21:10.397  5741  5741 W main    : type=1400 audit(0.0:55): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:21:10.415   548  1886 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:21:10.417  1806  2392 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:21:10.417  5741  5759 V UiAutomation: Init UiAutomation@8e85a1d[id=3, displayId=0, flags=0]
+11-13 02:21:10.418  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:10.418  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:10.418  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:10.419  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:10.419  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:10.419  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:10.419  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:10.419  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:10.420  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:21:10.420   548  2514 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:21:10.421  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-13 02:21:10.409  3142  3142 W binder:3142_4: type=1400 audit(0.0:56): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-13 02:21:10.435  1976  2510 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-13 02:21:10.435  1976  2510 I A       : Nga state changed to NgaStateDetails{state=DISABLED, isSpecialExperience=false}
+11-13 02:21:10.409  3142  3142 W binder:3142_4: type=1400 audit(0.0:57): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-13 02:21:10.441  1842  2617 I A       : Unsubscribed to apa or classic variant change.
+11-13 02:21:10.443   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:21:10.444  1842  3379 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-13 02:21:10.444  1842  3379 I A       : [Memory] eligibility: StashEligibility{4}
+11-13 02:21:10.449  1806  3286 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:21:10.449  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:10.449  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:10.449  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:10.451  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:10.451  1806  1995 I AiAiEcho: Predicting[0]: 
+11-13 02:21:10.451  1806  1995 I AiAiEcho: EchoTargets: 
+11-13 02:21:10.451  1806  1995 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:21:10.451  1806  1995 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:21:10.455  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:21:10.456  1806  1995 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-13 02:21:10.459   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:21:10.471   548   548 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-13 02:21:10.474   548   995 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
+11-13 02:21:10.543  3142  3717 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
+11-13 02:21:10.551  3142  3717 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
+11-13 02:21:10.554  3142  3717 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
+11-13 02:21:10.663   548  1886 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:21:10.663   548  1886 D PackageManager: Clear ephemeral installer activity
+11-13 02:21:10.668   548  1886 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:21:10.668   548  1886 D PackageManager: Clear ephemeral installer activity
+11-13 02:21:10.757  3142  3717 W SystemServiceRegistry: No service published for: persistent_data_block
+11-13 02:21:10.774   361  5761 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
+11-13 02:21:10.775   361  5762 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-13 02:21:10.775   361  5762 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23a3150290
+11-13 02:21:10.775   361  5762 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+11-13 02:21:10.776   361  5763 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-13 02:21:10.776   361  5763 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23e3153090
+11-13 02:21:10.776   361  5763 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+11-13 02:21:10.777  5226  5320 D TrafficStats: tagSocket(68) with statsTag=0x30003000, statsUid=-1
+11-13 02:21:10.781  5226  5320 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-13 02:21:10.781  5226  5320 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:21:10.781  5226  5320 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
 
