@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:35:29.352561+00:00
+updated_utc=2026-11-13T02:35:34.352654+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ qemu-system-x86_64-headless: warning: I/O thread spun for 1000 iterations
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:35:28.789  1522  3337 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
-11-13 02:35:28.790   547   629 D ActivityManager: sync unfroze 2632 com.android.externalstorage for 10
-11-13 02:35:28.790  1572  4649 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
-11-13 02:35:28.791  1572  4649 W Pay     : [eMoney card recovery task] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
-11-13 02:35:28.793  1572  4649 W Pay     : Mdl not supported. Not triggering periodic MSO refresh task. [CONTEXT service_id=198 ]
-11-13 02:35:28.794   547  2190 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:35:28.795   547  2190 D PackageManager: Clear ephemeral installer activity
-11-13 02:35:28.796   547  2190 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:35:28.797   547  2190 D PackageManager: Clear ephemeral installer activity
-11-13 02:35:28.801  1522  1591 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
-11-13 02:35:28.804  1522  1591 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
-11-13 02:35:28.805  1572  4742 D LT_PhenotypeApiImplV12: Retrieve experiment configurations
-11-13 02:35:28.812   547   982 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:35:28.813   547   982 D PackageManager: Clear ephemeral installer activity
-11-13 02:35:28.815   547  1318 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:35:28.815   547  1318 D PackageManager: Clear ephemeral installer activity
-11-13 02:35:28.829  1572  3494 W PeoplePU: getComponentEnabledSetting failed.
-11-13 02:35:28.829  1572  3494 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:28.829  1572  3494 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5159)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5141)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:388)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:3012)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6334)
-11-13 02:35:28.829  1572  3494 W PeoplePU: 
-11-13 02:35:28.843  1572  3498 W PeoplePU: getServiceInfo failed.
-11-13 02:35:28.843  1572  3498 W PeoplePU: android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.google.android.gms/com.google.android.gms.people.sync.focus.ContactsSyncAdapterService}
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:616)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:599)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at com.google.android.gms.people.sync.focus.ContactsSyncIntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):43)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:28.843  1572  3498 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:28.844  1572  3498 I FSA2_ContactsSyncIntentOp: Sync is disabled. Skip prepareToSync
-11-13 02:35:28.864  1572  3494 I PeopleGalProvider: Gal directories started.
-11-13 02:35:28.865  1572  3494 I PeopleGalProvider: Method 1 completed.
-11-13 02:35:28.865  1572  3494 I PeopleGalProvider: Method 1 finished successfully.
-11-13 02:35:28.866  1522  3172 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 65 [CONTEXT service_id=218 ]
-11-13 02:35:28.871  3377  3377 W binder:3377_6: type=1400 audit(0.0:23): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:35:28.878  3377  3811 W libc    : Access denied finding property "persist.adb.tls_server.enable"
-11-13 02:35:28.878  3377  3811 W libc    : Access denied finding property "service.adb.tls.port"
-11-13 02:35:28.879  1105  1105 D BluetoothPbapService:  onChange on contact uri 
-11-13 02:35:28.884  1105  4747 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
-11-13 02:35:28.875  3377  3377 W binder:3377_6: type=1400 audit(0.0:24): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:35:28.895  1572  3494 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
-11-13 02:35:28.895   547  1318 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:35:28.895   547  1318 D PackageManager: Clear ephemeral installer activity
-11-13 02:35:28.919  1572  3494 I GalProviderController: Setting component enabled succeeds.
-11-13 02:35:28.925  1572  3494 I PeopleGalProvider: Gal directories started.
-11-13 02:35:28.925  1572  3494 I PeopleGalProvider: Method 1 completed.
-11-13 02:35:28.925  1572  3494 I PeopleGalProvider: Method 1 finished successfully.
-11-13 02:35:28.929  1522  3966 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
-11-13 02:35:28.931  1522  3966 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
-11-13 02:35:28.931  1522  3966 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
-11-13 02:35:28.931  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.constellation.service.START pkg=com.google.android.gms }
-11-13 02:35:28.932  1522  3640 I NearbyShared: FastPairSlice: enableBindServiceForDiscoveryItem called, isBind = false
-11-13 02:35:28.960  1572  3494 I DeletedNullContactsCleanup: Scheduling the service.
-11-13 02:35:28.992  1572  2187 I FastPair: ServiceBindHelper.onSlicePinned, slice already pinned, uri = content://com.google.android.gms.nearby.fastpair/method_bind_service_for_discovery_item?is_bind=false
-11-13 02:35:28.997  1572  3494 I BackupAndSyncValidation: Scheduling the service.
-11-13 02:35:29.002   547   557 I system_server: Background young concurrent copying GC freed 550468(19MB) AllocSpace objects, 36(1360KB) LOS objects, 40% free, 29MB/49MB, paused 51us,524us total 201.576ms
-11-13 02:35:29.017  1572  3494 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
-11-13 02:35:29.021  1572  3498 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.personalsafety, using defaults.
-11-13 02:35:29.022   547  1318 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:35:29.024   547  1318 D PackageManager: Clear ephemeral installer activity
-11-13 02:35:29.031   547  2158 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:35:29.032   547  2158 D PackageManager: Clear ephemeral installer activity
-11-13 02:35:29.033  1572  3498 W ChimeraUtils: Module com.google.android.gms.phonesky_recovery missing resource null(0)
-11-13 02:35:29.034  1572  3498 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.phonesky_recovery, using defaults.
-11-13 02:35:29.039  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-11-13 02:35:29.040  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-11-13 02:35:29.046  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-11-13 02:35:29.050  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-11-13 02:35:29.051  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-11-13 02:35:29.053  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-11-13 02:35:29.054  1572  3498 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.vision, using defaults.
-11-13 02:35:29.066  1572  4642 I GmsDebugLogger: [53] +mlkit.barcode.ui:0
+11-13 02:35:33.145  1134  1191 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:33.145  1134  4435 D SlicesIndexer: Slices already indexed - returning.
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: Could not create slicedata for uri: content://com.android.settings.slices/intent/wifi_calling
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: java.lang.IllegalStateException: Invalid Slices key from path: wifi_calling
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getIndexedSliceData(SlicesDatabaseAccessor.java:132)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceDataFromUri(SlicesDatabaseAccessor.java:75)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.loadSlice(SettingsSliceProvider.java:404)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.lambda$loadSliceInBackground$5(SettingsSliceProvider.java:435)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.$r8$lambda$DuOQmiIacKr39-rTKxFwLhyIlOo(SettingsSliceProvider.java:0)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:35:33.146  1134  4435 D SettingsSliceProvider: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:35:33.197  1134  3862 D WifiCallingSliceHelper: Wifi calling is either not provisioned or not enabled by Platform
+11-13 02:35:33.198  1134  3862 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:33.198  1134  3862 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/zen_mode_toggle
+11-13 02:35:33.201  1134  3862 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:33.201  1134  3512 D SettingsSliceProvider: content://android.settings.slices/action/airplane_mode loaded from cache
+11-13 02:35:33.201  1134  1191 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+11-13 02:35:33.204  1134  1191 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+11-13 02:35:33.205  1134  1191 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:33.206  1134  3862 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+11-13 02:35:33.207  1134  4390 D SettingsSliceProvider: content://android.settings.slices/action/battery_saver loaded from cache
+11-13 02:35:33.209  1134  4398 D SlicesIndexer: Slices already indexed - returning.
+11-13 02:35:33.210  1134  4398 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 1
+11-13 02:35:33.210  1134  1191 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:33.211  1134  1191 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://android.settings.slices/action/bluetooth
+11-13 02:35:33.212  1134  1191 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:33.213  1134  3862 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:33.213  1134  1134 D SettingsSliceProvider: Starting background worker for: content://android.settings.slices/action/wifi
+11-13 02:35:33.213  1134  1134 D SliceBackgroundWorker: create instance: class com.android.settings.wifi.slice.WifiScanWorker
+11-13 02:35:33.214  1134  1191 D WifiSlice: calling uid name : com.google.android.settings.intelligence
+11-13 02:35:33.216  1134  1134 D WsuServiceClient: Binding to com.google.android.apps.carrier.carrierwifi
+11-13 02:35:33.216  1134  1134 D WsuServiceClient: the specified wsu service is not installed.
+11-13 02:35:33.218   547  2188 D ConnectivityService: requestNetwork for uid/pid:1000/1134 activeRequest: null callbackRequest: 112 [NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+11-13 02:35:33.220   547   834 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 1]
+11-13 02:35:33.221   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:33.221   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:33.221   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:33.221   547   834 D ConnectivityService: NetReassign [113 : null → 100] [c 0] [a 0] [i 1]
+11-13 02:35:33.221   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:33.224   547  2188 W ScanResultUtil: Empty or null ScanResult list
+11-13 02:35:33.224   547  2188 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
+11-13 02:35:33.228   547  2188 W ScanResultUtil: Empty or null ScanResult list
+11-13 02:35:33.229   547  2188 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
+11-13 02:35:33.229   547  2188 W ScanResultUtil: Empty or null ScanResult list
+11-13 02:35:33.230   547  2188 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
+11-13 02:35:33.230   547  2188 W ScanResultUtil: Empty or null ScanResult list
+11-13 02:35:33.230   547  2188 W WifiService: Attempt to retrieve OsuProviders with invalid scanResult List
+11-13 02:35:33.237  1134  4818 D CompatibilityChangeReporter: Compat change id reported: 186082280; UID 1000; state: ENABLED
+11-13 02:35:33.237  1134  4818 I WifiPickerTracker: Scanning started
+11-13 02:35:33.238  1134  4818 E WifiScanner: listener does not exist
+11-13 02:35:33.631  1522  1575 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.platform.statsd_java_boot) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-13 02:35:33.632  1522  3404 I bwdg    : No Heterodyne serving version in database [CONTEXT service_id=51 ]
+11-13 02:35:33.638  1522  1595 E IPCThreadState: Binder transaction failure: 316617/29189/-22
+11-13 02:35:33.850     0     0 I binder  : 1595:1522 cannot find target node
+11-13 02:35:33.854     0     0 I binder  : 1522:1595 transaction async to 0:0 failed 316617/29189/-22, size 168-0 line 3210
+11-13 02:35:33.646  1522  3449 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (1627) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 21.571s
+11-13 02:35:33.650  1522  3449 I NewModuleComplete: Received com.google.android.chimera.IntentOperation.NEW_MODULE(com.google.android.gms.chimera.PersistentIntentOperationService,2,true)
+11-13 02:35:33.653  1572  3492 I NewModuleHelper: Received com.google.android.chimera.container.NEW_MODULE_FINALIZE(2/0): com.google.android.gms.chimera.PersistentIntentOperationService,2,true
+11-13 02:35:33.662  4454  4610 V ClearcutMetricXmitter: Transmission is done.
+11-13 02:35:33.671  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-13 02:35:33.798  1522  3623 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.device_performance#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-13 02:35:33.801  1522  3623 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-13 02:35:33.803  1522  1575 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-13 02:35:33.804  1522  1595 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-13 02:35:33.817  1522  3623 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+11-13 02:35:33.818  1522  3623 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+11-13 02:35:33.819  1522  1531 I .gms.persistent: Compiler allocated 4924KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+11-13 02:35:33.822  1522  3623 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+11-13 02:35:33.835  1522  3623 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=33, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-13 02:35:33.839  1522  3623 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+11-13 02:35:33.839   547   619 D ConnectivityService: requestNetwork for uid/pid:10128/1522 activeRequest: null callbackRequest: 115 [NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10128 RequestorUid: 10128 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-13 02:35:33.842   547   834 D ConnectivityService: NetReassign [116 : null → 100] [c 0] [a 1] [i 1]
+11-13 02:35:33.842   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10128 RequestorUid: 10128 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-13 02:35:33.842   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10128 RequestorUid: 10128 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-13 02:35:33.842   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10128 RequestorUid: 10128 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-13 02:35:33.843   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10128 RequestorUid: 10128 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-13 02:35:33.845   547   834 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 1]
+11-13 02:35:33.878   356  4829 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
+11-13 02:35:33.879   356  4830 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-13 02:35:33.879   356  4830 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x709b736161d0
+11-13 02:35:33.879   356  4830 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+11-13 02:35:33.881   356  4831 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-13 02:35:33.881   356  4831 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x709cb3621c70
+11-13 02:35:33.881   356  4831 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+11-13 02:35:33.883  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.885  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.886  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.888  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.889  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.890  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.891  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.893  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:33.894  1522  4827 D TrafficStats: tagSocket(73) with statsTag=0x1203, statsUid=10128
+11-13 02:35:34.031   547   619 D WifiNl80211Manager: Scan result ready event
+11-13 02:35:34.031   547   619 D WifiNative: Scan result ready event
+11-13 02:35:34.036   547   619 I WifiService: startScan uid=1000
 
