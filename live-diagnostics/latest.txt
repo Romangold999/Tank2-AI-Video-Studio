@@ -1,15 +1,12 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:05:45.294680+00:00
+updated_utc=2026-11-13T02:05:46.778259+00:00
 workflow_run_id=43349239517
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
-STATUS=EMULATOR_BOOT_WAIT
-ELAPSED_SECONDS=5
-EMULATOR_PID=3493
-ADB_DEVICE_STATE=not-seen
-BOOT_COMPLETED=not-yet
+STATUS=EMULATOR_PROCESS_EXITED
+ELAPSED_SECONDS=10
 
 ===== emulator-startup.log (last 100 lines) =====
 INFO         | Android emulator version 37.2.13.0 (build_id 16740729) (CL:N/A)
