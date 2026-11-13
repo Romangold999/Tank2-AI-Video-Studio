@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:35:59.353180+00:00
+updated_utc=2026-11-13T02:36:04.353293+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -113,105 +113,116 @@ qemu-system-x86_64-headless: warning: I/O thread spun for 1000 iterations
 === INSTALLED PACKAGE ===
 package:/data/app/~~JbJfUakHixffyOOsekFHNA==/com.romangold.tank2aivideostudio.debug-6TVaP_FTkMxY67dETRd00w==/base.apk
 
+=== UI IMAGE_PICKER ===
+text='This app can only access the photos you select' desc='' class=android.widget.TextView bounds=[248,244][832,283] clickable=false
+text='Recent' desc='' class=android.widget.TextView bounds=[0,493][1080,640] clickable=false
+text='' desc='Photo taken on Nov 13, 2026, 2:32:30\u202fAM' class=android.widget.FrameLayout bounds=[0,640][354,994] clickable=true
+text='' desc='Cancel' class=android.widget.ImageButton bounds=[0,335][147,482] clickable=true
+text='' desc='Photos' class=android.widget.LinearLayout bounds=[267,346][540,472] clickable=false
+text='Photos' desc='' class=android.widget.TextView bounds=[345,383][461,434] clickable=false
+text='' desc='Albums' class=android.widget.LinearLayout bounds=[540,346][813,472] clickable=true
+text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] clickable=false
+text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
+
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:59.084  1522  3452 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:59.109  1522  3452 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:35:59.109  1522  3452 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:35:59.110  1522  3452 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.110  1522  3452 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:35:59.110  1522  3452 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-11-13 02:35:59.110  1522  3452 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:35:59.110  1522  3452 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.110  1522  3452 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:35:59.112  1522  3452 I bwir    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
-11-13 02:35:59.114  1522  5496 I PTCommittedOperation: Receive new configuration for com.google.android.gms
-11-13 02:35:59.114  1522  5496 I PTCommittedOperation: Running Fixer Framework for com.google.android.gms
-11-13 02:35:59.119  1522  5496 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:35:59.119  1522  5496 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:35:59.119  1522  5496 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.119  1522  5496 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:35:59.119  1522  5496 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-11-13 02:35:59.119  1522  5496 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:35:59.119  1522  5496 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.120  1522  5496 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.kids#com.google.android.gms [CONTEXT service_id=204 ]
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.kids#com.google.android.gms
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:59.120  1522  5496 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:59.121  1522  5560 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:35:59.122  1522  5560 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:35:59.122  1522  5560 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.122  1522  5560 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:35:59.122  1522  5560 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-11-13 02:35:59.122  1522  5560 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:35:59.122  1522  5560 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.122  1522  5560 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.libraries.performance.primes#com.google.android.gms [CONTEXT service_id=204 ]
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.libraries.performance.primes#com.google.android.gms
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:59.126  1522  5560 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:59.126   547   971 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10181 pid=0
-11-13 02:35:59.126   547   971 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10181 => denied (133 us)
-11-13 02:35:59.126   547   971 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10181 pid=0
-11-13 02:35:59.126   547   971 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10181 => denied (86 us)
-11-13 02:35:59.127   547   971 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10181 pid=0
-11-13 02:35:59.127   547   971 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10181 => denied (79 us)
-11-13 02:35:59.128  1522  5541 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:35:59.130  1522  5541 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:35:59.131  1522  5541 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.131  1522  5541 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:35:59.132  1522  5541 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-11-13 02:35:59.133  1522  5541 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:35:59.133  1522  5541 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:59.133  1522  5541 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.wallet_dynamite#com.google.android.gms [CONTEXT service_id=204 ]
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.wallet_dynamite#com.google.android.gms
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:59.133  1522  5541 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:59.136  5513  5525 I OpenGLRenderer: Davey! duration=856ms; Flags=1, FrameTimelineVsyncId=10260, IntendedVsync=95805098256, Vsync=95821764922, InputEventId=0, HandleInputStart=95834945464, AnimationStart=95834945775, PerformTraversalsStart=95834945975, DrawStart=95951195347, FrameDeadline=95821764922, FrameInterval=95834937192, FrameStartTime=16666666, SyncQueued=95955466995, SyncStart=95955954661, IssueDrawCommandsStart=95956542416, SwapBuffers=96437806308, FrameCompleted=96661999301, DequeueBufferDuration=3335, QueueBufferDuration=162342, GpuCompleted=96661924570, SwapBuffersCompleted=96661999301, DisplayPresentTime=0, CommandSubmissionCompleted=96437806308, 
-11-13 02:35:59.138   547   971 D CoreBackPreview: Window{ac65afa u0 com.google.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerGetContentActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@e3a9960, mPriority=0, mIsAnimationCallback=false}
-11-13 02:35:59.146  1755  1780 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
-11-13 02:35:59.146  1755  1780 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
-11-13 02:35:59.147  1755  1780 D PickerSyncController:    Latest ID/Gen=1407:d33b5fa0-14d1-41e3-95a3-e7030d6d6b94:external_primary/7
-11-13 02:35:59.147  1755  1780 D PickerSyncController:    Cached ID/Gen=1407:d33b5fa0-14d1-41e3-95a3-e7030d6d6b94:external_primary/7
-11-13 02:35:59.147  1755  1780 D PickerSyncController:    RESULT=SyncRequestParams{type=NONE, gen=0, latest=null}
-11-13 02:35:59.147  5513  5513 W View    : requestLayout() improperly called by com.google.android.material.textview.MaterialTextView{3bf15f4 V.ED..... ......ID 248,116-832,155 #7f0a01c5 app:id/privacy_text} during layout: running second layout pass
-11-13 02:35:59.148  5513  5543 D PhotoPicker: Loaded 1 items in Category: {mId: null, mAuthority: null, mDisplayName: null, mCoverUri: null, mItemCount: 0, mIsLocal: false for user 0
+11-13 02:36:03.608  5852  5852 V GraphicsEnvironment: Currently set values for:
+11-13 02:36:03.608  5852  5852 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:36:03.608  5852  5852 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:36:03.616  5852  5852 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
+11-13 02:36:03.617  5852  5852 V GraphicsEnvironment: com.google.android.gms is not listed in per-application setting
+11-13 02:36:03.617  5852  5852 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:36:03.620  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [maps_core]. Pending module sets: container:2318189190800+maps_core
+11-13 02:36:03.621   547   617 W JobScheduler: Job didn't exist in JobStore: d0073f3 #u0a154/7 com.google.android.contacts/com.google.android.apps.contacts.shortcut.ShortcutJobService
+11-13 02:36:03.631  5687  5782 I GmsDebugLogger: [73] 1801
+11-13 02:36:03.635  5687  5782 W ZappDownloader: No successful module downloads for requested features [maps_core].
+11-13 02:36:03.636  5687  5782 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:231112103100800]
+11-13 02:36:03.639  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-13 02:36:03.639  5687  5782 I GmsDebugLogger: [83] 1 [maps_core]
+11-13 02:36:03.642  5687  5782 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: mlkit.barcode.ui:0
+11-13 02:36:03.646  1134  1159 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
+11-13 02:36:03.650  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.CallVolumePreferenceController
+11-13 02:36:03.653  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+11-13 02:36:03.661  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [mlkit.barcode.ui]. Pending module sets: container:2318189190800+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2640104055100800+tflite_dynamite
+11-13 02:36:03.670  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.MediaVolumePreferenceController
+11-13 02:36:03.671  5687  5782 I GmsDebugLogger: [73] 1801
+11-13 02:36:03.678  5687  5782 W ZappDownloader: No successful module downloads for requested features [mlkit.barcode.ui].
+11-13 02:36:03.679  5687  5782 I GmsDebugLogger: [30] [VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitBarcodeUi.optional:231818100000]
+11-13 02:36:03.680  1134  4702 D MediaVolumePreCtrl: The slice doesn't support end item
+11-13 02:36:03.683   547  2634 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+11-13 02:36:03.685  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/call_volume
+11-13 02:36:03.686  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+11-13 02:36:03.686  5852  5852 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10128; state: ENABLED
+11-13 02:36:03.687  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/media_volume
+11-13 02:36:03.690  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-13 02:36:03.690  5687  5782 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
+11-13 02:36:03.690  1134  1134 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/media_volume
+11-13 02:36:03.691   547   547 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+11-13 02:36:03.911     0     0 I servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
+11-13 02:36:03.697  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/notification_volume
+11-13 02:36:03.697  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+11-13 02:36:03.697  5687  5782 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
+11-13 02:36:03.697   547  2634 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+11-13 02:36:03.699   547  2634 I RemoteProvisionSysSvc: Fetching key 10128 for client 130959758
+11-13 02:36:03.699   547  2634 I RegistrationProxy: getKeyAsync operation started with callback 252888495
+11-13 02:36:03.699  3933  4004 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10128, callback: 64371193
+11-13 02:36:03.703  1134  1159 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:36:03.703  1134  4398 D SlicesIndexer: Slices already indexed - returning.
+11-13 02:36:03.704  5589  5619 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 101 [CONTEXT service_id=218 ]
+11-13 02:36:03.704  1134  4398 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+11-13 02:36:03.704  3933  4004 I RkpdRegistrationBinder: Key successfully assigned to client
+11-13 02:36:03.705   547   547 I RemoteProvisionSysSvc: Successfully fetched key for client 130959758
+11-13 02:36:03.705  1134  4398 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 2
+11-13 02:36:03.706  5852  5852 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-13 02:36:03.707  5852  5852 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-13 02:36:03.707  5852  5852 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-13 02:36:03.707  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+11-13 02:36:03.717  3377  3402 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-13 02:36:03.717  3377  3402 W libc    : Access denied finding property "service.adb.tls.port"
+11-13 02:36:03.728  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [tflite_dynamite]. Pending module sets: container:2318189190800,tflite_dynamite:2640104055100800+tflite_dynamite
+11-13 02:36:03.732  5852  5852 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-13 02:36:03.735  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+11-13 02:36:03.739  1134  4702 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/alarm_volume
+11-13 02:36:03.743  1134  4702 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:36:03.744  1134  4435 D SlicesIndexer: Slices already indexed - returning.
+11-13 02:36:03.745  1134  4435 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 1
+11-13 02:36:03.746  5687  5782 I GmsDebugLogger: [73] 1801
+11-13 02:36:03.750  5687  5782 W ZappDownloader: No successful module downloads for requested features [tflite_dynamite].
+11-13 02:36:03.750  5687  5782 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:264010405100800]
+11-13 02:36:03.753  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-13 02:36:03.753  5687  5782 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+11-13 02:36:03.756  5687  5782 E IPCThreadState: Binder transaction failure: 463720/29189/-22
+11-13 02:36:03.756  5687  5782 E ChimeraUPLUtils: Failed to invoke updateComplete: android.os.DeadObjectException
+11-13 02:36:03.971     0     0 I binder  : 5782:5687 cannot find target node
+11-13 02:36:03.762  5687  5830 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
+11-13 02:36:03.764  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+11-13 02:36:03.715  3377  3377 W binder:3377_2: type=1400 audit(0.0:49): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-13 02:36:03.785  5852  5852 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-13 02:36:03.790  5102  5110 I gs.intelligence: Background concurrent copying GC freed 48643(3492KB) AllocSpace objects, 5(100KB) LOS objects, 49% free, 5778KB/11MB, paused 30us,20us total 128.614ms
+11-13 02:36:03.793  5687  5830 I ChimeraConfigurator: Detected pending changes for urgent request: [tflite_dynamite]. Pending module sets: container:2318189190800,tflite_dynamite:2640104055100800+tflite_dynamite
+11-13 02:36:03.715  3377  3377 W binder:3377_2: type=1400 audit(0.0:50): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-13 02:36:03.805  5852  5852 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10128; state: ENABLED
+11-13 02:36:03.805  5852  5852 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 101159, Startup latency (ms): 185, Is system user: true
+11-13 02:36:03.805  5852  5852 I cuir    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-13 02:36:03.810  5852  5890 I GMS_MM_Logger: Start time: 142531
+11-13 02:36:03.810  5852  5890 I GMS_MM_Logger: Started.
+11-13 02:36:03.811   547   617 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10128. pid: 5852
+11-13 02:36:03.812  5687  5830 I GmsDebugLogger: [73] 1801
+11-13 02:36:03.819  5687  5830 W ZappDownloader: No successful module downloads for requested features [tflite_dynamite].
+11-13 02:36:03.819  5687  5830 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:264010405100800]
+11-13 02:36:03.823  5687  5830 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-13 02:36:03.823  5687  5830 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+11-13 02:36:03.826  5687  5782 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-13 02:36:03.851  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [vision.ocr]. Pending module sets: container:2318189190800+mlkit.ocr.common,tflite_dynamite:2640104055100800+tflite_dynamite,vision_ocr:2316024025100000+vision.ocr
+11-13 02:36:03.863  5687  5782 I GmsDebugLogger: [73] 1801
+11-13 02:36:03.871  5687  5782 W ZappDownloader: No successful module downloads for requested features [vision.ocr].
+11-13 02:36:03.871  5687  5782 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitOcrCommon.optional:231818100800]
+11-13 02:36:03.880  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-13 02:36:03.880  5687  5782 I GmsDebugLogger: [83] 1 [vision.ocr]
+11-13 02:36:03.883  5687  5803 W Vision  : Request for optional module download of ocr failed. Request again.
+11-13 02:36:03.883  5687  5803 W Vision  : Would have logged:
+11-13 02:36:03.883  5687  5803 W Vision  : # dsae@37884fe7
+11-13 02:36:03.883  5687  5803 I Vision  : Schedule retrying download ocr at 101423 with backoff 10 seconds
+11-13 02:36:03.944  5687  5695 I gle.android.gms: Compiler allocated 4750KB to compile boolean zec.j(int, zdr, java.util.List, zeb)
+11-13 02:36:04.029  3377  3402 W SystemServiceRegistry: No service published for: persistent_data_block
+11-13 02:36:04.055  5589  5619 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 299 uptime_millis: 299 exec_start_elapsed_seconds: 101 [CONTEXT service_id=218 ]
 
