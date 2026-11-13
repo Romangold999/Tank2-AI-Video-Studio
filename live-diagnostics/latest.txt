@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:06.054078+00:00
+updated_utc=2026-11-13T02:20:11.054172+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:05.592  1177  1177 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
-11-13 02:20:05.594   548   568 D ColorDisplayService: setUp: currentUser=0
-11-13 02:20:05.599   548  2382 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10139; state: ENABLED
-11-13 02:20:05.601   548   979 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:05.601   548   979 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:05.602  1806  2132 I SP.AiAi : Registering spelling_correction.22110320, url: https://www.gstatic.com/nasa/apps/pack_spelling_checker_11032022/22110320/2/en-us/superpacks_manifest.zip, constraints: W:*:I:*, flags: *, requested: 22110320, current: -1
-11-13 02:20:05.602   506   506 D PermissionCache: checking android.permission.ACCESS_KEYGUARD_SECURE_STORAGE for uid=1000 => granted (23145 us)
-11-13 02:20:05.603   506   506 I gatekeeperd: cold boot: clearing state
-11-13 02:20:05.603  1141  1178 D ActivityEmbeddingUtils: isEmbeddingActivityEnabled = true
-11-13 02:20:05.607   548   548 D LockSettingsService: Clearing FRP credential tied to user 0
-11-13 02:20:05.609   548   829 D WifiConfigStore: Writing to stores completed in 70 ms.
-11-13 02:20:05.611   548   829 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.612  1126  1126 W FeatureConnection: getRegistrationTech: ImsRegistration is null
-11-13 02:20:05.613  1806  1806 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
-11-13 02:20:05.615  1126  1126 I ImsExternalCallTracker: handleVideoCapabilitiesChanged : isVideoCapable = false
-11-13 02:20:05.615  1126  1126 D ImsExternalCallTracker: refreshCallPullState
-11-13 02:20:05.615  1126  1126 I Telephony: handleVideoCapabilitesChanged. Video capability - false
-11-13 02:20:05.615  1126  1126 I ImsExternalCallTracker: handleVideoCapabilitiesChanged : isVideoCapable = false
-11-13 02:20:05.615  1126  1126 D ImsExternalCallTracker: refreshCallPullState
-11-13 02:20:05.615  1126  1126 I Telephony: handleVideoCapabilitesChanged. Video capability - false
-11-13 02:20:05.615  1806  1806 I SP.AiAi : ====> Starting job {m:b:u:l, bg}
-11-13 02:20:05.627   548   657 I StorageSessionController: Notifying volume state changed for session with id: emulated;0
-11-13 02:20:05.637   548  1837 I system_server: IncrementDisableThreadFlip blocked for 21.190ms
-11-13 02:20:05.640  2470  2470 E .localtransport: Not starting debugger since process cannot load the jdwp agent.
-11-13 02:20:05.644   548   601 I AppsFilter: Cache invalidated while building, retrying.
-11-13 02:20:05.646   548   576 I system_server: IncrementDisableThreadFlip blocked for 17.658ms
-11-13 02:20:05.651  1976  2512 I A       : load shared preferences: file not found
-11-13 02:20:05.652  1976  2513 I A       : load shared preferences: file not found
-11-13 02:20:05.653   548   829 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.653   548   829 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.653   548   829 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.654  1806  2266 I AiAiEcho: Cross device timer feature not enabled, not displaying timers
-11-13 02:20:05.666  1806  2166 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
-11-13 02:20:05.666  1528  1528 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360041125 windowMillis: -1 intervalMillis: 0]
-11-13 02:20:05.667  1997  2376 W SQLiteLog: (28) double-quoted string literal: ""
-11-13 02:20:05.667  1997  2376 W SQLiteLog: (28) double-quoted string literal: ""
-11-13 02:20:05.669  1806  2392 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10127; state: ENABLED
-11-13 02:20:05.675  1083  1310 D IpClient/wlan0: addressUpdated: fe80::ecac:f212:d87b:fb2/64 on ifindex 16 flags 0x00000880 scope 253
-11-13 02:20:05.682  1083  1310 D IpClient/wlan0: routeUpdated: ::/0 -> fe80::2 wlan0 mtu 0
-11-13 02:20:05.682  1083  1310 D IpClient/wlan0: routeUpdated: fec0::/64 -> :: wlan0 mtu 0
-11-13 02:20:05.682  1083  1310 D IpClient/wlan0: addressUpdated: fec0::4bfd:8463:13c1:404b/64 on ifindex 16 flags 0x00000944 scope 200
-11-13 02:20:05.682  1083  1310 D IpClient/wlan0: addressUpdated: fec0::ce5b:2d32:4e79:d722/64 on ifindex 16 flags 0x00000045 scope 200
-11-13 02:20:05.684  1903  1903 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10156; state: ENABLED
-11-13 02:20:05.685  1997  2434 W android.youtube: Long monitor contention with owner BG Thread #3 (2376) at akrv vdu.D()(PG:23) waiters=0 in akrv vdu.E() for 377ms
-11-13 02:20:05.685  1997  2434 W SQLiteLog: (28) double-quoted string literal: ""
-11-13 02:20:05.685  1997  2434 W SQLiteLog: (28) double-quoted string literal: ""
-11-13 02:20:05.889     0     0 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification apexservice has clients: 0
-11-13 02:20:05.892     0     0 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
-11-13 02:20:05.894     0     0 I servicemanager: Unregistering apexservice
-11-13 02:20:05.898     0     0 I BpBinder: onLastStrongRef automatically unlinking death recipients:
-11-13 02:20:05.701  1997  2435 W android.youtube: Long monitor contention with owner BG Thread #3 (2376) at akrv vdu.D()(PG:23) waiters=1 in akrv vdu.B() for 387ms
-11-13 02:20:05.900     0     0 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
-11-13 02:20:05.904     0     0 I init    : Service 'apexd' (pid 225) exited with status 0 oneshot service took 33.412998 seconds in background
-11-13 02:20:05.906     0     0 I init    : Sending signal 9 to service 'apexd' (pid 225) process group...
-11-13 02:20:05.908     0     0 I libprocessgroup: Successfully killed process cgroup uid 0 pid 225 in 0ms
-11-13 02:20:05.728   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10169; state: DISABLED
-11-13 02:20:05.729   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10169; state: DISABLED
-11-13 02:20:05.729   548  2514 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10169; state: DISABLED
-11-13 02:20:05.729   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10169; state: DISABLED
-11-13 02:20:05.736   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10169; state: DISABLED
-11-13 02:20:05.737   548  2514 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10169; state: DISABLED
-11-13 02:20:05.737   548  2514 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10169; state: DISABLED
-11-13 02:20:05.737   548  2514 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10169; state: DISABLED
-11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10169; state: DISABLED
-11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10169; state: DISABLED
-11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10169; state: DISABLED
-11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10169; state: DISABLED
-11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10169; state: DISABLED
-11-13 02:20:05.739   548  2514 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10169; state: DISABLED
-11-13 02:20:05.739   548  2514 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10169; state: DISABLED
-11-13 02:20:05.739   548  2514 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10169; state: DISABLED
-11-13 02:20:05.745   548  2514 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10169; state: DISABLED
-11-13 02:20:05.745   548  2514 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10169; state: DISABLED
-11-13 02:20:05.745   548  2514 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10169; state: ENABLED
-11-13 02:20:05.748   548  1081 D ConnectivityService: requestNetwork for uid/pid:10139/1997 activeRequest: null callbackRequest: 46 [NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-11-13 02:20:05.750   548   836 D ConnectivityService: NetReassign [47 : null → 100] [c 0] [a 0] [i 1]
-11-13 02:20:05.752   548   829 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.752   548   829 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.752   548   829 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.752   548   829 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
-11-13 02:20:05.761  1997  1997 W YTPL.mediasession: MediaSession created
-11-13 02:20:05.762  1997  1997 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10139; state: ENABLED
-11-13 02:20:05.762   548  1952 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:05.762   548  1952 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:05.762   548  2514 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10169; state: ENABLED
-11-13 02:20:05.764   548  2514 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
-11-13 02:20:05.771   548  1952 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:05.771   548  1952 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:05.772  1976  1976 I A       : Initializing GMS Compliance Client Library...
-11-13 02:20:05.772  1976  1976 I A       : Checking for device compliance...
-11-13 02:20:05.773   548   617 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 1000; state: DISABLED
-11-13 02:20:05.774   548   617 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 1000; state: DISABLED
-11-13 02:20:05.779  1826  2244 D MediaProvider: Starting migration from legacy provider
-11-13 02:20:05.780   548  1358 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10086. pid: 2308
-11-13 02:20:05.781   904   904 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-11-13 02:20:05.787   548   548 W Looper  : Slow dispatch took 179ms main h=android.os.Handler c=android.database.ContentObserver$$ExternalSyntheticLambda0@37792c8 m=0
-11-13 02:20:05.802   548  1964 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10154; state: ENABLED
-11-13 02:20:05.807  1177  1177 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
-11-13 02:20:05.807  1177  1177 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
-11-13 02:20:05.815  1528  1528 W SystemServiceRegistry: No service published for: contexthub
+11-13 02:20:10.740  1083  3122 D TrafficStats: tagSocket(109) with statsTag=0xffffff81, statsUid=-1
+11-13 02:20:10.741  1528  1642 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-13 02:20:10.742  1528  2855 I bwdg    : No Heterodyne serving version in database [CONTEXT service_id=51 ]
+11-13 02:20:10.743  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.gsa.pcp.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.744  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.podcasts_android.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.746  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.search.smartsetup#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.747  1528  1629 W bwft    : Succeeded but not registered: com.google.android.apps.search.soundsearch.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.748  1528  1629 W bwft    : Succeeded but not registered: com.google.android.libraries.assistant.symbiote#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.749  1528  1629 W bwft    : Succeeded but not registered: com.google.android.libraries.search.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.749  1528  1642 W bwft    : Succeeded but not registered: com.google.ar.sceneviewer.android.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.750  1528  1642 W bwft    : Succeeded but not registered: com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.754  1976  2455 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-13 02:20:10.755  1976  2856 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-13 02:20:10.759  1126  1126 D CarrierSvcBindHelper: No carrier app for: 0
+11-13 02:20:10.760  1976  2856 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: Currently set values for:
+11-13 02:20:10.763  3036  3036 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:20:10.763  3036  3036 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.tts: false
+11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: com.google.android.tts is not listed in per-application setting
+11-13 02:20:10.763  3036  3036 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:20:10.764   904   986 W Looper  : Drained
+11-13 02:20:10.766  3036  3036 I MultiDex: VM with version 2.1.0 has multidex support
+11-13 02:20:10.766  3036  3036 I MultiDex: Installing application
+11-13 02:20:10.766  3036  3036 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-13 02:20:10.766  3036  3036 I MultiDex: Installing application
+11-13 02:20:10.766  3036  3036 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-13 02:20:10.767  1976  2856 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-13 02:20:10.768  3057  3057 V GraphicsEnvironment: Currently set values for:
+11-13 02:20:10.768  3057  3057 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:20:10.768  3057  3057 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:20:10.769  3057  3057 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.dialer: false
+11-13 02:20:10.769  3057  3057 V GraphicsEnvironment: com.google.android.dialer is not listed in per-application setting
+11-13 02:20:10.769  3057  3057 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:20:10.770  1177  1177 I Choreographer: Skipped 71 frames!  The application may be doing too much work on its main thread.
+11-13 02:20:10.772   548  1837 W AppSearchIcing: icing-search-engine.cc:283: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-13 02:20:10.773  1177  2600 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=z1{delegate=s1{logId=5, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=X1.T@62f8bd7
+11-13 02:20:10.774  1528  1642 W bwft    : Succeeded but not registered: com.google.android.apps.search.transcription.uidevice#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
+11-13 02:20:10.775  3057  3057 I MultiDex: Installing application
+11-13 02:20:10.775  3057  3057 I MultiDex: VM with version 2.1.0 has multidex support
+11-13 02:20:10.775  3057  3057 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-13 02:20:10.776  3057  3057 I DialerProvider: enter
+11-13 02:20:10.781  3057  3057 I AtlasPixelTipsContentPr: enter
+11-13 02:20:10.781   548   577 W ActivityManager: Slow operation: 169ms so far, now at startProcess: done creating new process record
+11-13 02:20:10.781   548   577 W ActivityManager: Slow operation: 169ms so far, now at startProcess: stepping in to startProcess
+11-13 02:20:10.781   909   940 I PermissionControllerServiceImpl: Updating user sensitive for uid 10180
+11-13 02:20:10.783   548   548 W Looper  : Slow dispatch took 123ms main h=android.app.ActivityThread$H c=android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0@de876d4 m=0
+11-13 02:20:10.785  1083  3121 D NetworkMonitor/101: PROBE_HTTPS https://www.google.com/generate_204 time=52ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Fri, 13 Nov 2026 02:20:10 GMT], X-Android-Received-Millis=[1794536410782], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794536410774]}
+11-13 02:20:10.787  1083  3122 D NetworkMonitor/101: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=53ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Fri, 13 Nov 2026 02:20:10 GMT], X-Android-Received-Millis=[1794536410786], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794536410761]}
+11-13 02:20:10.787  1083  3120 D NetworkMonitor/101: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=84ms
+11-13 02:20:10.788  1177  1177 D TISBindHelper: TIS service connected
+11-13 02:20:10.788  1177  1177 D b/254119092: Set mActivity=com.google.android.apps.nexuslauncher.NexusLauncherActivity@5e3b3b2
+11-13 02:20:10.788  1177  1177 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-13 02:20:10.788   548   836 I ConnectivityService: Update score for net 101 : +EVER_EVALUATED
+11-13 02:20:10.788   548   836 D ConnectivityService: [101 CELLULAR] validation passed
+11-13 02:20:10.788   548   836 I ConnectivityService: Update capabilities for net 101 : +VALIDATED
+11-13 02:20:10.788   548   836 I ConnectivityService: Update score for net 101 : +EVER_VALIDATED+IS_VALIDATED
+11-13 02:20:10.789   548   836 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+11-13 02:20:10.790   548   836 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-13 02:20:10.790   548   836 D DnsManager: sendDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [10.0.2.3])
+11-13 02:20:10.790   361   361 I resolv  : setDoh: No suitable DoH server found
+11-13 02:20:10.790   361  3137 W resolv  : Validating DnsTlsServer 10.0.2.3 with mark 0xf0065
+11-13 02:20:10.790   361   361 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, "", [10.0.2.3]) -> (0) (0.2ms)
+11-13 02:20:10.790   361   361 I netd    : setResolverConfiguration(ResolverParamsParcel{netId: 101, sampleValiditySeconds: 1800, successThreshold: 25, minSamples: 8, maxSamples: 64, baseTimeoutMsec: 0, retryCount: 0, servers: [10.0.2.3], domains: [], tlsName: , tlsServers: [10.0.2.3], tlsFingerprints: [], caCertificate: , tlsConnectTimeoutMs: 0, resolverOptions: (null), transportTypes: [0]}) <0.26ms>
+11-13 02:20:10.791   361  3137 W resolv  : SSL_connect ssl error =5, mark 0xf0065: Connection refused
+11-13 02:20:10.791   361  3137 W resolv  : TLS Handshake failed
+11-13 02:20:10.791   361  3137 W resolv  : query failed
+11-13 02:20:10.791   361  3137 W resolv  : validateDnsTlsServer returned 0 for 10.0.2.3
+11-13 02:20:10.791   361  3137 W resolv  : Validation failed
+11-13 02:20:10.793   909   940 I PermissionControllerServiceImpl: Updating user sensitive for uid 10154
+11-13 02:20:10.794  1126  1438 D com.android.ons.ONSProfileActivator: Internet connection available
+11-13 02:20:10.795   548   565 I GnssNetworkConnectivityHandler: updateNetworkState, state=CLOSED, connected=true, network=101, capabilities=[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyNetworkSpecifier [mSubId = 1]> SubscriptionIds: {1} UnderlyingNetworks: Null], availableNetworkCount: 2
+11-13 02:20:10.799   909   940 I PermissionControllerServiceImpl: Updating user sensitive for uid 10128
+11-13 02:20:10.801   548   629 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10148; state: ENABLED
+11-13 02:20:10.803   361   361 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.74ms>
+11-13 02:20:10.804   361   361 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.83ms>
+11-13 02:20:10.805  1177  1225 D LoaderTask: loadWorkspace
+11-13 02:20:10.805  1177  1225 D LoaderTask: Cancelled
+11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10085; state: DISABLED
+11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10085; state: DISABLED
+11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10085; state: DISABLED
+11-13 02:20:10.810   548   577 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10085; state: ENABLED
+11-13 02:20:10.810   548   577 W ActivityManager: Slow operation: 198ms so far, now at startProcess: done starting proc!
+11-13 02:20:10.811  1673  1766 I DeviceStatusMonitor: DeviceStatusMonitor.handleBroadcast():122 onReceive() : Action = android.net.conn.CONNECTIVITY_CHANGE
+11-13 02:20:10.812   548   578 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10085; state: ENABLED
+11-13 02:20:10.813  1177  1225 D LoaderTask: loadWorkspace: loading default favorites
+11-13 02:20:10.815  1806  1806 I AiAiCaptions: onServiceConnected(): Connected to Superpacks Service
+11-13 02:20:10.815  1806  2696 I AiAiCaptions: initialize(): bound to superpacks service.
+11-13 02:20:10.815  1806  2696 I AiAiCaptions: getResource(): Could not find pack: 'sound' in superpack: 'captions_i18n_v0_mandatory', trying legacy Superpack.
+11-13 02:20:10.817  1673  1766 I DeviceStatusMonitor: DeviceStatusMonitor.notifyIfNetworkChanged():179 notifyIfNetworkChanged: newState = NON_METERED, airplaneModeOn = false, notifyAnyway = false
+11-13 02:20:10.817  1673  1766 I NetworkInfoNotification: NetworkInfoNotification$Listener.onReceive():93 onNetworkAvailable: networkState = NON_METERED, isAirplaneModeOn = false
+11-13 02:20:10.817  1673  1766 I LatinImeEntryActivation: LatinImeActivationContentObserver.activeLanguagesHaveChanged():68 Active entries changed: [] -> {en-US}
+11-13 02:20:10.817  1673  1766 I SuperDelight: SuperDelightManager.syncBundledLanguageModels():734 syncBundledLanguageModels(): clearing bundled_delight selection
+11-13 02:20:10.818  1673  1766 I LmManager: LmManager.asyncUpdateEnabledLanguageModels():90 asyncUpdateEnabledLanguageModels()
+11-13 02:20:10.818  1673  1766 I SuperDelight: SuperDelightManager.initializeDelightSuperpacks():340 initializeDelightSuperpacks()
+11-13 02:20:10.818  1673  1766 I SuperDelight: SuperDelightManager.getDelightMetadataUriAndVersion():1011 getDelightMetadataUriAndVersion(): Phenotype : 2022101700 : https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json
+11-13 02:20:10.819  1673  1766 I SuperDelight: SuperDelightAppsSuperpacksManager.initializeDelightAppsSuperpacks():92 initializeDelightAppsSuperpacks()
+11-13 02:20:10.820  1673  1766 I SuperDelight: SuperDelightManager.initializeOverridesSuperpacks():402 initializeOverridesSuperpacks()
+11-13 02:20:10.820   362   362 D Zygote  : Forked child process 3140
+11-13 02:20:10.821   548   578 I ActivityManager: Start proc 3140:com.android.externalstorage/u0a85 for broadcast {com.android.externalstorage/com.android.externalstorage.MountReceiver}
 
