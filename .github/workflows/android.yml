@@ -118,6 +118,20 @@ jobs:
           python3 scripts/publish-live-diagnostics.py &
           PUBLISHER_PID=$!
           echo "$PUBLISHER_PID" > diagnostics-publisher.pid
+          for attempt in $(seq 1 30); do
+            if [ -f live-publisher.ready ]; then break; fi
+            if ! kill -0 "$PUBLISHER_PID" 2>/dev/null; then
+              wait "$PUBLISHER_PID" || true
+              echo "Live diagnostics publisher failed before confirming GitHub write access"
+              exit 1
+            fi
+            sleep 1
+          done
+          if [ ! -f live-publisher.ready ]; then
+            echo "Live diagnostics publisher did not confirm remote writes within 30 seconds"
+            exit 1
+          fi
+          echo "LIVE_DIAGNOSTICS_READY interval_seconds=5 branch=live-diagnostics"
           cleanup() {
             if kill -0 "$PUBLISHER_PID" 2>/dev/null; then
               kill -TERM "$PUBLISHER_PID" 2>/dev/null || true
