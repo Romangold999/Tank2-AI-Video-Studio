@@ -1,19 +1,13 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:01.053987+00:00
+updated_utc=2026-11-13T02:20:06.054078+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
-STATUS=EMULATOR_BOOT_WAIT
-ELAPSED_SECONDS=40
-EMULATOR_PID=3280
-ADB_DEVICE_STATE=device
-BOOT_COMPLETED=not-yet
+STATUS=INSTALLING_REUSED_APK\nUTC=2026-11-13T02:20:03Z\n
 
 ===== emulator-startup.log (last 100 lines) =====
-##  emulator by sending anonymized usage data. Or use the '-no-metrics'     ##
-##  flag to bypass this warning and turn off the metrics collection.        ##
 ##  In a future release this warning will turn into a one-time blocking     ##
 ##  prompt to ask for explicit user input regarding metrics collection.     ##
 ##                                                                          ##
@@ -112,10 +106,111 @@ INFO         | emulatorSetupEnvironment: Environment scene is not required
 USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
 WARNING      | Failed to process .ini file /home/runner/.android/emu-update-last-check.ini for reading.
 WARNING      | Failed to process .ini file /home/runner/.android/emu-update-last-check.ini for reading.
+INFO         | Boot completed in 39023 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-(not created yet)
+11-13 02:20:05.592  1177  1177 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-13 02:20:05.594   548   568 D ColorDisplayService: setUp: currentUser=0
+11-13 02:20:05.599   548  2382 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10139; state: ENABLED
+11-13 02:20:05.601   548   979 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:05.601   548   979 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:05.602  1806  2132 I SP.AiAi : Registering spelling_correction.22110320, url: https://www.gstatic.com/nasa/apps/pack_spelling_checker_11032022/22110320/2/en-us/superpacks_manifest.zip, constraints: W:*:I:*, flags: *, requested: 22110320, current: -1
+11-13 02:20:05.602   506   506 D PermissionCache: checking android.permission.ACCESS_KEYGUARD_SECURE_STORAGE for uid=1000 => granted (23145 us)
+11-13 02:20:05.603   506   506 I gatekeeperd: cold boot: clearing state
+11-13 02:20:05.603  1141  1178 D ActivityEmbeddingUtils: isEmbeddingActivityEnabled = true
+11-13 02:20:05.607   548   548 D LockSettingsService: Clearing FRP credential tied to user 0
+11-13 02:20:05.609   548   829 D WifiConfigStore: Writing to stores completed in 70 ms.
+11-13 02:20:05.611   548   829 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.612  1126  1126 W FeatureConnection: getRegistrationTech: ImsRegistration is null
+11-13 02:20:05.613  1806  1806 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+11-13 02:20:05.615  1126  1126 I ImsExternalCallTracker: handleVideoCapabilitiesChanged : isVideoCapable = false
+11-13 02:20:05.615  1126  1126 D ImsExternalCallTracker: refreshCallPullState
+11-13 02:20:05.615  1126  1126 I Telephony: handleVideoCapabilitesChanged. Video capability - false
+11-13 02:20:05.615  1126  1126 I ImsExternalCallTracker: handleVideoCapabilitiesChanged : isVideoCapable = false
+11-13 02:20:05.615  1126  1126 D ImsExternalCallTracker: refreshCallPullState
+11-13 02:20:05.615  1126  1126 I Telephony: handleVideoCapabilitesChanged. Video capability - false
+11-13 02:20:05.615  1806  1806 I SP.AiAi : ====> Starting job {m:b:u:l, bg}
+11-13 02:20:05.627   548   657 I StorageSessionController: Notifying volume state changed for session with id: emulated;0
+11-13 02:20:05.637   548  1837 I system_server: IncrementDisableThreadFlip blocked for 21.190ms
+11-13 02:20:05.640  2470  2470 E .localtransport: Not starting debugger since process cannot load the jdwp agent.
+11-13 02:20:05.644   548   601 I AppsFilter: Cache invalidated while building, retrying.
+11-13 02:20:05.646   548   576 I system_server: IncrementDisableThreadFlip blocked for 17.658ms
+11-13 02:20:05.651  1976  2512 I A       : load shared preferences: file not found
+11-13 02:20:05.652  1976  2513 I A       : load shared preferences: file not found
+11-13 02:20:05.653   548   829 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.653   548   829 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.653   548   829 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.654  1806  2266 I AiAiEcho: Cross device timer feature not enabled, not displaying timers
+11-13 02:20:05.666  1806  2166 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+11-13 02:20:05.666  1528  1528 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360041125 windowMillis: -1 intervalMillis: 0]
+11-13 02:20:05.667  1997  2376 W SQLiteLog: (28) double-quoted string literal: ""
+11-13 02:20:05.667  1997  2376 W SQLiteLog: (28) double-quoted string literal: ""
+11-13 02:20:05.669  1806  2392 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10127; state: ENABLED
+11-13 02:20:05.675  1083  1310 D IpClient/wlan0: addressUpdated: fe80::ecac:f212:d87b:fb2/64 on ifindex 16 flags 0x00000880 scope 253
+11-13 02:20:05.682  1083  1310 D IpClient/wlan0: routeUpdated: ::/0 -> fe80::2 wlan0 mtu 0
+11-13 02:20:05.682  1083  1310 D IpClient/wlan0: routeUpdated: fec0::/64 -> :: wlan0 mtu 0
+11-13 02:20:05.682  1083  1310 D IpClient/wlan0: addressUpdated: fec0::4bfd:8463:13c1:404b/64 on ifindex 16 flags 0x00000944 scope 200
+11-13 02:20:05.682  1083  1310 D IpClient/wlan0: addressUpdated: fec0::ce5b:2d32:4e79:d722/64 on ifindex 16 flags 0x00000045 scope 200
+11-13 02:20:05.684  1903  1903 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10156; state: ENABLED
+11-13 02:20:05.685  1997  2434 W android.youtube: Long monitor contention with owner BG Thread #3 (2376) at akrv vdu.D()(PG:23) waiters=0 in akrv vdu.E() for 377ms
+11-13 02:20:05.685  1997  2434 W SQLiteLog: (28) double-quoted string literal: ""
+11-13 02:20:05.685  1997  2434 W SQLiteLog: (28) double-quoted string literal: ""
+11-13 02:20:05.889     0     0 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification apexservice has clients: 0
+11-13 02:20:05.892     0     0 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+11-13 02:20:05.894     0     0 I servicemanager: Unregistering apexservice
+11-13 02:20:05.898     0     0 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+11-13 02:20:05.701  1997  2435 W android.youtube: Long monitor contention with owner BG Thread #3 (2376) at akrv vdu.D()(PG:23) waiters=1 in akrv vdu.B() for 387ms
+11-13 02:20:05.900     0     0 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+11-13 02:20:05.904     0     0 I init    : Service 'apexd' (pid 225) exited with status 0 oneshot service took 33.412998 seconds in background
+11-13 02:20:05.906     0     0 I init    : Sending signal 9 to service 'apexd' (pid 225) process group...
+11-13 02:20:05.908     0     0 I libprocessgroup: Successfully killed process cgroup uid 0 pid 225 in 0ms
+11-13 02:20:05.728   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10169; state: DISABLED
+11-13 02:20:05.729   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10169; state: DISABLED
+11-13 02:20:05.729   548  2514 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10169; state: DISABLED
+11-13 02:20:05.729   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10169; state: DISABLED
+11-13 02:20:05.736   548  2514 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10169; state: DISABLED
+11-13 02:20:05.737   548  2514 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10169; state: DISABLED
+11-13 02:20:05.737   548  2514 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10169; state: DISABLED
+11-13 02:20:05.737   548  2514 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10169; state: DISABLED
+11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10169; state: DISABLED
+11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10169; state: DISABLED
+11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10169; state: DISABLED
+11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10169; state: DISABLED
+11-13 02:20:05.738   548  2514 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10169; state: DISABLED
+11-13 02:20:05.739   548  2514 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10169; state: DISABLED
+11-13 02:20:05.739   548  2514 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10169; state: DISABLED
+11-13 02:20:05.739   548  2514 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10169; state: DISABLED
+11-13 02:20:05.745   548  2514 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10169; state: DISABLED
+11-13 02:20:05.745   548  2514 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10169; state: DISABLED
+11-13 02:20:05.745   548  2514 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10169; state: ENABLED
+11-13 02:20:05.748   548  1081 D ConnectivityService: requestNetwork for uid/pid:10139/1997 activeRequest: null callbackRequest: 46 [NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-13 02:20:05.750   548   836 D ConnectivityService: NetReassign [47 : null → 100] [c 0] [a 0] [i 1]
+11-13 02:20:05.752   548   829 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.752   548   829 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.752   548   829 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.752   548   829 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:20:05.761  1997  1997 W YTPL.mediasession: MediaSession created
+11-13 02:20:05.762  1997  1997 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10139; state: ENABLED
+11-13 02:20:05.762   548  1952 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:05.762   548  1952 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:05.762   548  2514 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10169; state: ENABLED
+11-13 02:20:05.764   548  2514 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+11-13 02:20:05.771   548  1952 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:05.771   548  1952 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:05.772  1976  1976 I A       : Initializing GMS Compliance Client Library...
+11-13 02:20:05.772  1976  1976 I A       : Checking for device compliance...
+11-13 02:20:05.773   548   617 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 1000; state: DISABLED
+11-13 02:20:05.774   548   617 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 1000; state: DISABLED
+11-13 02:20:05.779  1826  2244 D MediaProvider: Starting migration from legacy provider
+11-13 02:20:05.780   548  1358 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10086. pid: 2308
+11-13 02:20:05.781   904   904 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
+11-13 02:20:05.787   548   548 W Looper  : Slow dispatch took 179ms main h=android.os.Handler c=android.database.ContentObserver$$ExternalSyntheticLambda0@37792c8 m=0
+11-13 02:20:05.802   548  1964 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10154; state: ENABLED
+11-13 02:20:05.807  1177  1177 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+11-13 02:20:05.807  1177  1177 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-13 02:20:05.815  1528  1528 W SystemServiceRegistry: No service published for: contexthub
 
