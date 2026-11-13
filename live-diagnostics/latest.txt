@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:37:04.354444+00:00
+updated_utc=2026-11-13T02:37:09.354533+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -137,104 +137,104 @@ text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] cl
 text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:37:04.052  5589  6510 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:37:04.055  5687  5780 W PeoplePU: getComponentEnabledSetting failed.
-11-13 02:37:04.055  5687  5780 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at bvgq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:37:04.055  5687  5780 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5159)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5141)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:388)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:3012)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6334)
-11-13 02:37:04.055  5687  5780 W PeoplePU: 
-11-13 02:37:04.056  5687  5780 I FsaEntryPointSwitcher: setting component enabled=1 for com.google.android.gms.people.sync.focus.ContactsSyncAdapterService
-11-13 02:37:04.056  5687  5780 I FsaEntryPointSwitcher: Setting component enabled succeeds.
-11-13 02:37:04.057  5687  5780 W PeoplePU: getComponentEnabledSetting failed.
-11-13 02:37:04.057  5687  5780 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at bvgq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):29)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:37:04.057  5687  5780 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:37:04.058  5687  5780 W PeoplePU: getComponentEnabledSetting failed.
-11-13 02:37:04.058  5687  5780 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:37:04.058  5687  5780 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:37:04.064  5687  5777 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43201] seconds from now (1794537424064) [CONTEXT service_id=264 ]
-11-13 02:37:04.065  5687  5777 I GmsDebugLogger: [83] 1 [vision.ocr]
-11-13 02:37:04.066  5687  6540 W Vision  : Request for optional module download of ocr failed. Request again.
-11-13 02:37:04.066  5687  6540 W Vision  : Would have logged:
-11-13 02:37:04.066  5687  6540 W Vision  : # dsae@37884fe7
-11-13 02:37:04.066  5687  6540 I Vision  : Schedule retrying download ocr at 161605 with backoff 10 seconds
-11-13 02:37:04.069  5589  6510 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService started execution. cause:5 exec_start_elapsed_seconds: 161 [CONTEXT service_id=218 ]
-11-13 02:37:04.077  5687  5775 I ChimeraConfigurator: Starting update, reason: 1 urgentFeatures: 
-11-13 02:37:04.083  5687  5780 I PeopleGalProvider: Gal directories started.
-11-13 02:37:04.083  5687  5780 I PeopleGalProvider: Method 1 completed.
-11-13 02:37:04.083  5687  5780 I PeopleGalProvider: Method 1 finished successfully.
-11-13 02:37:04.089  1105  1105 D BluetoothPbapService:  onChange on contact uri 
-11-13 02:37:04.091  5687  5780 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
-11-13 02:37:04.091   547   576 W ProcessStats: Tracking association SourceState{190deb system/1000 BFgs #11994} whose proc state 4 is better than process ProcessState{95072de android.process.acore/10084 pkg=com.android.providers.contacts (sub)} proc state 6 (11 skipped)
-11-13 02:37:04.092  5687  5780 I GalProviderController: Setting component enabled succeeds.
-11-13 02:37:04.100  5687  5780 I PeopleGalProvider: Gal directories started.
-11-13 02:37:04.101  5687  5780 I PeopleGalProvider: Method 1 completed.
-11-13 02:37:04.101  5687  5780 I PeopleGalProvider: Method 1 finished successfully.
-11-13 02:37:04.103  1105  6558 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
-11-13 02:37:04.103  5687  5780 I DeletedNullContactsCleanup: Scheduling the service.
-11-13 02:37:04.104  5687  5780 I BackupAndSyncValidation: Scheduling the service.
-11-13 02:37:04.105   547  2190 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:37:04.105   547  2190 D PackageManager: Clear ephemeral installer activity
-11-13 02:37:04.107  3377  6527 W libc    : Access denied finding property "persist.adb.tls_server.enable"
-11-13 02:37:04.107  3377  6527 W libc    : Access denied finding property "service.adb.tls.port"
-11-13 02:37:04.099  3377  3377 W IntentService[D: type=1400 audit(0.0:97): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:37:04.107  3377  3377 W IntentService[D: type=1400 audit(0.0:98): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:37:04.116  5687  5780 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
-11-13 02:37:04.122  5687  5780 I HeterodyneSyncScheduler: Cancel all previously scheduled polling [CONTEXT service_id=51 ]
-11-13 02:37:04.125  5687  5780 I HeterodyneSyncScheduler: Scheduling Phenotype for first execution 9887 seconds from now (1794537424125) [CONTEXT service_id=51 ]
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+11-13 02:37:07.117  1835  1835 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:37:07.117  1835  1835 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-13 02:37:07.117  1835  1835 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:37:07.117  1835  1835 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:37:07.117  1835  1835 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+11-13 02:37:07.117  1835  1835 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+11-13 02:37:07.117  1835  1835 E A       : 	... 15 more
+11-13 02:37:07.117  1835  1835 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+11-13 02:37:07.117  1835  1835 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+11-13 02:37:07.117  1835  1835 E A       : 	... 12 more
+11-13 02:37:07.121  1835  1835 W A       : Failed to sync device settings.
+11-13 02:37:07.121  1835  1835 I A       : Retrying to sync device settings.
+11-13 02:37:07.122   902   963 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+11-13 02:37:07.122  1133  1439 D ImsResolver: maybeAddedImsService, packageName: com.google.android.contacts
+11-13 02:37:07.126   547  2194 W JobScheduler: Job didn't exist in JobStore: 5683cbd #u0a132/-353 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+11-13 02:37:07.126  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:37:07.126  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:37:07.129   547   576 E system_server: No package ID 7f found for resource ID 0x7f080107.
+11-13 02:37:07.129   547   576 E system_server: No package ID 7f found for resource ID 0x7f150560.
+11-13 02:37:07.134   902   963 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+11-13 02:37:07.134   902   963 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+11-13 02:37:07.135  1740  1740 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.contacts.
+11-13 02:37:07.135  1740  2833 I AiAiEcho: AppIndexer Package:[com.google.android.contacts] UserProfile:[0] Enabled:[true].
+11-13 02:37:07.135  1740  2833 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.contacts], userId:[0], reason:[package is updated.].
+11-13 02:37:07.136   902   963 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+11-13 02:37:07.136   902   963 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+11-13 02:37:07.177  5589  5685 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:37:07.178  5589  5685 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:37:07.179  5589  6606 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-13 02:37:07.182  5589  6522 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-13 02:37:07.192  5687  5796 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-13 02:37:07.195  5687  5796 I Icing   : Indexing done com.google.android.gms-apps
+11-13 02:37:07.601  4454  4583 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of bdxy@2cbeb36
+11-13 02:37:08.728  6618  6618 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-13 02:37:08.732  6618  6618 I AndroidRuntime: Using default boot image
+11-13 02:37:08.732  6618  6618 I AndroidRuntime: Leaving lock profiling enabled
+11-13 02:37:08.734  6618  6618 I app_process: Core platform API reporting enabled, enforcing=false
+11-13 02:37:08.734  6618  6618 I app_process: Using CollectorTypeCC GC.
+11-13 02:37:08.788  6618  6618 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-13 02:37:08.797  6618  6618 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-13 02:37:08.798  6618  6618 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
+11-13 02:37:08.802  6618  6618 W app_process: Unexpected CPU variant for x86: x86_64.
+11-13 02:37:08.802  6618  6618 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-13 02:37:08.804  6618  6618 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]} | PCL[])
+11-13 02:37:08.805  6618  6618 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}#PCL[/system/framework/android.test.base.jar*836642756]} | PCL[/system/framework/android.test.runner.jar*4168958247])
+11-13 02:37:08.816  6618  6618 W libc    : Access denied finding property "ro.product.name_for_attestation"
+11-13 02:37:08.817  6618  6618 W libc    : Access denied finding property "ro.product.brand_for_attestation"
+11-13 02:37:08.817  6618  6618 W libc    : Access denied finding property "ro.product.model_for_attestation"
+11-13 02:37:08.818  6618  6618 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-13 02:37:08.820  6618  6618 D UiAutomationConnection: Created on user UserHandle{0}
+11-13 02:37:08.821  6618  6618 I UiAutomation: Initialized for user 0 on display 0
+11-13 02:37:08.821  6618  6618 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+11-13 02:37:08.815  6618  6618 W main    : type=1400 audit(0.0:102): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:37:08.822   547  2604 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+11-13 02:37:08.822   547  2604 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation) when called by user 0
+11-13 02:37:08.823   547  2604 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:37:08.824  6618  6634 V UiAutomation: Init UiAutomation@5662f0b[id=18, displayId=0, flags=0]
+11-13 02:37:08.825   547   547 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-13 02:37:08.827  1740  2665 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:37:08.828  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:37:08.828  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:37:08.828  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:37:08.828  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:37:08.815  6618  6618 W main    : type=1400 audit(0.0:103): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:37:08.828  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:37:08.828  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:37:08.828  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:37:08.828  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:37:08.829  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-13 02:37:08.829  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:37:08.831   547  2159 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:37:08.833   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:37:08.833  1740  2665 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:37:08.833  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:37:08.833  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:37:08.833  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:37:08.833  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:37:08.834  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:37:08.834  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:37:08.834  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:37:08.834  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:37:08.834  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-13 02:37:08.834  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:37:08.837  1835  2464 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-13 02:37:08.837  1835  2464 I A       : Nga state changed to NgaStateDetails{state=DISABLED, isSpecialExperience=false}
+11-13 02:37:08.815  6618  6618 W main    : type=1400 audit(0.0:104): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+11-13 02:37:08.838  1757  5179 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-13 02:37:08.838  1757  5179 I A       : [Memory] eligibility: StashEligibility{4}
+11-13 02:37:08.838   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:37:08.839  1757  2320 I A       : Unsubscribed to apa or classic variant change.
+11-13 02:37:08.852   547  2159 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
+11-13 02:37:08.919   547  2188 D OomAdjuster: Not killing cached processes
 
