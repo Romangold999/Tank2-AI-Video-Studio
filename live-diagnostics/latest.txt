@@ -1,15 +1,11 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:34:59.348385+00:00
+updated_utc=2026-11-13T02:35:04.348494+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
-STATUS=EMULATOR_BOOT_WAIT
-ELAPSED_SECONDS=40
-EMULATOR_PID=3249
-ADB_DEVICE_STATE=device
-BOOT_COMPLETED=not-yet
+STATUS=INSTALLING_REUSED_APK\nUTC=2026-11-13T02:35:02Z\n
 
 ===== emulator-startup.log (last 100 lines) =====
 ##  In a future release this warning will turn into a one-time blocking     ##
@@ -117,5 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-(not created yet)
+11-13 02:35:04.012  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:35:04.012  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:35:04.012  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:35:04.014  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:35:04.014  1740  2101 I LPRequestState: [ManagerRequests] #resolveUnusedLanguagePacks
+11-13 02:35:04.014  1740  2101 I LPRequestState: [ManagerRequests] #resolveDesiredLanguagePacks
+11-13 02:35:04.014  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:35:04.015   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:35:04.015  1835  2818 I MicroDetectionWorker: Initializing MicroDataManager InitializeType-1, isForced-false, isActivePhoneEnrollment-false isActiveGoogleHomeEnrollment-false
+11-13 02:35:04.022   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:35:04.022   902   902 W BcSmartspaceView: Current card is not present in the Adapter; cannot log.
+11-13 02:35:04.025  1835  2462 I A       : #onStartupAfterPackageReplaced()
+11-13 02:35:04.025  1835  2462 I WeatherWidgetAvailabili: #isAnyPixel: Isn't Pixel but: sdk_gphone64_x86_64
+11-13 02:35:04.028  1847  3120 D ProfileInstaller: Installing profile for com.google.android.gsf
+11-13 02:35:04.029  1835  2818 I MicroDetectionState: Should stop hotword detection immediately - false
+11-13 02:35:04.030  1835  2464 I A       : Using proto config with mendel
+11-13 02:35:04.030  1835  2464 I A       : Proto config empty. Exit merge.
+11-13 02:35:04.030  1835  2464 I MicroDataManager: Location for model with model type: 1 and locale: en-US, is : en-US/hotword.data
+11-13 02:35:04.030  1835  2464 I MicroModelsUtil: #getHotwordModel [locale: en-US, modelType: 1]
+11-13 02:35:04.035   547  1221 D ConnectivityService: requestNetwork for uid/pid:10139/1846 activeRequest: null callbackRequest: 70 [NetworkRequest [ REQUEST id=71, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-13 02:35:04.036  1835  1835 I CastDynamiteModuleImpl: vk created by ClassLoader dalvik.system.DelegateLastClassLoader[DexPathList[[zip file "/data/user_de/0/com.google.android.gms/app_chimera/m/00000004/DynamiteModulesC.apk"],nativeLibraryDirectories=[/data/user_de/0/com.google.android.gms/app_chimera/m/00000004/DynamiteModulesC.apk!/lib/x86_64, /data/user_de/0/com.google.android.gms/app_chimera/m/00000004/DynamiteModulesC.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]].
+11-13 02:35:04.039   547   834 D ConnectivityService: NetReassign [71 : null → 100] [c 0] [a 1] [i 1]
+11-13 02:35:04.040   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=71, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:35:04.040   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=71, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:35:04.041   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=71, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:35:04.041   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=71, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+11-13 02:35:04.044  1835  1835 I ExoPlayerImpl: Init 55f6077 [AndroidXMedia3/1.0.0-alpha03] [emu64xa, sdk_gphone64_x86_64, Google, 34]
+11-13 02:35:04.047  1105  1458 I HeadsetPhoneState: stopListenForPhoneState(), no listener indicates nothing is listening
+11-13 02:35:04.047  1105  1458 W HeadsetPhoneState: startListenForPhoneState, no event to listen
+11-13 02:35:04.048  1133  1133 D TelephonyProvider: subIdString = 1 subId = 1
+11-13 02:35:04.049  1133  1133 D CarrierConfigLoader: Update config for phoneId: 0 simState: LOADED
+11-13 02:35:04.050  1133  1133 D TelephonyProvider: subIdString = 1 subId = 1
+11-13 02:35:04.051  1740  3111 I Manager : DeviceManager::DeviceManager
+11-13 02:35:04.051  1740  3111 I Manager : findAvailableDevices
+11-13 02:35:04.051  1133  1133 D TelephonyProvider: subId:1 mccmnc=310260 carrierId=1, match current APN size:  1
+11-13 02:35:04.052  1133  1133 D TelephonyProvider: match MNO APN: 1
+11-13 02:35:04.052  1133  1133 D TelephonyProvider: match carrier id APN: 0
+11-13 02:35:04.053  1133  1133 D TelephonyProvider: subIdString = 1 subId = 1
+11-13 02:35:04.054  1133  1133 D TelephonyProvider: subIdString = 1 subId = 1
+11-13 02:35:04.054  1133  1133 D TelephonyProvider: subId:1 mccmnc=310260 carrierId=1, match current APN size:  1
+11-13 02:35:04.055  1133  1133 D TelephonyProvider: match MNO APN: 1
+11-13 02:35:04.055  1133  1133 D TelephonyProvider: match carrier id APN: 0
+11-13 02:35:04.056  1133  1133 D TelephonyProvider: subIdString = 1 subId = 1
+11-13 02:35:04.057  1133  1133 D TelephonyProvider: subIdString = 1 subId = 1
+11-13 02:35:04.058  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:35:04.058  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:35:04.058  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:35:04.060  2974  2974 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10130; state: ENABLED
+11-13 02:35:04.060  2974  2974 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10130; state: DISABLED
+11-13 02:35:04.062   356  3100 I resolv  : res_nsend: used send_dg 95 terrno: 0
+11-13 02:35:04.062   356  3100 I resolv  : doQuery: rcode=0, ancount=4, return value=95
+11-13 02:35:04.062   356  3099 I resolv  : res_nsend: used send_dg 143 terrno: 0
+11-13 02:35:04.062   356  3099 I resolv  : doQuery: rcode=0, ancount=4, return value=143
+11-13 02:35:04.063   547  1221 D WifiNl80211Manager: Scan result ready event
+11-13 02:35:04.063   547  1221 D WifiNative: Scan result ready event
+11-13 02:35:04.064  1667  3096 D TrafficStats: tagSocket(106) with statsTag=0xffffffff, statsUid=-1
+11-13 02:35:04.065  1835  2462 I WeatherWidgetAvailabili: #isAnyPixel: Isn't Pixel but: sdk_gphone64_x86_64
+11-13 02:35:04.066  1835  2462 I A       : WeatherWidgetSynclet is disabled, at least Android S and any Pixel is required.
+11-13 02:35:04.069  1105  3110 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+11-13 02:35:04.070  1607  2019 I ContactsDatabaseHelper: Locale change completed in 91ms
+11-13 02:35:04.071   356  3118 I resolv  : res_nsend: used send_dg 85 terrno: 0
+11-13 02:35:04.071   356  3118 I resolv  : doQuery: rcode=0, ancount=2, return value=85
+11-13 02:35:04.071   547   629 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10108; state: ENABLED
+11-13 02:35:04.072  2981  2981 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10148; state: ENABLED
+11-13 02:35:04.072  2981  2981 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10148; state: DISABLED
+11-13 02:35:04.072  2935  2935 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10150; state: ENABLED
+11-13 02:35:04.073  2935  2935 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10150; state: ENABLED
+11-13 02:35:04.074   547   568 W BLASTSyncEngine: Sync group 6 timeout
+11-13 02:35:04.074   547   568 I BLASTSyncEngine: Unfinished container: Task{4de40cd #7 type=home I=com.google.android.apps.nexuslauncher/.NexusLauncherActivity}
+11-13 02:35:04.074   547   568 I BLASTSyncEngine: Unfinished container: WindowToken{11ee69 type=2000 android.os.BinderProxy@b73cd33}
+11-13 02:35:04.077  1740  3111 I Manager : Found interface nnapi-sample_all (version = JUST_AN_EXAMPLE)
+11-13 02:35:04.077  1740  3111 I Manager : Found interface nnapi-sample_quant (version = JUST_AN_EXAMPLE)
+11-13 02:35:04.077  1740  3111 I Manager : Found interface nnapi-sample_sl_shim (version = JUST_AN_EXAMPLE)
+11-13 02:35:04.077   356  3119 I resolv  : res_nsend: used send_dg 45 terrno: 0
+11-13 02:35:04.077   356  3119 I resolv  : doQuery: rcode=0, ancount=1, return value=45
+11-13 02:35:04.078  2411  2894 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+11-13 02:35:04.079   902   941 V WindowManagerShell: onTransitionReady android.os.BinderProxy@7475238: {id=6 t=CHANGE f=0x0 trk=1 r=[0@Point(0, 0)] c=[{null m=TO_BACK f=IS_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@c34e68a} leash=Surface(name=WallpaperWindowToken{2c139cf token=android.os.Binder@b5b7a2e})/@0x349407e sb=Rect(0, 0 - 1080, 1920) eb=Rect(0, 0 - 1080, 1920) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@98064fb} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x74b09df sb=Rect(0, 0 - 1080, 1920) eb=Rect(0, 0 - 1080, 1920) d=0 snapshot=Surface(name=transition snapshot: Display{#0 state=ON size=1080x1920 ROTATION_0})/@0x96f562c}]}
+11-13 02:35:04.079   902   941 V WindowManagerShell: Playing animation for (#6)android.os.BinderProxy@7475238@1
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@e252663
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@b15b260
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@ad66319
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@dcfffde
+11-13 02:35:04.080   902   941 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@539c5bf
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@493948c
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@a6117d5
+11-13 02:35:04.080   902   941 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@9762cb6
+11-13 02:35:04.080   902   941 V WindowManagerShell: start default transition animation, info = {id=6 t=CHANGE f=0x0 trk=1 r=[0@Point(0, 0)] c=[{null m=TO_BACK f=IS_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@c34e68a} leash=Surface(name=WallpaperWindowToken{2c139cf token=android.os.Binder@b5b7a2e})/@0x349407e sb=Rect(0, 0 - 1080, 1920) eb=Rect(0, 0 - 1080, 1920) d=0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@98064fb} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x74b09df sb=Rect(0, 0 - 1080, 1920) eb=Rect(0, 0 - 1080, 1920) d=0 snapshot=Surface(name=transition snapshot: Display{#0 state=ON size=1080x1920 ROTATION_0})/@0x96f562c}]}
+11-13 02:35:04.080   902   941 V WindowManagerShell: Display is changing, resolve the animation hint.
+11-13 02:35:04.082  1835  2500 I MicroDataManager: MicroDataManager InitializationTask. googleHotwordData is null: true, hotwordModel is null: false , sourceLocationOfCurrentHotwordModel en-US/hotword.data
+11-13 02:35:04.083  1835  2818 I A       : Using proto config with mendel
+11-13 02:35:04.083  1835  2818 I A       : Proto config empty. Exit merge.
+11-13 02:35:04.084  1835  2818 I MicroDetectionState: Should stop hotword detection immediately - false
+11-13 02:35:04.090   902   941 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9762cb6
+11-13 02:35:04.091   902   949 W Looper  : Drained
+11-13 02:35:04.092   547  2158 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:04.092   547  2158 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:04.093  1133  1133 D TelephonyProvider: subIdString = 1 subId = 1
+11-13 02:35:04.096  1133  1133 D CarrierConfigLoader: mHandler: EVENT_DO_FETCH_DEFAULT phoneId: 0
+11-13 02:35:04.097  1133  1133 D CarrierConfigLoader: File not found : /data/user_de/0/com.android.phone/files/carrierconfig-com.android.carrierconfig-override-89860***************-1.xml
 
