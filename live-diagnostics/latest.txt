@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:36:04.353293+00:00
+updated_utc=2026-11-13T02:36:09.353389+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -123,106 +123,107 @@ text='Photos' desc='' class=android.widget.TextView bounds=[345,383][461,434] cl
 text='' desc='Albums' class=android.widget.LinearLayout bounds=[540,346][813,472] clickable=true
 text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] clickable=false
 text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
+IMAGE_SELECTION_TAPPED
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:36:03.608  5852  5852 V GraphicsEnvironment: Currently set values for:
-11-13 02:36:03.608  5852  5852 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
-11-13 02:36:03.608  5852  5852 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
-11-13 02:36:03.616  5852  5852 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
-11-13 02:36:03.617  5852  5852 V GraphicsEnvironment: com.google.android.gms is not listed in per-application setting
-11-13 02:36:03.617  5852  5852 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-11-13 02:36:03.620  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [maps_core]. Pending module sets: container:2318189190800+maps_core
-11-13 02:36:03.621   547   617 W JobScheduler: Job didn't exist in JobStore: d0073f3 #u0a154/7 com.google.android.contacts/com.google.android.apps.contacts.shortcut.ShortcutJobService
-11-13 02:36:03.631  5687  5782 I GmsDebugLogger: [73] 1801
-11-13 02:36:03.635  5687  5782 W ZappDownloader: No successful module downloads for requested features [maps_core].
-11-13 02:36:03.636  5687  5782 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:231112103100800]
-11-13 02:36:03.639  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
-11-13 02:36:03.639  5687  5782 I GmsDebugLogger: [83] 1 [maps_core]
-11-13 02:36:03.642  5687  5782 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: mlkit.barcode.ui:0
-11-13 02:36:03.646  1134  1159 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
-11-13 02:36:03.650  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.CallVolumePreferenceController
-11-13 02:36:03.653  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
-11-13 02:36:03.661  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [mlkit.barcode.ui]. Pending module sets: container:2318189190800+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2640104055100800+tflite_dynamite
-11-13 02:36:03.670  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.MediaVolumePreferenceController
-11-13 02:36:03.671  5687  5782 I GmsDebugLogger: [73] 1801
-11-13 02:36:03.678  5687  5782 W ZappDownloader: No successful module downloads for requested features [mlkit.barcode.ui].
-11-13 02:36:03.679  5687  5782 I GmsDebugLogger: [30] [VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitBarcodeUi.optional:231818100000]
-11-13 02:36:03.680  1134  4702 D MediaVolumePreCtrl: The slice doesn't support end item
-11-13 02:36:03.683   547  2634 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
-11-13 02:36:03.685  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/call_volume
-11-13 02:36:03.686  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
-11-13 02:36:03.686  5852  5852 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10128; state: ENABLED
-11-13 02:36:03.687  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/media_volume
-11-13 02:36:03.690  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
-11-13 02:36:03.690  5687  5782 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
-11-13 02:36:03.690  1134  1134 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/media_volume
-11-13 02:36:03.691   547   547 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
-11-13 02:36:03.911     0     0 I servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
-11-13 02:36:03.697  1134  1159 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/notification_volume
-11-13 02:36:03.697  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
-11-13 02:36:03.697  5687  5782 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
-11-13 02:36:03.697   547  2634 I RegistrationProxy: IGetRegistrationCallback.onSuccess
-11-13 02:36:03.699   547  2634 I RemoteProvisionSysSvc: Fetching key 10128 for client 130959758
-11-13 02:36:03.699   547  2634 I RegistrationProxy: getKeyAsync operation started with callback 252888495
-11-13 02:36:03.699  3933  4004 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10128, callback: 64371193
-11-13 02:36:03.703  1134  1159 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:36:03.703  1134  4398 D SlicesIndexer: Slices already indexed - returning.
-11-13 02:36:03.704  5589  5619 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 101 [CONTEXT service_id=218 ]
-11-13 02:36:03.704  1134  4398 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
-11-13 02:36:03.704  3933  4004 I RkpdRegistrationBinder: Key successfully assigned to client
-11-13 02:36:03.705   547   547 I RemoteProvisionSysSvc: Successfully fetched key for client 130959758
-11-13 02:36:03.705  1134  4398 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 2
-11-13 02:36:03.706  5852  5852 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
-11-13 02:36:03.707  5852  5852 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
-11-13 02:36:03.707  5852  5852 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
-11-13 02:36:03.707  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
-11-13 02:36:03.717  3377  3402 W libc    : Access denied finding property "persist.adb.tls_server.enable"
-11-13 02:36:03.717  3377  3402 W libc    : Access denied finding property "service.adb.tls.port"
-11-13 02:36:03.728  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [tflite_dynamite]. Pending module sets: container:2318189190800,tflite_dynamite:2640104055100800+tflite_dynamite
-11-13 02:36:03.732  5852  5852 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
-11-13 02:36:03.735  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
-11-13 02:36:03.739  1134  4702 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/alarm_volume
-11-13 02:36:03.743  1134  4702 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:36:03.744  1134  4435 D SlicesIndexer: Slices already indexed - returning.
-11-13 02:36:03.745  1134  4435 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 1
-11-13 02:36:03.746  5687  5782 I GmsDebugLogger: [73] 1801
-11-13 02:36:03.750  5687  5782 W ZappDownloader: No successful module downloads for requested features [tflite_dynamite].
-11-13 02:36:03.750  5687  5782 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:264010405100800]
-11-13 02:36:03.753  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
-11-13 02:36:03.753  5687  5782 I GmsDebugLogger: [83] 1 [tflite_dynamite]
-11-13 02:36:03.756  5687  5782 E IPCThreadState: Binder transaction failure: 463720/29189/-22
-11-13 02:36:03.756  5687  5782 E ChimeraUPLUtils: Failed to invoke updateComplete: android.os.DeadObjectException
-11-13 02:36:03.971     0     0 I binder  : 5782:5687 cannot find target node
-11-13 02:36:03.762  5687  5830 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
-11-13 02:36:03.764  1134  4702 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
-11-13 02:36:03.715  3377  3377 W binder:3377_2: type=1400 audit(0.0:49): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:36:03.785  5852  5852 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
-11-13 02:36:03.790  5102  5110 I gs.intelligence: Background concurrent copying GC freed 48643(3492KB) AllocSpace objects, 5(100KB) LOS objects, 49% free, 5778KB/11MB, paused 30us,20us total 128.614ms
-11-13 02:36:03.793  5687  5830 I ChimeraConfigurator: Detected pending changes for urgent request: [tflite_dynamite]. Pending module sets: container:2318189190800,tflite_dynamite:2640104055100800+tflite_dynamite
-11-13 02:36:03.715  3377  3377 W binder:3377_2: type=1400 audit(0.0:50): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
-11-13 02:36:03.805  5852  5852 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10128; state: ENABLED
-11-13 02:36:03.805  5852  5852 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 101159, Startup latency (ms): 185, Is system user: true
-11-13 02:36:03.805  5852  5852 I cuir    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
-11-13 02:36:03.810  5852  5890 I GMS_MM_Logger: Start time: 142531
-11-13 02:36:03.810  5852  5890 I GMS_MM_Logger: Started.
-11-13 02:36:03.811   547   617 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10128. pid: 5852
-11-13 02:36:03.812  5687  5830 I GmsDebugLogger: [73] 1801
-11-13 02:36:03.819  5687  5830 W ZappDownloader: No successful module downloads for requested features [tflite_dynamite].
-11-13 02:36:03.819  5687  5830 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:264010405100800]
-11-13 02:36:03.823  5687  5830 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
-11-13 02:36:03.823  5687  5830 I GmsDebugLogger: [83] 1 [tflite_dynamite]
-11-13 02:36:03.826  5687  5782 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
-11-13 02:36:03.851  5687  5782 I ChimeraConfigurator: Detected pending changes for urgent request: [vision.ocr]. Pending module sets: container:2318189190800+mlkit.ocr.common,tflite_dynamite:2640104055100800+tflite_dynamite,vision_ocr:2316024025100000+vision.ocr
-11-13 02:36:03.863  5687  5782 I GmsDebugLogger: [73] 1801
-11-13 02:36:03.871  5687  5782 W ZappDownloader: No successful module downloads for requested features [vision.ocr].
-11-13 02:36:03.871  5687  5782 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitOcrCommon.optional:231818100800]
-11-13 02:36:03.880  5687  5782 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
-11-13 02:36:03.880  5687  5782 I GmsDebugLogger: [83] 1 [vision.ocr]
-11-13 02:36:03.883  5687  5803 W Vision  : Request for optional module download of ocr failed. Request again.
-11-13 02:36:03.883  5687  5803 W Vision  : Would have logged:
-11-13 02:36:03.883  5687  5803 W Vision  : # dsae@37884fe7
-11-13 02:36:03.883  5687  5803 I Vision  : Schedule retrying download ocr at 101423 with backoff 10 seconds
-11-13 02:36:03.944  5687  5695 I gle.android.gms: Compiler allocated 4750KB to compile boolean zec.j(int, zdr, java.util.List, zeb)
-11-13 02:36:04.029  3377  3402 W SystemServiceRegistry: No service published for: persistent_data_block
-11-13 02:36:04.055  5589  5619 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 299 uptime_millis: 299 exec_start_elapsed_seconds: 101 [CONTEXT service_id=218 ]
+11-13 02:36:07.749  5589  5626 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:36:07.749  5589  5626 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:36:07.749  5589  5626 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:36:07.749  5589  5626 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:36:07.749  5589  5626 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:36:07.749  5589  5626 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:36:07.749  5589  5626 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-13 02:36:07.750  5589  5626 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.trustlet_onbody(change count changed - expected 1  but was 0), resolution=null}]
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:36:07.750  5589  5626 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:36:07.759  5687  5799 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.trustlet_onbody, triggering flag update. Experiments may be delayed til next app start.
+11-13 02:36:08.026  1163  1163 D TaplEvents: TIS / TouchInteractionService.onInputEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=540.0, y[0]=1175.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=105563, downTime=105563, deviceId=-1, source=0x1002, displayId=0, eventId=-972246393 }
+11-13 02:36:08.045  1163  1163 D TaplEvents: TIS / TouchInteractionService.onInputEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=540.0, y[0]=1175.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=105563, downTime=105563, deviceId=-1, source=0x1002, displayId=0, eventId=-415868973 }
+11-13 02:36:08.264   547  2189 D OomAdjuster: Not killing cached processes
+11-13 02:36:08.264  5687  5687 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.findmydevice.spot.service.locationreport.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-13 02:36:08.265  5687  5687 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.findmydevice.spot.service.management.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-13 02:36:08.605  5589  5685 I NearbySharing: FastInitiation warming period has ended [CONTEXT service_id=194 ]
+11-13 02:36:08.676  5589  5681 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+11-13 02:36:08.677  5589  5681 D BluetoothAdapter: isLeEnabled(): ON
+11-13 02:36:08.682  1105  1138 D BtGatt.GattService: stopScan() - queue size =2
+11-13 02:36:08.684  1105  1138 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-13 02:36:08.685  1105  1138 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:829 get_profile_interface: get_profile_interface: id = activity_attribution
+11-13 02:36:08.685  1105  1420 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10128]]
+11-13 02:36:08.686  1105  1420 D BtGatt.ScanManager: stop gattClientScanNative
+11-13 02:36:08.686  1105  1420 I bt_stack: [INFO:le_scanning_manager.cc(168)] Scan in shim layer stopped
+11-13 02:36:08.686  1105  1368 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:193 unregister_client: Client unregistered
+11-13 02:36:08.686  1105  1368 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:197 unregister_client: Cancelled address rotation alarm
+11-13 02:36:08.686  1105  1420 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:36:08.686  1105  1381 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:36:08.686  1105  1381 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:36:08.687  1105  1420 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:36:08.687  1105  1381 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:36:08.687  1105  1381 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:36:08.687  1105  1420 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:36:08.687  1105  1381 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:36:08.687  1105  1381 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:36:08.687  1105  1420 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:36:08.687  1105  1381 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:36:08.687  1105  1381 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:36:08.687  1105  1420 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:36:08.687  1105  1381 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:36:08.687  1105  1381 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-13 02:36:08.687  1105  1420 D BtGatt.ScanManager: configureRegularScanParams() - queue=1
+11-13 02:36:08.687  1105  1420 D BtGatt.ScanManager: configureRegularScanParams() - queue empty, scan stopped
+11-13 02:36:08.690  1105  1138 D BtGatt.GattService: unregisterScanner() - scannerId=2
+11-13 02:36:08.690  1105  1138 I bt_stack: [INFO:le_scanning_manager.cc(162)] Unregister in shim layer, scanner_id:2
+11-13 02:36:08.692  5589  5681 I Nearby  : [MBleClient] M hardware scan: 1 clients, scanMode= OPPORTUNISTIC, filters size = 5 [CONTEXT service_id=49 ]
+11-13 02:36:08.692  5589  5681 D BluetoothAdapter: isLeEnabled(): ON
+11-13 02:36:08.694  1105  4652 D BtGatt.GattService: registerScanner() - UUID=5bdb4238-706a-4fd9-b325-722b8a252efb
+11-13 02:36:08.694  1105  4652 I bt_stack: [INFO:le_scanning_manager.cc(155)] RegisterScanner in shim layer
+11-13 02:36:08.695  1105  1381 D BtGatt.GattService: onScannerRegistered() - UUID=5bdb4238-706a-4fd9-b325-722b8a252efb, scannerId=2, status=0
+11-13 02:36:08.695  5589  5604 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=2 mScannerId=0
+11-13 02:36:08.696  1105  4652 D BtGatt.GattService: start scan with filters
+11-13 02:36:08.696  1105  4652 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=224, mManufacturerData=[0, 0, 0], mManufacturerDataMask=[0, 0, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fef3-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000feaa-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1,
+11-13 02:36:08.698  1105  4652 D BtGatt.ScanManager: startScan()  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10128]]
+11-13 02:36:08.698  1105  4652 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-13 02:36:08.698  1105  4652 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:829 get_profile_interface: get_profile_interface: id = activity_attribution
+11-13 02:36:08.698  1105  1420 D BtGatt.ScanManager: handling starting scan
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: Could not register for notifications with InnerTube: 
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: abqx: zvm: Precondition check failed.
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at abqn.apply(Unknown Source:4)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at yyi.r(PG:5)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at yyi.b(PG:2)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at abqp.d(PG:4)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at agsb.c(PG:63)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at agsb.i(PG:4)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at agsb.c(PG:92)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at agsb.j(PG:38)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at agsb.d(PG:3)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at agrz.run(Unknown Source:2)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at smg.run(PG:2)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at snu.run(PG:5)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: Caused by: zvm: Precondition check failed.
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at abpb.e(PG:5)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at zhp.f(PG:1)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at zhp.e(PG:1)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at zgl.run(PG:19)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at aosb.run(PG:3)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at yxr.run(PG:11)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: Caused by: efc
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	at zgl.run(PG:13)
+11-13 02:36:09.097  1814  2610 W YouTubeMusic: 	... 5 more
 
