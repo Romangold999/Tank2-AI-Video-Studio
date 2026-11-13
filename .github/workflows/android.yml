@@ -73,7 +73,10 @@ jobs:
       - name: Create generic Android 14 x86_64 AVD
         run: |
           set -euxo pipefail
-          mkdir -p "$HOME/.android/avd"
+          export ANDROID_USER_HOME="$HOME/.android"
+          export ANDROID_AVD_HOME="$HOME/.android/avd"
+          unset XDG_CONFIG_HOME
+          mkdir -p "$ANDROID_AVD_HOME"
           printf 'no\\n' | avdmanager create avd --name ci_android_x86_64 --package "system-images;android-34;google_apis;x86_64" --device "pixel_6" --path "$HOME/.android/avd/ci_android_x86_64.avd" --force
           AVD_CONFIG="$HOME/.android/avd/ci_android_x86_64.avd/config.ini"
           if [ ! -f "$AVD_CONFIG" ]; then
@@ -94,6 +97,9 @@ jobs:
             echo "hw.keyboard=yes"
           } >> "$AVD_CONFIG"
           cat "$AVD_CONFIG"
+          echo "=== AVDs visible to emulator ==="
+          "$ANDROID_HOME/emulator/emulator" -list-avds
+          "$ANDROID_HOME/emulator/emulator" -list-avds | grep -Fx "ci_android_x86_64"
       - name: Boot emulator and run real-photo inference with 5-second live diagnostics
         id: android_tests
         env:
@@ -128,6 +134,9 @@ jobs:
           }
           trap cleanup EXIT
 
+          export ANDROID_USER_HOME="$HOME/.android"
+          export ANDROID_AVD_HOME="$HOME/.android/avd"
+          unset XDG_CONFIG_HOME
           SDK_ROOT="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-}}"
           if [ -z "$SDK_ROOT" ]; then
             echo "ANDROID_SDK_ROOT and ANDROID_HOME are both unset"
