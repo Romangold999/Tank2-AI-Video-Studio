@@ -51,15 +51,12 @@ jobs:
           path: ci-existing-apk
           run-id: 43347242486
           github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Verify reused APK and build only the instrumentation test APK
+      - name: Verify and preserve the existing APK from run 118 (no APK rebuild)
         run: |
           set -euxo pipefail
           test -s ci-existing-apk/app-debug.apk
           stat -c "REUSED_APK_BYTES=%s" ci-existing-apk/app-debug.apk
           sha256sum ci-existing-apk/app-debug.apk
-          gradle --no-daemon :app:assembleDebugAndroidTest --stacktrace
-          test -s app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
-          stat -c "TEST_APK_BYTES=%s" app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
       - name: Install emulator runtime dependencies
         run: |
           sudo apt-get update
@@ -201,14 +198,14 @@ jobs:
 
           printf 'STATUS=INSTALLING_REUSED_APK\\nUTC=%s\\n' "$(date -u +%FT%TZ)" > live-status.txt
           adb install -r ci-existing-apk/app-debug.apk
-          adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
-          printf 'STATUS=ANDROID_INSTRUMENTED_TEST_RUNNING\\nUTC=%s\\n' "$(date -u +%FT%TZ)" > live-status.txt
+          adb shell mkdir -p /sdcard/Pictures
+          printf 'STATUS=ANDROID_UI_GENERATION_TEST_RUNNING\\nUTC=%s\\n' "$(date -u +%FT%TZ)" > live-status.txt
           set +e
-          adb -s emulator-5554 shell am instrument -w -r -e class com.romangold.tank2aivideostudio.RealImageGenerationInstrumentedTest#realPhotoProducesPlayableMp4 com.romangold.tank2aivideostudio.debug.test/androidx.test.runner.AndroidJUnitRunner 2>&1 | tee gradle-instrumented-test.log
+          python3 scripts/run-real-image-ui-test.py 2>&1 | tee gradle-instrumented-test.log
           TEST_STATUS=${PIPESTATUS[0]}
           set -e
-          printf 'STATUS=ANDROID_TEST_FINISHED\nTEST_EXIT_CODE=%s\nUTC=%s\n' "$TEST_STATUS" "$(date -u +%FT%TZ)" > live-status.txt
-          echo "INSTRUMENTED_TEST_EXIT_CODE=$TEST_STATUS"
+          printf 'STATUS=ANDROID_UI_TEST_FINISHED\\nTEST_EXIT_CODE=%s\\nUTC=%s\\n' "$TEST_STATUS" "$(date -u +%FT%TZ)" > live-status.txt
+          echo "ANDROID_UI_TEST_EXIT_CODE=$TEST_STATUS"
           kill "$LOGCAT_PID" 2>/dev/null || true
           sleep 6
           exit "$TEST_STATUS"
