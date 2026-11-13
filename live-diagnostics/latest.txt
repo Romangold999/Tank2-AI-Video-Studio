@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:16.054271+00:00
+updated_utc=2026-11-13T02:20:21.054398+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:15.694  3057  3199 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_all_calls
-11-13 02:20:15.694  3057  3232 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForCallLogAllCalls:57 notifyForCallLogAllCalls
-11-13 02:20:15.695  3057  3202 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:162 start writing coalesced_rows_for_conversation_history_all_calls
-11-13 02:20:15.695  3057  3202 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_conversation_history_all_calls
-11-13 02:20:15.696  3057  3195 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:162 start writing coalesced_rows_for_missed_calls
-11-13 02:20:15.696  3057  3195 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_missed_calls
-11-13 02:20:15.700  1607  1616 I gle.android.gms: Background young concurrent copying GC freed 64090(3387KB) AllocSpace objects, 20(1048KB) LOS objects, 42% free, 5875KB/10184KB, paused 80us,16us total 154.373ms
-11-13 02:20:15.701  3057  3201 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForConversationHistory:79 notifyForConversationHistory
-11-13 02:20:15.701  3057  3201 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForCallLogMissedCalls:68 notifyForCallLogMissedCalls
-11-13 02:20:15.701  3057  3201 I DialerRefreshAnnotatedCallLogWorker: com.android.dialer.calllog.refresh.impl.RefreshAnnotatedCallLogWorker.lambda$rebuild$7:219 coalesced row updated
-11-13 02:20:15.702  3057  3202 I DialerSystemCallLogUpdater: com.android.dialer.calllog.refresh.impl.SystemCallLogUpdater.lambda$update$0:105 not updating system call log for initial build
-11-13 02:20:15.702  3057  3201 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: ANNOTATED_CALL_LOG_FORCE_REFRESH_NO_CHANGES_NEEDED
-11-13 02:20:15.703  1697  1726 I .apps.wellbeing: Background concurrent copying GC freed 62727(3399KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 4599KB/9198KB, paused 30us,10us total 132.325ms
-11-13 02:20:15.708   548  2382 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10098. pid: 3403
-11-13 02:20:15.708   548  1951 W JobScheduler: Job didn't exist in JobStore: 1af854a #u0a132/-1000001 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
-11-13 02:20:15.708  3403  3403 W PreBootReceiver: Can't get valid overlay info
-11-13 02:20:15.709  3403  3403 D DocumentsApplication: OverlayManager.setEnabled() result: true
-11-13 02:20:15.709  3487  3487 D nativeloader: Configuring clns-7 for other apk /data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/lib/x86_64:/data/app/~~Y6Tz5z11KN5eRNRG9SzVew==/com.google.android.webview-FmL-I9HqKzVX8NjprlUDjg==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~xwpsku4Sy8RANl8qI2hOzQ==/com.google.android.trichromelibrary_567263637-sjeAoj9qAI3tTJrm67NQEA==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
-11-13 02:20:15.713  1976  2509 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
-11-13 02:20:15.713  1976  2509 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
-11-13 02:20:15.713  1976  2509 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
-11-13 02:20:15.716   548  1916 W JobScheduler: Job didn't exist in JobStore: a60890f #u0a132/-133 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
-11-13 02:20:15.718  1976  2509 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
-11-13 02:20:15.718  1976  2509 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
-11-13 02:20:15.722   548   565 W Looper  : Slow dispatch took 213ms android.fg h=android.os.Handler c=<recycled PooledLambda@910bb5c> m=0
-11-13 02:20:15.726  1528  1528 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-11-13 02:20:15.726  1528  1528 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-11-13 02:20:15.727  1528  1642 D BluetoothAdapter: isLeEnabled(): ON
-11-13 02:20:15.728  1976  2849 I A       : Executing HotwordSilentEnrollment for user profile: 0
-11-13 02:20:15.728  1976  2849 I A       : Using proto config with mendel
-11-13 02:20:15.728  1976  2849 I A       : Proto config empty. Exit merge.
-11-13 02:20:15.729   548   565 W Looper  : Slow delivery took 261ms android.fg h=android.os.Handler c=<recycled PooledLambda@ed05aa2> m=0
-11-13 02:20:15.729  1976  2849 I A       : Using proto config with mendel
-11-13 02:20:15.729  1976  2849 I A       : Proto config empty. Exit merge.
-11-13 02:20:15.729  1976  2849 I MicroDataManager: Location for model with model type: 1 and locale: en-US, is : en-US/hotword.data
-11-13 02:20:15.729  1976  2849 I A       : Using proto config with mendel
-11-13 02:20:15.730  1976  2849 I A       : Proto config empty. Exit merge.
-11-13 02:20:15.730  1976  2849 I MicroDataManager: Location for model with model type: 1 and locale: en-US, is : en-US/hotword.data
-11-13 02:20:15.730  1976  2849 I MicroDataManager: Already initialized, obtaining the hotword data immediately.
-11-13 02:20:15.730  1976  2849 I MicroDataManager: #getGoogleHotwordData desiredModel en-US/hotword.data, sourceLocationOfCurrentHotwordModel en-US/hotword.data
-11-13 02:20:15.730  1976  2849 I MicroDataManager: Obtaining new data for new params.
-11-13 02:20:15.733  1528  1637 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.consentverifier#com.google.android.tts) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: Currently set values for:
-11-13 02:20:15.738  3487  3487 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
-11-13 02:20:15.738  3487  3487 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
-11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.webview: false
-11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: com.google.android.webview is not listed in per-application setting
-11-13 02:20:15.738  3487  3487 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-11-13 02:20:15.742  3487  3487 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
-11-13 02:20:15.744  3487  3487 I cr_WebViewApkApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview:webview_service
-11-13 02:20:15.747  1976  2849 I MicroDataManager: Created a new hotword model for:
-11-13 02:20:15.747  1976  2849 I MicroDataManager:  LOC: en-US/hotword.data SR: 16000 CC: 1
-11-13 02:20:15.749   548   565 I PreBootBroadcaster: Pre-boot of {com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher} for user 0
-11-13 02:20:15.751  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:15.753  1528  1629 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gm#com.google.android.gm_Hub) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:20:15.765  1806  2132 I SP.AiAi : Successfully got manifest for actions-ranking-table-manifest: manifests:actions-ranking-table-211005
-11-13 02:20:15.767  1528  1637 W bwft    : Succeeded but not registered: com.google.android.libraries.search.rendering.xuikit.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:20:15.767  1607  3119 W SQLiteLog: (28) double-quoted string literal: "1794363615767"
-11-13 02:20:15.767  1607  3119 W SQLiteLog: (28) double-quoted string literal: "1"
-11-13 02:20:15.770   548  1931 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:15.770   548  1931 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:15.770  1976  2863 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:15.773   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:15.773   548   977 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:15.779  1528  2878 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 53594]
-11-13 02:20:15.780   548  1951 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 10128; state: ENABLED
-11-13 02:20:15.781   548  1951 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10128; state: ENABLED
-11-13 02:20:15.787   548   980 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:15.787   548   980 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  3301  3438 E LiveWallpaperInfo: Found a null resolve info
-11-13 02:20:15.789  1806  3397 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'actions-ranking-table' (download version 211005), starting to download superpack.
-11-13 02:20:15.792  1976  2509 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=31, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
-11-13 02:20:15.792   548  2514 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:15.792   548  2514 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:15.794  1976  2509 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
-11-13 02:20:15.809  1528  3313 I GoogleLocationManager: loading FLP PI cache [CONTEXT service_id=6 ]
-11-13 02:20:15.813   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:15.813   548   977 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:15.816   548  2382 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10133. pid: 3487
-11-13 02:20:15.821  1108  3210 D BtGatt.GattService: registerScanner() - UUID=2483657b-7cbe-4ecb-9df1-6d85421e0bb7
-11-13 02:20:15.822  1108  3210 I bt_stack: [INFO:le_scanning_manager.cc(155)] RegisterScanner in shim layer
-11-13 02:20:15.827  1126  1161 D MmsSmsDatabaseHelper: clearMmsParts: removing all attachments from: /data/user/0/com.android.providers.telephony/app_parts
-11-13 02:20:15.827  1108  1321 D BtGatt.GattService: onScannerRegistered() - UUID=2483657b-7cbe-4ecb-9df1-6d85421e0bb7, scannerId=1, status=0
-11-13 02:20:15.828  1528  3103 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=1 mScannerId=0
-11-13 02:20:15.828   904   904 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
-11-13 02:20:15.829  1108  3210 D BtGatt.GattService: start scan with filters
-11-13 02:20:15.829  1108  3210 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=0000fe2c-0000-1000-8000-00805f9b34fb, mServiceData=[-4, 18, -114], mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null]])
-11-13 02:20:15.833  1108  3210 W droid.bluetooth: Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/google/protobuf/UnsafeUtil; using reflection
-11-13 02:20:15.833  1108  3210 W droid.bluetooth: Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/google/protobuf/UnsafeUtil; using reflection
+11-13 02:20:20.529  1126  1126 I PhoneInterfaceManager: unregisterMmTelCapabilityCallback: 1 is inactive, ignoring unregister.
+11-13 02:20:20.529  1126  1126 I PhoneInterfaceManager: unregisterImsRegistrationCallback: 1is inactive, ignoring unregister.
+11-13 02:20:20.533  1126  1126 I Telephony: TelecomAccountRegistry: setupAccounts: Found 1 phones.  Attempting to register.
+11-13 02:20:20.533  1126  1126 I Telephony: TelecomAccountRegistry: setupAccounts: Phone with subscription id 1
+11-13 02:20:20.537  2937  3912 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10089; state: ENABLED
+11-13 02:20:20.552  1528  1528 I NearbyDiscovery: DiscoveryService created [CONTEXT service_id=265 ]
+11-13 02:20:20.554  1528  3244 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360056014 windowMillis: -1 intervalMillis: 0]
+11-13 02:20:20.554   548   622 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 10089; state: ENABLED
+11-13 02:20:20.554   548   622 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10089; state: ENABLED
+11-13 02:20:20.564  1528  1528 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-13 02:20:20.565  1528  1528 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.572  1126  1151 W System  : A resource failed to call AbstractCursor.close. 
+11-13 02:20:20.382   904   986 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+11-13 02:20:20.614  1976  2744 I A       : GMSCore Auth returned 0 accounts.
+11-13 02:20:20.614  1976  2744 I A       : GoogleOwnersProvider returned 0 accounts.
+11-13 02:20:20.629   548   638 I RoleService: Granting default roles...
+11-13 02:20:20.648  1673  2010 I SP      : Sync for bundled_delight succeeded in 4272 ms: {added: [main_en_us_2022051700_2], metadata: false
+11-13 02:20:20.665   361   361 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.08ms>
+11-13 02:20:20.665   361   361 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.02ms>
+11-13 02:20:20.665   361   361 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.03ms>
+11-13 02:20:20.666   361   361 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.02ms>
+11-13 02:20:20.676  1697  1786 W efg     : <DWB> Register all active fences - Successfully registered 4.
+11-13 02:20:20.687  1607  3854 I LocationHistory: [IntentOperation] Module is disabled [CONTEXT service_id=314 ]
+11-13 02:20:20.688  1607  1607 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:20:20.692  1141  1141 D BootBroadcastReceiver: refresh periodic job from action=android.intent.action.BOOT_COMPLETED
+11-13 02:20:20.693  1141  1141 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 1000; state: ENABLED
+11-13 02:20:20.694  1673  2010 I SP      : GC for 'bundled_delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-13 02:20:20.695  1673  2010 I LmManager: LmManager$1.onSuccess():76 Bundled delight sync success
+11-13 02:20:20.695  1607  3781 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-13 02:20:20.695  1607  3781 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:20:20.695  1607  3781 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:20:20.697  1673  1766 I SuperDelight: SuperDelightManager$2.onSuccess():635 bundled_delight sync success, adding to data file manager
+11-13 02:20:20.699  1673  1766 I DataFileManager: DataFileManager.addDataWithoutNotify():166 adding data en-US bundled_delight
+11-13 02:20:20.704   548   565 W Looper  : Slow dispatch took 274ms android.fg h=android.os.Handler c=<recycled PooledLambda@c624739> m=0
+11-13 02:20:20.714   904   986 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+11-13 02:20:20.714   904   986 W Looper  : Slow delivery took 1113ms SysUiBg h=android.hardware.input.InputManagerGlobal$InputDeviceListenerDelegate c=null m=3
+11-13 02:20:20.714  1126  1126 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+11-13 02:20:20.714  1126  1126 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-13 02:20:20.714   904   986 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+11-13 02:20:20.714   904   986 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+11-13 02:20:20.715   904   986 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+11-13 02:20:20.715   904   986 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+11-13 02:20:20.722  1126  1126 I Telephony: isRttCurrentlySupported -- regular acct, hasVoiceAvailability: false
+11-13 02:20:20.722  1126  1126 I Telephony:  isRttSupported: false
+11-13 02:20:20.722  1126  1126 I Telephony:  alwaysAllowWhileRoaming: false
+11-13 02:20:20.722  1126  1126 I Telephony:  isRoaming: false
+11-13 02:20:20.722  1126  1126 I Telephony:  isOnWfc: false
+11-13 02:20:20.723   548  2075 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 1000; state: ENABLED
+11-13 02:20:20.724   361  3915 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
+11-13 02:20:20.724   548  2075 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 1000; state: ENABLED
+11-13 02:20:20.727  1141  1141 D CompatibilityChangeReporter: Compat change id reported: 170233598; UID 1000; state: ENABLED
+11-13 02:20:20.727  1141  1141 D PeriodicJobManager: schedule next alarm job at Nov 13, 2026, 03:00:00
+11-13 02:20:20.728   361  3917 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-13 02:20:20.728   361  3917 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23e3153090
+11-13 02:20:20.728   361  3917 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+11-13 02:20:20.729  1607  1607 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:20:20.729  1607  1607 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:20:20.732  1141  1141 D BatterySettingsMigrateChecker: invoke verifySaverConfiguration()
+11-13 02:20:20.732   361  3916 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-13 02:20:20.733   361  3916 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23a3150290
+11-13 02:20:20.733   361  3916 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+11-13 02:20:20.735   904   986 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+11-13 02:20:20.735  1607  3855 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.games [CONTEXT service_id=231 ]
+11-13 02:20:20.737  1607  3855 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.maps#com.google.android.gms [CONTEXT service_id=231 ]
+11-13 02:20:20.737  1528  3908 D TrafficStats: tagSocket(194) with statsTag=0x1203, statsUid=10128
+11-13 02:20:20.737  1607  3855 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.cast [CONTEXT service_id=231 ]
+11-13 02:20:20.739  1141  1141 D BatterySettingsMigrateChecker: invoke verifyOptimizationModes()
+11-13 02:20:20.741   904   986 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+11-13 02:20:20.743   904   986 W Looper  : Drained
+11-13 02:20:20.764   904   904 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.screen.ui.GrayscaleTileService}(0)
+11-13 02:20:20.767  1607  3855 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+11-13 02:20:20.770  1607  1607 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:20:20.775  1607  3855 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.udc [CONTEXT service_id=231 ]
+11-13 02:20:20.778  1126  1126 I Telephony: AccountEntry: registerPstnPhoneAccount: Registering account=[[ ] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} Capabilities: CallProvider MultiUser PlaceEmerg SimSub  Audio Routes: BESW Schemes: tel voicemail  Extras: Bundle[{android.telecom.extra.SUPPORTS_VIDEO_CALLING_FALLBACK=true}] GroupId: ***] with Telecom. subId=1
+11-13 02:20:20.779  1697  1803 W fyg     : <DWB> Unsupported: feature flag disabled.
+11-13 02:20:20.788   548  1966 I Telecom : : registerPhoneAccount: account=[[ ] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} Capabilities: CallProvider MultiUser PlaceEmerg SimSub  Audio Routes: BESW Schemes: tel voicemail  Extras: Bundle[{android.telecom.extra.SUPPORTS_VIDEO_CALLING_FALLBACK=true}] GroupId: ***]: TSI.rPA(cap)@ALk🔒
+11-13 02:20:20.789  1528  3908 D TrafficStats: tagSocket(194) with statsTag=0x1203, statsUid=10128
+11-13 02:20:20.793   548  2075 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:20.793   548  2075 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:20.794  1607  1607 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:20:20.794  1607  1607 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:20:20.809   548  2643 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:20.809   548  2643 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:20.810  1607  1607 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:20:20.812   548  2075 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:20.812   548  2075 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:20.815   548  1966 I Telecom : PhoneAccountRegistrar: Modify account: [ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0}]: TSI.rPA(cap)@ALk🔒
+11-13 02:20:20.816   548  1966 I Telecom : CallsManager: handlePhoneAccountChanged: phoneAccount=[[X] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} Capabilities: CallProvider MultiUser PlaceEmerg SimSub  Audio Routes: BESW Schemes: tel voicemail  Extras: Bundle[{android.telecom.extra.SUPPORTS_VIDEO_CALLING_FALLBACK=true}] GroupId: ***]: TSI.rPA(cap)@ALk🔒
+11-13 02:20:20.823  1528  3908 D TrafficStats: tagSocket(194) with statsTag=0x1203, statsUid=10128
+11-13 02:20:20.828   548  1966 I Telecom : PhoneAccountRegistrar: getSimCallManager: SimCallManager for subId 1 queried, returning: null: TSI.rPA(cap)@ALk🔒
+11-13 02:20:20.830   548  1966 I Telecom : PhoneAccountRegistrar: Notifying telephony of voice service override change for 1 SIMs, hasService = false: TSI.rPA(cap)@ALk🔒
+11-13 02:20:20.831  1126  1126 I PhoneInterfaceManager: setVoiceServiceStateOverride: subId=1, phone=Handler (com.android.internal.telephony.GsmCdmaPhone) {ae5033f}, hasService=false, callingPackage=com.android.server.telecom
 
