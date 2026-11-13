@@ -106,17 +106,18 @@ jobs:
             echo "hw.keyboard=yes"
           } >> "$AVD_CONFIG"
           cat "$AVD_CONFIG"
-      - name: Boot generic Android 14 emulator and run full real-photo MobileI2V inference
+      - name: Boot emulator and run real-photo inference with live diagnostics
         id: android_tests
         run: |
-          set -o pipefail
+          set -euo pipefail
           emulator -avd ci_android_x86_64 -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot -memory 6144 -cores 4 > emulator-startup.log 2>&1 &
           EMULATOR_PID=$!
           echo "$EMULATOR_PID" > emulator.pid
           adb wait-for-device
           BOOTED=0
           for i in $(seq 1 120); do
-            if [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ]; then BOOTED=1; break; fi
+            if [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\\r')" = "1" ]; then BOOTED=1; break; fi
+            echo "EMULATOR_BOOT_WAIT elapsed_seconds=$((i * 5))"
             sleep 5
           done
           if [ "$BOOTED" != "1" ]; then
@@ -126,33 +127,43 @@ jobs:
           fi
           adb shell wm size 1080x1920
           adb shell wm density 420
+          echo "=== DEVICE INFO ==="
           adb shell getprop ro.build.version.release
           adb shell getprop ro.product.cpu.abi
           adb shell cat /proc/meminfo | head
           adb logcat -c
-          adb logcat -v threadtime > emulator-logcat.txt &
-          echo $! > logcat.pid
-          gradle --no-daemon :app:connectedDebugAndroidTest --info
-      - name: Collect original photo, generated MP4 and previews
+          # Keep the complete logcat file and stream progress/errors into the live Actions console.
+          adb logcat -v threadtime 2>&1 | tee emulator-logcat.txt | grep --line-buffered -E 'RealImageI2V|AndroidRuntime|FATAL EXCEPTION|ANR in|OutOfMemoryError|Fatal signal' &
+          LOGCAT_PID=$!
+          echo "$LOGCAT_PID" > logcat.pid
+          set +e
+          gradle --no-daemon :app:connectedDebugAndroidTest --info --console=plain 2>&1 | tee gradle-instrumented-test.log
+          TEST_STATUS=${PIPESTATUS[0]}
+          set -e
+          echo "INSTRUMENTED_TEST_EXIT_CODE=$TEST_STATUS"
+          kill "$LOGCAT_PID" 2>/dev/null || true
+          exit "$TEST_STATUS"
+      - name: Collect generated media, live logs and device diagnostics
         if: always()
         run: |
           mkdir -p ci-artifacts
-          DEVICE_DIR="/sdcard/Android/data/com.romangold.tank2aivideostudio.debug/files"
+          DEVICE_DIR="/sdcard/Android/data/com.romgold.tank2aivideostudio.debug/files"
           adb devices || true
           adb pull "$DEVICE_DIR/ci-source.png" ci-artifacts/source-image-from-device.png || true
           adb pull "$DEVICE_DIR/ci-generated.mp4" ci-artifacts/generated-video.mp4 || true
           adb pull "$DEVICE_DIR/ci-generated-frame.jpg" ci-artifacts/generated-frame-preview.jpg || true
           adb pull "$DEVICE_DIR/ci-video-preview.jpg" ci-artifacts/video-first-frame-preview.jpg || true
           adb pull "$DEVICE_DIR/ci-generation-summary.txt" ci-artifacts/generation-summary.txt || true
+          adb shell dumpsys meminfo com.romgold.tank2aivideostudio.debug > ci-artifacts/device-meminfo.txt 2>&1 || true
+          cp gradle-instrumented-test.log ci-artifacts/ 2>/dev/null || true
+          cp emulator-logcat.txt ci-artifacts/ 2>/dev/null || true
+          cp emulator-startup.log ci-artifacts/ 2>/dev/null || true
           ls -lh ci-artifacts || true
       - name: Upload real-image generation output and diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: real-image-to-video-test-output
-          path: |
-            ci-artifacts/
-            emulator-startup.log
-            emulator-logcat.txt
+          name: real-image-generation-and-detailed-logs
+          path: ci-artifacts/
           if-no-files-found: warn
           retention-days: 14
