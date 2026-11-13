@@ -30,7 +30,7 @@ class RealImageGenerationInstrumentedTest {
         val heartbeat = Thread({
             while (!Thread.currentThread().isInterrupted) {
                 try {
-                    Thread.sleep(30_000L)
+                    Thread.sleep(5_000L)
                     logSnapshot("HEARTBEAT", currentStage.get(), totalStarted, outputDirectory)
                 } catch (_: InterruptedException) {
                     return@Thread
