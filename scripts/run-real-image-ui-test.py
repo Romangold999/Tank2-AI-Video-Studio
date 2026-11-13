@@ -102,24 +102,25 @@ def main():
     nodes=dump_state("AFTER_IMAGE_SELECTION")
     # Wait for main screen and launch generation.
     gen, nodes = wait_for(lambda ns: click_text(ns,"Создать видео"), 60, "GENERATION_BUTTON")
-    # The first run may present a non-cancelable license acceptance dialog.
+    gen=click_text(nodes,"Создать видео")
+    if not gen: raise RuntimeError("Generation button unavailable after image selection")
+    tap_node(gen)
+    print("GENERATION_BUTTON_TAPPED", flush=True)
+    # The model license dialog is displayed only after the Generate button is tapped.
+    time.sleep(3)
+    nodes=dump_state("POST_GENERATE_LICENSE_CHECK")
     license_node=click_text(nodes,"Я прочитал(а) и принимаю")
     if license_node:
+        tap_node(license_node)
         print("LICENSE_CHECKBOX_TAPPED", flush=True)
         time.sleep(1)
         nodes=dump_state("LICENSE_ACCEPTANCE")
         accept=click_text(nodes,"Принять и продолжить")
         if not accept: raise RuntimeError("License checkbox was tapped but accept button not found")
         tap_node(accept)
-        time.sleep(3)
-        nodes=snapshot()
-    gen=click_text(nodes,"Создать видео")
-    if not gen:
-        nodes=dump_state("GENERATION_BUTTON_MISSING")
-        gen=click_text(nodes,"Создать видео")
-    if not gen: raise RuntimeError("Generation button unavailable after image selection/license")
-    tap_node(gen)
-    print("GENERATION_BUTTON_TAPPED", flush=True)
+        print("LICENSE_ACCEPTED", flush=True)
+    else:
+        print("LICENSE_ALREADY_ACCEPTED_OR_DIALOG_NOT_REQUIRED", flush=True)
     started=time.time()
     last_text=""
     timeout=5*60*60
@@ -127,9 +128,12 @@ def main():
         nodes=snapshot()
         texts=[n["text"] for n in nodes if n["text"]]
         joined=" | ".join(texts)
+        elapsed=int(time.time()-started)
         if joined != last_text:
-            print(f"UI_PROGRESS elapsed={int(time.time()-started)}s {joined}", flush=True)
+            print(f"UI_PROGRESS elapsed={elapsed}s {joined}", flush=True)
             last_text=joined
+        elif elapsed % 5 == 0:
+            print(f"UI_HEARTBEAT elapsed={elapsed}s progress={joined}", flush=True)
         if "Готово" in joined:
             print("UI_GENERATION_SUCCESS", flush=True)
             break
