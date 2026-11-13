@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:11:58.077289+00:00
+updated_utc=2026-11-13T02:12:03.077389+00:00
 workflow_run_id=43349759093
 run_attempt=1
 branch=live-diagnostics
@@ -110,104 +110,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:11:57.707  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.707  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.707  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.707  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.707  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.707  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.708  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.709  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.709  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.709  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.709  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.720  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.720  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.720  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.720  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.720  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.721  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.722  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 W IndexDataConverter: Skipping index for null-key item IndexData.Builder {title: Prevent ringing,package: com.android.settings}
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.723  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.724  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.725  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.726  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.726  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
-11-13 02:11:57.726  4208  4277 E gs.intelligence: No package ID ff found for resource ID 0xffffffff.
+11-13 02:12:02.565  1760  2500 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:396)
+11-13 02:12:02.565  1760  2500 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:387)
+11-13 02:12:02.565  1760  2500 W ModernMediaScanner: 	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+11-13 02:12:02.565  1760  2500 W ModernMediaScanner: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:12:02.565  1760  2500 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:12:02.565  1760  2500 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:12:02.565  1760  2500 W ModernMediaScanner: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:12:02.574  4208  4715 W RankingPostProcessor: A card with invalid score: content://com.android.settings.slices/intent/screen_timeout
+11-13 02:12:02.574  4208  4715 W RankingPostProcessor: A card with invalid score: content://com.google.android.settings.intelligence.modules.contextualcards.slices/suggestion/com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity
+11-13 02:12:02.574  4208  4715 W RankingPostProcessor: A card with invalid score: content://com.google.android.settings.intelligence.modules.contextualcards.slices/suggestion/com.android.settings/com.android.settings.notification.zen.ZenSuggestionActivity
+11-13 02:12:02.574  4208  4715 W RankingPostProcessor: A card with invalid score: content://com.google.android.settings.intelligence.modules.contextualcards.slices/suggestion/com.google.android.gms/com.google.android.gms.trustlet.onbody.discovery.OnbodyPromotionActivity
+11-13 02:12:02.593  1505  3655 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:12:02.602  1569  4728 D LT_PhenotypeApiImplV12: Retrieve experiment configurations
+11-13 02:12:02.607  1505  3881 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-13 02:12:02.608  1505  3881 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
+11-13 02:12:02.608  1505  3881 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
+11-13 02:12:02.608  1505  2007 I NearbyShared: FastPairSlice: enableBindServiceForDiscoveryItem called, isBind = false
+11-13 02:12:02.613  1569  3787 I FastPair: ServiceBindHelper.onSlicePinned, slice already pinned, uri = content://com.google.android.gms.nearby.fastpair/method_bind_service_for_discovery_item?is_bind=false
+11-13 02:12:02.635  1505  4703 D TrafficStats: tagSocket(258) with statsTag=0x30008100, statsUid=-1
+11-13 02:12:02.663  1505  3655 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:12:02.688  1505  4703 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-13 02:12:02.688  1505  4703 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:02.688  1505  4703 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:02.727  1569  3386 I Checkin : [CheckinOperation] Starting Checkin: Default Task Reason : 8 Force : false UserId : 0 Start time : 67484
+11-13 02:12:02.732  1569  3386 I CheckinUtil: Classify the device as Phone. [CONTEXT service_id=130 ]
+11-13 02:12:02.734   358   403 I netd    : tetherGetStats() -> {[]} <0.36ms>
+11-13 02:12:02.739   358   403 I netd    : bandwidthSetGlobalAlert(2097152) <0.08ms>
+11-13 02:12:02.740  2540  2621 W DG      : [flow devicekey] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+11-13 02:12:02.749   546  2280 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+11-13 02:12:02.751  1505  4739 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-13 02:12:02.754   546   546 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+11-13 02:12:02.757  1569  4677 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-13 02:12:02.757  1569  4677 W Pay     : [eMoney txn sync] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-13 02:12:02.763   546  2576 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+11-13 02:12:02.965     0     0 I servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
+11-13 02:12:02.765   546  2280 I RemoteProvisionSysSvc: Fetching key 10127 for client 267485780
+11-13 02:12:02.765   546  2280 I RegistrationProxy: getKeyAsync operation started with callback 8537597
+11-13 02:12:02.766  3786  3839 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10127, callback: 34210832
+11-13 02:12:02.766  3786  3839 I RkpdRegistrationBinder: Key successfully assigned to client
+11-13 02:12:02.767   546   546 I RemoteProvisionSysSvc: Successfully fetched key for client 267485780
+11-13 02:12:02.768  1075  1333 D DhcpClient: Received packet: 02:15:b2:00:00:00 OFFER, ip /10.0.2.16, mask /255.255.255.0, DNS servers: /10.0.2.3 /10.0.2.4 /10.0.2.5 , gateways [/10.0.2.2], lease time 86400, domain null
+11-13 02:12:02.770  1505  4739 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-13 02:12:02.775  1569  4677 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-13 02:12:02.792  1569  4677 W Pay     : [eMoney card recovery task] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-13 02:12:02.793  1569  4677 I Pay     : Closed loop HCE not migrated or access is not enabled. [CONTEXT service_id=198 ]
+11-13 02:12:02.794  1075  1333 D DhcpClient: Received packet: 02:15:b2:00:00:00 ACK: your new IP /10.0.2.16, netmask /255.255.255.0, gateways [/10.0.2.2] DNS servers: /10.0.2.3 /10.0.2.4 /10.0.2.5 , lease time 86400
+11-13 02:12:02.795  1569  4677 I Pay     : Requested immediate check to see whether to show pay module downloading complete notification. [CONTEXT service_id=198 ]
+11-13 02:12:02.795  1569  4677 I Pay     : Closed loop HCE not migrated and campus id not enabled. [CONTEXT service_id=198 ]
+11-13 02:12:02.801  1569  4677 W Pay     : Mdl not supported. Not triggering periodic MSO refresh task. [CONTEXT service_id=198 ]
+11-13 02:12:02.804  1569  4677 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+11-13 02:12:02.806   546  2198 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:12:02.806   546  2198 D PackageManager: Clear ephemeral installer activity
+11-13 02:12:02.812   546  2320 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:12:02.812   546  2320 D PackageManager: Clear ephemeral installer activity
+11-13 02:12:02.813   546  2320 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:12:02.813   546  2320 D PackageManager: Clear ephemeral installer activity
+11-13 02:12:02.815   546  2320 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:12:02.815   546  2320 D PackageManager: Clear ephemeral installer activity
+11-13 02:12:02.836  1569  4682 W PeoplePU: getComponentEnabledSetting failed.
+11-13 02:12:02.836  1569  4682 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3061)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3041)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3024)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2966)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6034)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3097)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:12:02.836  1569  4682 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5159)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5141)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:388)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:3012)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6334)
+11-13 02:12:02.836  1569  4682 W PeoplePU: 
+11-13 02:12:02.848  1569  1644 W PeoplePU: getServiceInfo failed.
+11-13 02:12:02.848  1569  1644 W PeoplePU: android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.google.android.gms/com.google.android.gms.people.sync.focus.ContactsSyncAdapterService}
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:616)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:599)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at com.google.android.gms.people.sync.focus.ContactsSyncIntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):43)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:12:02.848  1569  1644 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:12:02.848  1569  1644 I FSA2_ContactsSyncIntentOp: Sync is disabled. Skip prepareToSync
 
