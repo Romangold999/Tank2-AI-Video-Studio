@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:26.054503+00:00
+updated_utc=2026-11-13T02:20:31.054607+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.handleCallback(Handler.java:958)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:205)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loop(Looper.java:294)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgi.run(PG:13)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgg.run(PG:604)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qig.run(PG:64)
-11-13 02:20:25.454  1997  2448 D StrictMode: StrictMode policy violation; ~duration=81 ms: android.os.strictmode.DiskReadViolation
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1666)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at sun.nio.ch.FileDispatcherImpl.size(FileDispatcherImpl.java:106)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at sun.nio.ch.FileChannelImpl.size(FileChannelImpl.java:359)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at ayy.c(PG:28)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at bkb.a(PG:174)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at aqy.run(PG:173)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.handleCallback(Handler.java:958)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:205)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loop(Looper.java:294)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgi.run(PG:13)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgg.run(PG:604)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qig.run(PG:64)
-11-13 02:20:25.454  1997  2448 D StrictMode: StrictMode policy violation; ~duration=81 ms: android.os.strictmode.DiskReadViolation
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1666)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at sun.nio.ch.FileDispatcherImpl.size(FileDispatcherImpl.java:106)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:945)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at ayy.c(PG:36)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at bkb.a(PG:174)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at aqy.run(PG:173)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.handleCallback(Handler.java:958)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:205)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loop(Looper.java:294)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgi.run(PG:13)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgg.run(PG:604)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qig.run(PG:64)
-11-13 02:20:25.454  1997  2448 D StrictMode: StrictMode policy violation; ~duration=81 ms: android.os.strictmode.DiskReadViolation
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1666)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:982)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at ayy.c(PG:36)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at bkb.a(PG:174)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at aqy.run(PG:173)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.handleCallback(Handler.java:958)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:205)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at android.os.Looper.loop(Looper.java:294)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgi.run(PG:13)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qgg.run(PG:604)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:25.454  1997  2448 D StrictMode: 	at qig.run(PG:64)
-11-13 02:20:25.476  1607  1607 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
-11-13 02:20:25.476  1607  1607 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
-11-13 02:20:25.495   548  2644 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:25.495   548  2644 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:25.497   548  2644 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:25.497   548  2644 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:25.498   548  1959 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:25.498   548  1959 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:25.504  1177  2071 D EGL_emulation: app_time_stats: avg=1957.22ms min=1957.22ms max=1957.22ms count=1
-11-13 02:20:25.523  1528  4098 I NearbyMessages: OfflineCache: old scanner cache is not enabled [CONTEXT service_id=62 ]
-11-13 02:20:25.564  4276  4276 I equicksearchbox: Using CollectorTypeCC GC.
-11-13 02:20:25.565  4276  4276 W equicksearchbox: Unexpected CPU variant for x86: x86_64.
-11-13 02:20:25.565  4276  4276 W equicksearchbox: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
-11-13 02:20:25.573  4276  4276 E equicksearchbox: Not starting debugger since process cannot load the jdwp agent.
-11-13 02:20:25.626  4100  4187 D CompatibilityChangeReporter: Compat change id reported: 263076149; UID 10144; state: DISABLED
-11-13 02:20:25.626  4100  4187 I org.webrtc.Logging: EffectsMiniBenchmarkWorkerFactory: Received worker class com.google.android.libraries.hub.workmanager.HubListenableWorker
-11-13 02:20:25.628  2937  2937 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 10089; state: ENABLED
-11-13 02:20:25.628  2937  2937 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10089; state: ENABLED
-11-13 02:20:25.637   548   980 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 10089; state: ENABLED
-11-13 02:20:25.638   548  1916 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:25.638   548  1916 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:25.644   548  2644 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10132; state: DISABLED
-11-13 02:20:25.645   548  2644 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10132; state: DISABLED
-11-13 02:20:25.648  1528  1633 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 3310 uptime_millis: 3310 exec_start_elapsed_seconds: 54 [CONTEXT service_id=218 ]
-11-13 02:20:25.662   548   980 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10089; state: ENABLED
-11-13 02:20:25.677  4120  4120 I AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification android.hardware.drm.IDrmFactory/clearkey has clients: 1
-11-13 02:20:25.879     0     0 I servicemanager: Notifying android.hardware.drm.IDrmFactory/clearkey they do (previously: don't) have clients when service is guaranteed to be in use
-11-13 02:20:25.883     0     0 I servicemanager: Notifying android.hardware.drm.IDrmFactory/clearkey they don't (previously: do) have clients when we now have no record of a client
-11-13 02:20:25.894     0     0 I servicemanager: Unregistering android.hardware.drm.IDrmFactory/clearkey
-11-13 02:20:25.687  4120  4120 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.hardware.drm.IDrmFactory/clearkey has clients: 0
-11-13 02:20:25.687  4120  4120 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
-11-13 02:20:25.699   548   576 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
-11-13 02:20:25.703  1806  1806 I AiAiEcho: AppFetcherImpl onPackageChanged com.android.intentresolver.
-11-13 02:20:25.708   548  2514 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10118; state: ENABLED
-11-13 02:20:25.711  1806  3337 I AiAiEcho: AppIndexer Package:[com.android.intentresolver] UserProfile:[0] Enabled:[true].
-11-13 02:20:25.715  1806  3337 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.android.intentresolver], userId:[0], reason:[package is updated.].
-11-13 02:20:25.715  4120  4120 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
-11-13 02:20:25.919     0     0 I BpBinder: onLastStrongRef automatically unlinking death recipients:
-11-13 02:20:25.931     0     0 I init    : Service 'vendor.drm-clearkey-service' (pid 4120) exited with status 0 oneshot service took 2.248000 seconds in background
-11-13 02:20:25.935     0     0 I init    : Sending signal 9 to service 'vendor.drm-clearkey-service' (pid 4120) process group...
-11-13 02:20:25.938     0     0 I libprocessgroup: Successfully killed process cgroup uid 1013 pid 4120 in 0ms
-11-13 02:20:25.731  1528  1528 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
-11-13 02:20:25.731  1528  1528 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
-11-13 02:20:25.736  4276  4276 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10132; state: ENABLED
-11-13 02:20:25.736  4276  4276 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10132; state: DISABLED
-11-13 02:20:25.748  1673  1693 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[2]
-11-13 02:20:25.748  1673  1693 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022051700_2[2]
-11-13 02:20:25.784   548   977 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10132; state: ENABLED
+11-13 02:20:30.631  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.631  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.631  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+11-13 02:20:30.631  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.633   904   989 D EGL_emulation: app_time_stats: avg=332.49ms min=8.89ms max=1351.68ms count=5
+11-13 02:20:30.634  1976  3405 I A       : hasHotwordEverywhere-true
+11-13 02:20:30.634  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.634  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.635  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.635  1976  3405 I A       : Merging legacy hotword config map with new proto.
+11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.647  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.648  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.648  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.656  1976  2458 E MicroModelsUtil: Hotword file group is null with group name: hotword_model_en-US_okg, locale: en-US
+11-13 02:20:30.668  1607  2262 I FastPair: ServiceBindHelper.onSlicePinned, slice already pinned, uri = content://com.google.android.gms.nearby.fastpair/method_bind_service_for_discovery_item?is_bind=false
+11-13 02:20:30.675  2308  4494 D DownloadManager: [2] Starting
+11-13 02:20:30.680  1528  3640 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-13 02:20:30.681  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.681  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.681  1976  3405 I HotwordService: Model ID: 
+11-13 02:20:30.685  1528  3513 W .gms.persistent: Long monitor contention with owner lowpool[12] (3640) at boolean oub.b()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):89) waiters=0 in boolean oub.b() for 3.065s
+11-13 02:20:30.711  1528  1639 I GCoreUlr: Unbound from all signal providers.
+11-13 02:20:30.726  1976  3405 I HotwordService: hotwordModelLocation is null true, locale is en-US, re-mapped Chinese locale 
+11-13 02:20:30.726  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.726  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.727  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.727  1976  3405 I A       : Merging legacy hotword config map with new proto.
+11-13 02:20:30.727  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.727  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.727  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.727  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+11-13 02:20:30.728  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.733  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.733  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.734  1976  3405 I A       : Using proto config with mendel
+11-13 02:20:30.734  1976  3405 I A       : Merging legacy hotword config map with new proto.
+11-13 02:20:30.734  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.734  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.740   361  4496 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
+11-13 02:20:30.741   361  4498 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-13 02:20:30.742   361  4497 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-13 02:20:30.753  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.757  1607  2936 W Icing   : No valid account for uploading user actions
+11-13 02:20:30.762  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 3 elapsed_millis: 1268 uptime_millis: 1268 exec_start_elapsed_seconds: 64 [CONTEXT service_id=218 ]
+11-13 02:20:30.764  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+11-13 02:20:30.766  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
+11-13 02:20:30.775  1976  2455 E BistoWorker: Couldn't get logged in Google account.
+11-13 02:20:30.777  1528  4340 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:30.784   361  4498 I resolv  : res_nsend: used send_dg 173 terrno: 0
+11-13 02:20:30.784   361  4498 I resolv  : doQuery: rcode=0, ancount=8, return value=173
+11-13 02:20:30.784   361  4497 I resolv  : res_nsend: used send_dg 269 terrno: 0
+11-13 02:20:30.784   361  4497 I resolv  : doQuery: rcode=0, ancount=8, return value=269
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: Phenotype bulk registration failed [CONTEXT service_id=231 ]
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: java.util.concurrent.TimeoutException: Timed out waiting for Task
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at com.google.android.gms.common.config.PhenotypeRegistrationOperation.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at com.google.android.gms.common.config.PhenotypeRegistrationOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):19)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:20:30.796  1842  2610 E GsaVoiceInteractionSrv: modelLocation is null: true isAlwaysOnEnabled is false: true isFromAnyScreenEnabled is false: true
+11-13 02:20:30.796  1842  2610 I HwDetectorWithState: Updating detector.
+11-13 02:20:30.799  1607  3776 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+11-13 02:20:30.800  1842  2610 I BistoHotwordHelper: getHotwordActive::active query: null, watch: false, devices connected: []
+11-13 02:20:30.800  1842  2610 E HwDetectorWithState: a: 3
+11-13 02:20:30.802  1842  2610 I GsaVoiceInteractionSrv: #checkDspStatus
+11-13 02:20:30.802  1842  2610 I BistoHotwordHelper: setting speaker id present: false
+11-13 02:20:30.803  1842  2610 I BistoHotwordHelper: setting hotword model of size: 0 bytes
+11-13 02:20:30.804  1607  3851 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.update.BASE_MODULE_INIT cat=[targeted_intent_op_prefix:.update.control.ReceiverIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+11-13 02:20:30.805  1842  2610 I BistoHotwordHelper: setting modeltype: Ok Google
+11-13 02:20:30.805  1842  2610 I BistoHotwordHelper: setHotwordVoiceLocale: prev: en-US, new: en-US
+11-13 02:20:30.813  1976  3226 W SessionLifecycleManager: Client : AttachedClient[8692334442350181, ClientConfig[mFlags=[40000088001] mSuggestFlags=[0] mClientId=HOTWORD_SERVICE mSessionType=search publicSearchServiceCallerUid=-1]] has no associated SessionController
+11-13 02:20:30.813  1607  1649 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+11-13 02:20:30.813  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:30.814  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:30.814  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:30.820  1528  1639 D TrafficStats: tagSocket(125) with statsTag=0x34000609, statsUid=10127
+11-13 02:20:30.828   361  4502 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
+11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10166; state: DISABLED
+11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10166; state: DISABLED
+11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10166; state: DISABLED
+11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10166; state: ENABLED
+11-13 02:20:30.829  3142  3200 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
+11-13 02:20:30.831   548   578 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10166; state: ENABLED
+11-13 02:20:30.832  3142  3200 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
+11-13 02:20:30.842  1607  3855 I Auth    : [WorkAccount] update authenticator enabled for boot or update
+11-13 02:20:30.842  3142  3200 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
 
