@@ -1,15 +1,22 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:05:40.294551+00:00
+updated_utc=2026-11-13T02:05:45.294680+00:00
 workflow_run_id=43349239517
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
-STATUS=STARTING
-UTC=2026-11-13T02:05:38Z
+STATUS=EMULATOR_BOOT_WAIT
+ELAPSED_SECONDS=5
+EMULATOR_PID=3493
+ADB_DEVICE_STATE=not-seen
+BOOT_COMPLETED=not-yet
 
 ===== emulator-startup.log (last 100 lines) =====
-(not created yet)
+INFO         | Android emulator version 37.2.13.0 (build_id 16740729) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+ERROR        | Unknown AVD name [ci_android_x86_64], use -list-avds to see valid list.
+ERROR        | HOME is defined but there is no file ci_android_x86_64.ini in $HOME/.android/avd
+ERROR        | (Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd and $HOME/.android/avd)
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
 (not created yet)
