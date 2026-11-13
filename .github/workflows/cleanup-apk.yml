@@ -1,0 +1,80 @@
+name: Cleanup old APK artifacts
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "dry_run only lists candidates; delete removes old APK artifacts"
+        required: true
+        type: choice
+        options:
+          - dry_run
+          - delete
+        default: dry_run
+      confirmation:
+        description: "For deletion, enter exactly DELETE_OLD_APK_ARTIFACTS"
+        required: false
+        type: string
+  push:
+    paths:
+      - ".github/workflows/cleanup-apk.yml"
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: cleanup-apk-artifacts
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Preview or delete old APK artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MODE: ${{ github.event_name == 'push' && 'dry_run' || inputs.mode }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "$MODE" == "delete" && "$CONFIRMATION" != "DELETE_OLD_APK_ARTIFACTS" ]]; then
+            echo "::error::Deletion blocked: exact confirmation phrase is required."
+            exit 1
+          fi
+
+          echo "Repository: $REPOSITORY"
+          echo "Mode: $MODE"
+
+          artifacts="$(gh api --paginate "/repos/$REPOSITORY/actions/artifacts?per_page=100" --jq '.artifacts[] | select(.expired == false) | select(.name | test("Tank2-AI-Video-Studio.*(debug|release).*"; "i")) | [.id, .name, .created_at, (.workflow_run.id|tostring), (.size_in_bytes|tostring)] | @tsv' | sort -t $'\t' -k3,3r)"
+
+          if [[ -z "$artifacts" ]]; then
+            echo "No matching APK artifacts found."
+            exit 0
+          fi
+
+          # Keep the newest APK artifact and explicitly protect the APK currently being downloaded (run #118).
+          keep_id="$(printf '%s\n' "$artifacts" | head -n1 | cut -f1)"
+          protected_run="43347242486"
+
+          echo "KEEP artifact_id=$keep_id (newest APK)"
+          printf '%s\n' "$artifacts" | while IFS=$'\t' read -r id name created run_id size; do
+            [[ -z "$id" ]] && continue
+            if [[ "$id" == "$keep_id" || "$run_id" == "$protected_run" ]]; then
+              echo "KEEP artifact_id=$id run_id=$run_id name=$name size_bytes=$size"
+              continue
+            fi
+
+            echo "CANDIDATE artifact_id=$id run_id=$run_id created_at=$created name=$name size_bytes=$size"
+            if [[ "$MODE" == "delete" ]]; then
+              gh api --method DELETE "/repos/$REPOSITORY/actions/artifacts/$id"
+              echo "DELETED artifact_id=$id"
+            else
+              echo "DRY_RUN: would delete artifact_id=$id"
+            fi
+          done
+
+          echo "Cleanup job finished in mode=$MODE."
