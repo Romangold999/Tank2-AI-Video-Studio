@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:31.054607+00:00
+updated_utc=2026-11-13T02:20:36.054705+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:30.631  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.631  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.631  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
-11-13 02:20:30.631  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.633   904   989 D EGL_emulation: app_time_stats: avg=332.49ms min=8.89ms max=1351.68ms count=5
-11-13 02:20:30.634  1976  3405 I A       : hasHotwordEverywhere-true
-11-13 02:20:30.634  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.634  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.635  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.635  1976  3405 I A       : Merging legacy hotword config map with new proto.
-11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.647  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
-11-13 02:20:30.647  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.648  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.648  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.656  1976  2458 E MicroModelsUtil: Hotword file group is null with group name: hotword_model_en-US_okg, locale: en-US
-11-13 02:20:30.668  1607  2262 I FastPair: ServiceBindHelper.onSlicePinned, slice already pinned, uri = content://com.google.android.gms.nearby.fastpair/method_bind_service_for_discovery_item?is_bind=false
-11-13 02:20:30.675  2308  4494 D DownloadManager: [2] Starting
-11-13 02:20:30.680  1528  3640 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
-11-13 02:20:30.681  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.681  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.681  1976  3405 I HotwordService: Model ID: 
-11-13 02:20:30.685  1528  3513 W .gms.persistent: Long monitor contention with owner lowpool[12] (3640) at boolean oub.b()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):89) waiters=0 in boolean oub.b() for 3.065s
-11-13 02:20:30.711  1528  1639 I GCoreUlr: Unbound from all signal providers.
-11-13 02:20:30.726  1976  3405 I HotwordService: hotwordModelLocation is null true, locale is en-US, re-mapped Chinese locale 
-11-13 02:20:30.726  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.726  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.727  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.727  1976  3405 I A       : Merging legacy hotword config map with new proto.
-11-13 02:20:30.727  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.727  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.727  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.727  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
-11-13 02:20:30.728  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.733  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.733  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.734  1976  3405 I A       : Using proto config with mendel
-11-13 02:20:30.734  1976  3405 I A       : Merging legacy hotword config map with new proto.
-11-13 02:20:30.734  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.734  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.740   361  4496 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
-11-13 02:20:30.741   361  4498 I resolv  : res_nmkquery: (QUERY, IN, A)
-11-13 02:20:30.742   361  4497 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
-11-13 02:20:30.753  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.757  1607  2936 W Icing   : No valid account for uploading user actions
-11-13 02:20:30.762  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 3 elapsed_millis: 1268 uptime_millis: 1268 exec_start_elapsed_seconds: 64 [CONTEXT service_id=218 ]
-11-13 02:20:30.764  1976  3405 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
-11-13 02:20:30.766  1976  3405 I A       : Skipping. Expected model: 1 Found: 2
-11-13 02:20:30.775  1976  2455 E BistoWorker: Couldn't get logged in Google account.
-11-13 02:20:30.777  1528  4340 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
-11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:30.783  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:30.784   361  4498 I resolv  : res_nsend: used send_dg 173 terrno: 0
-11-13 02:20:30.784   361  4498 I resolv  : doQuery: rcode=0, ancount=8, return value=173
-11-13 02:20:30.784   361  4497 I resolv  : res_nsend: used send_dg 269 terrno: 0
-11-13 02:20:30.784   361  4497 I resolv  : doQuery: rcode=0, ancount=8, return value=269
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: Phenotype bulk registration failed [CONTEXT service_id=231 ]
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: java.util.concurrent.TimeoutException: Timed out waiting for Task
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at com.google.android.gms.common.config.PhenotypeRegistrationOperation.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at com.google.android.gms.common.config.PhenotypeRegistrationOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):19)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:20:30.786  1607  3855 W PhenotypeRegOp: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:30.796  1842  2610 E GsaVoiceInteractionSrv: modelLocation is null: true isAlwaysOnEnabled is false: true isFromAnyScreenEnabled is false: true
-11-13 02:20:30.796  1842  2610 I HwDetectorWithState: Updating detector.
-11-13 02:20:30.799  1607  3776 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
-11-13 02:20:30.800  1842  2610 I BistoHotwordHelper: getHotwordActive::active query: null, watch: false, devices connected: []
-11-13 02:20:30.800  1842  2610 E HwDetectorWithState: a: 3
-11-13 02:20:30.802  1842  2610 I GsaVoiceInteractionSrv: #checkDspStatus
-11-13 02:20:30.802  1842  2610 I BistoHotwordHelper: setting speaker id present: false
-11-13 02:20:30.803  1842  2610 I BistoHotwordHelper: setting hotword model of size: 0 bytes
-11-13 02:20:30.804  1607  3851 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.update.BASE_MODULE_INIT cat=[targeted_intent_op_prefix:.update.control.ReceiverIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
-11-13 02:20:30.805  1842  2610 I BistoHotwordHelper: setting modeltype: Ok Google
-11-13 02:20:30.805  1842  2610 I BistoHotwordHelper: setHotwordVoiceLocale: prev: en-US, new: en-US
-11-13 02:20:30.813  1976  3226 W SessionLifecycleManager: Client : AttachedClient[8692334442350181, ClientConfig[mFlags=[40000088001] mSuggestFlags=[0] mClientId=HOTWORD_SERVICE mSessionType=search publicSearchServiceCallerUid=-1]] has no associated SessionController
-11-13 02:20:30.813  1607  1649 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
-11-13 02:20:30.813  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:30.814  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:30.814  1976  3226 W SearchServiceCore: Abort, client detached.
-11-13 02:20:30.820  1528  1639 D TrafficStats: tagSocket(125) with statsTag=0x34000609, statsUid=10127
-11-13 02:20:30.828   361  4502 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
-11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10166; state: DISABLED
-11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10166; state: DISABLED
-11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10166; state: DISABLED
-11-13 02:20:30.829   548  1961 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10166; state: ENABLED
-11-13 02:20:30.829  3142  3200 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
-11-13 02:20:30.831   548   578 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10166; state: ENABLED
-11-13 02:20:30.832  3142  3200 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
-11-13 02:20:30.842  1607  3855 I Auth    : [WorkAccount] update authenticator enabled for boot or update
-11-13 02:20:30.842  3142  3200 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
+11-13 02:20:35.371   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.371   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.371  1607  3849 V SmartDevice: [ModuleInitializer] ModuleInitializer got intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
+11-13 02:20:35.371  1607  3849 W ChimeraUtils: Module com.google.android.gms.smartdevice missing resource null(0)
+11-13 02:20:35.389  1528  3313 W .gms.persistent: Long monitor contention with owner highpool[3] (1642) at java.io.InputStream android.content.res.AssetManager.openNonAsset(int, java.lang.String, int)(AssetManager.java:1027) waiters=1 in java.lang.CharSequence android.content.res.AssetManager.getResourceText(int) for 190ms
+11-13 02:20:35.430  1528  3335 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+11-13 02:20:35.432  1528  4340 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-13 02:20:35.439  1528  3636 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction com.google.android.location.internal.server.ACTION_RESTARTED
+11-13 02:20:35.458  1528  3636 I GCoreUlr: WorldUpdater:com.google.android.location.internal.server.ACTION_RESTARTED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-13 02:20:35.461  4276  4276 V ClearcutMetricXmitter: Transmission is done.
+11-13 02:20:35.466  1607  4734 I LocationHistory: [IntentOperation] Module is disabled [CONTEXT service_id=314 ]
+11-13 02:20:35.470  1528  3636 I GCoreUlr: Unbound from all signal providers.
+11-13 02:20:35.472  1607  3849 D SmartDevice: [ModuleInitializer] Module init - scheduling buffered logs cleanup task
+11-13 02:20:35.473  1607  3849 I SmartDevice: [CleanBufferedLogsService] Periodic task upload_buffered_logs_periodic scheduled!
+11-13 02:20:35.475  1607  4437 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.security.snet.SnetGcmSchedulerChimeraIntentService for action com.google.android.gms.security.snet.ACTION_SET_EVENT_LOG_COLLECTOR_PERIOD (3855) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 194ms
+11-13 02:20:35.502  1607  3855 I TelephonySpamInit: On boot completed TelephonySpam module initialized [CONTEXT service_id=150 ]
+11-13 02:20:35.502  1607  3855 I TelephonySpamInit: onModuleUpdated TelephonySpam module initialized [CONTEXT service_id=150 ]
+11-13 02:20:35.502  1607  3855 I SpamListSync: scheduleSyncTasks [CONTEXT service_id=150 ]
+11-13 02:20:35.502  1607  3855 I SpamListSync: schedulePeriodicTask [CONTEXT service_id=150 ]
+11-13 02:20:35.507  1528  3313 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:20:35.511  1528  3313 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:20:35.564   548  2061 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.564   548  2061 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.566   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.566   548   977 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.570  1607  4736 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1794614400000]
+11-13 02:20:35.574  1607  3849 D ActivityThread: Loading provider com.google.android.gms.reminders: com.google.android.gms.reminders.provider.RemindersProvider
+11-13 02:20:35.576  1607  2936 W Icing   : No valid account for uploading user actions
+11-13 02:20:35.583  1607  3855 I SpamListSync: scheduleOneTimeTask [CONTEXT service_id=150 ]
+11-13 02:20:35.585  1607  4736 I ThreadNetworkModuleInit: Initializing runtime states: 2 [CONTEXT service_id=305 ]
+11-13 02:20:35.593  1607  4736 I ThreadNetworkModuleInit: Enabled component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
+11-13 02:20:35.594   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.594   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.599   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.599   548   977 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.607   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.607   548   977 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.609   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.609   548  1358 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.611   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.611   548  1358 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.612   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.612   548  1358 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.613  1607  4436 I TrustedTime: Skip initializing when trusted time feature disabled. [CONTEXT service_id=326 ]
+11-13 02:20:35.619  1607  4736 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
+11-13 02:20:35.621   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.621   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.622   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.622   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.624   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.624   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.624   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.624   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.625   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.625   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.632   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.632   548  1358 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.634   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.634   548  1358 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.634   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.635   548   977 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.636   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.636   548   977 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.649   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.649   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.650  1607  4436 W ActiveUnlock: Tried to set empty triggers [CONTEXT service_id=327 ]
+11-13 02:20:35.651  1607  4436 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
+11-13 02:20:35.652  1607  4436 I SystemUpdate: [Control,UpdateReminderDialogControl] Received action: android.intent.action.BOOT_COMPLETED
+11-13 02:20:35.680  1528  3595 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-13 02:20:35.681  1528  1528 I rcs     : [RcsBindingManager] Checking if we should rebind to previous service. Attempt 0
+11-13 02:20:35.681  1528  1528 I rcs     : [RcsBindingManager] No valid settings for binding.
+11-13 02:20:35.688  1528  3595 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-13 02:20:35.691  1528  3595 I SemanticLocation: ULR Settings changed. Updating LH/LR state. [CONTEXT service_id=173 ]
+11-13 02:20:35.704  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:5 exec_start_elapsed_seconds: 67 [CONTEXT service_id=218 ]
+11-13 02:20:35.706  1528  4340 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-13 02:20:35.706  1528  4198 E bwel    : Phenotype registration failed [CONTEXT service_id=51 ]
+11-13 02:20:35.706  1528  4198 E bwel    : java.util.concurrent.TimeoutException: Timed out waiting for Task
+11-13 02:20:35.706  1528  4198 E bwel    : 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at bwel.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:20:35.706  1528  4198 E bwel    : 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:20:35.712   548  1961 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.712   548  1961 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:35.732  1607  2936 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-13 02:20:35.736  1528  1528 I GCoreUlr: Unbound from all signal providers.
+11-13 02:20:35.736  1528  1528 I GCoreUlr: Stopping handler for UlrDispSvcFast
+11-13 02:20:35.749  1607  3855 I Wear_Controller: Wearable module requires a companion app to be installed.
+11-13 02:20:35.749  1607  3855 I Wear_Controller: onStartup - Wear is not available on this device.
+11-13 02:20:35.789  1528  3313 W .gms.persistent: Long monitor contention with owner highpool[6] (3513) at bdki bdki.c(android.content.Context, java.lang.String)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4) waiters=0 in bdki bdki.c(android.content.Context, java.lang.String) for 277ms
+11-13 02:20:35.818   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:20:35.820  1528  1528 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
+11-13 02:20:35.825   548  2382 D PackageManager: Clear ephemeral installer activity
 
