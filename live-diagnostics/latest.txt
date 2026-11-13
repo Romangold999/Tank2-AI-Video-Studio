@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:35:44.352865+00:00
+updated_utc=2026-11-13T02:35:49.352993+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -112,104 +112,104 @@ qemu-system-x86_64-headless: warning: I/O thread spun for 1000 iterations
 ===== gradle-instrumented-test.log (last 100 lines) =====
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:35:44.000  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.000  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsKeyguardPreferenceController
-11-13 02:35:44.000  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController
-11-13 02:35:44.008  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.023   547   619 D ConnectivityService: requestNetwork for uid/pid:10130/2974 activeRequest: null callbackRequest: 125 [NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
-11-13 02:35:44.023  1835  2463 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:44.030  2974  2974 I DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.startWork:66 starting work
-11-13 02:35:44.031  2974  3250 I DialerCountryCodeProvider: com.android.dialer.businessvoice.verifiedcall.impl.i18n.CountryCodeProvider.getSimCountryCodeInternal:85 returning Redacted-2-chars
-11-13 02:35:44.031  2974  3250 I DialerCachedVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.CachedVerifiedNumberProvider.refreshConstellationInfo:190 Retrieving constellation info and refreshing the cache.
-11-13 02:35:44.043   547   834 D ConnectivityService: NetReassign [126 : null → 100] [c 0] [a 5] [i 1]
-11-13 02:35:44.043   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
-11-13 02:35:44.043   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
-11-13 02:35:44.043   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
-11-13 02:35:44.043   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
-11-13 02:35:44.049  1572  3042 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
-11-13 02:35:44.052  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.053  1572  1637 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
-11-13 02:35:44.054  1572  3478 W Icing   : No valid account for uploading user actions
-11-13 02:35:44.060  1522  3452 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-11-13 02:35:44.061  1522  3452 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-11-13 02:35:44.065  1522  3452 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:44.068  1522  3452 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-11-13 02:35:44.068  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.069  1522  3452 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-11-13 02:35:44.069  1522  3452 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-11-13 02:35:44.069  1522  3452 I NamespaceManager: Package com.android.media name not found! Using module version.
-11-13 02:35:44.070  1522  3452 I NamespaceManager: Package 1 name not found! Using module version.
-11-13 02:35:44.071  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.075  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.075  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.075  1572  3478 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
-11-13 02:35:44.076  1134  1191 I ActiveUnlockStatusUtils: authority not set
-11-13 02:35:44.076  1572  3478 W Icing   : No valid account for uploading user actions
-11-13 02:35:44.085  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController
-11-13 02:35:44.085  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.AddDevicePreferenceController
-11-13 02:35:44.085  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
-11-13 02:35:44.085  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.DataSaverController
-11-13 02:35:44.085  1134  1191 W libc    : Access denied finding property "ro.vendor.aware_available"
-11-13 02:35:44.085  1134  1191 V SettingsSearchProvider: com.google.android.settings.aware.AwareSettings$1@f5dd93a tried to add an empty non-indexable key
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.VerifiedNumberProvider.lambda$getConstellationResponse$1:155 Failed to get constellation token.
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: nkq: 5005: 
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: 	at nov.au(PG:1)
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: 	at nnf.g(PG:2)
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: 	at npo.a(Unknown Source:2)
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: 	at npy.dm(PG:9)
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: 	at ncz.onTransact(PG:4)
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1344)
-11-13 02:35:44.091  2974  3176 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransact(Binder.java:1275)
-11-13 02:35:44.093  1134  1191 V SettingsSearchProvider: com.android.settings.wifi.WifiSettings$4@1697fcc tried to add an empty non-indexable key
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningPreviewPreferenceController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFontSizeController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningPresetController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningCustomController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningTypefaceController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningForegroundColorController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningForegroundOpacityController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningEdgeTypeController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningEdgeColorController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningBackgroundColorController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningBackgroundOpacityController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningWindowColorController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningWindowOpacityController
-11-13 02:35:44.094  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
-11-13 02:35:44.095  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.TemperatureUnitCategoryController
-11-13 02:35:44.095  2974  3176 W DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.lambda$syncConstellation$2:110 Constellation api request failed, status code: 5005
-11-13 02:35:44.096  1134  1191 D FaceSettings: FaceManager is not null. Hardware detected: true
-11-13 02:35:44.096  2974  3171 I WM-WorkerWrapper: Worker result RETRY for Work [ id=5ed9f216-bb9c-4c08-ac22-2e17fc762d30, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker } ]
-11-13 02:35:44.100  1134  1191 D FaceSettings: FaceManager is not null. Hardware detected: true
-11-13 02:35:44.100  1134  1191 D FaceSettings: Get non indexable keys. isFaceHardwareDetected: true, size:12
-11-13 02:35:44.100  1134  1191 V SettingsSearchProvider: com.android.settings.biometrics.face.FaceSettings$2@82f0360 tried to add an empty non-indexable key
-11-13 02:35:44.100  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.DefaultAppsPreferenceController
-11-13 02:35:44.103  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.ClonedAppsPreferenceController
-11-13 02:35:44.103  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.HibernatedAppsPreferenceController
-11-13 02:35:44.103  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.AppBatteryUsagePreferenceController
-11-13 02:35:44.103  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.SpecialAppAccessPreferenceController
-11-13 02:35:44.103  1134  1191 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.applications.AppsPreferenceController@a4316
-11-13 02:35:44.111  1572  3478 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
-11-13 02:35:44.111  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FlashNotificationsIntroPreferenceController
-11-13 02:35:44.111  1134  1191 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FlashNotificationIllustrationPreferenceController
-11-13 02:35:44.124  4454  4982 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.apps.messaging
-11-13 02:35:44.127  1835  2447 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: cpwb: FULL
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bdsy.h(PG:6)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bgit.<init>(PG:2)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bgiu.a(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.ai(PG:3)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.aj(PG:25)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.z(PG:2)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aule.k(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aulc.call(Unknown Source:2)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnsg.a(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnpm.a(PG:3)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfv.a(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctet.run(PG:4)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfx.run(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfd.run(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxef.run(PG:2)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfj.run(PG:5)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: cpwb: FULL
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bdsy.h(PG:6)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.ai(PG:18)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.aj(PG:25)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.z(PG:2)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aule.k(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aulc.call(Unknown Source:2)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnsg.a(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnpm.a(PG:3)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfv.a(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctet.run(PG:4)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfx.run(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfd.run(PG:1)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxef.run(PG:2)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfj.run(PG:5)
+11-13 02:35:49.032  4454  4591 I Bugle   : SubscriptionUtilsAsOfLMR1: getActiveSubscriptionInfo(): empty sub info for subscription{id:-1}
+11-13 02:35:49.032  4454  4591 I Bugle   : SubscriptionUtilsAsOfLMR1: getActiveSubscriptionInfo(): empty sub info for subscription{id:-1}
+11-13 02:35:49.032  4454  4591 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
+11-13 02:35:49.033  4454  4983 I BugleRcsEngine: [105] brnl.h: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+11-13 02:35:49.033  4454  4985 W BugleRcsEngine: [108] bpxc.w: Unable to send diagnostic log
+11-13 02:35:49.034  4454  4982 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+11-13 02:35:49.038  4454  4591 W BugleAction: No default number, returning empty msisdn
+11-13 02:35:49.039  4454  4582 I BugleTransport: updateActiveTransport: refreshing chat transport
+11-13 02:35:49.040  4454  4582 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+11-13 02:35:49.041  4454  4591 I RcsClientLib: Connecting RcsEngineLifecycleService
+11-13 02:35:49.042  4454  4565 I BugleRcsEngine: [44] bptz.run: SystemBindingManager: SystemBinding enabled: true
+11-13 02:35:49.042  4454  4591 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-13 02:35:49.042  4454  4578 I BugleRcsEngine: [49] bpua.b: System Binding updated
+11-13 02:35:49.042  4454  4585 W BugleRcsEngine: [55] bpxc.w: Unable to send diagnostic log
+11-13 02:35:49.043  4454  4591 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-13 02:35:49.045  4986  4986 I BugleRcsEngine: [2] JibeService.onBind: JibeService: onBind in state STARTING, intent action = com.google.android.ims.rcs.engine.IRcsEngineTemporaryController
+11-13 02:35:49.046  4454  4591 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+11-13 02:35:49.046  4454  4591 W RcsClientLib: Error while stopping RCS engine.
+11-13 02:35:49.046  4454  4591 W RcsClientLib: java.lang.IllegalStateException: JibeService Not Initialized
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3065)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.createException(Parcel.java:3041)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.readException(Parcel.java:3024)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.readException(Parcel.java:2966)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at com.google.android.aidl.BaseProxy.transactAndReadExceptionReturnVoid(PG:3)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at com.google.android.ims.rcs.engine.IRcsEngineTemporaryController$Stub$Proxy.triggerStopRcsStack(PG:3)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService.triggerStopRcsStack(PG:2)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at awzl.call(PG:1)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at cnsg.a(PG:1)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at cnpm.a(PG:3)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at ctfv.a(PG:1)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at ctet.run(PG:4)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at ctfx.run(PG:1)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at bxfd.run(PG:1)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at bxef.run(PG:2)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at bxfj.run(PG:5)
+11-13 02:35:49.050  4986  5218 I BugleRcsEngine: [86] RcsEngineImpl.init: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]: Initializing RcsEngine.
+11-13 02:35:49.051  4986  5027 I BugleRcsEngine: [63] EventHubProxy.subscribe: Adding event listener brml@22d0e3d for category 8 with key 36507197 for hub ENGINE
+11-13 02:35:49.052   547  1316 D ConnectivityService: requestNetwork for uid/pid:10131/4986 activeRequest: null callbackRequest: 136 [NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-13 02:35:49.052  4986  5218 I BugleRcsEngine: [86] RcsEngineImpl.init: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]: Initializing RBM resource permissions.
+11-13 02:35:49.052  4986  5218 I BugleRcsEngine: [86] brga.s: ProvisioningEngineManager: onCsLibPhenotypeUpdated, provisioningTaskInBugleEnabled = true, currentProvisioningStrategy = brka
+11-13 02:35:49.052  4986  5218 I BugleRcsEngine: [86] RcsEngineProxyImpl.f: RcsEngineProxyImpl:[7b2b0598-5862]: setting active RCS Engine to DUAL_REG instance
+11-13 02:35:49.054   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:49.054   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:49.055   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:49.055   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:49.055   547   834 D ConnectivityService: NetReassign [137 : null → 100] [c 0] [a 1] [i 1]
+11-13 02:35:49.055  4986  5028 I BugleRcsEngine: [64] bqvv.c: Connected state: [1], networkType: [WIFI]
+11-13 02:35:49.056  4986  5028 I BugleRcsEngine: [64] bqvv.c: Connected state: [1], networkType: [WIFI]
+11-13 02:35:49.058  4986  5218 D BugleRcsEngine: log_saver already enabled
+11-13 02:35:49.061  4986  5029 W BugleRcsEngine: [65] bpxk.i: Unable to send RCS extension log
+11-13 02:35:49.061  4986  5029 W BugleRcsEngine: [65] bqun.run: ProvisioningEngineMetricsStorage, the wrapper class for proto data store, is null
+11-13 02:35:49.062  4986  5027 W BugleRcsEngine: [63] brpi.b: Unable to send provisioning event log
+11-13 02:35:49.065  4986  5222 I BugleRcsEngine: [90] brqh.handleMessage: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]>Handler: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference
+11-13 02:35:49.067  4986  5218 W BugleRcsEngine: [86] JibeService.b: JibeService: Ignoring start action: com.google.android.ims.SIM_LOADED
+11-13 02:35:49.069  4986  5222 I BugleRcsEngine: [90] brnl.h: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+11-13 02:35:49.069  4986  5222 I BugleRcsEngine: [90] brqh.handleMessage: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]>Handler: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference
+11-13 02:35:49.070  4986  5222 I BugleRcsEngine: [90] brnl.h: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
 
