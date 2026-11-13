@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:12:08.077495+00:00
+updated_utc=2026-11-13T02:12:13.077867+00:00
 workflow_run_id=43349759093
 run_attempt=1
 branch=live-diagnostics
@@ -110,104 +110,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:12:07.305  1133  1162 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.307  1133  4376 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 1
-11-13 02:12:07.307  1133  1160 D SliceBuilder: Creating slice for: com.android.settings.accessibility.MagnificationGesturesPreferenceController
-11-13 02:12:07.308  1133  4346 D SettingsSliceProvider: content://com.android.settings.slices/action/gesture_double_tap_power loaded from cache
-11-13 02:12:07.310  1133  1160 D SliceBuilder: Creating slice for: com.android.settings.accessibility.MagnificationGesturesPreferenceController
-11-13 02:12:07.311  1133  1162 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.313  1133  1336 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-9033797 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
-11-13 02:12:07.314  1133  4348 D SettingsSliceProvider: content://com.android.settings.slices/action/screen_magnification_gestures_preference_screen loaded from cache
-11-13 02:12:07.316  1133  1162 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.317  1133  1336 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-9033797 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
-11-13 02:12:07.318  1133  1336 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-9033797 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
-11-13 02:12:07.318  1133  1162 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/mobile_data
-11-13 02:12:07.321   546   868 W BroadcastLoopers: Found previously unknown looper Thread[SliceManagerService,5,main]
-11-13 02:12:07.321  1133  1336 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-9033797 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
-11-13 02:12:07.322  1133  1133 D SettingsSliceProvider: Starting background worker for: content://com.android.settings.slices/action/mobile_data
-11-13 02:12:07.323  1133  1133 D SliceBackgroundWorker: create instance: class com.android.settings.network.telephony.MobileDataSlice$MobileDataWorker
-11-13 02:12:07.325  1133  1162 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.326  1133  3220 D SlicesIndexer: Slices already indexed - returning.
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: Could not create slicedata for uri: content://com.android.settings.slices/intent/wifi_calling
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: java.lang.IllegalStateException: Invalid Slices key from path: wifi_calling
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getIndexedSliceData(SlicesDatabaseAccessor.java:132)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceDataFromUri(SlicesDatabaseAccessor.java:75)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.loadSlice(SettingsSliceProvider.java:404)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.lambda$loadSliceInBackground$5(SettingsSliceProvider.java:435)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.$r8$lambda$DuOQmiIacKr39-rTKxFwLhyIlOo(SettingsSliceProvider.java:0)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:12:07.326  1133  3220 D SettingsSliceProvider: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:12:07.376  1133  1336 D WifiCallingSliceHelper: Wifi calling is either not provisioned or not enabled by Platform
-11-13 02:12:07.376  1133  1162 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.377  1133  1162 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/zen_mode_toggle
-11-13 02:12:07.379  1133  1336 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.379  1133  1162 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
-11-13 02:12:07.380  1133  4376 D SettingsSliceProvider: content://android.settings.slices/action/battery_saver loaded from cache
-11-13 02:12:07.381  1133  1160 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
-11-13 02:12:07.384  1133  1160 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
-11-13 02:12:07.385  1133  1162 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
-11-13 02:12:07.389  1133  1336 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.390  1133  4346 D SettingsSliceProvider: content://android.settings.slices/action/airplane_mode loaded from cache
-11-13 02:12:07.391  1133  1336 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.394  1133  1160 D WifiSlice: calling uid name : com.google.android.settings.intelligence
-11-13 02:12:07.396  1133  4348 D SlicesIndexer: Slices already indexed - returning.
-11-13 02:12:07.396  1133  4348 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 0
-11-13 02:12:07.397  1133  1336 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.398  1133  3220 D SlicesIndexer: Slices already indexed - returning.
-11-13 02:12:07.398  1133  3220 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 0
-11-13 02:12:07.399  1133  1336 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.399  1133  1336 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://android.settings.slices/action/bluetooth
-11-13 02:12:07.400  1133  1336 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.402  1133  1336 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
-11-13 02:12:07.402  1133  1133 D SettingsSliceProvider: Starting background worker for: content://android.settings.slices/action/wifi
-11-13 02:12:07.402  1133  1133 D SliceBackgroundWorker: create instance: class com.android.settings.wifi.slice.WifiScanWorker
-11-13 02:12:07.410  1133  1133 D WsuServiceClient: Binding to com.google.android.apps.carrier.carrierwifi
-11-13 02:12:07.411  1133  1133 D WsuServiceClient: the specified wsu service is not installed.
-11-13 02:12:07.414   546  2576 D ConnectivityService: requestNetwork for uid/pid:1000/1133 activeRequest: null callbackRequest: 115 [NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
-11-13 02:12:07.415   546   833 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 1]
-11-13 02:12:07.416   546   833 D ConnectivityService: NetReassign [116 : null → 101] [c 0] [a 0] [i 1]
-11-13 02:12:07.416   546   826 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
-11-13 02:12:07.416   546   826 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
-11-13 02:12:07.416   546   826 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
-11-13 02:12:07.416   546   826 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=116, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
-11-13 02:12:07.418   546  2576 W ScanResultUtil: Empty or null ScanResult list
-11-13 02:12:07.418   546  2576 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
-11-13 02:12:07.420   546  2576 W ScanResultUtil: Empty or null ScanResult list
-11-13 02:12:07.420   546  2576 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
-11-13 02:12:07.421   546  2576 W ScanResultUtil: Empty or null ScanResult list
-11-13 02:12:07.421   546  2576 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
-11-13 02:12:07.422   546  2576 W ScanResultUtil: Empty or null ScanResult list
-11-13 02:12:07.422   546  2576 W WifiService: Attempt to retrieve OsuProviders with invalid scanResult List
-11-13 02:12:07.428  1133  4812 D CompatibilityChangeReporter: Compat change id reported: 186082280; UID 1000; state: ENABLED
-11-13 02:12:07.429  1133  4812 I WifiPickerTracker: Scanning started
-11-13 02:12:07.430  1133  4812 E WifiScanner: listener does not exist
-11-13 02:12:07.459   358  4813 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10127 0}
-11-13 02:12:07.459   358  4814 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
-11-13 02:12:07.461   358  4815 I resolv  : res_nmkquery: (QUERY, IN, A)
-11-13 02:12:07.463   358  4814 I resolv  : res_nsend: used send_dg 142 terrno: 0
-11-13 02:12:07.463   358  4814 I resolv  : doQuery: rcode=0, ancount=2, return value=142
-11-13 02:12:07.467   358  4815 I resolv  : res_nsend: used send_dg 183 terrno: 0
-11-13 02:12:07.467   358  4815 I resolv  : doQuery: rcode=0, ancount=2, return value=183
-11-13 02:12:07.468  1505  4703 D TrafficStats: tagSocket(-1) with statsTag=0x30000407, statsUid=-1
-11-13 02:12:07.468  1505  4703 I TrafficStats: tagSocketFd(-1, 805307399, -1) failed with errno-9
-11-13 02:12:07.470  1505  4703 D TrafficStats: tagSocket(272) with statsTag=0x30000407, statsUid=-1
-11-13 02:12:07.672  1505  4134 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 602430]
-11-13 02:12:07.690  1505  2005 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 602448]
-11-13 02:12:07.701  1505  2005 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 602458]
-11-13 02:12:07.731  1569  1632 I GCM-GMS : Got GMS registration
-11-13 02:12:07.738  1505  1505 I GCoreUlr: GCM registration ID changed: Intent { act=com.google.android.gms.gcm.REGISTERED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/com.google.android.location.reporting.service.GcmRegistrationReceiver (has extras) }
-11-13 02:12:07.742  1505  3601 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 1 elapsed_millis: 1135 uptime_millis: 1135 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
-11-13 02:12:07.752  1569  4677 E MDM     : [240] aywf.a: No Google accounts; deferring server state update.
-11-13 02:12:07.757  1569  4818 I Authzen : [AuthZenEventHandler] Handling event: com.google.android.gms.gcm.REGISTERED
-11-13 02:12:07.765  1505  1505 I GCoreUlr: Unbound from all signal providers.
-11-13 02:12:07.765  1505  1505 I GCoreUlr: Stopping handler for UlrDispSvcFast
-11-13 02:12:07.790  1505  1505 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
-11-13 02:12:07.799  1505  3601 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 72 [CONTEXT service_id=218 ]
-11-13 02:12:07.806  1505  4134 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 19 uptime_millis: 19 exec_start_elapsed_seconds: 72 [CONTEXT service_id=218 ]
-11-13 02:12:07.837  1505  3601 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:5 exec_start_elapsed_seconds: 72 [CONTEXT service_id=218 ]
-11-13 02:12:07.844  1505  4757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:5 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 72 [CONTEXT service_id=218 ]
+11-13 02:12:10.666  4440  4575 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-13 02:12:10.666  4440  4549 W BugleRcsEngine: [48] brcu.d: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false]
+11-13 02:12:10.667  4440  4567 I BugleNetwork: Startup: registering tachyon.
+11-13 02:12:10.669  4440  4549 I BugleRcsEngine: [48] zzm.run: Skipping provisioning scheduling since RCS is disabled
+11-13 02:12:10.674  4440  4877 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+11-13 02:12:10.682  1505  1519 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-13 02:12:10.684  4440  4877 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-13 02:12:10.684  4440  4877 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+11-13 02:12:10.685  4440  4549 I BugleNetwork: RegistrationProvider: Getting Tachyon registration
+11-13 02:12:10.695  4440  4877 D nativeloader: Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-13 02:12:10.696  4440  4877 D nativeloader: Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-13 02:12:10.706  4440  4877 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-13 02:12:10.706  4440  4877 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-13 02:12:10.712  4440  4877 D nativeloader: Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+11-13 02:12:10.733  4440  4877 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-13 02:12:10.741  4440  4877 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: UID for network attribution might be misset for tag 805307399 [CONTEXT service_id=39 ]
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: dhwp: FULL
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at d.N(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aobf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aqzt.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aqzk.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aqzp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aqzk.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at apiy.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):51)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at apit.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.000  1505  4759 E GmsConnectionFactory: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: UID for network attribution might be misset for tag 805307399 [CONTEXT service_id=39 ]
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: dhwp: FULL
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at d.N(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aobf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aqzt.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aqzk.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aqzp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aqzk.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at apiy.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):51)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at apit.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.001  1505  3601 E GmsConnectionFactory: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:12:11.002   358  4888 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10127 0}
+11-13 02:12:11.003   358  4890 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-13 02:12:11.003   358  4890 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7d6d3bd29eb0
+11-13 02:12:11.003   358  4889 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-13 02:12:11.003   358  4890 I resolv  : doQuery: rcode=0, ancount=7, return value=314
+11-13 02:12:11.003   358  4889 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7d6bebd2ca10
+11-13 02:12:11.003   358  4889 I resolv  : doQuery: rcode=0, ancount=2, return value=146
+11-13 02:12:11.004  1505  3601 D TrafficStats: tagSocket(225) with statsTag=0x30000407, statsUid=-1
+11-13 02:12:11.016  1505  3601 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-13 02:12:11.016  1505  3601 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:11.016  1505  3601 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.068  1505  1505 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+11-13 02:12:11.142  1505  3601 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-13 02:12:11.142  1505  3601 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:12:11.142  1505  3601 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-13 02:12:11.609   546   634 D ActivityManager: freezing 4432 com.android.emergency
+11-13 02:12:11.618   546   634 D ActivityManager: freezing 4485 com.google.android.healthconnect.controller
+11-13 02:12:11.619   546   634 D ActivityManager: freezing 4487 com.google.android.marvin.talkback
+11-13 02:12:11.825  1505  1505 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
+11-13 02:12:12.074  1910  2532 W A       : [Download] response code: 400
+11-13 02:12:12.270  1505  1505 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-13 02:12:12.296  4440  4526 W Bugle   : TextClassifierLibManagerImpl: Reclaiming memory at level: 40
+11-13 02:12:12.300  4440  4894 I BugleNetwork: NewLightTickleFcmHandler: Handling firebase new token
+11-13 02:12:12.301  4440  4894 I BugleNetwork: RegistrationProvider: Refresh Tachyon Registration Now
+11-13 02:12:12.304  4440  4549 I BugleNetwork: RegistrationProvider: Tachyon registration token is null, ignore immediate refresh
+11-13 02:12:12.312  1505  4759 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:1 exec_start_elapsed_seconds: 77 [CONTEXT service_id=218 ]
+11-13 02:12:12.312  1569  3135 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+11-13 02:12:12.313  4440  4549 I BugleNetwork: NewLightTickleFcmHandler: Successfully handled firebase new token.
+11-13 02:12:12.315  1505  4759 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:1 result: 2 elapsed_millis: 22 uptime_millis: 22 exec_start_elapsed_seconds: 77 [CONTEXT service_id=218 ]
+11-13 02:12:12.491  4440  4894 I BugleNetwork: NewLightTickleFcmHandler: Handling firebase new token
+11-13 02:12:12.491  4440  4894 I BugleNetwork: RegistrationProvider: Refresh Tachyon Registration Now
+11-13 02:12:12.492  4440  4569 I BugleNetwork: RegistrationProvider: Tachyon registration token is null, ignore immediate refresh
+11-13 02:12:12.492  4440  4569 I BugleNetwork: NewLightTickleFcmHandler: Successfully handled firebase new token.
+11-13 02:12:12.504  2540  2568 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+11-13 02:12:12.504  2540  2568 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+11-13 02:12:12.515  2540  2568 W DG      : [flow tachyon_registration] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+11-13 02:12:12.519  2540  3624 D TrafficStats: tagSocket(115) with statsTag=0x1803, statsUid=10131
+11-13 02:12:12.618   546  2453 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+11-13 02:12:12.625   546   546 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+11-13 02:12:12.630   546  2453 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+11-13 02:12:12.632   546  1462 I RemoteProvisionSysSvc: Fetching key 10127 for client 175775404
+11-13 02:12:12.632   546  1462 I RegistrationProxy: getKeyAsync operation started with callback 6268789
+11-13 02:12:12.632  3786  3839 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10127, callback: 76566909
+11-13 02:12:12.633  3786  3839 I RkpdRegistrationBinder: Key successfully assigned to client
+11-13 02:12:12.633   546   546 I RemoteProvisionSysSvc: Successfully fetched key for client 175775404
+11-13 02:12:12.836     0     0 I servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
+11-13 02:12:12.862   546  1462 D WifiNl80211Manager: Scan result ready event
+11-13 02:12:12.862   546  1462 D WifiNative: Scan result ready event
 
