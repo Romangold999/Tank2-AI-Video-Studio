@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:35:49.352993+00:00
+updated_utc=2026-11-13T02:35:54.353085+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -110,106 +110,108 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 qemu-system-x86_64-headless: warning: I/O thread spun for 1000 iterations
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
+=== INSTALLED PACKAGE ===
+package:/data/app/~~JbJfUakHixffyOOsekFHNA==/com.romangold.tank2aivideostudio.debug-6TVaP_FTkMxY67dETRd00w==/base.apk
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: cpwb: FULL
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bdsy.h(PG:6)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bgit.<init>(PG:2)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bgiu.a(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.ai(PG:3)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.aj(PG:25)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.z(PG:2)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aule.k(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aulc.call(Unknown Source:2)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnsg.a(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnpm.a(PG:3)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfv.a(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctet.run(PG:4)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfx.run(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfd.run(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxef.run(PG:2)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfj.run(PG:5)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: cpwb: FULL
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bdsy.h(PG:6)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.ai(PG:18)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.aj(PG:25)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at awsw.z(PG:2)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aule.k(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at aulc.call(Unknown Source:2)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnsg.a(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at cnpm.a(PG:3)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfv.a(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctet.run(PG:4)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at ctfx.run(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfd.run(PG:1)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxef.run(PG:2)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:49.032  4454  4591 W SubscriptionMetadataUti: 	at bxfj.run(PG:5)
-11-13 02:35:49.032  4454  4591 I Bugle   : SubscriptionUtilsAsOfLMR1: getActiveSubscriptionInfo(): empty sub info for subscription{id:-1}
-11-13 02:35:49.032  4454  4591 I Bugle   : SubscriptionUtilsAsOfLMR1: getActiveSubscriptionInfo(): empty sub info for subscription{id:-1}
-11-13 02:35:49.032  4454  4591 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
-11-13 02:35:49.033  4454  4983 I BugleRcsEngine: [105] brnl.h: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
-11-13 02:35:49.033  4454  4985 W BugleRcsEngine: [108] bpxc.w: Unable to send diagnostic log
-11-13 02:35:49.034  4454  4982 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
-11-13 02:35:49.038  4454  4591 W BugleAction: No default number, returning empty msisdn
-11-13 02:35:49.039  4454  4582 I BugleTransport: updateActiveTransport: refreshing chat transport
-11-13 02:35:49.040  4454  4582 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
-11-13 02:35:49.041  4454  4591 I RcsClientLib: Connecting RcsEngineLifecycleService
-11-13 02:35:49.042  4454  4565 I BugleRcsEngine: [44] bptz.run: SystemBindingManager: SystemBinding enabled: true
-11-13 02:35:49.042  4454  4591 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
-11-13 02:35:49.042  4454  4578 I BugleRcsEngine: [49] bpua.b: System Binding updated
-11-13 02:35:49.042  4454  4585 W BugleRcsEngine: [55] bpxc.w: Unable to send diagnostic log
-11-13 02:35:49.043  4454  4591 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
-11-13 02:35:49.045  4986  4986 I BugleRcsEngine: [2] JibeService.onBind: JibeService: onBind in state STARTING, intent action = com.google.android.ims.rcs.engine.IRcsEngineTemporaryController
-11-13 02:35:49.046  4454  4591 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
-11-13 02:35:49.046  4454  4591 W RcsClientLib: Error while stopping RCS engine.
-11-13 02:35:49.046  4454  4591 W RcsClientLib: java.lang.IllegalStateException: JibeService Not Initialized
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3065)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.createException(Parcel.java:3041)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.readException(Parcel.java:3024)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at android.os.Parcel.readException(Parcel.java:2966)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at com.google.android.aidl.BaseProxy.transactAndReadExceptionReturnVoid(PG:3)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at com.google.android.ims.rcs.engine.IRcsEngineTemporaryController$Stub$Proxy.triggerStopRcsStack(PG:3)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService.triggerStopRcsStack(PG:2)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at awzl.call(PG:1)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at cnsg.a(PG:1)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at cnpm.a(PG:3)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at ctfv.a(PG:1)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at ctet.run(PG:4)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at ctfx.run(PG:1)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at bxfd.run(PG:1)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at bxef.run(PG:2)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:35:49.046  4454  4591 W RcsClientLib: 	at bxfj.run(PG:5)
-11-13 02:35:49.050  4986  5218 I BugleRcsEngine: [86] RcsEngineImpl.init: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]: Initializing RcsEngine.
-11-13 02:35:49.051  4986  5027 I BugleRcsEngine: [63] EventHubProxy.subscribe: Adding event listener brml@22d0e3d for category 8 with key 36507197 for hub ENGINE
-11-13 02:35:49.052   547  1316 D ConnectivityService: requestNetwork for uid/pid:10131/4986 activeRequest: null callbackRequest: 136 [NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-11-13 02:35:49.052  4986  5218 I BugleRcsEngine: [86] RcsEngineImpl.init: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]: Initializing RBM resource permissions.
-11-13 02:35:49.052  4986  5218 I BugleRcsEngine: [86] brga.s: ProvisioningEngineManager: onCsLibPhenotypeUpdated, provisioningTaskInBugleEnabled = true, currentProvisioningStrategy = brka
-11-13 02:35:49.052  4986  5218 I BugleRcsEngine: [86] RcsEngineProxyImpl.f: RcsEngineProxyImpl:[7b2b0598-5862]: setting active RCS Engine to DUAL_REG instance
-11-13 02:35:49.054   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
-11-13 02:35:49.054   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
-11-13 02:35:49.055   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
-11-13 02:35:49.055   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
-11-13 02:35:49.055   547   834 D ConnectivityService: NetReassign [137 : null → 100] [c 0] [a 1] [i 1]
-11-13 02:35:49.055  4986  5028 I BugleRcsEngine: [64] bqvv.c: Connected state: [1], networkType: [WIFI]
-11-13 02:35:49.056  4986  5028 I BugleRcsEngine: [64] bqvv.c: Connected state: [1], networkType: [WIFI]
-11-13 02:35:49.058  4986  5218 D BugleRcsEngine: log_saver already enabled
-11-13 02:35:49.061  4986  5029 W BugleRcsEngine: [65] bpxk.i: Unable to send RCS extension log
-11-13 02:35:49.061  4986  5029 W BugleRcsEngine: [65] bqun.run: ProvisioningEngineMetricsStorage, the wrapper class for proto data store, is null
-11-13 02:35:49.062  4986  5027 W BugleRcsEngine: [63] brpi.b: Unable to send provisioning event log
-11-13 02:35:49.065  4986  5222 I BugleRcsEngine: [90] brqh.handleMessage: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]>Handler: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference
-11-13 02:35:49.067  4986  5218 W BugleRcsEngine: [86] JibeService.b: JibeService: Ignoring start action: com.google.android.ims.SIM_LOADED
-11-13 02:35:49.069  4986  5222 I BugleRcsEngine: [90] brnl.h: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
-11-13 02:35:49.069  4986  5222 I BugleRcsEngine: [90] brqh.handleMessage: RcsEngineImpl[DUAL_REG]:[a11083fb-4ff5]>Handler: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference
-11-13 02:35:49.070  4986  5222 I BugleRcsEngine: [90] brnl.h: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+11-13 02:35:53.657   547   648 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+11-13 02:35:53.658  1522  1591 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:35:53.665  1667  1882 I SP      : Sync for dynamic_art succeeded in 7600 ms: {added: [305f81355a729e382ea9f374dd286d9f, b1f6f47a53f7820be91b9fe247728980], metadata: false
+11-13 02:35:53.667  1134  3512 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 15
+11-13 02:35:53.678   902   963 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+11-13 02:35:53.679  1134  3512 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+11-13 02:35:53.679  1134  4398 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 197
+11-13 02:35:53.679  1134  4435 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 35
+11-13 02:35:53.687  1134  4390 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 37
+11-13 02:35:53.692  1134  1191 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:53.695   547   547 I ExplicitHealthCheckController: Explicit health check service is connected ComponentInfo{com.google.android.ext.services/android.ext.services.watchdog.ExplicitHealthCheckServiceImpl}
+11-13 02:35:53.695   547   547 I ExplicitHealthCheckController: Service initialized, syncing requests
+11-13 02:35:53.695   547   547 I PackageWatchdog: Syncing health check requests for packages: {}
+11-13 02:35:53.695   547   547 D ExplicitHealthCheckController: Getting health check supported packages
+11-13 02:35:53.698  1134  3512 D SettingsSliceProvider: content://android.settings.slices/action/battery_saver loaded from cache
+11-13 02:35:53.733   902   963 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+11-13 02:35:53.737   547  2426 I ExplicitHealthCheckController: Explicit health check supported packages [PackageConfig{com.google.android.networkstack, 86400000}]
+11-13 02:35:53.737   547  2426 D PackageWatchdog: Received supported packages [PackageConfig{com.google.android.networkstack, 86400000}]
+11-13 02:35:53.737   547  2426 D ExplicitHealthCheckController: Getting health check requested packages
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+11-13 02:35:53.744  1835  2462 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:35:53.754   902   963 D StylusManager: Stylus InputDevice changed: 7 virtio_input_multi_touch_4
+11-13 02:35:53.755   902   963 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+11-13 02:35:53.769  1134  1190 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:53.770   902   963 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+11-13 02:35:53.776  1134  1190 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://android.settings.slices/action/bluetooth
+11-13 02:35:53.779   902   963 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+11-13 02:35:53.784   902   963 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+11-13 02:35:53.792   902   963 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+11-13 02:35:53.795   547   619 I ExplicitHealthCheckController: Explicit health check requested packages []
+11-13 02:35:53.796   547   619 I ExplicitHealthCheckController: No more health check requests, unbinding...
+11-13 02:35:53.796   547   619 I ExplicitHealthCheckController: Explicit health check service is unbound
+11-13 02:35:53.798   902   963 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+11-13 02:35:53.808   902   963 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+11-13 02:35:53.816   902   963 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+11-13 02:35:53.865   356   391 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.45ms>
+11-13 02:35:53.865   356   391 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.03ms>
+11-13 02:35:53.866   356   391 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.05ms>
+11-13 02:35:53.866   356   391 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.02ms>
+11-13 02:35:53.870   547  3634 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-13 02:35:53.871  1522  1591 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:35:53.897  1522  3623 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 91 [CONTEXT service_id=218 ]
+11-13 02:35:53.899  1134  1190 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:53.900  1134  1190 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+11-13 02:35:53.903  1134  1134 D SettingsSliceProvider: Starting background worker for: content://android.settings.slices/action/wifi
+11-13 02:35:53.903  1134  1134 D WsuServiceClient: Binding to com.google.android.apps.carrier.carrierwifi
+11-13 02:35:53.903  1134  4818 I WifiPickerTracker: Scanning started
+11-13 02:35:53.903  1134  4818 E WifiScanner: listener does not exist
+11-13 02:35:53.904  1134  1134 D WsuServiceClient: the specified wsu service is not installed.
+11-13 02:35:53.906  1133  1439 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+11-13 02:35:53.906   547  1318 D ConnectivityService: requestNetwork for uid/pid:10131/4454 activeRequest: null callbackRequest: 138 [NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-13 02:35:53.917  1572  3561 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+11-13 02:35:53.926   909  1094 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+11-13 02:35:53.927  1572  3795 I GCM-GMS : Registering GMS for direct boot.
+11-13 02:35:53.938   909  1094 I Role    : com.google.android.gms not qualified for android.app.role.SYSTEM_CALL_STREAMING due to missing RequiredComponent{mIntentFilterData=IntentFilterData{mAction='android.telecom.CallStreamingService', mCategories='[]', mDataScheme='null', mDataType='null'}, mMinTargetSdkVersion=1, mFlags='0', mPermission='android.permission.BIND_CALL_STREAMING_SERVICE', mQueryFlags=0, mMetaData=[]}
+11-13 02:35:53.939   909  1094 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
+11-13 02:35:53.941   909  1094 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-13 02:35:53.944   547  2195 D ConnectivityService: requestNetwork for uid/pid:1000/1134 activeRequest: null callbackRequest: 141 [NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+11-13 02:35:53.967   547   576 I CredManSysServiceImpl: CredentialManagerServiceImpl constructed for: com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService
+11-13 02:35:53.968   547   576 I CredManSysServiceImpl: newServiceInfoLocked, mInfo null, com.google.android.gms/com.google.android.gms.auth.api.credentials.credman.service.PasswordAndPasskeyService
+11-13 02:35:53.985   547   834 D ConnectivityService: NetReassign [139 : null → 100] [c 9] [a 1] [i 2]
+11-13 02:35:53.986   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:53.987   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:53.989   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:53.990   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+11-13 02:35:53.992   547   834 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 6]
+11-13 02:35:53.994   547   834 D ConnectivityService: NetReassign [142 : null → 100] [c 1] [a 0] [i 1]
+11-13 02:35:53.997   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:53.997  1134  1190 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/mobile_data
+11-13 02:35:54.000   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:54.001   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:54.001   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+11-13 02:35:54.015  1572  4105 I PeopleGalProvider: Gal directories started.
+11-13 02:35:54.015  1572  4105 I PeopleGalProvider: Method 1 completed.
+11-13 02:35:54.016  1572  4105 I PeopleGalProvider: Method 1 finished successfully.
+11-13 02:35:54.033  1134  1134 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/mobile_data
+11-13 02:35:54.037  4454  4982 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningListenableWorker
+11-13 02:35:54.045   547   562 W JobScheduler: Job didn't exist in JobStore: 37e306e #u0a154/7 com.google.android.contacts/com.google.android.apps.contacts.shortcut.ShortcutJobService
+11-13 02:35:54.049  1572  5212 W Icing   : No valid account for uploading user actions
+11-13 02:35:54.052  1667  1882 I SP      : Sync for emoji succeeded in 7529 ms: {added: [60932fe37d5f6d7a3e60488d8a1755c4], metadata: false
+11-13 02:35:54.065  1572  3561 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+11-13 02:35:54.112  1667  1882 I SP      : GC for 'dynamic_art' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-13 02:35:54.113  1667  1882 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
 
