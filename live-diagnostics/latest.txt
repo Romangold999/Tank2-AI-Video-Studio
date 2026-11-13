@@ -1,12 +1,12 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:11:28.076681+00:00
+updated_utc=2026-11-13T02:11:33.076778+00:00
 workflow_run_id=43349759093
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
 STATUS=EMULATOR_BOOT_WAIT
-ELAPSED_SECONDS=35
+ELAPSED_SECONDS=40
 EMULATOR_PID=4126
 ADB_DEVICE_STATE=device
 BOOT_COMPLETED=not-yet
@@ -107,6 +107,8 @@ INFO         | emulatorSetupEnvironment: Environment scene is not required
 USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
 WARNING      | Failed to process .ini file /home/runner/.android/emu-update-last-check.ini for reading.
 WARNING      | Failed to process .ini file /home/runner/.android/emu-update-last-check.ini for reading.
+INFO         | Boot completed in 37369 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
 (not created yet)
