@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:36:54.354259+00:00
+updated_utc=2026-11-13T02:36:59.354349+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -137,104 +137,104 @@ text='Albums' desc='' class=android.widget.TextView bounds=[614,383][739,434] cl
 text='' desc='More options' class=android.widget.ImageView bounds=[975,345][1080,471] clickable=true
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:36:52.478  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:52.478  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:52.478  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:52.479  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:52.479  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:52.479  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:52.479  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:52.479  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:52.459  6453  6453 W main    : type=1400 audit(0.0:90): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=86 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
-11-13 02:36:52.479  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
-11-13 02:36:52.479  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
-11-13 02:36:52.480   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-11-13 02:36:52.488   547   547 D BatterySaverPolicy: accessibility changed to true, updating policy.
-11-13 02:36:52.492   547  2195 D SafetySourceDataValidator: No cert check requested for package com.google.android.permissioncontroller
-11-13 02:36:53.081   902   902 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
-11-13 02:36:53.485  6453  6453 W AccessibilityNodeInfoDumper: Fetch time: 2ms
-11-13 02:36:53.486   547  2195 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
-11-13 02:36:53.486   547  2195 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
-11-13 02:36:53.486  1740  1834 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
-11-13 02:36:53.486  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:53.486  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:53.486  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:53.487  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:53.487  6453  6453 D AndroidRuntime: Shutting down VM
-11-13 02:36:53.489  1740  2118 I AiAiEcho: Predicting[0]: 
-11-13 02:36:53.489  1740  2118 I AiAiEcho: EchoTargets: 
-11-13 02:36:53.489  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
-11-13 02:36:53.490  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
-11-13 02:36:53.490  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
-11-13 02:36:53.490  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
-11-13 02:36:53.491   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
-11-13 02:36:53.492  1835  2462 I A       : NGA enabled in interactor.
-11-13 02:36:53.492  1835  2462 I A       : Nga state changed to NgaStateDetails{state=ENABLED, isSpecialExperience=false}
-11-13 02:36:53.492   547   547 D BatterySaverPolicy: accessibility changed to false, updating policy.
-11-13 02:36:53.493  1757  4865 I A       : Initializing all components
-11-13 02:36:53.493  1757  4865 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
-11-13 02:36:53.493  1757  4865 I A       : [Memory] eligibility: StashEligibility{6}
-11-13 02:36:53.493  1757  2319 I A       : onIsEnabledChanged, isEnabled: false
-11-13 02:36:53.493  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.493  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2320 I A       : State changed: IDLE => IDLE by NGA_STATE_CHANGED and N/A with Optional.empty
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 I A       : onOpaVisibilityChanged: false
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2320 I A       : Recognizer choice: (recognizer_type: 1, recognizer_mode: 1, choice_reason: 4)
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2320 I A       : onActiveStateChangeEvent: IDLE => IDLE
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 I A       : Setting session to type: NO_SESSION
-11-13 02:36:53.494  1757  2320 I A       : #onActiveStateChangeEvent, newState: IDLE, previousState: IDLE.
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.494  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.495  1757  2319 I A       : setNavBarVisible: GestureNavBarVisible{navbarVisible=true}
-11-13 02:36:53.495  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.495  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.495  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.495  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.495  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.495  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
-11-13 02:36:53.495  1757  2319 I A       : onDisabled. Registered: false
-11-13 02:36:53.496  1757  2320 I A       : on opa visibility changed false
-11-13 02:36:53.496  1757  2320 I A       : on opa visibility changed false
-11-13 02:36:53.496  1757  2320 I A       : stopListening(NGA_PAUSED_UNKNOWN_REASON, NGA_CREATE), idleOverride=NOT_LISTENING
-11-13 02:36:53.497  1757  2320 I NgaEntryPointEventSendr: setupConnection
-11-13 02:36:53.498  1757  2319 I A       : Initialize
-11-13 02:36:53.499   547  2195 W ProcessStats: Tracking association SourceState{536c1e3 com.google.android.googlequicksearchbox:interactor/10132 BFgs #11814} whose proc state 4 is better than process ProcessState{1bf038e com.google.android.googlequicksearchbox:search/10132 pkg=com.google.android.googlequicksearchbox} proc state 6 (8 skipped)
-11-13 02:36:53.499  1835  1835 I A       : Creating pss binder().
-11-13 02:36:53.507  1757  2320 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
-11-13 02:36:53.508  1757  2320 I NgaEntryPointEventSendr: onServiceConnected
-11-13 02:36:53.508  1835  2346 I A       : Calling beginBinderSession().
-11-13 02:36:53.508  1835  2346 I A       : beginBinderSession(): calling binder
-11-13 02:36:53.509  1757  2320 I NgaEntryPointEventSendr: State changed: Connecting => Ready
-11-13 02:36:53.513   547  1221 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
-11-13 02:36:53.513  1757  2320 I A       : Successfully initialized all components
-11-13 02:36:53.526  1757  2319 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
-11-13 02:36:53.526  1835  3465 I PBSessionCacheImpl: Deleted sessionId[8072209885176433] from persistence.
-11-13 02:36:53.526  1835  2818 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
-11-13 02:36:53.531  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:53.532  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:53.532  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:53.532  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:53.533  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:53.533  1835  2818 W SearchServiceCore: Abort, client detached.
-11-13 02:36:53.533  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:56.511  1740  2814 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:36:56.511   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:36:56.511  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:36:56.511  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:36:56.511  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:36:56.511  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:36:56.513  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:36:56.513  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:36:56.513  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:36:56.513  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:36:56.513  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-13 02:36:56.513  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:36:56.516   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:36:57.518  6473  6473 W AccessibilityNodeInfoDumper: Fetch time: 3ms
+11-13 02:36:57.520   547  2194 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:36:57.520   547  2194 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-13 02:36:57.520  6473  6473 D AndroidRuntime: Shutting down VM
+11-13 02:36:57.520  1740  2814 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-13 02:36:57.522  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:36:57.522  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:36:57.522  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:36:57.522  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:36:57.522  1740  2118 I AiAiEcho: Predicting[0]: 
+11-13 02:36:57.522  1740  2118 I AiAiEcho: EchoTargets: 
+11-13 02:36:57.522  1740  2118 I AiAiEcho: Filtered by AiAi flag check: 
+11-13 02:36:57.522  1740  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+11-13 02:36:57.523  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-13 02:36:57.525   547   547 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-13 02:36:57.526  1835  2457 I A       : NGA enabled in interactor.
+11-13 02:36:57.526  1835  2457 I A       : Nga state changed to NgaStateDetails{state=ENABLED, isSpecialExperience=false}
+11-13 02:36:57.527  1757  6233 I A       : Initializing all components
+11-13 02:36:57.529  1757  2319 I A       : onIsEnabledChanged, isEnabled: false
+11-13 02:36:57.529  1757  2320 I A       : State changed: IDLE => IDLE by NGA_STATE_CHANGED and N/A with Optional.empty
+11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.529  1757  2320 I A       : Recognizer choice: (recognizer_type: 1, recognizer_mode: 1, choice_reason: 4)
+11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.529  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.530  1757  2320 I A       : onActiveStateChangeEvent: IDLE => IDLE
+11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.530  1757  2319 I A       : onOpaVisibilityChanged: false
+11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.530  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 I A       : Setting session to type: NO_SESSION
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1740  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 I A       : setNavBarVisible: GestureNavBarVisible{navbarVisible=true}
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-13 02:36:57.531  1757  2319 I A       : onDisabled. Registered: false
+11-13 02:36:57.532  1757  2320 I A       : #onActiveStateChangeEvent, newState: IDLE, previousState: IDLE.
+11-13 02:36:57.532  1757  6233 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-13 02:36:57.533  1757  6233 I A       : [Memory] eligibility: StashEligibility{6}
+11-13 02:36:57.538  1757  2319 I A       : Initialize
+11-13 02:36:57.539  1757  2319 I A       : on opa visibility changed false
+11-13 02:36:57.539  1757  2319 I A       : on opa visibility changed false
+11-13 02:36:57.539  1757  2319 I A       : stopListening(NGA_PAUSED_UNKNOWN_REASON, NGA_CREATE), idleOverride=NOT_LISTENING
+11-13 02:36:57.541  1757  2320 I NgaEntryPointEventSendr: setupConnection
+11-13 02:36:57.546   547  2628 D OomAdjuster: Not killing cached processes
+11-13 02:36:57.551   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:36:57.559  1835  1835 I A       : Creating pss binder().
+11-13 02:36:57.560  1757  2320 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+11-13 02:36:57.560  1757  2320 I NgaEntryPointEventSendr: onServiceConnected
+11-13 02:36:57.561  1835  3209 I A       : Calling beginBinderSession().
+11-13 02:36:57.561  1835  3209 I A       : beginBinderSession(): calling binder
+11-13 02:36:57.561  1757  2320 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+11-13 02:36:57.562  1757  2319 I A       : Successfully initialized all components
+11-13 02:36:57.569  1757  1757 V ClearcutMetricXmitter: Transmission is done.
+11-13 02:36:57.570   547  2195 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-13 02:36:57.584  1757  2319 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+11-13 02:36:57.584  1835  2818 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+11-13 02:36:57.585  1835  3465 I PBSessionCacheImpl: Deleted sessionId[8072209885176436] from persistence.
+11-13 02:36:57.588  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:57.589  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:57.589  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:57.589  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:57.591  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:57.591  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:57.591  1835  2818 W SearchServiceCore: Abort, client detached.
+11-13 02:36:59.087   902   902 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
 
