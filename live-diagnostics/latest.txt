@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:36.054705+00:00
+updated_utc=2026-11-13T02:20:41.054859+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:35.371   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.371   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.371  1607  3849 V SmartDevice: [ModuleInitializer] ModuleInitializer got intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
-11-13 02:20:35.371  1607  3849 W ChimeraUtils: Module com.google.android.gms.smartdevice missing resource null(0)
-11-13 02:20:35.389  1528  3313 W .gms.persistent: Long monitor contention with owner highpool[3] (1642) at java.io.InputStream android.content.res.AssetManager.openNonAsset(int, java.lang.String, int)(AssetManager.java:1027) waiters=1 in java.lang.CharSequence android.content.res.AssetManager.getResourceText(int) for 190ms
-11-13 02:20:35.430  1528  3335 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
-11-13 02:20:35.432  1528  4340 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
-11-13 02:20:35.439  1528  3636 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction com.google.android.location.internal.server.ACTION_RESTARTED
-11-13 02:20:35.458  1528  3636 I GCoreUlr: WorldUpdater:com.google.android.location.internal.server.ACTION_RESTARTED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
-11-13 02:20:35.461  4276  4276 V ClearcutMetricXmitter: Transmission is done.
-11-13 02:20:35.466  1607  4734 I LocationHistory: [IntentOperation] Module is disabled [CONTEXT service_id=314 ]
-11-13 02:20:35.470  1528  3636 I GCoreUlr: Unbound from all signal providers.
-11-13 02:20:35.472  1607  3849 D SmartDevice: [ModuleInitializer] Module init - scheduling buffered logs cleanup task
-11-13 02:20:35.473  1607  3849 I SmartDevice: [CleanBufferedLogsService] Periodic task upload_buffered_logs_periodic scheduled!
-11-13 02:20:35.475  1607  4437 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.security.snet.SnetGcmSchedulerChimeraIntentService for action com.google.android.gms.security.snet.ACTION_SET_EVENT_LOG_COLLECTOR_PERIOD (3855) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 194ms
-11-13 02:20:35.502  1607  3855 I TelephonySpamInit: On boot completed TelephonySpam module initialized [CONTEXT service_id=150 ]
-11-13 02:20:35.502  1607  3855 I TelephonySpamInit: onModuleUpdated TelephonySpam module initialized [CONTEXT service_id=150 ]
-11-13 02:20:35.502  1607  3855 I SpamListSync: scheduleSyncTasks [CONTEXT service_id=150 ]
-11-13 02:20:35.502  1607  3855 I SpamListSync: schedulePeriodicTask [CONTEXT service_id=150 ]
-11-13 02:20:35.507  1528  3313 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
-11-13 02:20:35.511  1528  3313 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
-11-13 02:20:35.564   548  2061 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.564   548  2061 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.566   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.566   548   977 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.570  1607  4736 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1794614400000]
-11-13 02:20:35.574  1607  3849 D ActivityThread: Loading provider com.google.android.gms.reminders: com.google.android.gms.reminders.provider.RemindersProvider
-11-13 02:20:35.576  1607  2936 W Icing   : No valid account for uploading user actions
-11-13 02:20:35.583  1607  3855 I SpamListSync: scheduleOneTimeTask [CONTEXT service_id=150 ]
-11-13 02:20:35.585  1607  4736 I ThreadNetworkModuleInit: Initializing runtime states: 2 [CONTEXT service_id=305 ]
-11-13 02:20:35.593  1607  4736 I ThreadNetworkModuleInit: Enabled component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
-11-13 02:20:35.594   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.594   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.599   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.599   548   977 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.607   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.607   548   977 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.609   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.609   548  1358 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.611   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.611   548  1358 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.612   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.612   548  1358 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.613  1607  4436 I TrustedTime: Skip initializing when trusted time feature disabled. [CONTEXT service_id=326 ]
-11-13 02:20:35.619  1607  4736 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
-11-13 02:20:35.621   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.621   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.622   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.622   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.624   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.624   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.624   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.624   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.625   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.625   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.632   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.632   548  1358 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.634   548  1358 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.634   548  1358 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.634   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.635   548   977 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.636   548   977 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.636   548   977 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.649   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.649   548  2382 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.650  1607  4436 W ActiveUnlock: Tried to set empty triggers [CONTEXT service_id=327 ]
-11-13 02:20:35.651  1607  4436 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
-11-13 02:20:35.652  1607  4436 I SystemUpdate: [Control,UpdateReminderDialogControl] Received action: android.intent.action.BOOT_COMPLETED
-11-13 02:20:35.680  1528  3595 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
-11-13 02:20:35.681  1528  1528 I rcs     : [RcsBindingManager] Checking if we should rebind to previous service. Attempt 0
-11-13 02:20:35.681  1528  1528 I rcs     : [RcsBindingManager] No valid settings for binding.
-11-13 02:20:35.688  1528  3595 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
-11-13 02:20:35.691  1528  3595 I SemanticLocation: ULR Settings changed. Updating LH/LR state. [CONTEXT service_id=173 ]
-11-13 02:20:35.704  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:5 exec_start_elapsed_seconds: 67 [CONTEXT service_id=218 ]
-11-13 02:20:35.706  1528  4340 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
-11-13 02:20:35.706  1528  4198 E bwel    : Phenotype registration failed [CONTEXT service_id=51 ]
-11-13 02:20:35.706  1528  4198 E bwel    : java.util.concurrent.TimeoutException: Timed out waiting for Task
-11-13 02:20:35.706  1528  4198 E bwel    : 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at bwel.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
-11-13 02:20:35.706  1528  4198 E bwel    : 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:35.712   548  1961 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.712   548  1961 D PackageManager: Clear ephemeral installer activity
-11-13 02:20:35.732  1607  2936 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
-11-13 02:20:35.736  1528  1528 I GCoreUlr: Unbound from all signal providers.
-11-13 02:20:35.736  1528  1528 I GCoreUlr: Stopping handler for UlrDispSvcFast
-11-13 02:20:35.749  1607  3855 I Wear_Controller: Wearable module requires a companion app to be installed.
-11-13 02:20:35.749  1607  3855 I Wear_Controller: onStartup - Wear is not available on this device.
-11-13 02:20:35.789  1528  3313 W .gms.persistent: Long monitor contention with owner highpool[6] (3513) at bdki bdki.c(android.content.Context, java.lang.String)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4) waiters=0 in bdki bdki.c(android.content.Context, java.lang.String) for 277ms
-11-13 02:20:35.818   548  2382 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
-11-13 02:20:35.820  1528  1528 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
-11-13 02:20:35.825   548  2382 D PackageManager: Clear ephemeral installer activity
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.aj.a(PG:2)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.c(PG:2)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.a(PG:1)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.e(PG:2)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.c(PG:3)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:5)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.cd.g.a.f.e(PG:2)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:20:39.905  1976  2744 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+11-13 02:20:39.915  1976  4210 I A       : [Upload] Connected
+11-13 02:20:39.918  1976  1976 W A       : Failed to sync device settings.
+11-13 02:20:39.918  1976  1976 I A       : Retrying to sync device settings.
+11-13 02:20:39.926   548  1965 W JobScheduler: Job didn't exist in JobStore: 1817e82 #u0a132/-353 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+11-13 02:20:39.931  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:39.931  1976  3226 W SearchServiceCore: Abort, client detached.
+11-13 02:20:40.007  2179  2978 I HttpGrpcBindableService: [pfd-write] DOWNLOAD COMPLETE: Downloaded 38498810 bytes from URL [https://storage.googleapis.com/captions/aiai-en-US-v3003.zip].
+11-13 02:20:40.008  1806  2359 I AstreaHttpConnection: Download completed for url [https://storage.googleapis.com/captions/aiai-en-US-v3003.zip].
+11-13 02:20:40.009  1806  2166 I SP.AiAi : Download stopped: captions_i18n_v0_en-US:asr_en-US_v3003, succeeded, size: 38498810
+11-13 02:20:40.012  2179  2389 I HttpGrpcBindableService: Downloading requested for URL 'https://storage.googleapis.com/captions/sound_recognition_v1.zip'
+11-13 02:20:40.025  2179  2389 I HttpGrpcBindableService: Responding with header information for URL 'https://storage.googleapis.com/captions/sound_recognition_v1.zip'
+11-13 02:20:40.027  1806  2359 I AstreaHttpConnection: Started download from url='https://storage.googleapis.com/captions/sound_recognition_v1.zip'
+11-13 02:20:40.060  1806  2166 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 4 pending: manifests:spelling_correction-22110320 {W:b:I:l, bg}, manifests:text-classifier-langid-1941001461 {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 {W:b:u:l, bg}, captions_i18n_v0_mandatory:sound_recognition_v1 @ {W:b:u:l, bg}
+11-13 02:20:40.171  1607  1607 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-13 02:20:40.248  1607  3884 I GCM-GMS : Got GMS registration
+11-13 02:20:40.280   548   622 W ProcessStats: Tracking association SourceState{c953c6 com.google.android.googlequicksearchbox:search/10132 BTop #3238} whose proc state 2 is better than process ProcessState{c46f350 com.google.android.gms.persistent/10128 pkg=com.google.android.gms} proc state 4 (21639 skipped)
+11-13 02:20:40.283  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 1 elapsed_millis: 846 uptime_millis: 846 exec_start_elapsed_seconds: 74 [CONTEXT service_id=218 ]
+11-13 02:20:40.393  2179  2978 I HttpGrpcBindableService: [pfd-write] DOWNLOAD COMPLETE: Downloaded 2565038 bytes from URL [https://storage.googleapis.com/captions/sound_recognition_v1.zip].
+11-13 02:20:40.394  1806  2359 I AstreaHttpConnection: Download completed for url [https://storage.googleapis.com/captions/sound_recognition_v1.zip].
+11-13 02:20:40.400  1806  2166 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 12462 ms. elapsed since start
+11-13 02:20:40.406  1806  2166 I SP.AiAi : Download stopped: captions_i18n_v0_mandatory:sound_recognition_v1, succeeded, size: 2565038
+11-13 02:20:40.448  1528  3640 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:5 exec_start_elapsed_seconds: 75 [CONTEXT service_id=218 ]
+11-13 02:20:40.450   361   361 I netd    : tetherGetStats() -> {[]} <0.32ms>
+11-13 02:20:40.473   361   361 I netd    : bandwidthSetGlobalAlert(2097152) <0.10ms>
+11-13 02:20:40.476   361   361 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.59ms>
+11-13 02:20:40.477   361   361 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.82ms>
+11-13 02:20:40.492  1528  3244 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:5 result: 1 elapsed_millis: 68 uptime_millis: 68 exec_start_elapsed_seconds: 75 [CONTEXT service_id=218 ]
+11-13 02:20:40.507  1806  2166 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-13 02:20:40.510  1806  2166 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 2 candidates
+11-13 02:20:40.519  1806  2166 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 3 scheduled, 3 pending: manifests:spelling_correction-22110320 * {W:b:I:l, bg}, manifests:text-classifier-langid-1941001461 * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 * {W:b:u:l, bg}
+11-13 02:20:40.522  1806  1806 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+11-13 02:20:40.529  1806  2166 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-13 02:20:40.530   548  2075 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10128; state: ENABLED
+11-13 02:20:40.531   548  2075 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10128; state: DISABLED
+11-13 02:20:40.534  1806  2166 I SP.AiAi : Scheduling: job start ({W:b:u:l, bg}), 2 started, 0 paused, 1 scheduled, 3 pending: manifests:spelling_correction-22110320 * {W:b:I:l, bg}, manifests:text-classifier-langid-1941001461 @ * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ * {W:b:u:l, bg}
+11-13 02:20:40.535  1806  2166 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip to text-classifier-langid-1941001461.zip.fetched (constraints: W:b:u:l)
+11-13 02:20:40.535  1806  2166 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip to tc_model_e202592534082c01f9642f709a627dd9.zip.fetched (constraints: W:b:u:l)
+11-13 02:20:40.539  2179  2389 I HttpGrpcBindableService: Downloading requested for URL 'https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip'
+11-13 02:20:40.550   548  1965 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10128; state: DISABLED
+11-13 02:20:40.555  1528  3640 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+11-13 02:20:40.572  2179  2389 I HttpGrpcBindableService: Responding with header information for URL 'https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip'
+11-13 02:20:40.574  2179  2978 I HttpGrpcBindableService: [pfd-write] DOWNLOAD COMPLETE: Downloaded 399 bytes from URL [https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip].
+11-13 02:20:40.574  1806  2359 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip'
+11-13 02:20:40.575  1806  2359 I AstreaHttpConnection: Download completed for url [https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip].
+11-13 02:20:40.576  1806  2166 I SP.AiAi : Download stopped: manifests:text-classifier-langid-1941001461, succeeded, size: 399
+11-13 02:20:40.580  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 36 uptime_millis: 36 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+11-13 02:20:40.582  2179  2389 I HttpGrpcBindableService: Downloading requested for URL 'https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip'
+11-13 02:20:40.613  2179  2389 I HttpGrpcBindableService: Responding with header information for URL 'https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip'
+11-13 02:20:40.617  1806  2166 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-13 02:20:40.619  1806  2359 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip'
+11-13 02:20:40.622  1806  2166 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:spelling_correction-22110320 * {W:b:I:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ {W:b:u:l, bg}
+11-13 02:20:40.633  1528  3244 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+11-13 02:20:40.634  1607  3577 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+11-13 02:20:40.696  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 31 uptime_millis: 31 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+11-13 02:20:40.759  1528  3244 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+11-13 02:20:40.762  1528  1634 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+11-13 02:20:40.828  1528  4184 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+11-13 02:20:40.828  1528  4184 D BluetoothAdapter: isLeEnabled(): ON
+11-13 02:20:40.831  1108  3210 D BtGatt.GattService: stopScan() - queue size =2
+11-13 02:20:40.838  1108  3210 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-13 02:20:40.838  1108  3210 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:829 get_profile_interface: get_profile_interface: id = activity_attribution
+11-13 02:20:40.838  1108  1405 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10128]]
+11-13 02:20:40.839  1108  1405 D BtGatt.ScanManager: stop gattClientScanNative
+11-13 02:20:40.839  1108  1405 I bt_stack: [INFO:le_scanning_manager.cc(168)] Scan in shim layer stopped
+11-13 02:20:40.839  1108  1277 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:193 unregister_client: Client unregistered
+11-13 02:20:40.839  1108  1277 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:197 unregister_client: Cancelled address rotation alarm
+11-13 02:20:40.839  1108  1405 I bt_stack: [INFO:le_scanning_manager.cc(204)] ScanFilterParamSetup in shim layer
+11-13 02:20:40.839  1108  1321 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-13 02:20:40.839  1108  1321 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
 
