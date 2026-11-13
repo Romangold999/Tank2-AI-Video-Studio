@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:35:09.348580+00:00
+updated_utc=2026-11-13T02:35:14.351557+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
@@ -113,104 +113,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1275)
-11-13 02:35:08.912  1522  3365 E AuthPII : Message is Long live credential not available.
-11-13 02:35:08.912  1522  3365 E AuthPII : abcp: Long live credential not available.
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at mbt.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at mca.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at lzx.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):48)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at lyz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at lze.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at mcs.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at mcs.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at lye.hasFeatures(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.hasFeatures(AbstractAccountAuthenticator.java:324)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:299)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at android.os.Binder.transact(Binder.java:1183)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at aumo.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at android.os.Binder.transact(Binder.java:1183)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at aoey.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1344)
-11-13 02:35:08.912  1522  3365 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1275)
-11-13 02:35:08.913  1522  3365 W Auth    : [AccountStateSyncher] Unable to look up account state from server: couldn't fetch accessToken [CONTEXT service_id=153 ]
-11-13 02:35:08.915  1522  3365 W Auth    : [GaiaServicesFlagManager] Services not available! [CONTEXT service_id=153 ]
-11-13 02:35:08.916  1835  2462 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=31, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
-11-13 02:35:08.924   547   834 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 2]
-11-13 02:35:08.925  1835  2462 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
-11-13 02:35:08.934   909  1094 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
-11-13 02:35:08.936  1757  1803 I hbox:interactor: Background concurrent copying GC freed 186660(11MB) AllocSpace objects, 2(632KB) LOS objects, 49% free, 5114KB/10228KB, paused 39us,10us total 580.591ms
-11-13 02:35:08.942  2974  2974 I DialerFlags: com.android.dialer.phenotype.Flags.lambda$registerDialerSharedDirectbootMendelConfigPackage$2:156 dialer-shared-directboot-aware phenotype register status: true
-11-13 02:35:08.948  1572  3460 W PackageParser: Unknown element under <manifest>: queries at /data/user_de/0/com.google.android.gms/app_chimera/m/00000004/DynamiteModulesC.apk Binary XML file line #15
-11-13 02:35:08.952   547  2196 D ConnectivityService: requestNetwork for uid/pid:10132/1835 activeRequest: null callbackRequest: 79 [NetworkRequest [ REQUEST id=80, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10132 RequestorUid: 10132 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-11-13 02:35:08.956   547   834 D ConnectivityService: NetReassign [80 : null → 100] [c 1] [a 0] [i 1]
-11-13 02:35:08.957   547   827 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=80, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10132 RequestorUid: 10132 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
-11-13 02:35:08.957   547   827 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=80, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10132 RequestorUid: 10132 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
-11-13 02:35:08.957   547   827 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=80, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10132 RequestorUid: 10132 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
-11-13 02:35:08.957   547   827 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=80, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10132 RequestorUid: 10132 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
-11-13 02:35:08.961   547   834 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 1]
-11-13 02:35:08.962   909  1094 I Role    : com.google.android.gms not qualified for android.app.role.SYSTEM_CALL_STREAMING due to missing RequiredComponent{mIntentFilterData=IntentFilterData{mAction='android.telecom.CallStreamingService', mCategories='[]', mDataScheme='null', mDataType='null'}, mMinTargetSdkVersion=1, mFlags='0', mPermission='android.permission.BIND_CALL_STREAMING_SERVICE', mQueryFlags=0, mMetaData=[]}
-11-13 02:35:08.962   909  1094 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
-11-13 02:35:08.963   909  1094 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
-11-13 02:35:08.965  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
-11-13 02:35:08.965  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
-11-13 02:35:08.979  1835  3465 W earchbox:search: Long monitor contention with owner UserFacingBlocking0 (2612) at java.lang.Object com.google.android.apps.gsa.staticplugins.dx.b.v.call()(PG:1) waiters=0 in android.database.sqlite.SQLiteDatabase com.google.android.apps.gsa.staticplugins.dx.b.ad.a() for 127ms
-11-13 02:35:08.981  1835  2500 I A       : GMSCore Auth returned 0 accounts.
-11-13 02:35:08.982  1835  2500 I A       : GoogleOwnersProvider returned 0 accounts.
-11-13 02:35:08.984  2974  3176 I DialerCallRecordingDataSource: com.android.dialer.callrecording.impl.calllog.CallRecordingDataSource.handleDeletesFromAnnotatedCallLog:152 enter
-11-13 02:35:08.984  1607  1607 I ContactsUpgradeReceiver: Creating or opening contacts database
-11-13 02:35:08.984  2974  3176 I DialerCallRecordingInfoStorageAsyncSqlite: com.android.dialer.callrecording.impl.storage.CallRecordingInfoStorageAsyncSqlite.deleteCallLogInitiated:477 enter
-11-13 02:35:08.985  2974  3176 I DialerCallRecordingDataSource: com.android.dialer.callrecording.impl.calllog.CallRecordingDataSource.addDeleteUpdatesFromCallRecordingInitiatedDeletes:196 enter
-11-13 02:35:08.985  2974  3176 I DialerRefreshAnnotatedCallLogWorker: com.android.dialer.calllog.refresh.impl.RefreshAnnotatedCallLogWorker.lambda$rebuild$3:173 filling VerifiedCallDataSource
-11-13 02:35:08.988   547   547 W ActivityThread: getPackageInfo() called with an older ApplicationInfo than the cached version for package android
-11-13 02:35:08.994  3377  3377 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
-11-13 02:35:08.995  3377  3377 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
-11-13 02:35:08.995  3377  3377 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
-11-13 02:35:08.999   902   902 W SubscriptionInfo: MCC string is not a number
-11-13 02:35:08.999   902   902 W SubscriptionInfo: MNC string is not a number
-11-13 02:35:09.013  1522  3102 I FontLog : No directory on disk newer than version 0 [CONTEXT service_id=132 ]
-11-13 02:35:09.020  1835  2818 W A       : Account id is not cached
-11-13 02:35:09.029  1740  2244 W AiAiEcho: LyftNotificationParser Ridesharing ETA not enabled
-11-13 02:35:09.029  1740  2244 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
-11-13 02:35:09.043  1835  2818 W A       : Account id is not cached
-11-13 02:35:09.043  1522  3452 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
-11-13 02:35:09.051  3377  3377 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
-11-13 02:35:09.055  1835  2612 W A       : Account id is not cached
-11-13 02:35:09.057  2974  3176 I DialerRefreshAnnotatedCallLogWorker: com.android.dialer.calllog.refresh.impl.RefreshAnnotatedCallLogWorker.lambda$rebuild$4:186 applying mutations
-11-13 02:35:09.057  2974  3176 I DialerRefreshAnnotatedCallLogWorker: com.android.dialer.calllog.refresh.impl.RefreshAnnotatedCallLogWorker.lambda$rebuild$5:200 coalescing call history
-11-13 02:35:09.057  2974  3176 I DialerCallHistoryCoalescer: com.android.dialer.calllog.coalescer.CallHistoryCoalescer.coalesce:109 coalesce
-11-13 02:35:09.057  2974  3176 I DialerCallHistoryCoalescer: com.android.dialer.calllog.coalescer.CallHistoryCoalescer.coalesceWithSelection:166 coalesceWithSelection
-11-13 02:35:09.057  2974  3176 I DialerCallHistoryCoalescer: com.android.dialer.calllog.coalescer.CallHistoryCoalescer.coalesceWithSelection:166 coalesceWithSelection
-11-13 02:35:09.058  2974  3176 I DialerRefreshAnnotatedCallLogWorker: com.android.dialer.calllog.refresh.impl.RefreshAnnotatedCallLogWorker.lambda$rebuild$6:209 coalescing conversation history
-11-13 02:35:09.058  2974  3176 I DialerConversationHistoryCoalescer: com.android.dialer.calllog.coalescer.ConversationHistoryCoalescer.coalesce:100 coalesce
-11-13 02:35:09.058  2974  3176 I DialerCallRecordingDataSource: com.android.dialer.callrecording.impl.calllog.CallRecordingDataSource.onSuccessfulFill:236 enter
-11-13 02:35:09.059  2974  3181 I DialerConversationHistoryCoalescer: com.android.dialer.calllog.coalescer.ConversationHistoryCoalescer.coalesceInternal:125 coalesceInternal
-11-13 02:35:09.061  2974  3164 I DialerCallerIdFeedbackPhoneLookupContributor: com.android.dialer.calleridfeedback.impl.phonelookup.CallerIdFeedbackPhoneLookupContributor.onSuccessfulBulkUpdate:133 Writing timestampOfLastCallerIdFeedbackLookup : 1794537308767
-11-13 02:35:09.065  2974  3171 I DialerCallHistoryCoalescer: com.android.dialer.calllog.coalescer.CallHistoryCoalescer.coalesceInternal:203 coalesceInternal
-11-13 02:35:09.065  2974  3157 I DialerCallHistoryCoalescer: com.android.dialer.calllog.coalescer.CallHistoryCoalescer.coalesceInternal:203 coalesceInternal
-11-13 02:35:09.065  2974  3176 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.saveToFileForMissedCalls:121 saveToFileForMissedCalls
-11-13 02:35:09.066  2974  3157 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:162 start writing coalesced_rows_for_missed_calls
-11-13 02:35:09.066  2974  3157 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_missed_calls
-11-13 02:35:09.067  2974  3250 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForCallLogMissedCalls:68 notifyForCallLogMissedCalls
-11-13 02:35:09.067  2974  3176 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.saveToFileForAllCalls:101 saveToFileForAllCalls
-11-13 02:35:09.068  2974  3164 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:162 start writing coalesced_rows_for_all_calls
-11-13 02:35:09.068  2974  3164 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_all_calls
-11-13 02:35:09.068  2974  3250 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForCallLogAllCalls:57 notifyForCallLogAllCalls
-11-13 02:35:09.069  2974  3176 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.saveToFileForAllCallsInConversationHistory:142 saveToFileForAllCallsInConversationHistory
-11-13 02:35:09.070  2974  3157 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:162 start writing coalesced_rows_for_conversation_history_all_calls
-11-13 02:35:09.070  2974  3157 I DialerCoalescedRowsDao: com.android.dialer.calllog.coalescer.CoalescedRowsDao.save:167 finished writing coalesced_rows_for_conversation_history_all_calls
-11-13 02:35:09.070  2974  3250 I DialerCoalescedRowsUpdatedNotifier: com.android.dialer.calllog.coalescer.CoalescedRowsUpdatedNotifier.notifyForConversationHistory:79 notifyForConversationHistory
-11-13 02:35:09.070  2974  3250 I DialerRefreshAnnotatedCallLogWorker: com.android.dialer.calllog.refresh.impl.RefreshAnnotatedCallLogWorker.lambda$rebuild$7:219 coalesced row updated
-11-13 02:35:09.070  2974  3171 I DialerSystemCallLogUpdater: com.android.dialer.calllog.refresh.impl.SystemCallLogUpdater.lambda$update$0:105 not updating system call log for initial build
-11-13 02:35:09.071  2974  3176 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: ANNOTATED_CALL_LOG_FORCE_REFRESH_NO_CHANGES_NEEDED
-11-13 02:35:09.078  3377  3377 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
-11-13 02:35:09.079  1572  3460 W ConfigFileUtils: Failed to read asset ChimeraModuleSetList.pb: java.io.FileNotFoundException: ChimeraModuleSetList.pb
-11-13 02:35:09.088   356  3505 I resolv  : GetAddrInfoHandler::run: {100 262244 100 983140 10132 0}
-11-13 02:35:09.089   356  3507 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
-11-13 02:35:09.093   356  3508 I resolv  : res_nmkquery: (QUERY, IN, A)
-11-13 02:35:09.095   356  3508 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x709b6361a650
-11-13 02:35:09.095   356  3508 I resolv  : doQuery: rcode=0, ancount=8, return value=160
-11-13 02:35:09.099   356  3507 I resolv  : res_nsend: used send_dg 256 terrno: 0
-11-13 02:35:09.099   356  3507 I resolv  : doQuery: rcode=0, ancount=8, return value=256
-11-13 02:35:09.102  1835  2457 W A       : Account id is not cached
-11-13 02:35:09.104   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-13 02:35:13.930  1740  2262 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-13 02:35:13.935   357   357 D Zygote  : Forked child process 3841
+11-13 02:35:13.935   547   578 I ActivityManager: Start proc 3841:com.android.intentresolver/u0a92 for broadcast {com.android.intentresolver/com.android.intentresolver.ChooserActivityReEnabler}
+11-13 02:35:13.936  1572  3478 I Icing   : updateResources: need to parse arkh{com.google.android.gms}
+11-13 02:35:13.939  1572  3561 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-13 02:35:13.939  1572  3561 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-13 02:35:13.939  1572  3561 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-13 02:35:13.941  2974  2974 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.getFullIccId:131 preferences with ICCID not found, nothing to migrate.
+11-13 02:35:13.941  2974  2974 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.migrate:99 migration completed
+11-13 02:35:13.941  2974  2974 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.migrate:54 migrating
+11-13 02:35:13.944  2974  2974 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.getFullIccId:131 preferences with ICCID not found, nothing to migrate.
+11-13 02:35:13.944  2974  2974 I DialerPerAccountSharedPreferencesTMigrator: com.android.dialer.common.PerAccountSharedPreferencesTMigrator.migrate:99 migration completed
+11-13 02:35:13.944  2974  2974 I DialerStatusCheckJobService: com.android.voicemail.impl.StatusCheckJobService.onStartJob:100 attempting to reactivate ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} [CONTEXT enable_persistent_logger=true ]
+11-13 02:35:13.944  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.944  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.948   547  2081 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+11-13 02:35:13.948   547  2081 I system_server: Waiting for a blocking GC ClassLinker
+11-13 02:35:13.952  1740  2262 I SP.AiAi : Scheduling: download registered, 1 started, 0 paused, 1 scheduled, 3 pending: manifests:spelling_correction-22110320 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 @ {W:b:u:l, bg}, manifests:text-classifier-annotator-272525175 @ * {W:b:u:l, bg}
+11-13 02:35:13.952  1522  1522 W .gms.persistent: Long monitor contention with owner binder:1522_F (3815) at void cvdh.d()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2) waiters=0 in cvdh cvdh.a(android.content.ContentResolver, android.net.Uri, java.lang.Runnable) for 152ms
+11-13 02:35:13.957  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.965  3342  3342 V ActivityThread: getPackageInfo() caused update to cached ApplicationInfo for package com.android.providers.calendar
+11-13 02:35:13.967   547  1315 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:13.967   547  1315 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:13.970  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.970  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.973  1572  3655 I SingleHostAsyncVerifier: Verification result: checking for a statement with source # dmsa@f69fa8f2, relation delegate_permission/common.handle_all_urls, and target # dmsa@2cbe911d --> true. [CONTEXT service_id=244 ]
+11-13 02:35:13.973   547  2188 W JobScheduler: Job didn't exist in JobStore: 18f16bd #u0a130/13 com.google.android.dialer/androidx.work.impl.background.systemjob.SystemJobService
+11-13 02:35:13.974  1572  3494 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.appintegrity, using defaults.
+11-13 02:35:13.977   547  1315 W JobScheduler: Job didn't exist in JobStore: 7a68324 #u0a130/12 com.google.android.dialer/androidx.work.impl.background.systemjob.SystemJobService
+11-13 02:35:13.978  1740  2256 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-13 02:35:13.978  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.980   356   391 I netd    : tetherGetStats() -> {[]} <0.34ms>
+11-13 02:35:13.983  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.983  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.990  3342  3844 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10089; state: ENABLED
+11-13 02:35:13.997  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:13.999  2974  3176 I DialerVoicemailStatusDataMigration: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataMigration.lambda$migrate$0:78 no package status to migrate
+11-13 02:35:14.013  2974  3171 I DialerVoicemailStatusDataMigration: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataMigration.cleanup:89 enter
+11-13 02:35:14.015  1522  3638 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-13 02:35:14.015  3823  3823 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 1000; state: ENABLED
+11-13 02:35:14.015  3823  3823 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 1000; state: ENABLED
+11-13 02:35:14.018   547  2189 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 10089; state: ENABLED
+11-13 02:35:14.018  1572  3494 W AppIntegrityRulePusher: Successfully pushed ruleset prod_rule_set_version_23 to AIC.
+11-13 02:35:14.018   547  2189 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10089; state: ENABLED
+11-13 02:35:14.021  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:14.021  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:14.025  1572  3737 I SingleHostAsyncVerifier: Verification result: checking for a statement with source # dmsa@3ec27e04, relation delegate_permission/common.handle_all_urls, and target # dmsa@2cbe911d --> true. [CONTEXT service_id=244 ]
+11-13 02:35:14.030  1572  1572 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:14.031  1572  3748 I SingleHostAsyncVerifier: Verification result: checking for a statement with source # dmsa@ae3dda2d, relation delegate_permission/common.handle_all_urls, and target # dmsa@2cbe911d --> true. [CONTEXT service_id=244 ]
+11-13 02:35:14.032  1572  3745 I SingleHostAsyncVerifier: Verification result: checking for a statement with source # dmsa@381d73, relation delegate_permission/common.handle_all_urls, and target # dmsa@2cbe911d --> true. [CONTEXT service_id=244 ]
+11-13 02:35:14.032  1134  1134 D BootBroadcastReceiver: refresh periodic job from action=android.intent.action.BOOT_COMPLETED
+11-13 02:35:14.032  1572  3761 I SingleHostAsyncVerifier: Verification result: checking for a statement with source # dmsa@d0d54563, relation delegate_permission/common.handle_all_urls, and target # dmsa@2cbe911d --> true. [CONTEXT service_id=244 ]
+11-13 02:35:14.033  1134  1134 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 1000; state: ENABLED
+11-13 02:35:14.034   547   653 W BroadcastLoopers: Found previously unknown looper Thread[AppIntegrityManagerServiceHandler,5,main]
+11-13 02:35:14.034   547  2189 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 1000; state: ENABLED
+11-13 02:35:14.034   547  2189 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 1000; state: ENABLED
+11-13 02:35:14.037  1572  3561 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-13 02:35:14.037  1572  3561 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-13 02:35:14.037  1572  3561 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-13 02:35:14.039  1572  3744 I SingleHostAsyncVerifier: Verification result: checking for a statement with source # dmsa@50d41111, relation delegate_permission/common.handle_all_urls, and target # dmsa@2cbe911d --> true. [CONTEXT service_id=244 ]
+11-13 02:35:14.040  1572  3765 I SingleHostAsyncVerifier: Verification result: checking for a statement with source # dmsa@8ce3ec58, relation delegate_permission/common.handle_all_urls, and target # dmsa@2cbe911d --> true. [CONTEXT service_id=244 ]
+11-13 02:35:14.040   547  1316 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.040   547  1316 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.042  1522  3638 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-13 02:35:14.043  1134  1134 D CompatibilityChangeReporter: Compat change id reported: 170233598; UID 1000; state: ENABLED
+11-13 02:35:14.043  1134  1134 D PeriodicJobManager: schedule next alarm job at Nov 13, 2026, 03:00:00
+11-13 02:35:14.050  3841  3841 I .intentresolver: Using CollectorTypeCC GC.
+11-13 02:35:14.051  3841  3841 W .intentresolver: Unexpected CPU variant for x86: x86_64.
+11-13 02:35:14.051  3841  3841 W .intentresolver: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+11-13 02:35:14.052  3823  3823 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 1000; state: ENABLED
+11-13 02:35:14.067  1572  1572 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:14.067  1572  1572 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-13 02:35:14.077   547  1221 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.077   547  1221 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.078  1572  3496 I NearbyFastPair: onInitRuntimeState isEnableWearableListener: false [CONTEXT service_id=265 ]
+11-13 02:35:14.079   547  2426 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.079   547  2426 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.079   547  1221 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.079   547  1221 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.082  3823  3823 D nativeloader: Configuring clns-shared-6 for other apk /system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk. target_sdk_version=34, uses_libraries=, library_path=/system/priv-app/DynamicSystemInstallationService/lib/x86_64:/system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk!/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.dynsystem:/system/priv-app/DynamicSystemInstallationService:/system/lib64:/system_ext/lib64
+11-13 02:35:14.086  1572  3483 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-13 02:35:14.088   547   619 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.088   547   619 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.088   547   619 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.088   547   619 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.088   547   619 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.088   547   619 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.089   547  2625 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.089   547  2625 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.089  1134  1154 W ndroid.settings: Cleared Reference was only reachable from finalizer (only reported once)
+11-13 02:35:14.089   547  2625 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.089   547  2625 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.090   547  2625 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.090   547  2625 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.091   547  2625 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.091   547  2625 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.091   547  2625 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.091   547  2625 D PackageManager: Clear ephemeral installer activity
+11-13 02:35:14.091   547  2625 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-13 02:35:14.091   547  2625 D PackageManager: Clear ephemeral installer activity
 
