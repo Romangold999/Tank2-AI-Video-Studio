@@ -245,7 +245,7 @@ class RifeX2Interpolator(context: Context) : AutoCloseable {
         private const val MODEL_FILE = "rife49.onnx"
         private const val MODEL_SIZE_BYTES = 21458882L
         private const val MODEL_URL = "https://huggingface.co/edgetools/rife/resolve/main/rife49.onnx"
-        private const val MODEL_SHA256 = "76e4cef9ab42fa7dd8e4f6e4aba47462051e3faa969e4bca6479784fbab0ac6f"
+        private const val MODEL_SHA256 = "76e4cef9ab42fa7dd4e8f6e4aba47462051e3faa969e4bca6479784fbab0ac6f"
         private const val OUTPUT_NAME = "output"
     }
 }
