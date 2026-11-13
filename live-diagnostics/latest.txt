@@ -1,15 +1,15 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T01:50:16.964845+00:00
-workflow_run_id=43347242486
+updated_utc=2026-11-13T01:55:48.467997+00:00
+workflow_run_id=43348127865
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
-STATUS=EMULATOR_PROCESS_EXITED
-ELAPSED_SECONDS=5
+STATUS=STARTING
+UTC=2026-11-13T01:55:48Z
 
 ===== emulator-startup.log (last 100 lines) =====
-/home/runner/work/_temp/ceed52e2-250b-40aa-8e12-d6945cbac554.sh: line 31: emulator: command not found
+(not created yet)
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
 (not created yet)
