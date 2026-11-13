@@ -1,19 +1,17 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:34:54.341670+00:00
+updated_utc=2026-11-13T02:34:59.348385+00:00
 workflow_run_id=43352871885
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
 STATUS=EMULATOR_BOOT_WAIT
-ELAPSED_SECONDS=35
+ELAPSED_SECONDS=40
 EMULATOR_PID=3249
 ADB_DEVICE_STATE=device
 BOOT_COMPLETED=not-yet
 
 ===== emulator-startup.log (last 100 lines) =====
-##  emulator by sending anonymized usage data. Or use the '-no-metrics'     ##
-##  flag to bypass this warning and turn off the metrics collection.        ##
 ##  In a future release this warning will turn into a one-time blocking     ##
 ##  prompt to ask for explicit user input regarding metrics collection.     ##
 ##                                                                          ##
@@ -112,6 +110,8 @@ INFO         | emulatorSetupEnvironment: Environment scene is not required
 USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
 WARNING      | Failed to process .ini file /home/runner/.android/emu-update-last-check.ini for reading.
 WARNING      | Failed to process .ini file /home/runner/.android/emu-update-last-check.ini for reading.
+INFO         | Boot completed in 36221 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
 (not created yet)
