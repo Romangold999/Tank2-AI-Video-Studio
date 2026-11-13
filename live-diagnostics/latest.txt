@@ -1,5 +1,5 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:11:38.076867+00:00
+updated_utc=2026-11-13T02:11:43.076967+00:00
 workflow_run_id=43349759093
 run_attempt=1
 branch=live-diagnostics
@@ -110,104 +110,104 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 (not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:11:37.658  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.659  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.674  1910  2103 I A       : Using proto config with mendel
-11-13 02:11:37.680  1180  1180 D b/254119092: TaskbarManager#mComponentCallbacks.onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h683dp 420dpi nrml port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1857) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.105 fontWeightAdjustment=0}
-11-13 02:11:37.680  1180  1180 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
-11-13 02:11:37.680  1180  1180 D b/254119092: ComponentCallbacks#onConfigurationChanged() configDiffForRecreate={CONFIG_ASSETS_PATHS}
-11-13 02:11:37.680  1180  1180 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
-11-13 02:11:37.680  1180  1180 D b/254119092: destroyExistingTaskbar: null
-11-13 02:11:37.680  1180  1180 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
-11-13 02:11:37.681  1180  1180 D b/254119092: recreateTaskbar: isTaskbarEnabled=false [dp != null (i.e. mUserUnlocked)]=true FLAG_HIDE_NAVBAR_WINDOW=false dp.isTaskbarPresent=false
-11-13 02:11:37.681  1180  1180 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
-11-13 02:11:37.681  1180  1180 D b/254119092: DisplayController#onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h683dp 420dpi nrml port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1857) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.105 fontWeightAdjustment=0}
-11-13 02:11:37.684  1505  2680 I NetworkScheduler: Using standalone scheduling engine [CONTEXT service_id=218 ]
-11-13 02:11:37.691  1505  2835 W bwft    : Succeeded but not registered: com.google.android.libraries.search.user#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:11:37.692  1505  2835 W bwft    : Succeeded but not registered: com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:11:37.692  1505  2835 W bwft    : Succeeded but not registered: com.google.android.apps.search.transcription.uidevice#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:11:37.692  1505  2835 W bwft    : Succeeded but not registered: com.google.android.apps.search.webglide.user#com.google.android.googlequicksearchbox [CONTEXT service_id=51 ]
-11-13 02:11:37.704  1910  2103 I A       : Proto config empty. Exit merge.
-11-13 02:11:37.704  1910  2103 I ModelDownloadController: MDD hotword model download ignored; looking for model in assets.
-11-13 02:11:37.705  1910  2103 I ModelDownloadController: Handle the downloaded hotword model
-11-13 02:11:37.710  1916  3104 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
-11-13 02:11:37.714  1910  2103 I ModelDownloadController: process baked model en-US/hotword.data
-11-13 02:11:37.714  1910  2103 I A       : Refusing EXCLUSIVE task 81, it is already pending. Try again in 296 seconds.
-11-13 02:11:37.728  1910  2103 I SodaSilentEnrollment: Executing HotwordSilentEnrollment, updateOnly: true
-11-13 02:11:37.729   546  1861 W AppSearchIcing: icing-search-engine.cc:283: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
-11-13 02:11:37.731  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.732  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.732  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.732   546   563 W Looper  : Slow dispatch took 332ms android.fg h=android.os.Handler c=android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0@fa6aaab m=0
-11-13 02:11:37.732   546   563 W Looper  : Slow delivery took 331ms android.fg h=android.os.Handler c=com.android.server.am.SameProcessApplicationThread$$ExternalSyntheticLambda1@d38f508 m=0
-11-13 02:11:37.734   546   563 W Looper  : Drained
-11-13 02:11:37.735  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.735  1910  2338 W SearchServiceCore: Abort, client detached.
-11-13 02:11:37.735  1132  1132 D ImsNrSaModeHandler: setNrSaDisablePolicy : NrSaDisablePolicy = 0, IsNrSaSupported = true
-11-13 02:11:37.742  1910  2741 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:11:37.742  1910  2679 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:11:37.742  1910  2744 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:11:37.745  1180  2770 D OneSearchSuggestProvider: Shut down the binder channel
-11-13 02:11:37.746  1180  2770 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=z1{delegate=s1{logId=5, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=X1.T@61fe46c
-11-13 02:11:37.763  1910  1918 I earchbox:search: JIT allocated 76KB for compiled code of java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.ok.d()
-11-13 02:11:37.766  1910  2815 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task REFRESH_AUTH_TOKENS.
-11-13 02:11:37.766  1366  1366 D CellBroadcastReceiver: onReceive Intent { act=android.telephony.action.CARRIER_CONFIG_CHANGED flg=0x15000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
-11-13 02:11:37.766  1366  1366 D CBChannelManager: Clear channel range list
-11-13 02:11:37.766  1366  1366 D CellBroadcastReceiver: initializeSharedPreference
-11-13 02:11:37.766  1366  1366 D CellBroadcastReceiver: subId=1 defaultSubId=1
-11-13 02:11:37.767  1569  1569 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
-11-13 02:11:37.767  1569  1569 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
-11-13 02:11:37.769   546  2320 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 1000; state: ENABLED
-11-13 02:11:37.775   546  2605 W JobScheduler: Job didn't exist in JobStore: 70c7e26 #u0a132/-45 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
-11-13 02:11:37.776  1366  1366 D CellBroadcastReceiver: reset settings as needed for subId=1, carrierId=1
-11-13 02:11:37.784  1366  1366 D CellBroadcastReceiver: Skip setting default values of shared preference.
-11-13 02:11:37.784  1366  1366 D CellBroadcastReceiver: Default interval 2 did not change.
-11-13 02:11:37.785  1366  1366 D CellBroadcastReceiver: disable launcher activity: com.android.cellbroadcastreceiver.CellBroadcastListLauncherActivity
-11-13 02:11:37.786  1366  1366 D CellBroadcastReceiver: Start Cell Broadcast configuration for intent=ACTION_ENABLE_CHANNELS
-11-13 02:11:37.805   546  2605 W JobScheduler: Job didn't exist in JobStore: 24aa923 #u0a132/-111 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
-11-13 02:11:37.810  1916  2215 D CompatibilityChangeReporter: Compat change id reported: 263076149; UID 10138; state: ENABLED
-11-13 02:11:37.813  1180  1217 I ImeTracker: com.google.android.apps.nexuslauncher:6a2af13f: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
-11-13 02:11:37.813  1180  1217 I ImeTracker: com.google.android.apps.nexuslauncher:6a2af13f: onFailed at PHASE_CLIENT_VIEW_SERVED
-11-13 02:11:37.818   546  2304 W system_server: Long monitor contention with owner binder:546_F (1927) at com.android.server.pm.Computer com.android.server.pm.PackageManagerService.snapshotComputer(boolean)(PackageManagerService.java:1195) waiters=8 in com.android.server.pm.Computer com.android.server.pm.PackageManagerService.snapshotComputer(boolean) for 117ms
-11-13 02:11:37.818   358   403 I netd    : bandwidthRemoveInterfaceQuota(eth0) <1.77ms>
-11-13 02:11:37.819  1366  3152 D CellBroadcastConfigService: Enable CellBroadcast on sub 1
-11-13 02:11:37.822  2823  3010 I GoogleTTSServiceImpl: Synthesis request for locale eng-USA and name en-US-language
-11-13 02:11:37.823  2823  3010 I VoiceDataManager: Download voice sync en-us-x-iog-lstm-embedded
-11-13 02:11:37.823  2823  3010 I VoiceDataDownloader: fetch bundled voice en-us
-11-13 02:11:37.823  2823  3010 I VoiceDataDownloader: fetchVoiceInternal en-us
-11-13 02:11:37.823  2823  3015 I VoiceDataDownloader: Download of en-us started.
-11-13 02:11:37.823  1075  1333 D IpClient.wlan0: set max DTIM multiplier to 1
-11-13 02:11:37.823  2823  3015 I VoiceDataDownloader: Registered slicing strategy for en-us
-11-13 02:11:37.823  2823  3015 I VoiceDataDownloader: Getting pack name en-us-x-multi-r53
-11-13 02:11:37.823  2823  3015 I VoiceDataDownloader: Adding pack en-us-x-multi-r53 to superpack.
-11-13 02:11:37.823  2823  3015 I VoiceDataDownloader: Getting pack name en-us-x-multi-seanet-r53
-11-13 02:11:37.823  2823  3015 I VoiceDataDownloader: Adding pack en-us-x-multi-seanet-r53 to superpack.
-11-13 02:11:37.823  2823  3015 I VoiceDataDownloader: Getting pack name en-us-x-afh-r53
-11-13 02:11:37.824  2823  3015 I VoiceDataDownloader: Adding pack en-us-x-afh-r53 to superpack.
-11-13 02:11:37.824  2823  3015 I VoiceDataDownloader: Getting pack name en-us-x-fis-r53
-11-13 02:11:37.824  2823  3015 I VoiceDataDownloader: Adding pack en-us-x-fis-r53 to superpack.
-11-13 02:11:37.824  2823  3015 I VoiceDataDownloader: Getting pack name en-us-x-afh-seanet-r53
-11-13 02:11:37.824  2823  3015 I VoiceDataDownloader: Adding pack en-us-x-afh-seanet-r53 to superpack.
-11-13 02:11:37.824  2823  3015 I VoiceDataDownloader: Getting pack name en-us-x-fis-seanet-r53
-11-13 02:11:37.827  2823  3015 I VoiceDataDownloader: Adding pack en-us-x-fis-seanet-r53 to superpack.
-11-13 02:11:37.827  2823  3015 I VoiceDataDownloader: Syncing superpack en-us
-11-13 02:11:37.827  2823  3020 I SP      : Registering en-us.53, url: null, constraints: *:*:*:*, flags: *, requested: 53, current: 53
-11-13 02:11:37.828  1761  2162 D SharedPreferencesImpl: Time required to fsync /data/user/0/com.google.android.as/shared_prefs/gms_icing_mdd_manager_metadata.xml: [<1: 0, <2: 0, <4: 0, <8: 0, <16: 0, <32: 0, <64: 0, <128: 0, <256: 0, <512: 0, <1024: 1, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
-11-13 02:11:37.830  2894  3113 I DialerGmsFlagCommitter: com.android.dialer.phenotype.GmsFlagCommitter.lambda$commit$1:52 flags committing
-11-13 02:11:37.834  2823  3020 I SP      : Syncing en-us (53) with slices: [{en-us-x-multi-r53, m:*:*:*}], metadata: false
-11-13 02:11:37.842  1916  3148 I FA      : App measurement disabled via the manifest
-11-13 02:11:37.843   903   986 W ndroid.systemui: Long monitor contention with owner main (903) at boolean android.content.res.AssetManager.getResourceValue(int, int, android.util.TypedValue, boolean)(AssetManager.java:566) waiters=0 in boolean android.content.res.AssetManager.getResourceValue(int, int, android.util.TypedValue, boolean) for 364ms
-11-13 02:11:37.852  1916  3148 I FA      : App measurement initialized, version: 91004
-11-13 02:11:37.852  1916  3148 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
-11-13 02:11:37.853  1916  3148 I FA      : To enable faster debug mode event logging run:
-11-13 02:11:37.853  1916  3148 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.youtube
-11-13 02:11:37.857   546  1950 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10120; state: DISABLED
+11-13 02:11:42.614  3260  3537 W oid.documentsui: Long monitor contention with owner pool-4-thread-2 (3533) at void com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.handleDocumentsProvider(android.content.pm.ProviderInfo, com.android.documentsui.base.UserId)(ProvidersCache.java:645) waiters=4 in void com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.handleDocumentsProvider(android.content.pm.ProviderInfo, com.android.documentsui.base.UserId) for 188ms
+11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: Currently set values for:
+11-13 02:11:42.629  3493  3493 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-13 02:11:42.629  3493  3493 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.webview: false
+11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: com.google.android.webview is not listed in per-application setting
+11-13 02:11:42.629  3493  3493 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-13 02:11:42.631  1505  1587 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.consentverifier#com.google.android.gm) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-13 02:11:42.633  3493  3493 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+11-13 02:11:42.635  3493  3493 I cr_WebViewApkApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview:webview_service
+11-13 02:11:42.636   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+11-13 02:11:42.637  1910  1910 I ContentCaptureHelper: Setting logging level to DEBUG
+11-13 02:11:42.637  1910  1910 D ContentCaptureManager: setFlushViewTreeAppearingEventDisabled(): setting to false
+11-13 02:11:42.642  1910  2443 I OpenGLRenderer: Davey! duration=3476ms; Flags=1, FrameTimelineVsyncId=4705, IntendedVsync=43917997371, Vsync=45134663989, InputEventId=0, HandleInputStart=45152243664, AnimationStart=45152244355, PerformTraversalsStart=45152244546, DrawStart=47046079407, FrameDeadline=43934664037, FrameInterval=45150706138, FrameStartTime=16666666, SyncQueued=47048843493, SyncStart=47049138563, IssueDrawCommandsStart=47161405308, SwapBuffers=47236237032, FrameCompleted=47394757879, DequeueBufferDuration=39649764, QueueBufferDuration=156683, GpuCompleted=47368135926, SwapBuffersCompleted=47394757879, DisplayPresentTime=0, CommandSubmissionCompleted=47236237032, 
+11-13 02:11:42.643   546   977 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10132 pid=0
+11-13 02:11:42.644   546   977 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10132 => denied (355 us)
+11-13 02:11:42.644   546   977 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10132 pid=0
+11-13 02:11:42.644   546   977 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10132 => denied (30 us)
+11-13 02:11:42.644   546   977 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10132 pid=0
+11-13 02:11:42.644   546   977 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10132 => denied (16 us)
+11-13 02:11:42.645  1075  3524 D NetworkMonitor/101: PROBE_DNS connectivitycheck.gstatic.com 98ms OK 142.251.150.120,2001:4860:4826:7800::
+11-13 02:11:42.656   546  1891 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10133. pid: 3493
+11-13 02:11:42.669  1180  1180 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+11-13 02:11:42.669   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+11-13 02:11:42.670   903   986 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+11-13 02:11:42.670  1910  1910 I Choreographer: Skipped 135 frames!  The application may be doing too much work on its main thread.
+11-13 02:11:42.672  1180  1195 W s.nexuslauncher: Cleared Reference was only reachable from finalizer (only reported once)
+11-13 02:11:42.673  1505  1505 I CastSocket: Adding new CastClientAuthKeyManager. [CONTEXT service_id=161 ]
+11-13 02:11:42.674  1910  2338 W SessionLifecycleManager: Client : AttachedClient[8402063372101244, ClientConfig[mFlags=[40000088001] mSuggestFlags=[0] mClientId=HOTWORD_SERVICE mSessionType=search publicSearchServiceCallerUid=-1]] has no associated SessionController
+11-13 02:11:42.690  1910  2338 W SearchServiceCore: Abort, client detached.
+11-13 02:11:42.690  1910  2338 W SearchServiceCore: Abort, client detached.
+11-13 02:11:42.690  1910  2338 W SearchServiceCore: Abort, client detached.
+11-13 02:11:42.701  1910  2338 W SearchServiceCore: Abort, client detached.
+11-13 02:11:42.701  1910  2338 W SearchServiceCore: Abort, client detached.
+11-13 02:11:42.704   358  3561 I resolv  : GetAddrInfoHandler::run: {101 983141 101 983141 1073 1}
+11-13 02:11:42.710   358  3562 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-13 02:11:42.710   358  3562 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7d6bebd29f50
+11-13 02:11:42.710   358  3562 I resolv  : doQuery: rcode=0, ancount=1, return value=104
+11-13 02:11:42.756   546   563 I ActivityTaskManager: Displayed com.google.android.apps.nexuslauncher/.NexusLauncherActivity for user 0: +9s563ms
+11-13 02:11:42.756   546   563 W Looper  : Slow dispatch took 105ms android.fg h=android.os.Handler c=com.android.server.wm.ActivityMetricsLogger$$ExternalSyntheticLambda0@e97329c m=0
+11-13 02:11:42.756  1505  1515 I .gms.persistent: Background young concurrent copying GC freed 131434(6601KB) AllocSpace objects, 18(936KB) LOS objects, 48% free, 8113KB/15MB, paused 48us,15us total 173.219ms
+11-13 02:11:42.764  1180  1180 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+11-13 02:11:42.799   546  2453 W AlarmManager: Window length 1383505805528182272ms too long; limiting to 1 day
+11-13 02:11:42.800  1505  2939 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-13 02:11:42.802  1505  2939 W SystemServiceRegistry: No service published for: wifirtt
+11-13 02:11:42.805   903   986 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+11-13 02:11:42.808   546   974 D CompatibilityChangeReporter: Compat change id reported: 229362273; UID 10127; state: DISABLED
+11-13 02:11:42.809   546   974 D CompatibilityChangeReporter: Compat change id reported: 229362273; UID 10127; state: ENABLED
+11-13 02:11:42.813  1505  1623 W Nearby  : Failed to open content://com.android.contacts/profile because the Cursor was empty [CONTEXT service_id=49 ]
+11-13 02:11:42.831  1180  1180 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+11-13 02:11:42.839  1761  2155 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 3 scheduled, 3 pending: manifests:kg_collections_table-21051103 * {W:b:u:l, bg}, manifests:actions-ranking-table-211005 * {W:b:u:l, bg}, manifests:spelling_correction-22110320 * {W:b:I:l, bg}
+11-13 02:11:42.841  1761  1761 I AiAiEcho: AppFetcherImpl onPackageChanged android.
+11-13 02:11:42.842  1761  2798 I AiAiEcho: AppIndexer Package:[android] UserProfile:[0] Enabled:[true].
+11-13 02:11:42.843  1761  2798 I AiAiEcho: AppFetcherImplV2 updateApps package:[android], userId:[0], reason:[package is updated.].
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: Model sync failed.
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: kit: Request of 1 packs for webref-2-en-us-manifest failed
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at cjq.call(PG:126)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at oeh.a(Unknown Source:2)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at ofj.run(PG:3)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: Caused by: koy: HTTP_ERROR 404, url: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at kow.b(Unknown Source:4)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at kuk.o(PG:7)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at kug.run(PG:9)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	at dgq.run(PG:67)
+11-13 02:11:42.847  1761  2155 W AiAiTextClassifier: 	... 1 more
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: [TextClassifierLibProviderImpl]: TcLib packs sync failed.
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: kit: Request of 1 packs for webref-2-en-us-manifest failed
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at cjq.call(PG:126)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at oeh.a(Unknown Source:2)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at ofj.run(PG:3)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: Caused by: koy: HTTP_ERROR 404, url: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at kow.b(Unknown Source:4)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at kuk.o(PG:7)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at kug.run(PG:9)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	at dgq.run(PG:67)
+11-13 02:11:42.854  1761  2155 W AiAiTextClassifier: 	... 1 more
+11-13 02:11:42.855  1761  2155 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-13 02:11:42.857   546   574 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
 
