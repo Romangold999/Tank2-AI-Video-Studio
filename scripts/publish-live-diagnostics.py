@@ -110,6 +110,9 @@ def publish():
 
 def main():
     ensure_branch()
+    publish()
+    with open("live-publisher.ready", "w", encoding="utf-8") as ready:
+        ready.write("LIVE_DIAGNOSTICS_REMOTE_WRITE_CONFIRMED\\n")
     while not stopping:
         started = time.monotonic()
         try:
