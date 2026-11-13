@@ -1,11 +1,11 @@
 TANK2 LIVE DIAGNOSTICS
-updated_utc=2026-11-13T02:20:46.054981+00:00
+updated_utc=2026-11-13T02:20:51.055086+00:00
 workflow_run_id=43350991614
 run_attempt=1
 branch=live-diagnostics
 
 ===== live-status.txt (last 100 lines) =====
-STATUS=INSTALLING_REUSED_APK\nUTC=2026-11-13T02:20:03Z\n
+STATUS=ANDROID_UI_GENERATION_TEST_RUNNING\nUTC=2026-11-13T02:20:50Z\n
 
 ===== emulator-startup.log (last 100 lines) =====
 ##  In a future release this warning will turn into a one-time blocking     ##
@@ -110,107 +110,106 @@ INFO         | Boot completed in 39023 ms
 INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 
 ===== gradle-instrumented-test.log (last 100 lines) =====
-(not created yet)
 
 ===== emulator-logcat.txt (last 100 lines) =====
-11-13 02:20:42.465   361  4839 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10156 0}
-11-13 02:20:42.466   361  4840 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
-11-13 02:20:42.466   361  4840 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23a314e310
-11-13 02:20:42.466   361  4840 I resolv  : doQuery: rcode=0, ancount=8, return value=265
-11-13 02:20:42.466   361  4841 I resolv  : res_nmkquery: (QUERY, IN, A)
-11-13 02:20:42.466   361  4841 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b23e3154c10
-11-13 02:20:42.466   361  4841 I resolv  : doQuery: rcode=0, ancount=8, return value=169
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: Could not register for notifications with InnerTube: 
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: abqx: zvm: Precondition check failed.
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at abqn.apply(Unknown Source:4)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at yyi.r(PG:5)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at yyi.b(PG:2)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at abqp.d(PG:4)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at agsb.c(PG:63)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at agsb.j(PG:38)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at agsb.d(PG:3)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at agrz.run(Unknown Source:2)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at smg.run(PG:2)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at snu.run(PG:5)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: Caused by: zvm: Precondition check failed.
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at abpb.e(PG:5)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at zhp.f(PG:1)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at zhp.e(PG:1)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at zgl.run(PG:19)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at aosb.run(PG:3)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at yxr.run(PG:11)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: Caused by: efc
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	at zgl.run(PG:13)
-11-13 02:20:42.589  1903  2750 W YouTubeMusic: 	... 5 more
-11-13 02:20:42.859   548   637 D ActivityManager: freezing 1425 com.android.cellbroadcastreceiver
-11-13 02:20:42.859   548   637 D ActivityManager: freezing 1233 com.android.bluetooth
-11-13 02:20:42.865  1528  1528 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.proximity.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
-11-13 02:20:42.866  1528  1528 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.cast.firstparty.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-11-13 02:20:42.871   904   904 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
-11-13 02:20:43.070  1528  1528 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START pkg=com.google.android.gms }
-11-13 02:20:43.496  1976  4241 W A       : [Download] response code: 400
-11-13 02:20:44.175  1528  1528 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
-11-13 02:20:44.210  1528  1642 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, org.chromium.net.cronet) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:20:44.212  1528  1637 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.nnapi.drivermanager) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:20:44.213  1528  1637 W bwft    : Succeeded but not registered: com.google.android.libraries.performance.primes#com.google.android.gms [CONTEXT service_id=51 ]
-11-13 02:20:44.215  1528  1642 W bwft    : Succeeded but not registered: com.google.android.libraries.notifications#com.google.android.contacts [CONTEXT service_id=51 ]
-11-13 02:20:44.259  4530  4548 V ClearcutMetricXmitter: Transmission is done.
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: Could not register for notifications with InnerTube: 
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: abqx: zvm: Precondition check failed.
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at abqn.apply(Unknown Source:4)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at yyi.r(PG:5)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at yyi.b(PG:2)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at abqp.d(PG:4)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at agsb.c(PG:63)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at agsb.j(PG:38)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at agsb.d(PG:3)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at agrz.run(Unknown Source:2)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at smg.run(PG:2)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at snu.run(PG:5)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: Caused by: zvm: Precondition check failed.
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at abpb.e(PG:5)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at zhp.f(PG:1)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at zhp.e(PG:1)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at zgl.run(PG:19)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at aosb.run(PG:3)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at yxr.run(PG:11)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: Caused by: efc
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	at zgl.run(PG:13)
-11-13 02:20:44.396  1903  2750 W YouTubeMusic: 	... 5 more
-11-13 02:20:44.408  1528  4198 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.device_performance#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:20:44.411  1528  4198 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
-11-13 02:20:44.413  1528  1642 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.partnersetup) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
-11-13 02:20:44.413  2117  2117 E GooglePartnerSetup: Phenotype client.register: true
-11-13 02:20:44.425  1976  2458 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:44.427  1976  2458 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:44.440  1976  2864 W TimedProcessReaper: Scheduling killing of process to refresh configuration
-11-13 02:20:44.445  1976  1976 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
-11-13 02:20:44.526  1607  3439 I Authzen : [DeviceStateSyncManager] Device state updated successfully.
-11-13 02:20:44.595  1607  1607 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
-11-13 02:20:44.877   548   637 D ActivityManager: freezing 3403 com.google.android.documentsui
-11-13 02:20:45.125  1580  1580 V ContactsProvider: Scheduled notifyChange started.
-11-13 02:20:45.127  1108  1108 D BluetoothPbapService:  onChange on contact uri 
-11-13 02:20:45.135  1108  4847 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
-11-13 02:20:45.158  1528  2855 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:9 exec_start_elapsed_seconds: 80 [CONTEXT service_id=218 ]
-11-13 02:20:45.165  1528  3118 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:9 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 80 [CONTEXT service_id=218 ]
-11-13 02:20:45.203  1528  3244 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 80 [CONTEXT service_id=218 ]
-11-13 02:20:45.204  1607  3577 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
-11-13 02:20:45.206  1528  3118 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 80 [CONTEXT service_id=218 ]
-11-13 02:20:45.360  1607  4438 W PeopleGmsPhenoRgstrIntentOp: Google Api connection failed
+11-13 02:20:50.683  1108  1108 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_ADDED
+11-13 02:20:50.685   909   909 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.romangold.tank2aivideostudio.debug, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+11-13 02:20:50.686  1976  2458 I A       : Updating Gservices keys
+11-13 02:20:50.687   548   842 E AppOps  : attributionTag VCN not declared in manifest of android
+11-13 02:20:50.688  1108  1108 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_ADDED
+11-13 02:20:50.693   548   648 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+11-13 02:20:50.695  1528  4993 I GCoreUlr: WorldUpdater:com.google.gservices.intent.action.GSERVICES_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-13 02:20:50.695  1528  4993 I GCoreUlr: Unbound from all signal providers.
+11-13 02:20:50.701  1976  2026 I earchbox:search: JIT allocated 69KB for compiled code of com.google.android.apps.gsa.s.h com.google.android.apps.gsa.s.h.a(int)
+11-13 02:20:50.703  1607  1650 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-13 02:20:50.709   548   548 D TransparencyService: Not an update. Skipping...
+11-13 02:20:50.711   548  1081 W JobScheduler: Job didn't exist in JobStore: f9f327 #u0a132/-43 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+11-13 02:20:50.713  1607  4854 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Initializing auth_folsom
+11-13 02:20:50.714   909   936 I PermissionControllerServiceImpl: Updating user sensitive for uid 10192
+11-13 02:20:50.715  1607  4854 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService is already enabled. Ignore.
+11-13 02:20:50.715  1607  4854 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.GcmReceiverService is already enabled. Ignore.
+11-13 02:20:50.717   548   576 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-13 02:20:50.719  1607  4855 I SyncIntentOperation: Handling the intent: Intent { act=com.google.gservices.intent.action.GSERVICES_CHANGED flg=0x1000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService }. [CONTEXT service_id=80 ]
+11-13 02:20:50.719   904   986 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+11-13 02:20:50.725   548   978 W JobScheduler: Job didn't exist in JobStore: 95afea6 #u0a132/-1000006 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+11-13 02:20:50.725   438   438 W /apex/com.android.adbd/bin/adbd: type=1400 audit(0.0:35): avc:  denied  { search } for  comm=73796E6320737663203336 name="oem" dev="dm-5" ino=43 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=0
+11-13 02:20:50.732   548  1953 V RecoverableKeyStoreMgr: Not updating secret types - same as old value.
+11-13 02:20:50.733  1607  4854 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+11-13 02:20:50.734   548  1777 V RecoverableKeyStoreMgr: Not updating server params - same as old value.
+11-13 02:20:50.734   548  1777 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10128
+11-13 02:20:50.736  1607  4854 I RecoverableKeyStoreGms: [EnrollmentManager] Returning certificates list from cache [CONTEXT service_id=172 ]
+11-13 02:20:50.738   548   638 I RoleService: Granting default roles...
+11-13 02:20:50.742  1607  3855 I MS_Utils: version of com.google.android.apps.maps = 1066937505
+11-13 02:20:50.742  1607  3855 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-13 02:20:50.744  1607  3855 W PrereqChecker: No rear-facing camera detected.
+11-13 02:20:50.744  1607  3855 I OcrModelUpStIntentOp: Downloading text recognizer
+11-13 02:20:50.745  1607  4855 I MobileDataHub: Scheduling periodic tasks
+11-13 02:20:50.746  1607  3855 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.gservices.intent.action.GSERVICES_CHANGED flg=0x1000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+11-13 02:20:50.747  1607  4855 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+11-13 02:20:50.751  2308  5030 D TrafficStats: tagSocket(82) with statsTag=0xffffff01, statsUid=10129
+11-13 02:20:50.754  1528  1642 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-13 02:20:50.757   904   986 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+11-13 02:20:50.760  1528  4848 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-13 02:20:50.771   548   629 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10192; state: ENABLED
+11-13 02:20:50.771   548   629 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10192; state: ENABLED
+11-13 02:20:50.784   909   936 I PermissionControllerServiceImpl: Updating user sensitive for uid 10192
+11-13 02:20:50.784   548   648 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+11-13 02:20:50.794  1126  1126 D CarrierSvcBindHelper: onPackageModified: com.romangold.tank2aivideostudio.debug
+11-13 02:20:50.794  1126  1126 D CarrierSvcBindHelper: No carrier app for: 0
+11-13 02:20:50.802   548  2061 I RecoverableKeyStoreMgr: The cert file serial number is the same, so skip updating.
+11-13 02:20:50.803  1607  4854 I RecoverableKeyStoreGms: [EnrollmentManager] Recovery service is initialized. [CONTEXT service_id=172 ]
+11-13 02:20:50.804  1108  1108 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-13 02:20:50.804  1108  1108 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: Error reading snapshot for 10128 from disk
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10128.xml: open failed: ENOENT (No such file or directory)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:369)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2494)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:838)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1339)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1275)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-13 02:20:50.806   548  1358 E RecoverySnapshotStorage: 	... 8 more
+11-13 02:20:50.813  1126  1465 D ImsResolver: maybeAddedImsService, packageName: com.romangold.tank2aivideostudio.debug
+11-13 02:20:50.821   548  1358 W PlatformKeyManager: Platform generation ID was 0 but no entry was present in AndroidKeyStore. Generating fresh key.
+11-13 02:20:50.823   181   188 E keystore2: system/security/keystore2/src/error.rs:180 - system/security/keystore2/src/security_level.rs:684
+11-13 02:20:50.823   181   188 E keystore2: 
+11-13 02:20:50.823   181   188 E keystore2: Caused by:
+11-13 02:20:50.823   181   188 E keystore2:     0: system/security/keystore2/src/security_level.rs:199
+11-13 02:20:50.823   181   188 E keystore2:     1: system/security/keystore2/src/security_level.rs:176: Failed to handle super encryption.
+11-13 02:20:50.823   181   188 E keystore2:     2: system/security/keystore2/src/super_key.rs:762: User ECDH key missing.
+11-13 02:20:50.823   181   188 E keystore2:     3: Error::Rc(r#SYSTEM_ERROR)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: [WrappingKeyManager] InternalRecoveryServiceException during wrapping key generation [CONTEXT service_id=172 ]
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: android.security.keystore.recovery.InternalRecoveryServiceException: Failed to import secret key.
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.wrapUnexpectedServiceSpecificException(RecoveryController.java:783)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:569)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at qiw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at qiw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at qfw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):68)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at com.google.android.gms.auth.folsom.operation.GserviceChangeIntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at java.lang.Thread.run(Thread.java:1012)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: Caused by: android.os.ServiceSpecificException: Failed to import secret key. (code 22)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3071)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at android.os.Parcel.createException(Parcel.java:3041)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:3024)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2966)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at com.android.internal.widget.ILockSettings$Stub$Proxy.generateKey(ILockSettings.java:1679)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:556)
+11-13 02:20:50.825  1607  4854 W RecoverableKeyStoreGms: 	... 12 more
+11-13 02:20:50.832  1826  2298 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10191; state: ENABLED
+11-13 02:20:50.838   548   622 D CompatibilityChangeReporter: Compat change id reported: 149924527; UID 2000; state: ENABLED
 
