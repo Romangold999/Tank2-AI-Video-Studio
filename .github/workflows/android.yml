@@ -140,9 +140,25 @@ jobs:
           }
           trap cleanup EXIT
 
+          SDK_ROOT="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-}}"
+          if [ -z "$SDK_ROOT" ]; then
+            echo "ANDROID_SDK_ROOT and ANDROID_HOME are both unset"
+            env | grep -E "^(ANDROID|PATH)=" || true
+            exit 1
+          fi
+          EMULATOR_BIN="$SDK_ROOT/emulator/emulator"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT"
+          echo "Checking emulator binary: $EMULATOR_BIN"
+          if [ ! -x "$EMULATOR_BIN" ]; then
+            echo "Android Emulator binary is missing or not executable"
+            ls -la "$SDK_ROOT" "$SDK_ROOT/emulator" 2>&1 || true
+            find "$SDK_ROOT" -maxdepth 4 -type f -name emulator -print 2>/dev/null || true
+            exit 1
+          fi
+          "$EMULATOR_BIN" -version
           adb start-server
           printf 'STATUS=EMULATOR_STARTING\nUTC=%s\n' "$(date -u +%FT%TZ)" > live-status.txt
-          emulator -avd ci_android_x86_64 -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot -memory 6144 -cores 4 -port 5554 > emulator-startup.log 2>&1 &
+          "$EMULATOR_BIN" -avd ci_android_x86_64 -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot -memory 6144 -cores 4 -port 5554 > emulator-startup.log 2>&1 &
           EMULATOR_PID=$!
           echo "$EMULATOR_PID" > emulator.pid
           BOOTED=0
